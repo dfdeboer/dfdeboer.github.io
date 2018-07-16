@@ -1,0 +1,208 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>Managed devices</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center>&nbsp;<img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+
+<p><img SRC="images/manethde.gif" ALT="Managed ethernet devices" NOSAVE BORDER="2" HEIGHT="17" WIDTH="411">
+
+<p><h2>What are managed devices?</h2>
+
+<p>Managed devices are pieces of hardware, such as <a HREF="hub.htm">hubs</a>
+and <a HREF="router.htm">routers</a>, that support software <b>management
+agents</b>. Agents monitor and report the status of the devices, on
+which they run, to a monitoring device such as a server. Not all networking
+devices support management, it is an extra expense. Network management
+has become increasingly important. As an infrastructures ages and users
+place increasingly high demands on its capabilities, network managers need
+a good overview of how the network is responding. Hubs and routers are
+ideal places to gather information as all traffic must pass through both
+devices.
+
+<p>The success of <a HREF="tcpip.htm">TCP/IP</a> has meant that the
+simple network management protocol (<b>SNMP</b>),
+and the <b>SNMP2</b> derivative, have become the
+standard <a HREF="tcpippot.htm">protocols</a> for gathering network
+data. Centralised management systems, running on servers, can gather information
+from managed devices and store it in a database known as a <b>management
+information base</b>. The database can be easily interrogated to provide
+statistics on the performance of the network.
+
+<p>Original SMNP agents had to be polled for information, leading to
+increased traffic simply to obtain traffic flow information. They were
+unable to automatically communicate with management systems, therefore
+conditions of concern were not reported as they arose. SMNP2 was
+developed to allow management of devices across networks that did not run
+TCP/IP, automatically report alarms and provide security for its transmissions.
+
+<p>SNMP2 supports<b> Novell's IPX/SPX</b> and
+<b>Macintosh's AppleTalk</b> protocols and offers
+management system authentification, encryption of management information
+and the ability to allow more than one agent per device. Due to the more
+secure nature of SNMP2, devices can be monitored and configured remotely.
+Unfortunately, <a HREF="standorg.htm">standardisation organisations</a>
+have been unable to agree on much of what SNMP2 offers, so it has never
+fully been implemented.
+<br>&nbsp;
+<center><table BORDER COLS="3" WIDTH="90%">
+<tr>
+<td WIDTH="10%">
+<center><b><b>PROTOCOL</b></h2></center>
+</td>
+
+<td>
+<center><b><b>ADVANTAGES</b></h2></center>
+</td>
+
+<td>
+<center><b><b>DISADVANTAGES</b></h2></center>
+</td>
+</tr>
+
+<tr>
+<td WIDTH="30%">SNMP</td>
+
+<td>
+<ul>
+<li>
+Part of TCP/IP</li>
+
+<li>
+Already implemented</li>
+</ul>
+</td>
+
+<td>
+<ul>
+<li>
+Too much network traffic due to polling</li>
+
+<li>
+Supports only TCP/IP</li>
+
+<li>
+No security</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td WIDTH="30%">SNMP2</td>
+
+<td>
+<ul>
+<li>
+Supports other protocols</li>
+
+<li>
+Secure</li>
+
+<li>
+Allows remote configuration</li>
+</ul>
+</td>
+
+<td>
+<ul>
+<li>
+Never fully implemented</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>Updated SNMP</td>
+
+<td>
+<ul>
+<li>
+Easier to implement than SNMP2 due to the removal of security features</li>
+</ul>
+</td>
+
+<td>
+<ul>
+<li>
+No security features</li>
+
+<li>
+No remote configuration</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>SNMP3</td>
+
+<td>
+<ul>
+<li>
+Has the security of SNMP2</li>
+</ul>
+</td>
+
+<td>
+<ul>
+<li>
+Not supported by standards</li>
+
+<li>
+Manufacturers are offering their own solutions</li>
+</ul>
+</td>
+</tr>
+</table></center>
+<br>&nbsp;
+
+
+<p><h2>Tell me more!</h2>
+<center><table BORDER WIDTH="90%">
+<tr>
+<td WIDTH="30%"><a HREF="http://netman.cit.buffalo.edu">Network management
+server</a></td>
+
+<td>Information on network management issues</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://www.int.snmp.com">SNMP Research International</a></td>
+
+<td>Good commercial site</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://www.ukans.edu/~ntsstats">University
+of Kansas network management page</a></td>
+
+<td>Educational resource showing what network management can tell you</td>
+</tr>
+</table></center>
+
+
+<p>
+<hr WIDTH="100%">
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

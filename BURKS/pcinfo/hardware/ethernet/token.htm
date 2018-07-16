@@ -1,0 +1,132 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>Token ring</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center><img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+
+<p><img SRC="images/tokentit.gif" ALT="Token ring" NOSAVE BORDER="2" HEIGHT="17" WIDTH="167">
+
+<p><h2>What is token ring?</h2>
+
+<p><img SRC="images/anitoken.gif" ALT="AniToken.gif" NOSAVE BORDER="2" HEIGHT="390" WIDTH="359">
+<p>Although
+token ring can trace its origins back to the 1960s, <b>IBM</b>
+has been responsible for much of the development since 1981. IBM made an
+agreement with Texas Instruments to jointly develop the required chipsets
+to support a token-passing access methodology.
+
+<p>The <a HREF="standorg.htm">IEEE</a> became involved with the standardisation
+of token ring when it ratified the <b>802.5</b> standard
+for token passing. Token ring was originally based on <b>shielded
+twisted pair</b> media, but it can operate over <b>unshielded
+twisted pair</b> and <b>fibre optic</b>. Some
+manufacturers are hoping to develop token ring so it can use <b>legacy
+coaxial installations</b>. It is hoped that this will persuade organisations
+to migrate from older <a HREF="ethernet.htm">ethernet</a> to token ring
+without having to change their wiring infrastructure.
+
+<p>A single computer has to act as a monitoring station for each ring.
+The monitoring station does not require any extra hardware or software,
+all other computers are designed to act as standby monitors if the primary
+device fails. Monitors are responsible for the destruction of frames not
+removed by their source computers. Any damaged tokens also have to be renewed
+by the monitor.
+
+<p>There is a great deal of discussion concerning the advantages of
+token ring over ethernet. <b>Ethernet has a greater
+market share</b>, but much of this is due to the <b>higher
+cost of token ring hardware</b>. There have been many studies that contrast
+the performance characteristics of ethernet and token ring. CSMA/CD causes
+a performance tail-off, under high network loading, due to the increased
+number of collisions and retransmissions. Conversely, token ring does not
+perform as well under low loading - the monitoring and managing overheads
+are proportionally greater. Overall though, there is not a great difference
+in the two architectures.
+
+<p>Token ring is a <b>deterministic architecture</b>
+that commonly runs at <b>16Mbps</b>. It optimises
+its bandwidth through the token passing access methodology. Each network
+device can use the full bandwidth as soon as it possesses a special circulating
+24 bit packet (token):
+<ul>
+<li>
+When a computer wishes to transmit, it has to receive the circulating
+token.<br>
+<br></li>
+
+<li>
+The computer modifies the token into a frame and transmits data.<br>
+<br></li>
+
+<li>
+The frame circulates to each device on the way to its destination. Each
+device examines the address field of the frame to determine if the frame
+is destined for itself. No other station will attempt to transmit, they
+recognise that the frame is not the token.<br>
+<br></li>
+
+<li>
+When a frame arrives at its destination, it is copied, processed and
+retransmitted slightly modified. The modification is designed to inform
+the source computer that the data has been received and processed.<br>
+<br></li>
+
+<li>
+When the source computer receives its modified frame, it removes the
+frame from the ring and ,either completes its data transfer, or releases
+the token back onto the ring so that other devices may communicate.</li>
+</ul>
+<h2>Tell me more!</h2>
+<br><h2></h2>&nbsp;
+<center><table BORDER WIDTH="90%">
+<tr>
+<td WIDTH="30%"><a HREF="http://www.astral.org">Astral homepage</a></td>
+
+<td>Good resource dedicated to the promotion of token ring</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://home.sprynet.com/sprynet/jtmesser/faq/contents.html">James
+Messer's token ring site</a></td>
+
+<td>Good resource including a token ring FAQ</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://www.iol.unh.edu/consortiums/fddi">Interoperability
+Lab token ring consortium</a></td>
+
+<td>University of New Hampshire token ring research site</td>
+</tr>
+</table></center>
+<h2></h2>&nbsp;
+<center></center>
+
+<center>
+<hr WIDTH="100%"></center>
+
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

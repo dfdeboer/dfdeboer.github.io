@@ -1,0 +1,263 @@
+<HTML>
+<HEAD>
+<TITLE>ERRATA: Mano & Kime 3rd</TITLE>
+</HEAD>
+<BODY><PRE>
+                              ERRATA        Last update:  4/20/06
+                              ------
+Mano and Kime, <I>Logic and Computer Design Fundamentals</I>, 
+Third Edition, Pearson Prentice Hall, 2004.
+
+First, see the publisher's errata list on the Web at:
+<A 
+HREF="http://www.writphotec.com/mano/text_errata.html"
+>http://www.writphotec.com/mano/text_errata/html</A>
+
+                                                 <A NAME="P_133">
+p133, Problem 3-1.  The second function should be labeled "G", 
+   not "F."  (Change the second "F" to a "G".) (Posted 1/20/06)
+                                                 <A NAME="P_138">
+p138-9, Problems 3-24, 3-25.  The publisher's errata (see link 
+   above) is not sufficient to correct all the errors students 
+   encounter when working this problem.  Instead of referring 
+   to Figure 4-10, Students should use the datasheet for the 
+   type '139 2-to-4 decoder, for example the one from <A 
+   HREF="http://www.fairchildsemi.com/ds/74%2F74F139.pdf"
+   >Fairchild</A>
+   <A HREF="http://www.fairchildsemi.com/ds/74%2F74F139.pdf"
+   >Semiconductor</A>.  Note that O  = D ,   O  = D , etc.
+                              1    1     2    2
+
+   Also note that the truth tables given in datasheets typically 
+                            _
+   refer to signals such as O .  (Notice the bar for negation.)  
+                             1
+   That is the signal present on the wire that connects outside 
+
+   the bubble--that is the pin of the chip.  
+
+   The use of "bubbles" for negation in Figure 3-34 is 
+   inconsistent with Figure 4-10.  Figure 4-10 does not correctly 
+   describe the decoders used on Figure 3-34.  (To modify Figure 
+   4-10, for use with these problems only, each of the four AND 
+   gates at the outputs should be NAND gates.  Also, there should 
+   be a third inverter located on the schematic above the 
+   existing two inverters and in the EN signal line.  Finally, in 
+   the truth table to Figure 4-10, in each of the columns EN, D0, 
+   D1, D2, and D3, replace each "1" with a "0" and vice versa.  
+   The modified figure is useful only for these two problems 
+   however.) (Updated 1/25/06.)
+                                                 <A NAME="P_193">
+p193, Problem 4-8.  In the text, add a "*" at the beginning of 
+   the problem statement since the answer to this problem is 
+   posted on the book's companion web site.  In the PDF file with 
+   the solution (on the book's companion web site) change the 
+   label "4-10.*" to "4-8*."  Underneath the schematic diagram 
+   add a horizontal line.  Just under the horizontal line, add 
+   the label "4-10.*" (The solution to 4-8 is only the 
+   schematic.) 
+                                              <A NAME="P_193_10"> 
+p193, Problem 4-10.  The answer posted on the book's companion 
+   web site is improperly labeled and is also incomplete.  
+   
+   CORRECT THE LABELS:  The on the PDF file for this answer, 
+   change the label "4-10.*" to 4-8.*".  Below the schematic 
+   diagram and above the truth table and K-maps, add a horizontal 
+   line.  Just below this horizontal line add the label "4-10*".  
+
+   THE ANSWER SHOWN FOR 4-10* IS INCOMPLETE:  Students' 
+   solutions must also include a gate-level schematic of the 
+   logic.  This part of the answer is not given in the PDF file. 
+                                                 <A NAME="P_196">
+p196, Problem 4-36.  Replace "E_n, A0, A1" with "E_n, A1, A0."
+   (It is conventional in this text to list the most significant 
+   bits first.  Doing it in the other order confuses students.)
+                                                 <A NAME="P_236">
+p236, Problem 5-4.  Add these instructions for working the 
+   problem. . . 
+   Work the problem in this order:  1)  The given numbers are 
+   unsigned binary.  Pad each with zeros until they are each 8-
+   bits wide.  2) Negate subtrahends by taking the 2's 
+   complement.  3)  Add.  4)  For each case, note "overflow" or 
+   "no overflow" as the case may be. 
+
+   (Several of the given unsigned numbers are too large in 
+   magnitude to properly represent as signed integers with the 
+   same number of bits.  That "correct" answers can be obtained 
+   in these instances by using the methods shown in some 
+   examples in the textoobk is only because people can interpret 
+   the bits in the context of a modular number system.  Digital 
+   hardware does not act like that.  The four-step method 
+   described above emulates what 8-bit digital hadware would do 
+   to add the numbers.) 
+                                          _ _    <A NAME="P_246">
+p246 and p247, Labels "S" and "R" for the S R Latch are missing 
+   overbars in four places inside Figure 6-6.  The same problem 
+   exists in three places in the text that discusses this Figure.  
+
+   p246, 9 lines from the bottom, add overbar to "S".
+   p246, 8 lines from the bottom, add overbar to "S".
+   p246, 7 lines from the bottom, add overbar to "R".
+   (Other instances of "S" and "R" on these pages are correct 
+   as printed with or without the overbars.)  
+                                                 <A NAME="P_250">
+p250-283, Figures 6-10, 6-12, 6-13, 6-14, 6-15, 6-17, 6-18, 6-23, 
+   6-27, Table 6-7.  To be consistent with symbols used in 
+   Chapter 9 (e.g. Figure 9-4) add label "Q" at each output 
+   inside the block diagram symbol for each latch. (A note to 
+   students:  The absence of a name in the block diagram symbol, 
+   along with no postponement symbols or dynamic symbol, implies 
+   a latch.  Postponement or dynamic symbols are used to imply a 
+   master-slave or edge-triggered flip-flop, as shown in Figure 
+   6-14 and described on page 255.  Also note the publisher's 
+   errata for figure 6-14, the last two symbols in part (b).)  
+                                                 <A NAME="P_300">
+p300, Problem 6-4.  In the text add a "*" at the beginning of the 
+   problem statement since the answer is posted on the book's 
+   companion web site.  In the PDF file with the solution (on the 
+   book's companion web site) change the label "6-6*" to "6-4*".  
+   Underneath part (d) add a horizontal line.  Under the line, 
+   add a label, "6-6*".  
+                                                 <A NAME="P_301">
+p301, Problem 6-6.  The answer posted on the book's companion web 
+   site is improperly labeled.  The on the PDF file for this 
+   answer, change the label "6-6.*" to "6-4.*".  Underneath 
+   part (d) add a horizontal line.  Under the line, add a 
+   label, "6-6*".  
+                                               <A NAME="P_301_9">
+p301, Problem 6-9.  Place an asterisk ("*") at the start of the 
+     word "Draw."  (The answer is posted on the web.)
+                                                 <A NAME="P_330">
+p330, Table 7-7.  Change "Figure 7-7" to "Figure 7-11".
+                                                 <A NAME="P_336">
+p336, Figure 7-14.  Note the errata for this figure described in 
+   the author's list of errata.  A corrected figure is shown 
+   <A HREF="MK_FIG_7_14.DOC">here</A>.
+                                               <A NAME="P_393_1">
+p393, Problem *8-1.  The solution given on the companion web site 
+   is incorrect.  The state transition branch leading into state 
+   S2 should be redirected into state S1.
+
+                                                 <A NAME="P_393">
+p393, Figure 8-18.  Add a key showing input and output variables.
+
+   The key will show a circle representing a generic state.  The 
+
+   words "State name" will appear in the top half of the circle 
+
+   and the phrase "outputs Z Z " will appear in the bottom half.  
+                            1 2
+   An arrow representing a state transition will extend from the 
+
+   circle and be labeled "inputs X X ".  A corrected Figure is 
+                                  1 2
+   shown <A HREF="MK8_1.DOC">here</A>.
+                                                 <A NAME="P_427">
+p427 through p428.  Problems 9-2 through 9-12.  Each problem 
+   statement should be preceded by an asterisk ("*") since all 
+   the solutions for all the problems in this chapter are 
+   available on the companion web site.  
+                                                 <A NAME="P_447">
+p447 Table 10-6.  In the line with the micro-operation 
+   "R7 <-- R7 + 1" and in the column "MB," change the word 
+   "Register" to a dash.  (Posted 4/20/05)
+                                               <A NAME="P_447_7">
+p447 Table 10-7.  In the line with the micro-operation
+   "R7 <-- R7 + 1" and in the column "MB," change the "0" 
+   to an "X".  (Posted 4/20/05)
+                                                 <A NAME="P_506">
+p506 There are a number of omissions in the description of shift 
+   operations.  The line numbers below are counted down from the 
+   heading "Shift Instructions" and do not count blank lines.
+
+   Line 8 (starts with "the")  Insert these sentences after the 
+   existing period:  "It shifts the out-going bit into the carry 
+   flag bit.  The old carry flag bit is overwritten."
+
+   Line 12. (starts with "unchanged")  Insert this sentence 
+   after the existing period:  "The outgoing bit is shifted into 
+   the carry flag bit."  Also in line 12 and extending into line 
+   13, delete "inserts 0 into the incoming bit in the rightmost 
+   position and".
+
+   Line 18. (starts with "the")  After the existing period insert 
+   this sentence:  "The outgoing bit is also copied into the 
+   carry flag bit."
+
+   <A HREF="SHIFT_R.DOC"
+   >Here is a supplement</A> to further clarify this matter.
+                                                 <A NAME="P_512">
+p512 Table 11-7.  No errata, however Table 11-7 has little 
+   content.  Here is a <A HREF="P_CTRL.DOC"
+   >supplement to Table 11-7</A>.  (Posted 4/07/2006)
+                                                 <A NAME="P_515">
+p515 Table 11-9.  Change two lines to eliminate conflicts with 
+   Table 11-10.
+
+   Two lines in the table are incorrectly shown in the text as:
+   Branch if lower             BL      A < B      C = 1
+   Branch if lower or equal    BLE     A <= B     C + Z = 1
+
+   Correct the above lines to read as follows:
+   Branch if lower             BLO     A < B      C = 1
+   Branch if lower or same     BLS     A <= B     C + Z = 1
+
+   Summary:  Change "BL"  to "BLO"
+             Change "BLE" to "BLS"
+             Change "equal" to "same" in one instance.
+   
+   (As written the same instruction mnemonic "BL" stands for two 
+   separate and unique instructions.  Similarly for "BLE."  BLO 
+   and BLS follow Motorola style for assembly language mnemonics. 
+   (posted 4/27/05)
+                                                 <A NAME="P_522">
+p522. Problem 11-1.  Change "Section 11-1" to "Section 11-2".
+   Also add "SUB represents subtraction." to the problem 
+   statement.  (SUB is not illustrated in Section 11-2.)
+                                               <A NAME="P_522_3">
+p522. Problem *11-3.  The solution given on the companion web 
+   site is incomplete.  For part "b,c" the very last instruction 
+   is missing.  Add "POP X" after the last "MUL" and show that 
+   the stack is then empty.  (The result that was on the stack is 
+   stored in variable "X" and then removed from the stack by the 
+   POP instruction.)  
+                                               <A NAME="P_522_4">
+p522. Problem 11-4.  Add "Y = " to the start of the expression
+   so that it reads:  "Y = (A + B) x C / (D - (E x F))"
+                                                 <A NAME="P_524">
+p524. Problem *11-17.  The answer posted on the textbook's 
+   companion web site is wrong.  The column labeled "C" should 
+   have these entries (going down), " 1 1 0 0 0 0 0 0 0"
+   (It is also conventional to show the "C" column on the left of 
+   the register rather than to the right, but this is only a 
+   convention.)
+                                                 <A NAME="P_526">
+p526. Problem *11-27.  Change "located in memory at address 2000" 
+   to "located in memory at address 1000".  Change the solution 
+   shown on the textbook's companion web site to:
+
+                                 PC     SP     TOS
+              a) Initially      1000   2000   3000
+              b) After Call     0301   1999   1002
+              c) After Return   1002   2000   3000
+
+   (As written this problem would execute code stored on the 
+   stack.  This is not typical and could mislead students as to 
+   what a stack is typically used for.  The changes mentioned 
+   above solve this problem.)
+   
+Disclaimer:  This list of errata is provided by Professor De Boer 
+   for the use of his students in his courses.  Professor De Boer 
+   has no connection to the book's publisher or the authors of 
+   the textbook.  This list is offered as is, with no guarantee 
+   of any kind.  It is likely to be incomplete at the least.
+</PRE> 
+<BR> 
+<A HREF="http://homepages.dordt.edu/~ddeboer"> Prof. De Boer's home page </A> 
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+</BODY> 
+</HTML> 
+

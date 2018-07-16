@@ -1,0 +1,121 @@
+
+**** 09/22/04 15:20:55 ************** PSpice Lite (Mar 2000) *****************
+
+ A diode used as a variable resistor to attenuate a small signal
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+*
+*
+* Circuit Description
+*      +    -   Type(Offset  Vpeak   Freq
+VS     1    0   SIN(0v       10mV    100kHz)
+R1     1    2   1kohm
+C1     2    3   0.1uf
+D1     3    0   1N4148
+C2     3    4   0.1uf
+R2     4    0   100kohms
+Vbias  5    0   DC    5V
+R3     5    3   100kohms
+*
+*
+* Simulation Control Statements
+*      Suggested step size        End sim at    Start plot at  Max step size
+.tran  0.1us                      100us         0              0.1us
+.probe
+* In probe, v(1) is the input and v(4) is the output.  Plot both of those.
+*
+*
+* Diode Models
+*----------------------------------------------------------------------------
+*                 IDEAL   An (almost) Ideal Diode
+.MODEL IDEAL    D (N=0.00001)
+*----------------------------------------------------------------------------
+*                 1N4004  1 A  400 V  General Purpose Rectifier
+.MODEL 1N4004   D (IS = 3.699E-09 RS = 1.756E-02 N = 1.774 XTI = 3.0
++                 EG = 1.110 CJO = 1.732E-11 M = 0.3353 VJ = 0.3905
++                 FC = 0.5 ISR = 6.665E-10 NR = 2.103 BV = 400 IBV = 1.0E-03)
+*----------------------------------------------------------------------------
+*                 1N4148  200 mA  100 V  Fast Switching Small Signal Diode
+.model 1N4148   D (Is=5.84n N=1.94 Rs=.7017 Ikf=44.17m Xti=3 Eg=1.11 Cjo=.95p
++                 M=.55 Vj=.75 Fc=.5 Isr=11.07n Nr=2.088 Bv=100 Ibv=100u
++                 Tt=11.07n)
+*----------------------------------------------------------------------------
+*                 1N5819 1A 40V Schottky Barrier Diode
+*                 Note: SR104 is equivalent to the generic 1N5819
+.MODEL 1N5819   D (BV=5.33E+01 CJO=1.44E-10 EG=0.69 IBV=6.00E-04 IS=1.65E-05
++                 M=.671 N=1.41 RS=4.47E-02 TT=7.20E-11 VJ=1.45 XTI=2)
+.END
+
+**** 09/22/04 15:20:55 ************** PSpice Lite (Mar 2000) *****************
+
+ A diode used as a variable resistor to attenuate a small signal
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IDEAL           1N4004          1N4148          1N5819          
+          IS   10.000000E-15    3.699000E-09    5.840000E-09   16.500000E-06 
+           N   10.000000E-06    1.774           1.94            1.41         
+         ISR                  666.500000E-12   11.070000E-09                 
+          NR                    2.103           2.088                        
+         IKF                                     .04417                      
+          BV                  400             100              53.3          
+         IBV                    1.000000E-03  100.000000E-06  600.000000E-06 
+          RS                     .01756          .7017           .0447       
+          TT                                   11.070000E-09   72.000000E-12 
+         CJO                   17.320000E-12  950.000000E-15  144.000000E-12 
+          VJ                     .3905           .75            1.45         
+           M                     .3353           .55             .671        
+          EG                                                     .69         
+         XTI                                                    2            
+
+
+**** 09/22/04 15:20:55 ************** PSpice Lite (Mar 2000) *****************
+
+ A diode used as a variable resistor to attenuate a small signal
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)    0.0000  (    3)     .4245  (    4)    0.0000      
+
+(    5)    5.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    VS           0.000E+00
+    Vbias       -4.576E-05
+
+    TOTAL POWER DISSIPATION   2.29E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .24
+

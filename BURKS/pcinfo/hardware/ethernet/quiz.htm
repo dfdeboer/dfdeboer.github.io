@@ -1,0 +1,627 @@
+<html>
+
+<head>
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>JBC Questions Page</title>
+<script Language="Javascript">
+
+var NumberCorrect = 0
+var CurrentScore = 0
+var Selection = ""
+var Feedback = ""
+var Tries = 0
+var Done = "00000000000000000000"
+var DoneList = ""
+var SomeLeftFlag = 0
+var DoneFeedback = ""
+var i = 0
+
+function WriteFeedback(CurrentScore, Feedback, DoneFeedback) {
+    parent.frames[1].document.clear();
+    parent.frames[1].document.open();
+    parent.frames[1].document.writeln ("<html>");
+    parent.frames[1].document.writeln ("<body bgcolor = #FFFFFF text = #BA050A>");
+    parent.frames[1].document.writeln ("<font size = +1>");
+    parent.frames[1].document.writeln ("<center>");
+    parent.frames[1].document.writeln (Feedback);
+    parent.frames[1].document.writeln ("<p>Your current score is: ");
+    parent.frames[1].document.writeln (CurrentScore);
+    parent.frames[1].document.writeln ("%.<BR>");
+    parent.frames[1].document.writeln (DoneFeedback);
+    parent.frames[1].document.writeln ("</center></font></body></html>");
+    parent.frames[1].document.close();
+}
+
+function checkAnswer(Selection, Correct, QNum) {
+    if (Done.charAt(QNum-1) != '1') {
+        if (Correct == 1) {
+            ++NumberCorrect;
+            Done = Done.substring(0, QNum-1) + 1 +
+                   Done.substring(QNum, Done.length);
+            SomeLeftFlag = 0;
+            DoneList = "";
+            for (i=0; i < Done.length; i++) {
+                if (Done.charAt(i) == 0) {
+                    SomeLeftFlag = 1;
+                    DoneList += (i+1) + ', ';
+                }
+            }
+            if (SomeLeftFlag ==1) {
+                DoneList = DoneList.substring(0, DoneList.length - 2) + '.';
+                DoneFeedback = 'Remaining questions: ' + DoneList;
+            }
+            else {
+                DoneFeedback = 'You have finished the quiz.';
+            }
+        };
+        ++Tries;
+        CurrentScore = Math.floor((NumberCorrect/Tries) * 100);
+        Feedback = Selection;
+        WriteFeedback(CurrentScore, Feedback, DoneFeedback);
+    }
+}
+
+function donothing()    { }
+
+</script>
+</head>
+
+<body BACKGROUND="images/marble.gif" NOSAVE>
+<center>
+<h2>
+<img SRC="images/title.gif" ALT="Ethernet tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center></h2>
+Welcome to the ethernet tutorial multiple choice quiz. There are twenty
+questions that are designed to test your general knowledge of the topics
+covered in the tutorial. Try to achieve 80% or greater. The quiz is designed
+to allow you to answer a question wrong as many times as you want, but
+as soon as you answer it correctly, you cannot answer it again. The script
+will calculate an overall percentage score when you have answered all of
+the questions.
+
+<p align="center"><img SRC="images/multiple.gif" ALT="Multiple choice questions"
+NOSAVE BORDER="2" HEIGHT="21" WIDTH="343"> <br>
+<div align="center"><center>
+
+<table BORDER="0" CELLPADDING="2" WIDTH="85%">
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">1. What is the application layer of the OSI
+    reference model responsible for?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - that is the function of the presentation layer.&quot;', 0, 1)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>It provides network communication services such as translation and encryption.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - that is the function of the datalink layer.&quot;', 0, 1)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>It provides logical link and access control.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct!&quot;', 1, 1)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>It provides services for the program that the user is operating.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">2. At which layer of the OSI reference model will
+    you find the protocols necessary to assemble packets of data into a coherent message?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - the session layer is responsible for node to node communication.&quot;', 0, 2)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>At the session layer.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - the datalink layer is responsible for logical link control and medium access control.&quot;', 0, 2)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>At the datalink layer.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct!&quot;', 1, 2)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>At the transport layer.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">3. In the TCP/IP protocol suite, where is CSMA/CD
+    to be found?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - IP and ARP, amonst others are at the internet layer.&quot;', 0, 3)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>At the internet layer.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - TCP and UDP are found at the transport layer.&quot;', 0, 3)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>At the transport layer.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct!&quot;', 1, 3)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>At the datalink sublayer of the network access layer.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">4. The file transfer protocol (FTP) requires a
+    reliable transport service. Which protocol of the TCP/IP suite does it use?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct!&quot;', 1, 4)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>Transmission control protocol (TCP).</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - UDP is an unreliable, connectionless protocol.&quot;', 0, 4)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>User datagram protocol (UDP).</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - telnet is a terminal emulator.&quot;', 0, 4)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>Telnet.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">5. Which standardisation organisation is
+    responsible for the 802.3 standard?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - but they did develop the OSI reference model.&quot;', 0, 5)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>The International Standards Organisation (ISO).</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - but they have helped in the development of ISDN.&quot;', 0, 5)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>The International Telecommunications Union (ITU).</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct!&quot;', 1, 5)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>The Institute of Electrical and Electronics Engineers (IEEE).</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">6. 10BaseT ethernet is specified by which
+    standard?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct!&quot;', 1, 6)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>IEEE 802.3i.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - that is the token ring standard.&quot;', 0, 6)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>IEEE 802.5.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - that is the 10Base2 standard.&quot;', 0, 6)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>IEEE 802.3a.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">7. What is the most dominant LAN technology?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - token ring has less than 30% of the market share.&quot;', 0, 7)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>Token ring.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - ATM has less than 5% of the market share.&quot;', 0, 7)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>Asynchronous Transfer Mode.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct! Ethernet has over 60% of the market share. This question was a bit of a give-away!&quot;', 1, 7)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>Ethernet.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">8. Which ethernet architecture uses hubs?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct! Hubs are intrinsic to non-switched 10BaseT.&quot;', 1, 8)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>10BaseT.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - 10Base2 has a bussed physical topology that does not require hubs.&quot;', 0, 8)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>10Base2.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - 10Base5 has a bussed physical topology that does not require hubs.&quot;', 0, 8)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>10Base5.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">9. As an access methodology, what network
+    environment is CSMA/CD most suited for?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - CSMA/CD performance suffers during times of high network loading.&quot;', 0, 9)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>Heavily loaded networks, often running high bandwidth multimedia applications.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct - CSMA/CD is a simple access methodology that operates well under moderate load.&quot;', 1, 9)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>Moderately loaded networks where bandwidth is ample for requirements.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - token ring uses a token passing methodology.&quot;', 0, 9)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>Token ring networks.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">10. In an 802.3 frame, what is the purpose of the
+    preamble?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - there is a frame check sequence field  that provides the CRC.&quot;', 0, 10)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>It provides the cyclic redundancy check.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct!&quot;', 1, 10)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>It alerts and synchronises the destination network interface card.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - there is a length field that does that!&quot;', 0, 10)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>It indicates the length of the data field.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">11. What term denotes gigabit ethernet over
+    unshielded twisted pair.</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - this is gigabit over multimode fibre optic, with a maximum segment length of 260 metres.&quot;', 0, 11)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>1000BaseSX.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - this is gigabit over twin-axial copper, with a maximum segment length of 25 metres.&quot;', 0, 11)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>1000BaseCX</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct - 1000BaseT is gigabit over four pairs of Cat5 unshielded twisted pair, with a segment length of 100 metres.&quot;', 1, 11)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>1000BaseT</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">12. What media supports 10Base5?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - 10BaseT operates over Cat5 UTP.&quot;', 0, 12)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>Cat5 unshielded twisted pair.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - RG58 thinnet cable supports 10Base2.&quot;', 0, 12)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>RG58 thin coaxial cable.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct! RG8 frozen garden hose is required by thick ethernet.&quot;', 1, 12)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>RG8 thick coaxial cable.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">13. What addressing information is shipped with
+    every network interface card?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - this is assigned by the network administrator, or dynamically by a server if a dial-up connection is made.&quot;', 0, 13)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>The internet protocol (IP) address.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct! The MAC address is burned onto the ROM of the NIC.&quot;', 1, 13)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>The physical (MAC) address.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - there is no such thing!&quot;', 0, 13)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>The address resolution protocol (ARP) address.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">14. What phrase best defines a hub?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct!&quot;', 1, 14)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>A hub is a multiport repeater.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - that simply defines a router.&quot;', 0, 14)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>A hub is a device that routes at the internet layer of the TCP/IP suite.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - that simply defines a switch.&quot;', 0, 14)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>A hub is a device that routes at the datalink sublayer of the network access layer of
+    the TCP/IP suite.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">15. What is distributed routing?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct!&quot;', 1, 15)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>Layer 2 switching and layer three routing combined in a multilayer switch.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - that is distinct layer 2 switching and layer 3 routing.&quot;', 0, 15)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>The use of two devices - a switch and a router.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - this is basically the use of a central server to route data in conjunction with edge switches.&quot;', 0, 15)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>The use of a routing server over a distributed system.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">16. What method do some switches employ to cause
+    transmitting computers to time-out?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - they definately do not do that!&quot;', 0, 16)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>They stop responding to incoming traffic.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct! Switches can transmit a series of false CSMA/CD collision signals to force network devices to time-out.&quot;', 1, 16)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>They generate &quot;backpressure&quot;.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - some switches employ the store and forward method, but this doesn\'t cause other devices to time-out.&quot;', 0, 16)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>They store and forward existing messages.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">17. Why can the original SNMP cause greater
+    network overheads?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - it does use UDP, but this lowers overheads in comparison to using TCP.&quot;', 0, 17)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>Because it uses the user data protocol (UDP).</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - SNMP2 supports remote configuration.&quot;', 0, 17)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>Because it allows remote configuration.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct! The original implementation of SNMP had to be polled to provide information.&quot;', 1, 17)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>Because it cannot automatically provide information to a management information base.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">18. Which statement about fibre distributed data
+    interface (FDDI) is correct?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - FDDI has been standardised by the American National  Standards Institute.&quot;', 0, 18)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>It is ratified by the IEEE.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - it operates at 100Mbps.&quot;', 0, 18)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>It is faster than gigabit ethernet.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct! If one ring fails, some devices can still operate.&quot;', 1, 18)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>The two counter-rotating rings offer an element of redundancy.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">19. What sentence best defines asynchronous
+    transfer mode?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct! It certainly is.&quot;', 1, 19)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>ATM is a fast, scaleable architecure.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - some organisations will continue to use it and develop it. The rumours of the death of ATM are greatly exaggerated!&quot;', 0, 19)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>Gigabit ethernet will destroy ATM.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - ATM is well suited to high bandwidth applications, due to Quality of Service and fast switching.&quot;', 0, 19)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>ATM is not effective with high bandwidth multimedia.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"><hr color="#150890">
+    </td>
+  </tr>
+  <tr VALIGN="TOP">
+    <td COLSPAN="2"><font COLOR="#150890">20. Which access methodology does token ring
+    employ?</font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - FDDI uses token passing.&quot;', 0, 20)"
+    onMouseOver="window.status='Click here to check your answer.';return true">a)</a></td>
+    <td>Modified token passing.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Correct! It\'s as simple as that.&quot;', 1, 20)"
+    onMouseOver="window.status='Click here to check your answer.';return true">b)</a></td>
+    <td>Token passing.</td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP">&nbsp;&nbsp; <a HREF="javascript:donothing()"
+    onClick="checkAnswer('&quot;Wrong - that\'s non-switched ethernet.&quot;', 0, 20)"
+    onMouseOver="window.status='Click here to check your answer.';return true">c)</a></td>
+    <td>CSMA/CD.</td>
+  </tr>
+  <tr>
+    <td COLSPAN="2"></td>
+  </tr>
+</table>
+</center></div>
+
+<hr>
+<div align="center"><center>
+
+<table BORDER="2">
+  <tr>
+    <td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page"
+    NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+    <td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page"
+    NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+    <td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page"
+    NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+    <td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE
+    HEIGHT="17" WIDTH="126"></a></td>
+  </tr>
+</table>
+</center></div>
+
+<p>Created with <a HREF="http://web.uvic.ca/hrd/jbc">Half-Baked Software's JBC</a> </p>
+</body>
+</html>

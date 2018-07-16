@@ -1,0 +1,142 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>Medium access control</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center><img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+
+<p><img SRC="images/mactitle.gif" ALT="Medium access control" NOSAVE BORDER="2" HEIGHT="17" WIDTH="364">
+
+<p><h2>What is medium access control?</h2>
+
+<p>In terms of <b>non-switched ethernet</b>, medium
+access control (<b>MAC</b>) is an effective methodology
+that allows devices on a LAN to share their interconnecting <a HREF="media.htm">media</a>.
+A discussion on switching, and why it does not use the method outlined
+below, can be found <a HREF="switch.htm">here</a>.
+
+<p>Due to the shared nature of the media, it is obvious that more than
+one device might send data at the same time, therefore ethernet MAC has
+to be able to:
+<ul>
+<li>
+decide when to send data.<br>
+<br></li>
+
+<li>
+what to do if its data collides with another device's data.<br>
+<br></li>
+
+<li>
+how long to wait after a collision before re-transmitting.</li>
+</ul>
+<h2>What is CSMA/CD?</h2>
+
+<p>Carrier sensed multiple access with collision detection (<b>CSMA/CD</b>)
+is the MAC used by non-switched ethernet. It is easier to explain the CSMA/CD
+concept by looking at each phrase:
+<ul>
+<li>
+<b>carrier sensed </b>--
+each device that wants to send data along the shared media &quot;listens&quot; to
+the media to detect if it is in use by other users.<br>
+<br></li>
+
+<li>
+<b>multiple access</b> --
+any device can transmit if it detects that the media is clear.<br>
+<br></li>
+
+<li>
+<b>collision detection</b>
+-- each device monitors its data in case it collides with other data. Collisions
+can occur if two devices simultaneously listen to the media, decide it
+is clear and then </b><b>transmit at the same time</b><b>.</h2></li>
+</ul>
+<h2>How does it work?</h2>
+
+<p>When a device transmits data, it <b>encapsulates</b>
+the data into a <a HREF="framepac.htm">frame</a> with the destination
+address at the head of the frame. The frame is then <b>broadcast</b>
+onto the media. All other connected devices detect the broadcast. Each
+device reads the address at the head of the frame, but will only read the
+whole frame if it recognises its own address in the header. Once the frame
+has been read, the device responds to the source (the source address is
+also in the frame header). The response could tell the source that the
+data was received successfully, or that it was corrupt and re-transmission
+is neccessary.
+
+<p>Once a device has transmitted data, it monitors
+its progress across the media. If the device detects that the transmitted
+data is different from the monitored data, a collision is assumed to have
+occurred. To ensure that other devices involved in the collision are aware
+that a collision has taken place, the detecting device transmits a <b>random
+bit pattern</b>. This random pattern is known
+as a <b>jam bit</b>
+or <b>jam sequence </b>and
+it effecively &quot;kills&quot; the corrupted frames. The devices involved in the
+collision then enter a <b>randomly determined
+wait-state</b>, sometimes referred to as a <b>binary
+exponential back-off</b>, prior to attempting
+the re-transmission of the affected frames. The back off is simply a randomly
+calculated period of time that can increase if successive collisions occur.
+
+<p>CSMA/CD is an excellent solution to the problems
+of shared media access, but its use is problematic when a network is heavily
+loaded. When the media is heavily congested, a higher proportion
+of frames can be corrupted. This is particularly noticeable in networks
+operating at a high bit rate (100BaseT). <a HREF="switch.htm">Switched
+ethernet</a> technology has been developed to overcome the limitations
+of CSMA/CD.
+
+<p><h2>Tell me more!</h2>
+<center><table BORDER WIDTH="90%">
+<tr>
+<td WIDTH="30%"><a HREF="http://nt.comtec.co.kr/doc/lan/java-sim">Comtec
+CSMA/CD applet</a></td>
+
+<td>Java applet simulation of CSMA/CD in action</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.intel.nl/training/olc/course/cert/fn2/mod_03/lesson_1/fn20301.htm">Intel
+CSMA/CD tutorial</a></td>
+
+<td>Good commercial tutorial</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://saruman.cs.nott.ac.uk/course/CCN/ccn4/index.htm">Nottingham
+University MAC slide show</a></td>
+
+<td>Easy to follow slide show</td>
+</tr>
+</table></center>
+
+
+<p>
+<hr WIDTH="100%">
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

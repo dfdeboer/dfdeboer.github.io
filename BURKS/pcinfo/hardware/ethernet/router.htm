@@ -1,0 +1,143 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>Routers</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center><img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+
+<p><img SRC="images/ethroutt.gif" ALT="Ethernet routers" NOSAVE BORDER="2" HEIGHT="17" WIDTH="278">
+
+<p><h2>What do they do?</h2>
+
+<p><img SRC="images/ciscorou.jpg" ALT="CiscoRouters.jpg" NOSAVE BORDER="2" HEIGHT="170" WIDTH="253">
+<p>A router is a device that <b>interconnects networks</b>
+and decides the<b> best path</b> over which to send
+data between networks. Routers use the <b>logical (e.g.
+IP) address information</b> contained within ethernet <a HREF="framepac.htm">frames</a>.
+
+<p>It is also possible to define a router as a device that &quot;switches&quot;
+at the <b>internet layer </b><b>(layer
+3)</b> of the <a HREF="tcpip.htm">TCP/IP protocol suite</a>. Routers
+should not be confused with ethernet <a HREF="switch.htm">switches</a>
+that operate using the medium access control (MAC) address, inherent in
+the <a HREF="nic.htm">network interface card</a>, at the <b>datalink
+sublayer</b> (layer 2) of the network access layer.
+
+<p>The internet layer protocol declares the <b>logical
+source and destination addresses</b> and any routing parameters in the
+frame. A good example of such a parameter is the number of routers a frame
+is allowed to cross prior to reaching its destination. Therefore, a packet
+can almost be assigned a level of priority. Switches and routers can interoperate,
+but <b>multilayer switches</b> are available that
+provide datalink switching and internet routing in one device.
+
+<p>The use of routers and multilayer switches has evolved to produce
+two different architectures:
+
+<p><img SRC="images/distinct.gif" ALT="DistinctRouter.gif" HSPACE="5" NOSAVE BORDER="2" HEIGHT="212" WIDTH="535">
+<p>Distinct
+layer 2 switching and layer 3 routing utilises separate routers and switches.
+As stated above, ethernet switches operate at layer 2 and ethernet routers
+operate at layer 3. The LAN switches handle the interconnection needs of
+the small, geographically close, LANs. A single router is used to handle
+traffic between the larger remote LAN and the smaller LANs. This is a fairly
+common architecture. Some networking professionals think that networks
+should switch if they can and route if they must.
+
+<p><img SRC="images/distribu.gif" ALT="DistributedRouter.gif" HSPACE="5" NOSAVE BORDER="2" HEIGHT="212" WIDTH="368">
+<p>Distributed
+routing does away with separate switches and routers. Instead, multilayer
+switching is employed to handle network traffic between the small LANs
+and the remote LAN. The use of a single, relatively expensive, device does
+not create a significant cost reduction initially, but the reduced management
+needs should not be underestimated.
+
+<p><h2>How do they do it?</h2>
+
+<p>A router will <b>examine a frame</b> and <b>determine
+the logical address of the destination device</b> from the internet
+layer protocol header. Routers hold a <b>routing table</b>,
+listing available networks, that allows them to <b>effectively
+switch network traffic</b> over the most effective route. These tables
+also include a measure of the quality of the connection to a network and
+the address of the next device required to forward data to that network.
+Routers share the information held in these routing tables and they are
+able to <b>incorporate new routes</b> to networks,
+as they are added, and <b>delete routes</b> that
+have become unstable or unusable. <b>A </b><b>router
+modifies frames</b> by altering the source MAC (layer 2) address to
+its own. The <b>source and destination logical addresses
+remain the same</b>.
+
+<p>There is a great deal of discussion over the future of routing and
+there are three possibilities:
+<ul>
+<li>
+<b>Distinct layer 2 switching and layer 3 routing</b>.
+Layer 2 switching gives good LAN bandwidth but it requires the sophistication
+of layer 3 routing to provide advanced filtering and security. Each device
+does what is it best at.<br>
+<br></li>
+
+<li>
+<b>Distributed routing</b>. Layer 2 switching
+and layer 3 routing functionality is combined in a single device - the
+<b>multilayer switch</b>.<br>
+<br></li>
+
+<li>
+<b>Routing servers</b>. A central computer holds
+the bulk of routing information. Special devices known as <b>edge
+switches</b> are deployed in LANs with a minimum of routing information.</li>
+</ul>
+<br>&nbsp;
+<h2>Tell me more!</h2>
+<center><table BORDER WIDTH="90%">
+<tr>
+<td WIDTH="30%"><a HREF="http://www.3com.com/products/enterprise.html">3Com's
+enterprise router page</a></td>
+
+<td>Commercial page showing 3Com's products</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.cisco.com/warp/public/733">Cisco's router page</a></td>
+
+<td>Commercial page showing Cisco's products</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.cit.ac.nz/smac/winnt/pt1_8.htm#start">Routers
+- Central Institute of Technology</a></td>
+
+<td>General router information</td>
+</tr>
+</table></center>
+
+<center>&nbsp;</center>
+
+<hr WIDTH="100%">
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

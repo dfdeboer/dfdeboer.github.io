@@ -1,0 +1,181 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>TCP/IP protocol suite</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center>&nbsp;<img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+
+<p><img SRC="images/tcpipsui.gif" ALT="TCP/IP protocol suite" NOSAVE BORDER="2" HEIGHT="17" WIDTH="325">
+
+<p><h2>What is it?</h2>
+
+<p>TCP/IP is a suite of protocols, also known as the Internet Protocol
+Suite. It should not be confused with the <a HREF="osi.htm">OSI reference
+model</a>, although elements of TCP/IP exist in OSI. The transmission control
+protocol and the internet protocol are fundamental to the suite, hence
+the TCP/IP title. The suite was originally developed for the US Department
+of Defense Advanced Research Project Agency (DARPA) network, but it is
+now the basis for the Internet and many intranets - such as the <a HREF="http://www.ituser.it.brighton.ac.uk">Faculty
+of Information Technology</a> intranet at the <a HREF="http://www.brighton.ac.uk">University
+of Brighton</a>.
+
+<p>Research started in the 1970s and the incorporation of TCP/IP into
+the University of California distribution of Unix hastened exposure to
+academics and industrialists. The University of California Unix is also
+known as the Berkeley distribution. The suite formed the basis for the
+interoperability that is fundamental to distributed computing. It was originally
+assumed that organisations would use TCP/IP prior to migrating to the newer
+OSI protocols, although this transition has never really happened.
+
+<h2>What does it look like?</h2>
+
+<p><img SRC="images/tcpip.gif" ALT="TCP/IP.gif" NOSAVE BORDER="2" HEIGHT="496" WIDTH="499">
+<h2>What's
+in the layers and what do they do?</h2>
+
+<p>As with the OSI model, the TCP/IP suite uses a layered model. The
+OSI model has seven layers, the TCP/IP model has four or five - depending
+on who you talk to and which books you read!. Some people call it a four
+layer suite - <b>Application</b>,<b>
+Transport</b>,<b> Internet
+</b>and<b> Network Access</b>,
+others split the <b>Network Access </b>layer
+into its <b>Physical </b>and
+<b>Datalink </b>components.
+This diagram of the suite represents something of a compromise! Some of
+the protocols that comprise the TCP/IP model are explained further on the
+<a HREF="tcpippot.htm">TCP/IP Protocols</a> page.
+
+<h2>Layer 5 - Application</h2>
+
+<p>This layer is broadly equivalent to the application,
+presentation and session layers of the OSI model. It gives an application
+access to the communication environment. Examples of protocols found
+at this layer are <b>Telnet</b>,
+<b>FTP (File Tranfer Protocol)</b>,
+<b>SNMP (Simple Network Management Protocol)</b>,
+<b>HTTP (Hyper Text Transfer Protocol) </b>and
+<b>SMTP (Simple Mail Transfer Protocol)</b>.</h2>
+
+<h2>Layer 4 - Transport</h2>
+
+<p>The transport layer is similar to the OSI transport
+model, but with elements of the OSI session layer functionality. This layer
+provides an application layer delivery service. The two protocols found
+at the transport layer are <b>TCP (Transmission
+Control Protocol) </b>and <b>UDP
+(User Datagram Protocol)</b>. Either of these
+two protocols are used by the application layer process, the choice depends
+on the application's transmission reliability requirements.
+
+<p><b>TCP</b> is a <b>reliable,
+connection-oriented</b> protocol that provides
+error checking and&nbsp; flow control through a virtual link that it establishes
+and finally terminates. This gives a reliable service, therefore TCP would
+be utilised by FTP and SNMP - file transfer and email delivery have to
+be accurate and error free.
+
+<p><b>UDP</b> is an <b>unreliable,
+connectionless</b> protocol that provides data
+transport with lower network traffic overheads than TCP - UDP does not
+error check or offer any flow control, this is left to the application
+process. SNMP uses UDP - SNMP is used to monitor network performance,&nbsp;
+so its operation must not contribute to congestion.
+
+<h2>Layer 3 - Internet</h2>
+
+<p>This layer is responsible for the routing and
+delivery of data across networks. It allows communication across networks
+of the same and different types and carries out translations to deal with
+dissimilar data addressing schemes. <b>IP (Internet
+Protocol) </b>and <b>ARP
+(Address Resolution Protocol) </b>are both to
+be found at the Internet layer.
+
+<h2>Layers 2 and 1 - Network Access</h2>
+
+<p>The combination of datalink and physical layers
+deals with pure hardware (wires, satellite links, <a HREF="nic.htm">network
+interface cards</a>, etc.) and access methods such as <b>CSMA/CD</b>
+(carrier sensed multiple access with collision detection). <a HREF="ethernet.htm">Ethernet</a>
+exists at the network access layer - its hardware operates at the physical
+layer and its <a HREF="mac.htm">medium access control</a> method (CSMA/CD)
+operates at the datalink layer.
+
+<br>&nbsp;
+<h2>Tell me more!</h2>
+<center><table BORDER WIDTH="90%">
+<tr>
+<td WIDTH="30%"><a HREF="http://pclt.cis.yale.edu/pclt/COMM/TCPIP.HTM">PC
+Lube and Tune Introduction to TCP/IP</a></td>
+
+<td>Basic TCP/IP information</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://www.eece.napier.ac.uk/~jim_j/course_notes/cache/tcpip/">Napier
+University Introduction to TCP/IP</a></td>
+
+<td>Good resource hosted by Napier's Department of Electronic Engineering&nbsp;</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://www.ctf.imc.exec.nhs.uk/publishd/step/stepdocs/H322-2.html">National
+Health Service Electronic Library</a></td>
+
+<td>The NHS's TCP/IP guide!&nbsp;</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://www.eeng.brad.ac.uk/help/.xferfile/.inetproto.html">University
+of Bradford Introduction to TCP/IP</a></td>
+
+<td>Extensive FAQ</td>
+</tr>
+
+<tr>
+<td><a HREF="http://netman.cit.buffalo.edu/FAQs/tcp-ip-do-p1.faq">TCP/IP
+FAQ part 1</a> , <a HREF="http://netman.cit.buffalo.edu/FAQs/tcp-ip-do-p2.faq">TCP/IP
+FAQ part 2</a></td>
+
+<td>More FAQs from State University of New York, <a HREF="http://netman.cit.buffalo.edu/FAQs/tcp-ip.faq">this
+link is also worth a look</a></td>
+</tr>
+
+<tr>
+<td><a HREF="http://netman.cit.buffalo.edu/FAQs/snmp-p1.faq">SNMP FAQ
+part1</a> , <a HREF="http://netman.cit.buffalo.edu/FAQs/snmp-p2.faq">SMNP
+FAQ part 2</a></td>
+
+<td>Extensive frequently asked questions from State University of New
+York</td>
+</tr>
+</table></center>
+
+<center>&nbsp;</center>
+
+<hr WIDTH="100%">
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

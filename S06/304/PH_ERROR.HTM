@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../../favicon.ico">
+<TITLE>PHASE ERRORS</TITLE>
+</HEAD>
+<BODY>
+<TABLE><TR><TD WIDTH=500>
+
+<H2>Phasing Errors--Motorola Syntax</H2>
+
+<B>Definition</B><BR>
+
+<P>A phasing error occurs when the actual address assigned to a 
+label on pass one and stored in the symbol table turns out to be 
+incorrect for the context where the label must fit in the final 
+assembly (pass two).</P> 
+
+<B>How it happens</B><BR>
+
+<P>Most assemblers targeted for 16-bit Motorola microcontrollers 
+assume that undefined labels (addresses) are two bytes long.  
+During the first pass of assembly the symbol table is built using 
+this assumption, which is reasonable since the address bus is 16 
+bits wide.  However, if the address turns out to be "direct" or 
+"relative" it will require only 8 bits for storage.  For example, 
+a direct address within the first 255 (decimal) or $FF bytes of 
+the address space can be represented with only 8 bits.  Likewise, 
+a relative address of +127 or -128 (decimal) ($7F or $80) can be 
+represented with only 8 bits.  When the assembler detects that 8-
+bit addressing is possible, it will do that, but then the symbol 
+table will turn out to have been incorrectly made.  Later in the 
+code the assembler will detect that the location of the label in 
+the code does not match the symbol table.  At this point a 
+phasing error will be flagged.</P> 
+
+<B>Example--The error illustrated</B><BR>
+<PRE>
+              *LBL  OPCD OPERAND
+              **********************
+$0040               ORG  $0040
+$0040 9D45          JSR  SUBR
+$0042 20FF    LOOP  BRA  LOOP
+##### 
+Phasing error
+This line was at address $0043 in pass 1, now in pass 2 it is 
+$0042
+$0044 39      SUBR  RTS
+##### 
+Phasing error
+This line was at address $0045 in pass 1, now in pass 2 it is 
+$0044
+
+***************Symbol Table*********************
+LOOP         $0043 
+SUBR         $0045 
+##### Assembly failed, 2 errors!
+</PRE>
+
+<P>In the above example a phasing error occurs when the SUBR 
+label is encountered for the second time.  Notice that during the 
+first pass the address for SUBR was found to be $0045 (16-bits by 
+assumption).  That is the value that was stored in the symbol 
+table.  When this label was actually used in the assembly (at the 
+first occurrence of the label) only the least significant 8 bits 
+were used (direct addressing--note the "45" in the machine code 
+for that instruction, "9D45".)  Then, when the label actually was 
+defined in the second pass the address was $0044, which does not 
+match the symbol table.  At this point the phasing error was 
+flagged.</P> 
+
+<P>The label "LOOP" suffers the same type of problem in this 
+code.  (The address of the label in the assembled code, $0042, 
+does not match the address in the symbol table, $0043.)  This is 
+a consequence of the phasing error with SUBR.  </P> 
+
+<B>How to avoid a phasing error</B><BR>
+
+<P>If a label is actually used in a context where the label will 
+be assigned an 8-bit address on the second pass, you can mark 
+this with a "<" character in the source code the first time the 
+label is used.  Now the symbol table will be made correctly on 
+the first pass. </P>
+
+<B>Example--Phasing error avoided</B>
+<PRE>
+              *LBL  OPCD OPERAND
+              **********************
+$0040               ORG  $0040
+$0040 9D44          JSR  &#60SUBR
+$0042 20FE    LOOP  BRA  LOOP
+$0044 39      SUBR  RTS
+                      
+                      
+***************Symbol Table*********************
+LOOP         $0042 
+SUBR         $0044 
+Assembly successful
+</PRE>
+<HR>
+
+More on phasing errors from Montana State U:
+<A HREF = 
+"http://www.coe.montana.edu/ee/cady/ee361/asmphase.htm">http://www.coe.montana.edu/ee/cady/ee361/asmphase.htm</A>
+
+<P><I>Use your browser's "back" feature to return to the page 
+your were previously looking at.</I></P>
+
+</TD></TR></TABLE>
+</BODY>
+</HTML>
+
+

@@ -1,0 +1,156 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../../favicon.ico">
+<TITLE>EGR 304 Homework</TITLE>
+</HEAD>
+<BODY><PRE>
+               DORDT COLLEGE ENGINEERING DEPARTMENT
+               MICROPROCESSOR INTERFACING -- EGR 304
+                          (Spring 2007)
+
+                           PROBLEM SETS             (Last update:
+                           ------------         5/05/07  3:49 am) 
++===============================================================+ 
+|PS|ASSIGNED| DUE |RETURNED| Problems Assigned                  |
+| #|        /     \        | (<i>Your Computer</i> is the 6811         |     
+|  |       |       |       | or more specifically MC68HC811E2.) |
+|==+=======+=======+=======+====================================|
+| 7|  4/26 |  5/03 |  5/04 | Read this <A HREF=
+"http://burks.brighton.ac.uk/burks/pcinfo/hardware/ethernet/contents.htm"
+                                  >Ethernet Tutorial</A>        |
+|  |       |       |(grades|                                    |
+|  |       |       |  are  | Do this <A HREF=
+"http://burks.brighton.ac.uk/burks/pcinfo/hardware/ethernet/qframe.htm"
+                                >quiz</A>                       |
+|  |       |       |posted,|                                    |
+|  |       |       |nothing| E-mail your quiz grade to DDB      |
+|  |       |       |  to   | (full credit for any grade)        |
+|  |       |       |return)|                                    |
+|  |       |       |       | <A HREF=
+"http://courses.dordt.edu/mod/resource/view.php?id=10490"
+                        >Optional Reading</A>                   |
+|--+-------+-------+-------+------------------------------------|
+| 6|  4/05 |  4/12 |  4/26 | Read Chapter 7 through section 7.6.|
+|  |       |       |       | Optional supplement on <A HREF=
+"http://www2.rad.com/networks/1995/rs232/rs232.htm"
+                                               >RS-232</A>      |
+|  |       |       |       |                                    |
+|  |       |       |       | Plot voltage vs. time for sending  |
+|  |       |       |       | this text: "Z#" (without the quote |
+|  |       |       |       | marks) using RS-232.  Assume       |
+|  |       |       |       | +/- 12V signal voltages, 53 kbaud, |
+|  |       |       |       | eight data bits, and ene stop bit. |
+|  |       |       |       | Be sure to label your axes         |
+|  |       |       |       | properly.  An ASCII table can be   |       
+|  |       |       |       | found in many places, e.g.         |
+|  |       |       |       | <A HREF=
+"http://www.asciitable.com/"
+                        >http://www.asciitable.com/</A>         |
+|--+-------+-------+-------+------------------------------------|
+| 5|  3/08 | never |  ---- | Read Ch. 6                         |
+|  |       |       |       |                                    |
+|  |       |       |       | Do 4.1 part a only, 4.2 part a only|
+|  |       |       |       | Also do 6.7 part a only.           |
+|  |       |       |       |                                    |
+|  |       |       |       | As per classroom discussion on Tu  |
+|  |       |       |       | 3/29 the due date was changed from |
+|  |       |       |       | 3/29 to 4/05.  Also problem 6.7 was|
+|  |       |       |       | modified by adding, "part a only." |
+|  |       |       |       |                                    |
+|  |       |       |       | Note: there is no class to Tu 4/03 |
+|  |       |       |       | because this is assessment day.    |
+|  |       |       |       |                                    |
+|  |       |       |       | On 4/05 this assignment was        |
+|  |       |       |       | entirely retracted.  There are     |
+|  |       |       |       | typographic errors in some of the  |
+|  |       |       |       | problem statements and the         |
+|  |       |       |       | 68HC11 documentation is vague.     |
+|--+-------+-------+-------+------------------------------------|
+| 4|  2/27 |  3/08 |  4/10 | Read Ch. 4 (omit 68HC12 and 9S12   |
+|  |       |       |       | parts)                             |
+|  |       |       |       |                                    |
+|  |       |       |       | Do these problems from Peatman's   |
+|  |       |       |       | text <I>Design with Microcontrollers</I>  |
+|  |       |       |       | <A HREF="PS_INTER.RTF"
+                        >3.17, 3.19</A>                         |
+|--+-------+-------+-------+------------------------------------|
+| 3|  2/13 |  2/20 |  3/06 | Read Ch. 3 (omit 68HC12 parts)     |
+|  |       |       |       | Review all "Checkpoints" (Answers  |
+|  |       |       |       | are in the back of the text.  Do   |
+|  |       |       |       | not turn these in.  You need the   |
+|  |       |       |       | 68HC11 E family data book to answer|
+|  |       |       |       | some of these checkpoint questions)|
+|  |       |       |       |                                    |
+|  |       |       |       | Do 3.18 except modify it so that   |
+|  |       |       |       | a whole byte of data is read.      |
+|  |       |       |       | You may use assembly file          |
+|  |       |       |       | <A HREF=
+"http://courses.dordt.edu/file.php/688/V3_18_TX.ASM"
+                        >V3_18_TX.ASM</A> as a starting point.  |
+|  |       |       |       | The comments in that file give     |
+|  |       |       |       | necessary information about        |
+|  |       |       |       | modifications to the problem       |
+|  |       |       |       | statement.  You may also use I/O   |
+|  |       |       |       | file <A HREF=
+"http://courses.dordt.edu/file.php/688/V3_18_TX.IO"
+                             >V3_18_TX.IO</A> in your           |
+|  |       |       |       | simulation.  Unfortunately the     |
+|  |       |       |       | TExaS simulator can only simulate  |
+|  |       |       |       | a total of 8 input bits in the     |
+|  |       |       |       | *.IO file and one of these must    |
+|  |       |       |       | be the "Status" signal.  Thus in   |
+|  |       |       |       | the file given here PC0 is left    |
+|  |       |       |       | disconnected and only 7 bits of    |
+|  |       |       |       | data can be controlled by the      |
+|  |       |       |       | switches.                          |
+|  |       |       |       |                                    |
+|  |       |       |       | 3.20 (not in text) How does the    |
+|  |       |       |       | STAF bit in the PIOC register get  |
+|  |       |       |       | set?  Can you set it with software?|
+|  |       |       |       | How do you clear STAF?             |
+|--+-------+-------+-------+------------------------------------|
+| 2|  1/23 |  2/06 |  2/13 | Read Ch. 2 Sec. 2.1, 2.2, 2.3,     |
+|  |       |       |       | 2.5, 2.11.3                        |
+|  |       |       |       |                                    |
+|  |       |       |       | Do (on page 137) 2.1               |
+|  |       |       |       |                                    |
+|  |       |       |       | You may use file "<A HREF=
+"http://courses.dordt.edu/file.php/688/V2_1_TX.ASM"
+                                               >V2_1_TX.ASM</A>" as  |
+|  |       |       |       | a starting point.  Delete the      |
+|  |       |       |       | indicated comments and insert your |
+|  |       |       |       | code.  Simulate your results using |
+|  |       |       |       | TExaS.  Turn in "TheList" file and |
+|  |       |       |       | a "TheLog" file which demonstrates |
+|  |       |       |       | your working code.                 |
+|  |       |       |       |                                    |
+|  |       |       |       | Note:  As per discussion in class  |
+|  |       |       |       | on Th 1/25, the due date was       |
+|  |       |       |       | changed from 1/30 to 2/06.         |
+|--+-------+-------+-------+------------------------------------|
+| 1|  1/16 |  1/23 |  1/25 | Read Chapter 1                     |
+|  |       |       |       |                                    |
+|  |       |       |       | Do (on page 55) 1.5, 1.6, 1.7,     |
+|  |       |       |       | 1.8, 1.10, 1.24, 1.25, 1.27, 1.28, |
+|  |       |       |       | 1.30                               |
++---------------------------------------------------------------+
+Note 1) If a "#" follows the "returned" date, then the solution
+key is posted on the cork board across the hall from room S233.
+
+Note 2) Problems sets shown above with no "assigned" date are
+tentative.  More problems might be added, expected due dates
+might change, but problems shown will eventually be assigned.
+
+Note 3) If you are having difficulty reading the latest version
+of this page it may have to do with your browser's cached memory.
+Read this <A HREF=
+"../../ddb/notes00.htm">note on cached pages</A> to solve the 
+problem. 
+</PRE> 
+<A           HREF = "../../index.html"> Back to Prof. De Boer's home page </A> 
+
+
+
+</BODY> 
+</HTML> 
+

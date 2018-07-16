@@ -1,0 +1,1096 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../favicon.ico">
+<TITLE>EGR 204</TITLE>
+</HEAD>
+<BODY><PRE>
+               DORDT COLLEGE ENGINEERING DEPARTMENT
+  INTRODUCTION TO MICROPROCESSORS AND DIGITAL CIRCUITS, EGR 204
+                          (Spring 2005)
+                                          <A NAME="HOMEWORK"></A>
+                          ANNOUNCEMENTS
+                          -------------
+As of PS #15 the MAX/AVG/MIN raw homework grades in this class are
+202/155/98.  There are 206 possible points.  A raw score of 
+155/206 (the class average) corresponds to a homework grade of B.
+(Posted 2/22/05)
+
+As of 2/25/05 seventeen out of twenty-two students have 
+successfully demonstrated their lab projects.  (Posted 2/25/05)
+
+Click this <A HREF="../ddb/notes00.htm">note on cached pages and handouts</A> if you are
+having difficulty seeing the latest version of this page. 
+(posted 1/12 at 4:31 pm)
+
+As of about 2/25/05 a web site for this course was established on 
+"Courses@Dordt."  That web site is not yet up to date.  Students 
+should continue to use only this web site for this course.
+(Posted 2/28/05)
+
+Homework must conform to these <A 
+HREF="HWSTDS05.HTM">standards</A>.  (posted 1/12)
+
+                             HOMEWORK                Last update:
+                             --------            5/03 at  2:04 pm 
++===============================================================+
+|PS|ASSIGNED| DUE |RETURNED| Problems Assigned (In Mano's       |
+| #|        /     \        | Text (unless otherwise noted)      |
+|==+=======+=======+=======+====================================|
+|  |  4/29 |  ---  |  ---  | Review Day--no new assignment      |
+|--+-------+-------+-------+------------------------------------|
+|39|  4/27 |  4/29 |       | Read 11-9                          |
+|  |       |       |       | *11-27, 11-29                      |
+|  |       |  5/02 |  5/02#|                                    |
+|  |       | 10 AM |  at   | Note: Solutions for this problem   |
+|  |       | in bin|  noon | set will be posted after 11:59 AM  |
+|  |       | near  |       | on Monday, 5/02.                   |
+|  |       | egr   |       |                                    |
+|  |       | pod   |       | Note <A HREF="#P_526"
+>errata on problem *11-27</A>      |
+|  |       | door. |       |                                    |
+|  |       |       |       | In class on Wed. 4/27 we discussed |
+|  |       |       |       | the due date for this assignment.  |
+|  |       |       |       | The due date was changed from 5/03 |
+|  |       |       |       | at 8 AM to 5/02 at 10 AM so that   |
+|  |       |       |       | it could be graded and returned    |
+|  |       |       |       | before the exam.  Place completed  |
+|  |       |       |       | homework in the labeled plastic bin|
+|  |       |       |       | near the engineering pod door.     |
+|--+-------+-------+-------+------------------------------------|
+|38|  4/25 |  4/27 |       | Read 11-8, <A HREF="204/P_CTRL.DOC"
+>supplement to Table 11-7</A>|
+|  |       |  4/29 |  4/29#| Do *11-23, 11-24, *11-25, 11-26    |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint:  For problem *10-23 assume   |
+|  |       |       |       | that the "16 bit register" is named|
+|  |       |       |       | register "R".                      |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint: For problem *10-25 a computer|
+|  |       |       |       | does subtraction A - B as A + (-B) |
+|  |       |       |       | and treats the numbers as twos     |
+|  |       |       |       | complement no matter what format   |
+|  |       |       |       | they are actually in.  Then        |
+|  |       |       |       | "borrow" is the not of the carry   |
+|  |       |       |       | out of that addition.  This borrow |
+|  |       |       |       | is saved in the carry flag bit.    |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF="#P_515"
+>errata in Table 11-9, p515</A>.   |
+|  |       |       |       |                                    |
+|  |       |       |       | Please bring a #2 pencil (or HB    |
+|  |       |       |       | lead in a mechanical pencil) on    |
+|  |       |       |       | Wed. 4/27 so that you can fill in  |
+|  |       |       |       | a course evaluation survey.        |
+|--+-------+-------+-------+------------------------------------|
+|37|  4/22 |  4/25 |       | Read 11-4, 11-5, 11-6, <A 
+   HREF="204/SHIFT_R.DOC">supplement</A>  |
+|  |       |  4/27 | 4/29# | Do*11-3, 11-4, 11-15, 11-16, *11-17|
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF="#P_506"
+>errata on page 506</A>            |
+|  |       |       |       | Note <A HREF="#P_522_3"
+>errata on problem *11-3</A>       |
+|  |       |       |       | Note <A HREF="#P_522_4"
+>errata on problem 11-4</A>        |
+|  |       |       |       | Note <A HREF="#P_524"
+>errata on problem 11-17</A>       |
+|--+-------+-------+-------+------------------------------------|
+|36|  4/20 |  4/22 |       | Read 11-3                          |
+|  |       |  4/25 | 4/27# | Do 11-5, *11-6, 11-7               |
+|--+-------+-------+-------+------------------------------------|
+|35|  4/18 |  4/20 |       | Read 11-1, 11-2                    |
+|  |       |  4/22 | 4/25# | Do 11-1, *11-2                     |
+|  |       |       |       | Hint: Work *11-2 first.            |
+|  |       |       |       |                                    |
+|  |       |       |       | Note:  SUB and DIV work this way:  |
+|  |       |       |       |                                    |
+|  |       |       |       | 3 Address Instructions:            |
+|  |       |       |       | SUB R1,R2,R3   R1 <-- R2 - R3      |
+|  |       |       |       | DIV R1,R2,R3   R1 <-- R2/R3        |
+|  |       |       |       |                                    |
+|  |       |       |       | 2 Address Instructions             |
+|  |       |       |       | SUB T1,T2  M[T1] <-- M[T1] - M[T2] |
+|  |       |       |       | DIV T1,T2  M[T1] <-- M[T1]/M[T2]   |
+|  |       |       |       |                                    |
+|  |       |       |       | 1 Address Instructions             |
+|  |       |       |       | SUB X          ACC <-- ACC - M[X]  |
+|  |       |       |       | DIV X          ACC <-- ACC/M[X]    |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF="#P_522"
+>errata on problem 11-1</A>.       |
+|--+-------+-------+-------+------------------------------------|
+|34|  4/15 |  4/18 |       | Read 10-7, 10-8                    |
+|  |       |  4/20 | 4/25# | Do 10-13                           |
+|--+-------+-------+-------+------------------------------------|
+|33|  4/13 |  4/15 |       | Scan 10-4, 10-5, Read 10-6         |
+|  |       |  4/18 | 4/20# | Do 10-9                            |
+|  |       |       |       |                                    |
+|  |       |       |       | Hints:                             |
+|  |       |       |       |                                    |
+|  |       |       |       | Zero can be formed as the exclusive|
+|  |       |       |       | OR of two identical words.  For    |
+|  |       |       |       | example, R0 XOR R0 = 0.            |
+|  |       |       |       |                                    |
+|  |       |       |       | Assume numbers are signed integers |
+|  |       |       |       | in the two's complement number     |
+|  |       |       |       | system.  Then                      |
+|  |       |       |       |                     _              |
+|  |       |       |       |         X - Y = X + Y + 1          |
+|  |       |       |       |                                    |
+|  |       |       |       | It is possible that some bits in   |
+|  |       |       |       | the control word do not matter.    |
+|  |       |       |       | Mark those "X" for "Don't Care."   |
+|  |       |       |       |                                    |
+|  |       |       |       | Although *10-10 is not assigned,   |
+|  |       |       |       | understanding that problem and its |
+|  |       |       |       | solution on the web might help you |
+|  |       |       |       | understand and do 10-9.            |
+|  |       |       |       |                                    |
+|  |       |       |       | Posted on 4/20:                    |
+|  |       |       |       | Note <A HREF="#P_447"
+>errata in Tables 10-6, 10-7</A>   |
+|--+-------+-------+-------+------------------------------------|
+|32|  4/11 |  4/13 |       | Read 10-1, 10-2, 10-3              |
+|  |       |  4/15 | 4/18# | Do 10-1, *10-2                     |
+|  |       |       |       |                                    |
+|  |       |       |       | Note: In 10-1, "selection lines"   |
+|  |       |       |       | refers to "Destination Select,"    |
+|  |       |       |       | "A Select," and "B Select" in      |
+|  |       |       |       | Figure 10-1.                       |
+|  |       |       |       |                                    |
+|  |       |       |       | Note: For problem *10-2 assume     |
+|  |       |       |       | the ALU is designed to work with   |
+|  |       |       |       | numbers in twos complement format. |
+|  |       |       |       | Overflow detection is illustrated  |
+|  |       |       |       | on page 221 of your text.  The     |
+|  |       |       |       | result of your logic should be that|
+|  |       |       |       | N = 1 iff the output of the ALU    |
+|  |       |       |       | represents a negative number. Z = 1|
+|  |       |       |       | iff the output represents zero.    |
+|  |       |       |       | V = 1 iff there was overflow in    |
+|  |       |       |       | computing the output.  C = 1 iff   |
+|  |       |       |       | there is a carry out of the most   |
+|  |       |       |       | significant place.                 |
+|--+-------+-------+-------+------------------------------------|
+|32|  4/11 |  4/13 |       | Read 10-1, 10-2, 10-3              |
+|  |       |  4/15 | 4/18# | Do 10-1, *10-2                     |
+|  |       |       |       |                                    |
+|  |       |       |       | Note: In 10-1, "selection lines"   |
+|  |       |       |       | refers to "Destination Select,"    |
+|  |       |       |       | "A Select," and "B Select" in      |
+|  |       |       |       | Figure 10-1.                       |
+|  |       |       |       |                                    |
+|  |       |       |       | Note: For problem *10-2 assume     |
+|  |       |       |       | the ALU is designed to work with   |
+|  |       |       |       | numbers in twos complement format. |
+|  |       |       |       | Overflow detection is illustrated  |
+|  |       |       |       | on page 221 of your text.  The     |
+|  |       |       |       | result of your logic should be that|
+|  |       |       |       | N = 1 iff the output of the ALU    |
+|  |       |       |       | represents a negative number. Z = 1|
+|  |       |       |       | iff the output represents zero.    |
+|  |       |       |       | V = 1 iff there was overflow in    |
+|  |       |       |       | computing the output.  C = 1 iff   |
+|  |       |       |       | there is a carry out of the most   |
+|  |       |       |       | significant place.                 |
+|--+-------+-------+-------+------------------------------------|
+|31|  4/08 |  4/11 |       | Review 9-4, Read 9-6 (SDRAM,RAMBUS)|
+|  |       |  4/13 | 4/15# | Do. . .                            |
+|  |       |       |       | 9-10 EXCEPT Change                 |
+|  |       |       |       |    "512K x 16" to "256K x 32"      |
+|  |       |       |       |                                    |
+|  |       |       |       | 9-11 EXCEPT Change                 |
+|  |       |       |       |    "SDRAM" to "FPM DRAM" (FPM means|
+|  |       |       |       |    "Fast Page Mode.")              |
+|--+-------+-------+-------+------------------------------------|
+|30|  4/06 |  4/08 |       | Read 9-5 (Intro DRAM)              |
+|  |       |  4/11 | 4/13# | Do. . .                            |
+|  |       |       |       | 9-7 EXCEPT Change                  |
+|  |       |       |       |    "256Mb" to "128Kb" and change   |
+|  |       |       |       |    "4-bit" to "8-bit".             |
+|  |       |       |       |                                    |
+|  |       |       |       | 9-8 EXCEPT Change                  |
+|  |       |       |       |    "128 ms" to "256 ms" and change |
+|  |       |       |       |    "4096" to "16384".              |
+|--+-------+-------+-------+------------------------------------|
+|29|  4/04 |  4/06 |       | Read 9-3, 9-4 (SRAM and arrays of) |
+|  |       |  4/08 | 4/11# | Do 9-4 EXCEPT Change "64K X 16" to |
+|  |       |       |       |    1M X 4 and change "32000" to    |
+|  |       |       |       |    "196865".                       |
+|--+-------+-------+-------+------------------------------------|
+|28|  4/01 |  4/04 |       | Read 9-1, 9-2  (Mem organization)  |
+|  |       |  4/06 | 4/08# | Do *9-1, *9-2, *9-3                |
+|  |       |       |       |                                    |
+|  |       |       |       | See <A 
+HREF="#P_427">errata for prblms 9-2 thru 9-12</A>|
+|--+-------+-------+-------+------------------------------------|
+|27|  3/30 |  4/01 |       | Read 8-1, 8-2  (ASM Charts)        |
+|  |       |  4/04 | 4/06# | Do *8-1, 8-3                       |
+|  |       |       |       |                                    |
+|  |       |       |       | See <A
+HREF="#p_393">errata on Figure 8-18</A>          |
+|  |       |       |       | See <A
+HREF="#p_393_1">errata on solution to *8-1</A>     |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint for problem *8-1:  The binary |
+|  |       |       |       | codes for the state assignments    |
+|  |       |       |       | are not given in Figure 8-18, thus |
+|  |       |       |       | they should be blank on the ASM    |
+|  |       |       |       | chart.                             |
+|--+-------+-------+-------+------------------------------------|
+|26|  3/28 |  3/30 |       | Read 7-7, 7-8, 7-9, 7-12           |
+|  |       |  4/01 | 4/04# | Do 7-20  Hint:  Draw the register  |
+|  |       |       |       | cell.  Then use hierarchy to draw  |
+|  |       |       |       | the complete register.             |
+|--+-------+-------+-------+------------------------------------|
+|25|  3/25 |  3/28 |       | Read from "Ripple Counter" on page |
+|  |       |  3/30 | 4/01# | 331 to the end of section 7-6.     |
+|  |       |       |       | Do 7-10, 7-14                      |
+|  |       |       |       |                                    |
+|  |       |       |       | Note on problem 7-10:  The word    |
+|  |       |       |       | "values" could just as well be     |
+|  |       |       |       | "states" in this context.          |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint for problem 7-14:  Draw the   |
+|  |       |       |       | counter using hierarchy, as in     |
+|  |       |       |       | Figure 7-15, page 337 for example. |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A 
+HREF="http://www.writphotec.com/mano/Text_Errata/Text_Errata_v4.2.pdf"
+>author's errata on Figure 7-14</A>|
+|  |       |       |       | also on <A 
+HREF="http://www.writphotec.com/mano/Text_Errata/Text_Errata_v4.2.pdf"
+>Problem Statement 7-14</A>     |
+|  |       |       |       |                                    |
+|  |       |       |       |                                    |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+|24|  3/23 |  3/25 |       | Read 7-5, 7-6 up to "Ripple        |
+|  |       |  3/28 | 3/30# | Counter" on page 331.              |
+|  |       |       |       | Do 7-5, 7-6*, 7-7*                 |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF="#P_330"
+>errata in Table 7-7, page 330</A>.|
+|--+-------+-------+-------+------------------------------------|
+|23|  3/07 |  3/23 |       | Read 7-1, 7-2, 7-3                 |
+|  |       |  3/25 | 3/28# | Do <A HREF="204/MK7_A.RTF"
+>7-A</A>                             |
+|  |       |       |       |                                    |
+|  |       |       |       | Here is a <A HREF=
+"http://www.fairchildsemi.com/ds/DM/DM74ALS175.pdf"
+>datasheet</A> on the type    |
+|  |       |       |       | '175 (see especially the schematic |
+|  |       |       |       | on the right side of page 2).      |
+|--+-------+-------+-------+------------------------------------|
+|  |  3/02 |  ---  |  ---  | Study for <A HREF="#TESTS" 
+>test</A> on Wednesday, 3/9   | 
+|--+-------+-------+-------+------------------------------------|
+|22|  3/04 |  3/07 |       | Continue reading 6-5 from page 275 |
+|  |       |  3/09 | 3/23# | to the end of the section.  Also   |
+|  |       |       |       | read Section 6-9.                  |
+|  |       |       |       |                                    |
+|  |       |       |       | Do 6-14*  Note:  The solution to   |
+|  |       |       |       | 6-14 posted on the text's companion|
+|  |       |       |       | web site shows an extra term.      |
+|  |       |       |       | While still correct, it is not in  |
+|  |       |       |       | simplest from.   You can get full  |
+|  |       |       |       | credit for the answer on the web   |
+|  |       |       |       | or an answer in simplest form.     |
+|--+-------+-------+-------+------------------------------------|
+|21|  3/02 |  3/04 |       | Read 6-5 up to "Designing with     |
+|  |       |  3/07 | 3/09# | D Flip-Flops" on page 275.         |
+|  |       |       |       |                                    |
+|  |       |       |       | Do 6-8, <A HREF="204/MK6_C.RTF"
+>6-C</A>                        |
+|--+-------+-------+-------+------------------------------------|
+|20|  2/28 |  3/02 |       | Read 6-4                           |
+|  |       |  3/04 | 3/07# | Do 6-6*, 6-5                       |
+|  |       |       |       |    Note: see errata on <A 
+HREF="#P_301">6-6*</A>        |
+|--+-------+-------+-------+------------------------------------|
+|19|  2/25 |  2/28 |       | Read 6-3                           |
+|  |       |  3/02 | 3/04# | Do these problems:                 |
+|  |       |       |       |                                    |
+|  |       |       |       | 6-A.  Draw the logic diagram       |
+|  |       |       |       | (schematic) of the SR master-slave |
+|  |       |       |       | flip-flop shown in Figure 6-10     |
+|  |       |       |       | at the gate level.  (Note Figure   |
+|  |       |       |       | 6-7.)                              |
+|  |       |       |       |                                    |
+|  |       |       |       | 6-B.  Complete the timing diagram  |
+|  |       |       |       | <A HREF="204/MK6_B.DOC"
+>shown here. . .</A>                    |
+|  |       |       |       |                                    |
+|  |       |       |       | Optional supplemental reading:     |
+|  |       |       |       | <A HREF="http://www.play-hookey.com/digital"
+>http://www.play-hookey.com/digital</A> |
+|--+-------+-------+-------+------------------------------------|
+|18|  2/23 |  2/25 |       | Read 6-1, 6-2                      |
+|  |       |  2/28 | 3/02# | Do 6-1 Note: Use the table below   |
+|  |       |       |       | for the input sequence.  Fill in   |
+|  |       |       |       | the outputs in the table.  The     |
+|  |       |       |       | complete table or the equivalent   |
+|  |       |       |       | information in a vector waveform   |
+|  |       |       |       | file print-out is the answer.      |
+|  |       |       |       |                                    |
+|  |       |       |       | Also do 6-2.  Again, use the table |
+|  |       |       |       | shown below for the sequence of    |
+|  |       |       |       | inputs.  Fill in the table or      |
+|  |       |       |       | provide a waveform printout.       |
+|  |       |       |       | _  _      _                      _ |
+|  |       |       |       | S  R | Q  Q         C  S  R | Q  Q |
+|  |       |       |       | -----+-----         --------+----- |
+|  |       |       |       | 1  0 |              0  0  1 |      |
+|  |       |       |       | 1  1 |              0  0  0 |      |
+|  |       |       |       | 0  1 |              0  1  0 |      |
+|  |       |       |       | 1  1 |              0  1  1 |      |
+|  |       |       |       | 0  1 |              1  0  1 |      |
+|  |       |       |       | 0  0 |              1  0  0 |      |
+|  |       |       |       | 0  1 |              1  1  0 |      |
+|  |       |       |       |                     1  0  0 |      | 
+|  |       |       |       | Table for 6-1       1  1  0 |      | 
+|  |       |       |       |                     1  1  1 |      | 
+|  |       |       |       |                     1  1  0 |      | 
+|  |       |       |       |                     1  1  1 |      | 
+|  |       |       |       |                     1  0  0 |      | 
+|  |       |       |       |                                    | 
+|  |       |       |       |                     Table for 6-2  | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note <A HREF= "#P_246"
+   >errata, text pages 246, 247</A>   | 
+|  |       |       |       |                                  _ | 
+|  |       |       |       | Note:  In Quartus II, use /X for X.| 
+|  |       |       |       | (Overbars are not supported.)      | 
+|  |       |       |       |                            _       | 
+|  |       |       |       | Note:  In VHDL use x_n for x.      | 
+|  |       |       |       | (Overbars are not supported.)      | 
+|--+-------+-------+-------+------------------------------------| 
+|17|  2/21 |  2/23 |       | Read 5-3, 5-4, 5-9                 | 
+|  |       |  2/25 | 2/28# | Do 5-3*, 5-4 except do it in this  | 
+|  |       |       |       | order:  1) The given numbers are   | 
+|  |       |       |       | unsigned binary.  Pad each with    | 
+|  |       |       |       | leading zeros until it is 8-bits   | 
+|  |       |       |       | wide.  2) Negate subtrahends by    | 
+|  |       |       |       | taking 2's complement.  3) add     | 
+|  |       |       |       | 4) for each case, note "overflow"  | 
+|  |       |       |       | or "no overflow" as the case may   | 
+|  |       |       |       | be.                                | 
+|  |       |       |       | Repeat 5-4 with the method given   | 
+|  |       |       |       | above but use 1's complement math. | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Also answer this question:         | 
+|  |       |       |       | If 1's or 2's complement math is   | 
+|  |       |       |       | used, how can a computer detect    | 
+|  |       |       |       | overflow?                          | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note:  <A HREF="#P_236"
+>Errata on problem 5-3</A>       | 
+|--+-------+-------+-------+------------------------------------| 
+|16|  2/18 |  2/21 |       | Read Chapter 1 section 1-3 and in  | 
+|  |       |  2/23 | 2/25# | Chapter 5, Sections 5-1 and 5-2    | 
+|  |       |       |       | but skip the subsection labeled    | 
+|  |       |       |       | "Carry Lookahead Adder."           | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Do 5-2* (use manual verification)  | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Also do this problem:              | 
+|  |       |       |       | Overflow happens when the result of| 
+|  |       |       |       | a math operation has too great a   | 
+|  |       |       |       | magnitude to be represented with   | 
+|  |       |       |       | the number of bits available in the| 
+|  |       |       |       | hardware.  Given a 4-bit wide      | 
+|  |       |       |       | adder such as is shown in Fig. 5-5 | 
+|  |       |       |       | on page 206 in your text, invent   | 
+|  |       |       |       | two addition problems which        | 
+|  |       |       |       | illustrate the outcome when there  | 
+|  |       |       |       | is no overflow.  Invent two more   | 
+|  |       |       |       | addition problems that illustrate  | 
+|  |       |       |       | overflow.  In each of the four     | 
+|  |       |       |       | cases, specify the 4-bit words for | 
+|  |       |       |       | A, B, and S.  How can a computer   | 
+|  |       |       |       | detect overflow?                   | 
+|--+-------+-------+-------+------------------------------------| 
+|15|  2/16 |  2/18 |       | Read 4-7, 4-9                      | 
+|  |       |  2/21 | 2/23# | Do 4.36 with <A HREF= 
+"204/MK4_36.HTM" >these changes</A>         | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note:  The text that was here has  | 
+|  |       |       |       | been reformatted for easier        | 
+|  |       |       |       | reading.  Click on the link named  | 
+|  |       |       |       | "these changes" above to see the   | 
+|  |       |       |       | text.                              | 
+|--+-------+-------+-------+------------------------------------| 
+|14|  2/14 |  2/16 |       | Read 4-6                           | 
+|  |       |  2/18 | 2/21# | 4-35 except mark the fuses to      | 
+|  |       |       |       | remain intact on the fuse map for  | 
+|  |       |       |       | a TIBPAL16L8-25C part.  The fuse   | 
+|  |       |       |       | map can be found in this <A 
+HREF="http://focus.ti.com/lit/ds/symlink/tibpal16r4-25c.pdf" 
+>datasheet</A>.| 
+|  |       |       |       | (See page 5 of the datasheet.)     | 
+|--+-------+-------+-------+------------------------------------| 
+|13|  2/11 |  2/14 |       | Read 4-4, 4-5                      | 
+|  |       |  2/16 | 2/18# | Do 4-10*, 4-12 part a only         | 
+|  |       |       |       | Note:  "8 x 2" means 8 AND gates w/| 
+|  |       |       |       | 2 inputs per gate, followed by     | 
+|  |       |       |       | a single 8-input OR gate.          | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note <A HREF="#P_193_10" 
+>errata on problem 4-10</A>        | 
+|  |       |       |       |                                    | 
+|--+-------+-------+-------+------------------------------------| 
+|12|  2/07 |  2/11 |       | Read 4-1, 4-2, 4-3                 | 
+|  |       |  2/14 | 2/16# | Do 4-1*, 4-2                       | 
+|--+-------+-------+-------+------------------------------------| 
+|  |  2/07 |  ---  |  ---  | Study for <A HREF="#TESTS" 
+>test</A> on Wednesday, 2/9   | 
+|--+-------+-------+-------+------------------------------------| 
+|11|  2/04 |  2/07 |       | Read 3-5, 3-6, 3-7                 | 
+|  |       |  2/09 | 2/11# | Do 3-23                            | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Due to excessive errata on problem | 
+|  |       |       |       | 3-25, this problem was withdrawn   | 
+|  |       |       |       | from this problem set on 2/7.  It  | 
+|  |       |       |       | will not be re-assigned.           | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note errata on problem 3-25:       | 
+|  |       |       |       | Add this to the problem statement: | 
+|  |       |       |       | "See figure 4-10 for a schematic   | 
+|  |       |       |       | of the 2-to-4 decoder."            | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note additional errata on problem  | 
+|  |       |       |       | 3-25 (posted 2/7): Figure 4-10 does| 
+|  |       |       |       | not correctly describe the decoders| 
+|  |       |       |       | used in figure 3-34.  In Fig. 4-10 | 
+|  |       |       |       | for this problem only, each of the | 
+|  |       |       |       | four AND gates at the outputs      | 
+|  |       |       |       | should be NAND gates.  Also, there | 
+|  |       |       |       | should be a third inverter, located| 
+|  |       |       |       | on the schematic above the existing| 
+|  |       |       |       | two inverters, and in the "EN"     | 
+|  |       |       |       | signal line.  Finally, in the      | 
+|  |       |       |       | truth table in Figure 4-10, in each| 
+|  |       |       |       | of columns EN, D0, D1, D2, D3,     | 
+|  |       |       |       | replace each 1 with a 0 and vice   | 
+|  |       |       |       | versa.                             | 
+|--+-------+-------+-------+------------------------------------| 
+|10|  2/02 |  2/04 |       | Read: finish 3-1, 3-2, 3-3, 3-4    | 
+|  |       |  2/07 | 2/11# | Do 3-10, 3-15                      | 
+|--+-------+-------+-------+------------------------------------| 
+| 9|  1/31 |  2/02 |       | Read 3-1, 3-2 up to "Positive and  | 
+|  |       |  2/04 | 2/07# |    Negative Logic" on page 101     | 
+|  |       |       |       | Do 2-28, 3-1, 3-3                  | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note errata on problem 3-1: The    | 
+|  |       |       |       | second function should be labeled  | 
+|  |       |       |       | "G", not "F."                      | 
+|--+-------+-------+-------+------------------------------------| 
+| 8|  1/28 |  1/31 |       | Read Ch 2 Sec 2.8, 2.9, 2.10       | 
+|  |       |  2/02 | 2/04# | Do 2-8, 2-27, 2-32                 | 
+|--+-------+-------+-------+------------------------------------| 
+| 7|  1/26 |  1/28 |       | Read Ch 2 Sec 2.6, 2.7             | 
+|  |       |  1/31 | 2/02# | Do 2-24, 2-25*, 2-29               | 
+|--+-------+-------+-------+------------------------------------| 
+| 6|  1/24 |  1/26 |       | Read Ch 2 Sec 2.5,                 | 
+|  |       |  1/28 | 1/31# | Do 2-15*, 2-16, 2-19*              | 
+|--+-------+-------+-------+------------------------------------| 
+| 5|  1/21 |  1/24 |       | Read Ch 2 Sec 2-4                  | 
+|  |       |  1/26 | 1/28# | Do 2-11, 2-12*, 2-14               | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note: In the online answer to 2-12*| 
+|  |       |       |       | the answer to part (b), the POS    | 
+|  |       |       |       | form, is wrong.  The correct answer| 
+|  |       |       |       | is the same as the SOP form:       | 
+|  |       |       |       |  _       _                         | 
+|  |       |       |       | (X + Y + Z)     (Note posted 1/26) | 
+|  |       |       |       |                                    | 
+|--+-------+-------+-------+------------------------------------| 
+| 4|  1/19 |  1/21 |       | Read Ch 2 Sec 2-3                  | 
+|  |       |  1/24 | 1/26# | Do 2-7*, 2-10                      | 
+|--+-------+-------+-------+------------------------------------| 
+| 3|  1/17 |  1/19 |       | Read Ch 2 Sec 2-1, 2-2             | 
+|  |       |  1/21 | 1/24# | Do 2-1*, 2.2*                      | 
+|--+-------+-------+-------+------------------------------------| 
+| 2|  1/14 |  1/17 |       | Read Ch 1 Sec 1-4, thru 1-7        | 
+|  |       |  1/19 | 1/21# | Do 1-8, 1-20, 1-22, 1-23           | 
+|--+-------+-------+-------+------------------------------------| 
+| 1|  1/12 |  1/14 |       | Scan Chapter 1, Read Section 1-2   | 
+|  |       |  1/17 | 1/19# | Do 1-2, 1-3, 1-4*, 1-5, 1-7*       | 
++---------------------------------------------------------------+ 
+Note 1) Problems in the text marked with an asterisk (*) have 
+solutions available at <A 
+HREF="http://www.writphotec.com/mano/">http://www.writphotec.com/mano/</A> 
+
+Note 2) Homework must be ready for discussion in class on the 
+first listed due date.  Turn homework in for a final grade on 
+the second listed due date.  
+
+Note 3) If a "#" follows the "returned" date, then the solution
+key is posted on the cork board across the hall from room S233.
+
+Note 4) Assignments shown with no due dates are tentative.  
+Expected due dates might change, more problems might be added, 
+but the problems shown will eventually be assigned.
+                                             <A NAME="TESTS"></A>
+                              TESTS                 (Last update:
+                              -----                6/24  4:41 pm)
+Test #1, Wednesday, 2/9 
+     Coverage:  All sections in Chapters 1-3 except Section 1-3.  
+                The test will cover the lab handouts as well, 
+                including the topic of safety in the lab. 
+
+     Test Conditions:  Closed book, closed notes, no calculator.  
+
+     Results:  Max/Avg/Min Raw score was 96/70/42
+          Grade    A   A-  B+  B   B-  C+  C   C-  D+  D   D-  F
+          Min Raw  89  81  74  68  63  58  53  46  40  35  31  0
+          Freq.    5   3   3   2   1   0   3   3   2   0   0   0
+     Graded tests handed back to students on 2/11.
+
+Test #2, Wednesday, 3/9
+     Coverage:  Chapter 1 Section 1-3, 
+                Chapter 4 except Section 4-8, 
+                Chapter 5 Sections 5-1 through 5-4 except 
+                    the topic of carry look-ahead adders, 
+                Chapter 6 Sections 6-1 through 6-4.
+     Test Conditions:  Closed book, closed notes, no calculator.  
+
+     Results:  Max/Avg/Min Raw score was 96/57/22
+          Grade    A   A-  B+  B   B-  C+  C   C-  D+  D   D-  F
+          Min Raw  85  75  66  60  54  49  44  40  36  32  28  0
+          Freq.    2   2   6   0   3   2   1   3   1   0   0   1
+     Graded tests handed back to students on 3/23.
+
+Final Exam, Tuesday, 5/3 8:00 am - 10:30 am.
+     Coverage:  Covers the whole course and lab.  About 2/3 of 
+     the exam covers the material covered by tests #1 and #2. The 
+     remaining third covers the course from test #2 to the end.  
+     That includes these Chapters and Sections: 
+                Chapter  6 Sections 6-5, 6-9
+                Chapter  7 all except Sections 7-4, 7-10, 7-11.
+                Chapter  8 only Sections 8-1, 8-2.
+                Chapter  9 Sections 9-1 through 9-6
+                Chapter 10 Sections 10-1 through 10-8
+                Chapter 11 Sections 11-1 thru 11-9 omitting 11-7.
+
+     Test Conditions:  Closed book, closed notes, no calculator.  
+          Tables of instructions similar in style to the Z-80 
+          tables used in the lab will be supplied to cover any 
+          CPU instructions mentioned on or needed for the exam.  
+          (Both types of tables--op-code and RTL--will be 
+          provided.) 
+
+     Results:  Max/Avg/Min Raw score was 96/57/22
+          Grade    A   A-  B+  B   B-  C+  C   C-  D+  D   D-  F
+          Min Raw  89  80  72  63  56  52  46  41  36  32  27  0
+          Freq.    2   5   3   3   1   0   3   0   2   0   0   2
+
+                                              <A NAME="PEER"></A>
+                       PEER GRADING RUBRIC
+                       -------------------
+The purposes of peer grading are to. . .
+    (1) provide motivation for keeping up with the course, and
+    (2) to help each other learn how to solve problems, and
+    (3) to learn how to communicate our findings to others.
+
+"A" The work shows a sincere effort.  The presentation of the
+    work shows how the problem was solved.  I can read it without
+    difficulty.  (Correctness is not required.)
+
+"B" The work shows a sincere effort but is incomplete.  Or, the
+    work does not show all of what I would like to know about how
+    the problem was solved.  Or, the work is hard to read, but
+    mostly readable with effort.
+
+"C" Something is there and some sincere effort is shown.
+
+"D" (This grade is not allowed)
+
+"F" Nothing is there.  (The student would have no basis upon
+    which to participate in class discussion.  The Prof. gives 
+    this grade since nothing was turned in for peer grading.)
+
+Plus and minus grades are not allowed.  Comments from the peer
+grader to the student being graded are encouraged.  Please write
+them on the back of the page or in the margin so that the student
+may correct mistakes without re-copying the work.
+
+                                               <A NAME="LAB"></A>
+                               LABS                  Last update:
+                               ----              4/19 at  4:08 pm
++===============================================================+
+|LAB|ASSIGNED| DUE |RETURNED| Lab Topic                         |
+| # |        /     \        |                                   |
+|===+=======+=======+=======+===================================|
+| 8 |  4/19 |       |       | <A HREF="204/204S05L8.DOC"
+>Writing and Assembling a Program</A>  |
+|   |  4/21 |  ---  |       |                                   |
+|   |       |       |       | SUGGESTED PACE                    |
+|   |       |       |       | 1st week:  Work through the       |
+|   |       |       |       |    exercises in the Introduction. |
+|   |       |       |       |                                   |
+|   |       |       |       | 2nd week:  Write and de-bug the   |
+|   |       |       |       |    program.                       |
+|   |       |       |       |                                   |
+|   |       |       |       | Note:  If the any of the COPY,    |
+|   |       |       |       |    LOAD, or DUMP keys do not work,|
+|   |       |       |       |    then some of the monitor code  |
+|   |       |       |       |    stored in EEPROM has been      |
+|   |       |       |       |    accidentally erased.  Ask a    |
+|   |       |       |       |    lab TA for help.               |
+|   |       |       |       |                                   |
+|   |       |       |       | Note:  The appendix to the lab    |
+|   |       |       |       |    handout has important info     |
+|   |       |       |       |    that can save you time.  Use   |
+|   |       |       |       |    the program shown in Figure 1  |
+|   |       |       |       |    of the lab handout and try     |
+|   |       |       |       |    storing a the program in EEPROM|
+|   |       |       |       |    as described in the appendix.  |
+|   |       |       |       |    Then remove the power from the |
+|   |       |       |       |    Fox Kit, and re-apply power.   |
+|   |       |       |       |    This erases the RAM but not the|
+|   |       |       |       |    EEPROM.  You should then be    |
+|   |       |       |       |    able to load the RAM from the  |
+|   |       |       |       |    EEPROM as described in the     |
+|   |       |       |       |    appendix.                      |
+|---+-------+-------+-------+-----------------------------------|
+| 7 |  3/22 |       |       | <A 
+HREF="204/204S05L7.DOC"
+>Sequential Logic Design Problem</A>   |
+|   |  3/31 |  4/22 |       |                                   |
+|   |       |       |       | SUGGESTED PACE                    |
+|   |       |       |       | 1st week:  State diagram,         |
+|   |       |       |       |     transition tables, state      |
+|   |       |       |       |     assignment, logic circuit     |
+|   |       |       |       |     done.                         |
+|   |       |       |       |                                   |
+|   |       |       |       | 2nd week:  Debug logic using      |
+|   |       |       |       |     simulator.  Build circuit.    |
+|   |       |       |       |     Demonstrate the circuit.      |
+|   |       |       |       |                                   |
+|   |       |       |       | 3rd week:  Write report.          |
+|   |       |       |       |                                   |
+|   |       |       |       | NOTES:                            |
+|   |       |       |       | 1.) "One-hot state assignment" is |
+|   |       |       |       | further discussed in your textbook|
+|   |       |       |       | on pages 380-382.                 |
+|   |       |       |       |                                   |
+|   |       |       |       | 2.) Professor De Boer recommends  |
+|   |       |       |       | that you only use logic blocks    |
+|   |       |       |       | from the Maxplus2 library, and    |
+|   |       |       |       | then only blocks named 74xxx or   |
+|   |       |       |       | a_74xxx.  This way you can build  |
+|   |       |       |       | your circuit either on a bread-   |
+|   |       |       |       | board or on a UP-2 kit.           |
+|   |       |       |       |                                   |
+|   |       |       |       | 3.) The circuit shown in the lab  |
+|   |       |       |       | handout, Figure 3, cannot be      |
+|   |       |       |       | built on a UP-2 kit.  Consult with|
+|   |       |       |       | Professor De Boer for options.    |
+|   |       |       |       |                                   |
+|   |       |       |       | 4.) The type <A          8
+HREF="http://www.fairchildsemi.com/ds/DM/DM74ALS74A.pdf"
+>'74</A> D flip-flop      |
+|   |       |       |       | includes all the features you     |
+|   |       |       |       | might need.  It is not the only   |
+|   |       |       |       | flip-flop that can be used, but   |
+|   |       |       |       | it is a good enough one.          |
+|   |       |       |       |                                   |
+|   |       |       |       | 5.) If you are in the Tuesday lab |
+|   |       |       |       | section, labs on 3/22, 4/05, and  |
+|   |       |       |       | 4/12 are reserved for this        |
+|   |       |       |       | project.  (3/29 is assessment day.|
+|   |       |       |       | There will be no lab that day.)   |
+|   |       |       |       | If you are in the Thursday lab    |
+|   |       |       |       | section, labs on 3/31, 4/07, and  |
+|   |       |       |       | 4/14 are reserved for this lab.   |
+|   |       |       |       |                                   |
+|   |       |       |       | Datasheet: '<A 
+HREF="http://www.fairchildsemi.com/ds/DM%2FDM74ALS169B.pdf"
+>169</A>                   |
+|   |       |       |       | Aliases used for '169 signals in  |
+|   |       |       |       | the Quartus II Maxplus2 library.  |
+|   |       |       |       |                                   |
+|   |       |       |       | A = D0, B = D1, C = D2, D = D3    |
+|   |       |       |       |                                   |
+|   |       |       |       | Q = Q0, Q = Q1, Q = Q2, Q = Q3    |
+|   |       |       |       |  A       B       C       D        |
+|   |       |       |       |                                   |
+|   |       |       |       | (A, D0, Q , and Q0 are least sig.)|
+|   |       |       |       |          A                        |
+|   |       |       |       | ___         ___         ___       |
+|   |       |       |       | ENT = ENTN, ENP = ENPN, RCO = TCN |
+|   |       |       |       | ____          _                   |
+|   |       |       |       | LOAD = LDN, U/D = U/DN            |
+|---+-------+-------+-------+-----------------------------------|
+| 6 |  3/07 |       |       | <A 
+HREF="204/204S05L6.DOC"
+>Latches and Flip-Flops</a>            |
+|   |  3/24 |  ---  |  ---  | (Figure 4 is missing from the     |
+|   |       |       |       | above link.)                      |
+|   |       |       |       |                                   |
+|   |       |       |       | Datasheets:                       |
+|   |       |       |       | <A 
+HREF="http://www.fairchildsemi.com/ds/DM/DM74ALS00A.pdf"
+>'00</A>   <A 
+HREF="http://www.fairchildsemi.com/ds/DM/DM74ALS74A.pdf"
+>'74</A>    <A 
+HREF="http://focus.ti.com/lit/ds/symlink/sn74ls367a.pdf"
+>'367</A>   <A 
+HREF="http://www.fairchildsemi.com/ds/DM/DM74ALS373.pdf"
+>'373</A>   <A
+HREF="http://www.onsemi.com/pub/Collateral/MC14042B-D.PDF"
+>4042</A>   |
+|---+-------+-------+-------+-----------------------------------|
+| 5 |  2/15 |       |       | <A HREF="204/L5/204S05L5.DOC"
+>Programming a CPLD</A>                |
+|   |  2/17 |  ---  |  ---  |                                   |
+|   |       |       |       | Suggested References:             |
+|   |       |       |       |    <A 
+HREF="http://www.altera.com/literature/univ/upds.pdf"
+>User's Guide for UP-2 kit</A>      |
+|   |       |       |       |    <A 
+HREF="http://www.altera.com/literature/ds/m7000.pdf"
+>Data sheet, MAX EPM7128SLC84-7</A> |
+|   |       |       |       |                                   |
+|   |       |       |       | VHDL to erase a chip              |
+|   |       |       |       |    <A HREF="204/L5/ERASE.vhd"
+>erase.vhd</A>                      |
+|   |       |       |       |    Note:  Compiling erase.vhd     |
+|   |       |       |       |    will generate a warning about  |
+|   |       |       |       |    "stuck at" pins.  This is OK   |
+|   |       |       |       |    because pins ought not work    |
+|   |       |       |       |    normally if the chip is        |
+|   |       |       |       |    erased!                        |
+|   |       |       |       |                                   |
+|   |       |       |       | Booklet:  <A HREF="204/LRF04.DOC"
+>How to Write a Lab Rept</A> |
+|   |       |       |       |    Note:  This booklet will not   |
+|   |       |       |       |    print or display with proper   |
+|   |       |       |       |    formatting because it uses     |
+|   |       |       |       |    fonts that are not commonly    |
+|   |       |       |       |    installed.  Do not print it    |
+|   |       |       |       |    because Prof. De Boer will     |
+|   |       |       |       |    hand out hard copies in class  |
+|   |       |       |       |    on Friday, 2/18.               |
+|---+-------+-------+-------+-----------------------------------|
+| 4 |  2/08 |       |       | <A HREF="204/L4/204S05L4.DOC"
+>Combinational Design Project</A>      |
+|   |  2/10 |  3/04 |  3/23 |            <A 
+HREF="204/L4/204S05L4.DOC"
+>& VHDL</A>                 |
+|   |       |  in   |  in   |                                   |
+|   |       | class | class | SUGGESTED PACE                    |
+|   |       |       |       | 1st week:  Logic design done.     |
+|   |       |       |       |      Start entering the design in |
+|   |       |       |       |      Quartus II simulator either  |
+|   |       |       |       |      via schematic or VHDL        |
+|   |       |       |       |      (Also do VHDL exercise)      |
+|   |       |       |       | 2nd week:  Debug logic using the  |
+|   |       |       |       |      simulator.  Begin building   |
+|   |       |       |       |      the circuit in hardware.     |
+|   |       |       |       |      Begin writing the report.    |
+|   |       |       |       |      (Also do CPLD programming    |
+|   |       |       |       |      exercise.)                   |
+|   |       |       |       | 3rd week:  Finish building.       |
+|   |       |       |       |      Demonstrate finished and     |
+|   |       |       |       |      working hardware.            |
+|   |       |       |       |      Continue writing the report. |
+|   |       |       |       | 4th week:  Finish writing the     |
+|   |       |       |       |      report.                      |
+|   |       |       |       |                                   |
+|   |       |       |       | For the pinewood derby project,   |
+|   |       |       |       | a <A HREF="204/L4/7SEG_DRV.JPG"
+>photo of a 7-segment display</A>    |
+|   |       |       |       | with driver circuit.  Be sure the |
+|   |       |       |       | resistor leads do not touch each  |
+|   |       |       |       | other.  (It looks like they do in |
+|   |       |       |       | the photo, but there is separation|
+|   |       |       |       | in the vertical dimension.)       |
+|   |       |       |       |                                   |
+|   |       |       |       | Here is a document which describes|
+|   |       |       |       | the <A HREF="204/L4/204S05LX.DOC"
+>pinout and driver circuit</A> for |
+|   |       |       |       | a 7-segment display               |
+|   |       |       |       |                                   |
+|   |       |       |       | No reporting at all is needed on  |
+|   |       |       |       | the "VHDL Exercise."              |
+|   |       |       |       |                                   |
+|   |       |       |       | File: <A HREF = "204/L4/oddv.vhd"
+>oddv.vhd</A>                    |
+|   |       |       |       | File: <A HREF = "204/L4/ODD.vwf"
+>ODD.vwf</A>                     |
+|   |       |       |       |                                   |
+|   |       |       |       | You will have four weeks by the   |
+|   |       |       |       | calendar to do this project but   |
+|   |       |       |       | actually only three weeks of lab  |
+|   |       |       |       | time.  During the first week you  |
+|   |       |       |       | will also do a "VHDL Exercise"    |
+|   |       |       |       | that is estimated to take 1/2 of  |
+|   |       |       |       | the lab time.  During the second  |
+|   |       |       |       | week there will be a "CPLD        |
+|   |       |       |       | programming exercise," also       |
+|   |       |       |       | taking 1/2 of the lab time.       |
+|   |       |       |       |                                   |
+| Results for Lab Report #1                                     |
+| -------------------------                                     |
+| Max/Avg/Min grades were: A-/B-/D                              |
+| Grade:       A   A-  B+  B   B-  C+  C   C-  D+  D   D-  F    |
+| Frequency:   0   7   2   2   1   2   1   2   0   2   0   0    |
+|   |       |       |       |                                   |
+|---+-------+-------+-------+-----------------------------------|
+| 3 |  2/01 |  ---  |  ---  | <A HREF = 
+"204/L3/204S05L3.DOC">Introduction to Hierarchical</A>      |
+|   |  2/03 |       |       | <A HREF =
+"204/L3/204S05L3.DOC">design and VHDL</A>                   |
+|   |       |       |       |                                   |
+|   |       |       |       | File:  <A HREF = 
+"204/L3/ODD.vwf">ODD.vwf</A>                    |
+|   |       |       |       | File:  <A HREF = 
+"204/L3/TUTORIAL1.vwf">TUTORIAL1.vwf</A>              |
+|---+-------+-------+-------+-----------------------------------|
+| 2 |  1/25 |  ---  |  ---  | <A HREF = 
+"204/204S05L2.PDF">DeMorgan's Theorems and Logic</A>     |
+|   |  1/27 |       |       | <A HREF =
+"204/204S05L2.PDF">Simplification</A>                    |
+|---+-------+-------+-------+-----------------------------------|
+| 1 |  1/18 |  ---  |  ---  | <A HREF = 
+"204/204S05L1.PDF">Safety and Intro to the Equipment</A> |
+|   |  1/20 |       |       |                                   |
++---------------------------------------------------------------+
+                                              <A NAME=LINKS"></A>
+                       COURSE-RELATED LINKS
+                       --------------------
+The course syllabus is available (in MS-Word format) at:
+<A HREF = 
+"../S05/204/204S05SY.DOC" 
+>../S05/204/204S05SY.DOC</A>
+(posted 1/13)
+
+<A HREF="http://www.eng.auburn.edu/department/ee/mgc/vhdl.html"
+>VHDL Mini-Refernece</A> (Auburn University) (posted 2/28/05)
+                                            <A NAME="ERRATA"></A>
+                              ERRATA
+                              ------
+Mano and Kime, <I>Logic and Computer Design Fundamentals</I>, 
+Third Edition, Pearson Prentice Hall, 2004.
+
+The up-to-date textbook errata has been moved to this web page:
+<A 
+HREF="../mano_kime/3rd/err_mk.htm"
+>../mano_kime/3rd/err_mk.htm</A>
+
+The errata listed below is a snapshot of how the errata page
+looked at the end of the course on 4/29/05
+
+First, see the publisher's errata list on the Web at:
+<A 
+HREF="http://www.writphotec.com/mano/text_errata.html"
+>http://www.writphotec.com/mano/text_errata/html</A>
+                                                 <A NAME="P_138">
+p138-9, Problems 3-24, 3-25.  The author's use of "bubbles" in 
+   figure 3-34 is inconsistent with Figure 4-10.  See problem set 
+   number 11 (above) for additional notes on this errata.  
+                                                 <A NAME="P_193">
+p193, Problem 4-8.  In the text, add a "*" at the beginning of 
+   the problem statement since the answer to this problem is 
+   posted on the book's companion web site.  In the PDF file with 
+   the solution (on the book's companion web site) change the 
+   label "4-10.*" to "4-8*."  Underneath the schematic diagram 
+   add a horizontal line.  Just under the horizontal line, add 
+   the label "4-10.*" (The solution to 4-8 is only the 
+   schematic.) 
+                                              <A NAME="P_193_10"> 
+p193, Problem 4-10.  The answer posted on the book's companion 
+   web site is improperly labeled.  The on the PDF file for this 
+   answer, change the label "4-10.*" to 4-8.*".  Below the 
+   schematic diagram and above the truth table and K-maps, add a 
+   horizontal line.  Just below this horizontal line add the 
+   label "4-10*".  A schematic of the logic design should also be 
+   included in this solution, but it is not.  (The solution to 
+   4-10 is given only in the truth table and the K-maps.) 
+                                                 <A NAME="P_196">
+p196, Problem 4-36.  Replace "E_n, A0, A1" with "E_n, A1, A0."
+   (It is conventional in this text to list the most significant 
+   bits first.  Doing it in the other order confuses students.)
+                                                 <A NAME="P_236">
+p236, Problem 5-3*.  Four of the given unsigned numbers are too 
+   large to represent as signed integers with the same number of 
+   bits.  In a real computer a complement operation is equivalent 
+   to negation and would result in overflow in these four cases 
+   if the given number was truly taken as UNSIGNED.  
+   Alternatively a leading zero could be padded onto each given 
+   number to convert the number to the 1's or 2's complement 
+   number system before the 1's or 2's complement is taken.  The 
+   answers shown online do not mention these issues.  Thus, the 
+   answers shown online are not the negations of UNSIGNED 
+   integers.  They are the negations of signed integers with the 
+   issue of overflow ignored. 
+                                 _ _             <A NAME="P_246">
+p246, labels "S" and "R" for the S R Latch are missing overbars 
+   in four places inside Figure 6-6.  The same problem exists in 
+   three places in the text that discusses this Figure.  
+
+   p246, 9 lines from the bottom, add overbar to "S".
+   p246, 8 lines from the bottom, add overbar to "S".
+   p246, 7 lines from the bottom, add overbar to "R".
+   (Other instances of "S" and "R" on these pages are correct 
+   as printed with or without the overbars.)  
+                                                 <A NAME="P_250">
+p250-283, Figures 6-10, 6-12, 6-13, 6-14, 6-15, 6-17, 6-18, 6-23, 
+   6-27, Table 6-7.  To be consistent with symbols used in 
+   Chapter 9 (e.g. Figure 9-4) add label "Q" at each output 
+   inside the block diagram symbol for each latch. (A note to 
+   students:  The absence of a name in the block diagram symbol, 
+   along with no postponement symbols or dynamic symbol, implies 
+   a latch.  Postponement or dynamic symbols are used to imply a 
+   master-slave or edge-triggered flip-flop, as shown in Figure 
+   6-14 and described on page 255.  Also note the publisher's 
+   errata for figure 6-14, the last two symbols in part (b).)  
+                                                 <A NAME="P_300">
+p300, Problem 6-4.  In the text add a "*" at the beginning of the 
+   problem statement since the answer is posted on the book's 
+   companion web site.  In the PDF file with the solution (on the 
+   book's companion web site) change the label "6-6*" to "6-4*".  
+   Underneath part (d) add a horizontal line.  Under the line, 
+   add a label, "6-6*".  
+                                                 <A NAME="P_301">
+p301, Problem 6-6.  The answer posted on the book's companion web 
+   site is improperly labeled.  The on the PDF file for this 
+   answer, change the label "6-6.*" to "6-4.*".  Underneath 
+   part (d) add a horizontal line.  Under the line, add a 
+   label, "6-6*".  
+                                               <A NAME="P_301_9">
+p301, Problem 6-9.  Place an asterisk ("*") at the start of the 
+     word "Draw."  (The answer is posted on the web.)
+                                                 <A NAME="P_330">
+p330, Table 7-7.  Change "Figure 7-7" to "Figure 7-11".
+                                                 <A NAME="P_336">
+p336, Figure 7-14.  Note the errata for this figure described in 
+   the author's list of errata.  A corrected figure is shown 
+   <A HREF="204/MK_FIG_7_14.DOC">here</A>.
+                                               <A NAME="P_393_1">
+p393, Problem *8-1.  The solution given on the companion web site 
+   is incorrect.  The state transition branch leading into state 
+   S2 should be redirected into state S1.
+
+                                                 <A NAME="P_393">
+p393, Figure 8-18.  Add a key showing input and output variables.
+
+   The key will show a circle representing a generic state.  The 
+
+   words "State name" will appear in the top half of the circle 
+
+   and the phrase "outputs Z Z " will appear in the bottom half.  
+                            1 2
+   An arrow representing a state transition will extend from the 
+
+   circle and be labeled "inputs X X ".  A corrected Figure is 
+                                  1 2
+   shown <A HREF="204/MK8_1.DOC">here</A>.
+                                                 <A NAME="P_427">
+p427 through p428.  Problems 9-2 through 9-12.  Each problem 
+   statement should be preceded by an asterisk ("*") since all 
+   the solutions for all the problems in this chapter are 
+   available on the companion web site.  
+                                                 <A NAME="P_447">
+p447 Table 10-6.  In the line with the micro-operation 
+   "R7 <-- R7 + 1" and in the column "MB," change the word 
+   "Register" to a dash.  (Posted 4/20/05)
+                                               <A NAME="P_447_7">
+p447 Table 10-7.  In the line with the micro-operation
+   "R7 <-- R7 + 1" and in the column "MB," change the "0" 
+   to an "X".  (Posted 4/20/05)
+                                                 <A NAME="P_506">
+p506 There are a number of omissions in the description of shift 
+   operations.  The line numbers below are counted down from the 
+   heading "Shift Instructions" and do not count blank lines.
+
+   Line 8 (starts with "the")  Insert these sentences after the 
+   existing period:  "It shifts the out-going bit into the carry 
+   flag bit.  The old carry flag bit is overwritten."
+
+   Line 12. (starts with "unchanged")  Insert this sentence 
+   after the existing period:  "The outgoing bit is shifted into 
+   the carry flag bit."  Also in line 12 and extending into line 
+   13, delete "inserts 0 into the incoming bit in the rightmost 
+   position and".
+
+   Line 18. (starts with "the")  After the existing period insert 
+   this sentence:  "The outgoing bit is also copied into the 
+   carry flag bit."
+
+   <A HREF="204/SHIFT_R.DOC"
+   >Here is a supplement</A> to further clarify this matter.
+                                                 <A NAME="P_515">
+p515 Table 11-9.  Change two lines to eliminate conflicts with 
+   Table 11-10.
+
+   Two lines in the table are incorrectly shown in the text as:
+   Branch if lower             BL      A < B      C = 1
+   Branch if lower or equal    BLE     A <= B     C + Z = 1
+
+   Correct the above lines to read as follows:
+   Branch if lower             BLO     A < B      C = 1
+   Branch if lower or same     BLS     A <= B     C + Z = 1
+
+   Summary:  Change "BL"  to "BLO"
+             Change "BLE" to "BLS"
+             Change "equal" to "same" in one instance.
+   
+   (As written the same instruction nemonic "BL" stands for two 
+   separate and unique instructions.  Similarly for "BLE."  BLO 
+   and BLS follow Motorola style for assembly language mnemonics. 
+   (posted 4/27/05)
+                                                 <A NAME="P_522">
+p522. Problem 11-1.  Change "Section 11-1" to "Section 11-2".
+   Also add "SUB represents subtraction." to the problem 
+   statement.  (SUB is not illustrated in Section 11-2.)
+                                               <A NAME="P_522_3">
+p522. Problem *11-3.  The solution given on the companion web 
+   site is incomplete.  For part "b,c" the very last instruction 
+   is missing.  Add "POP X" after the last "MUL" and show that 
+   the stack is then empty.  (The result that was on the stack is 
+   stored in variable "X" and then removed from the stack by the 
+   POP instruction.)  
+                                               <A NAME="P_522_4">
+p522. Problem 11-4.  Add "Y = " to the start of the expression
+   so that it reads:  "Y = (A + B) x C / (D - (E x F))"
+                                                 <A NAME="P_524">
+p524. Problem *11-17.  The answer posted on the textbook's 
+   companion web site is wrong.  The column labeled "C" should 
+   have these entries (going down), " 1 1 0 0 0 0 0 0 0"
+                                                 <A NAME="P_526">
+p526. Problem *11-27.  Change "located in memory at adress 2000" 
+   to "located in memory at address 1000".  Change the solution 
+   shown on the textbook's companiono web site to:
+
+                                 PC     SP     TOS
+              a) Initally       1000   2000   3000
+              b) After Call     0301   1999   1002
+              c) After Return   1002   2000   3000
+
+   (As written this problem would execute code stored on the 
+   stack.  This is not typical and could mislead students as to 
+   what a stack is typically used for.  The changes mentioned 
+   above solve this problem.)
+   
+Disclaimer:  This list of errata is provided by Professor De Boer 
+   for the use of his students in his courses.  Professor De Boer 
+   has no connection to the book's publisher or the authors of 
+   the textbook.  This list is offered as is, with no guarantee 
+   of any kind.  It is likely to be incomplete at the least.
+
+   
+<a href="../S04/204S04.HTM"><--PREVIOUS</a> offering of this course <a href="../S06/204S06.HTM">NEXT--></a>   
+
+</PRE> 
+<BR> 
+<A HREF="../index.html"> Back to Prof. De Boer's home page </A> 
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+</BODY> 
+</HTML> 
+

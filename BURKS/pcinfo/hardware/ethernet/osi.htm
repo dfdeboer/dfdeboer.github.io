@@ -1,0 +1,162 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>OSI reference model</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center>&nbsp;<img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+
+<p><img SRC="images/osirefti.gif" ALT="OSI reference model" NOSAVE BORDER="2" HEIGHT="17" WIDTH="316">
+
+<p><h2>What is it?</h2>
+
+<p>The OSI reference model is a hierarchical structure of seven layers
+that defines the requirements for communications between two computers.
+The model was defined by the <a HREF="standorg.htm">International Standards
+Organisation</a>. It was conceived to allow interoperability across the
+various platforms offered by vendors. The model allows all network elements
+to operate together, regardless of who built them. By the late 1970's,
+ISO was recommending the implementation of the OSI model as a networking
+standard, unfortunately, <a HREF="tcpip.htm">TCP/IP</a> had been in use
+for years. TCP/IP was fundamental to ARPANET and the other networks that
+evolved into the Internet. Only a subset of the whole OSI model
+is used today. It is widely believed that much of the specification is
+too complicated and it's full functionality has taken too long to implement,
+although there are many people that strongly support the OSI model.
+
+<p><h2>What does it look like?</h2>
+
+<p><img SRC="images/osi.jpg" ALT="OSI.jpg" NOSAVE BORDER="2" HEIGHT="930" WIDTH="497">
+<h2>What do the layers do?</h2>
+
+<p>As data passes from an application and moves down the stack, each
+layer adds a header according to the protocol that exists at that layer.
+This is known as encapsulation. The only exception is the data link layer,
+a header and a trailer is added. After the data has been transmitted across
+whatever media is in use, the process of deencapsulation begins. Each layer
+of the stack, at the destination, removes the header (or header and trailer
+in the case of the data link layer) that was placed by its corresponding
+source layer. The physical and data link layers exist in hardware, all
+other layers are software driven.
+
+<p><h2>Layer 7 - Application</h2>
+
+<p>This layer has protocols that support user applications, but it does
+not include the applications themselves. There is an opinion that the network
+operating system should be included in this layer, but this is open to
+disagreement. Strictly speaking, this layer deals with file access and
+management and includes the OSI X.400 and X.500 email protocols. X.400
+allows interoperability between different email software and X.500 synchronises
+email across different systems.
+
+<p><h2>Layer 6 - Presentation</h2>
+
+<p>The presentation layer protocols deal with data syntax during transfer
+between two application processes. If the client and server are using different
+file formats, this layer has conversion protocols. Therefore, computers
+using different file formats can still communicate with each other. Data
+encryption and decryption protocols also exist at the presentation layer.
+
+<p><h2>Layer 5 - Session</h2>
+
+<p>Protocols at this layer are necessary for establishing, maintaining
+and ending sessions between user applications. Such protocols are designed
+to make the differences, across various platforms, transparent to the user.
+
+<p><h2>Layer 4 - Transport</h2>
+
+<p>Transport layer protocols are responsible for the reliability of
+end to end connections. These protocols assemble multiple network layer
+packets into a coherent message. This layer also provides flow-control
+and error recovery.
+
+<p><h2>Layer 3 - Network</h2>
+
+<p>The network layer protocols establish, maintain and terminate end
+to end (network) links. These protocols route messages across the network(s)
+between two computers. Different network operating systems often have their
+own network layer protocols, but can also use other protocols. This flexibiltity
+is essential when communicating accross multiple client/server platforms.
+
+<p><h2>Layer 2 - Data Link</h2>
+
+<p>Data link protocols provide logical link control
+and medium access control. These protocols provide reliability to the physical
+layer transmission by ordering the data into frames and adding error checking
+and addressing information. The network interface card assembles the data
+link layer frames.
+
+<p><h2>Layer 1 - Physical</h2>
+
+<p>Protocols at the physical layer are responsible
+for establishing, maintaining and ending physical connections (point to
+point) between computers. These protocols are manifested in the media across
+which transmission occurs. These protocols do not specify the various cables
+and connectors, these specifications are sometimes said to belong to layer
+0.
+
+<br>&nbsp;
+<p><h2>Tell me more!</h2>
+<center><table BORDER WIDTH="90%">
+<tr>
+<td>&nbsp;<a HREF="http://www.bdsltd.co.uk/network/index.htm">Business
+Direct Services' OSI page</a></td>
+
+<td>Basic protocol information for each layer</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://www.cit.ac.nz/smac/winnt/pt1_5a.htm#start">Central
+Institute of Technology</a></td>
+
+<td>General OSI model information</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.cisco.com/univercd/cc/td/doc/cisintwk/ito_doc/55016.htm#xtocid126062">Cisco
+Introduction to Networking</a></td>
+
+<td>OSI model overview</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.dcs.kcl.ac.uk/staff/pjm/iso7498.txt">ISO/IEC
+7498-1 : 1994(E)</a></td>
+
+<td>Full listing from Peter McBrien's King's College page</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.salford.ac.uk/iti/books/osi/osi.html">Prof.
+John Larmouth's online OSI book</a></td>
+
+<td>If it's not here, don't worry about it</td>
+</tr>
+</table></center>
+
+
+<p>
+<hr WIDTH="100%">
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

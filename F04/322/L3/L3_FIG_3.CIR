@@ -1,0 +1,24 @@
+*----------------------------------------------------------------------------
+*                 IDEAL   An (almost) Ideal Diode
+.MODEL IDEAL    D (N=0.01 Rs=0.1)
+*
+*                 On Wednesday, 10/13/04, this model was changed to improve 
+*                 convergence of simulations that include square-wave
+*                 sources.  The old version of the model is given in the 
+*                 comment line below.
+*                 .MODEL IDEAL    D (N=0.00001)
+*----------------------------------------------------------------------------
+*                 1N4004  1 A  400 V  General Purpose Rectifier
+.MODEL 1N4004   D IS = 3.699E-09 RS = 1.756E-02 N = 1.774 XTI = 3.0
++                 EG = 1.110 CJO = 1.732E-11 M = 0.3353 VJ = 0.3905
++                 FC = 0.5 ISR = 6.665E-10 NR = 2.103 BV = 400 IBV = 1.0E-03
+*----------------------------------------------------------------------------
+*                 1N4148  200 mA  100 V  Fast Switching Small Signal Diode
+.model 1N4148   D (Is=5.84n N=1.94 Rs=.7017 Ikf=44.17m Xti=3 Eg=1.11 Cjo=.95p
++                 M=.55 Vj=.75 Fc=.5 Isr=11.07n Nr=2.088 Bv=100 Ibv=100u 
++                 Tt=11.07n)
+*----------------------------------------------------------------------------
+*                 1N5819 1A 40V Schottky Barrier Diode
+*                 Note: SR104 is equivalent to the generic 1N5819
+.MODEL 1N5819   D (BV=5.33E+01 CJO=1.44E-10 EG=0.69 IBV=6.00E-04 IS=1.65E-05 
++                 M=.671 N=1.41 RS=4.47E-02 TT=7.20E-11 VJ=1.45 XTI=2)

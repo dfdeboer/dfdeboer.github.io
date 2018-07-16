@@ -1,0 +1,16 @@
+DIV.navigation {display: none;}
+
+H3{font-family: Times New Roman, Times, serif;color:#000000; font-size: 1.5em;}
+
+table,li,td{font-family: Times New Roman, Times, serif; font-size: 1em;}
+
+.symbolFont {
+	font-family: "Symbol";
+}
+
+li.selfTest {
+list-style-type: none; 
+margin-top: 10px;
+}
+
+H4{font-family: Times New Roman, Times, serif;color:#000000; font-size: 1.2em;}table{background-color:#ffffcc;}

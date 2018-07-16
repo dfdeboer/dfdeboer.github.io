@@ -1,0 +1,140 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>Physical topology</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center>&nbsp;<img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+
+<p><img SRC="images/phystopt.gif" ALT="Physical topology" NOSAVE BORDER="2" HEIGHT="17" WIDTH="289">
+
+<p><h2>What is physical topology?</h2>
+
+<p>&quot;Topology&quot; can be used to describe the <b>shape</b>
+of a network. It is a term that should be used with care as its misuse
+can be misleading. The following discussion will describe <b>physical
+topology</b> simply to aid in the understanding of how different types
+of ethernet are implemented. Beyond the bus and star topologies mentioned
+below, the ring topology is discussed elsewhere, in terms of <a HREF="token.htm">token
+ring</a>.
+
+<p>Confusion can arise if a <b>10BaseT</b>, or
+<b>100BaseT</b>, network is described as having a
+star topology. These networks have a star <b>physical</b>
+topology, but they are <b>bussed</b> across the hub.
+Some texts prefer to avoid difficulties altogether by not discussing topologies
+at all.
+
+<p><h2>So what does a bus physical topology look like?</h2>
+
+<p><img SRC="images/bustopol.gif" ALT="BusTopology.gif" NOSAVE BORDER="2" HEIGHT="288" WIDTH="325">
+<p>All network elements are connected to the same medium via a short cable. Data
+propagates along the medium in both directions from the transmitting device.
+<b>Terminators are required</b>, at the end of the
+bus, to prevent reflection of the signals across the media.
+
+<p><b>Buses are vulnerable to cable damage</b>.
+If any part of the bus is damaged, the whole network grinds to a halt.
+Some network devices will be isolated from the rest of the network and
+any signal propagating across the bus will be distorted by the damage to
+the cable. Proper network documentation is always essential to aid in fault
+finding, but this is particularly the case in bussed installations. If
+an unknown device is transmitting masses of corrupt data, it may be difficult
+to identify which device is responsible and then isolate it.
+
+<p>Many bussed installations are legacies and are being superseded by
+10BaseT and 100BaseT, but there are advantages to the bus - a relatively
+short length of media is required to connect all devices and they are a
+simple solution to the needs of distributed computing. CSMA/CD is used
+as the method of <a HREF="mac.htm">medium access control</a>.
+
+<p><b>10Base5 </b>installations
+use a viper tap to pierce the thick coaxial cable <a HREF="media.htm">media</a>
+that acts as the bus. The viper tap has a short length of thick coaxial
+that is used to connect the tap to the <a HREF="nic.htm">network interface
+card</a>.
+
+<p><b>10Base2 </b>installations
+use a BNC T-piece. The thin coaxial bus is cut and a T-piece used to join
+the two ends. The third connection on the T-piece is attached to a short
+cable, which, in turn, connects to the network interface card.
+
+<p><h2>So what does a star physical topology look like?</h2>
+
+<p><img SRC="images/startopo.gif" ALT="StarTopology.gif" NOSAVE BORDER="2" HEIGHT="238" WIDTH="297">
+<p>All devices on the segment are connected to a hub, this is analogous to a star
+shape with the hub at the centre and other devices radiating out from it.
+Each device has its own connection to the hub. The hub is, therefore, vital
+to the operation of the network. It is good practice to have upto
+twice as many hub ports as required. Should a port fail, the cable can
+simply be swapped to one of the spare ports. This is known as <b>redundancy</b>.
+
+<p>Both 10BaseT and 100BaseT use a star physical
+topology over unshielded twisted pair wire
+media.
+
+<p>Each device has its own link to the network, but star physical topologies
+can still suffer from congestion. This is due to the broadcast nature of
+ethernet - each station still uses CSMA/CD. Every broadcast from any device
+propagates to all other devices in order to reach its intended destination.
+This leads to unnecessary traffic that could overwhelm an already struggling
+network. <a HREF="switch.htm">Switches</a> can be used in the place of
+hubs to manage traffic more effectively.
+
+<br>&nbsp;
+<h2>Tell me more!</h2>
+<center><table BORDER WIDTH="90%">
+<tr>
+<td><a HREF="http://www.cit.ac.nz/smac/winnt">Brian Brown's NT Networking
+Course</a></td>
+
+<td>Marvellous networking site</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.cit.ac.nz/smac/winnt/pt1_5.htm#start">Co-axial
+- Central Institute of Technology</a></td>
+
+<td>Coaxial cable information</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.cit.ac.nz/smac/winnt/pt1_4.htm#start">Twisted
+Pair - Central Institute of Technology&nbsp;</a></td>
+
+<td>Twisted pair details</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.cit.ac.nz/smac/winnt/pt1_2.htm#brief">Wiring
+Guide - Central Institute of Technology</a></td>
+
+<td>Wiring information</td>
+</tr>
+</table></center>
+
+<p>
+<hr WIDTH="100%">
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

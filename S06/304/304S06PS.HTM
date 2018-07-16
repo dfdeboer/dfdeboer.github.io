@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../../favicon.ico">
+<TITLE>EGR 304 Homework</TITLE>
+</HEAD>
+<BODY><PRE>
+               DORDT COLLEGE ENGINEERING DEPARTMENT
+               MICROPROCESSOR INTERFACING -- EGR 304
+                          (Spring 2006)
+
+                           PROBLEM SETS             (Last update:
+                           ------------         4/11/06  5:47 pm) 
++===============================================================+ 
+|PS|ASSIGNED| DUE |RETURNED| Problems Assigned                  |
+| #|        /     \        | (Choose 6811 if there is a choice) |
+|==+=======+=======+=======+====================================|
+|  |       |       |       |                                    |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+|10|  4/11 |  4/28 |       | Read Chapter 8 Sections 8.1 and 8.2|
+|  |       |       |       |                                    |
+|  |       |       |       | Do repeat the analysis in Fig. 8.11|
+|  |       |       |       | and on page 422 of your text but   |
+|  |       |       |       | refine the analysis by modeling the|
+|  |       |       |       | input resistance of the '14 Schmitt|
+|  |       |       |       | trigger as a 1 kohm resistance from|
+|  |       |       |       | the '14's input through the '14 to |
+|  |       |       |       | the +5 V supply.  How does this    |
+|  |       |       |       | change the delta_t time?           |
+|  |       |       |       |                                    |
+|  |       |       |       | Do adapt the design shown in Fig.  |
+|  |       |       |       | 8.31b to replace the 75491 driver  |
+|  |       |       |       | with a PN2222 transistor.  Note    |
+|  |       |       |       | that if the 68HC11's output pin is |
+|  |       |       |       | logic-1 the pin can source up to   |
+|  |       |       |       | 0.8 mA.  If the 68HC11's output pin|
+|  |       |       |       | is logic-0 the pin can sink up to  |
+|  |       |       |       | 1.6 mA.  Adapt the design again to |
+|  |       |       |       | use a PN2907 transistor.  Which    |
+|  |       |       |       | design do you recommend?  (Use the |
+|  |       |       |       | transistor data inside the back    |
+|  |       |       |       | cover of your textbook.) Assume the|
+|  |       |       |       | LED is type "P300" which is equiv. |
+|  |       |       |       | to Lumex type <A HREF=
+"http://www.lumex.com/images/pdf/SSL-LX5093ID.pdf"
+                                      >SSL-LX50931D</A>         |
+|--+-------+-------+-------+------------------------------------|
+| 9|  3/21 |  3/28 |  4/04 | Browse the USB standard on reserve |
+|  |       |       |       | in Dordt's library or available at |
+|  |       |       |       | <A HREF=
+"http://www.usb.org/developers/docs"
+                        >http://www.usb.org/developers/docs</a> |
+|  |       |       |       |                                    |
+|  |       |       |       | Do these <A HREF="PS_USB.RTF"
+                                 >short essays on USB</A>       |
+|--+-------+-------+-------+------------------------------------|
+| 8|  3/21 |  3/28 |  4/04 | Read this <A HREF=
+"http://burks.brighton.ac.uk/burks/pcinfo/hardware/ethernet/contents.htm"
+                                  >Ethernet Tutorial</A>        |
+|  |       |       |       |                                    |
+|  |       |       |       | Do this <A HREF=
+"http://burks.brighton.ac.uk/burks/pcinfo/hardware/ethernet/qframe.htm"
+                                >quiz</A>                       |
+|  |       |       |       |                                    |
+|  |       |       |       | E-mail your quiz grade to DDB      |
+|  |       |       |       | (full credit for any grade)        |
+|  |       |       |       |                                    |
+|  |       |       |       | <A HREF=
+"http://courses.dordt.edu/mod/resource/view.php?id=10490"
+                        >Optional Reading</A>                   |
+|--+-------+-------+-------+------------------------------------|
+| 7|  3/02 |  3/07 |  3/21 | Read Chapter 7 through section 7.6.|
+|  |       |       |       | Optional supplement on <A HREF=
+"http://www2.rad.com/networks/1995/rs232/rs232.htm"
+                                               >RS-232</A>      |
+|  |       |       |       |                                    |
+|  |       |       |       | Plot voltage vs. time for sending  |
+|  |       |       |       | this text: "Z#" (without the quote |
+|  |       |       |       | marks) using RS-232.  Assume       |
+|  |       |       |       | +/- 12V signal voltages, 53 kbaud, |
+|  |       |       |       | eight data bits, and ene stop bit. |
+|  |       |       |       | Be sure to label your axes         |
+|  |       |       |       | properly.  An ASCII table can be   |       
+|  |       |       |       | found in many places, e.g.         |
+|  |       |       |       | <A HREF=
+"http://www.lookuptables.com"
+                        >http://www.lookuptables.com</A>        |
+|--+-------+-------+-------+------------------------------------|
+| 6|  2/21 |  2/28 |  3/21 | Read Chapter 4 Section 4.4         |
+|  |       |       |       | Do from Peatman's text, <A 
+HREF="PS_INTER.RTF"                             >3.17, 3.19</A> |
+|--+-------+-------+-------+------------------------------------|
+| 5|  2/14 |  2/21 |  3/21 | Read Chapter 4 Section 4.1         |
+|  |       |       |       | Do 4.1 part a only, 4.2 part a only|
+|--+-------+-------+-------+------------------------------------|
+|--|  2/14 |  ---  |  ---  | Study for test on Thursday, 2/16   |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+| 4|  2/09 |  2/14 |  3/21 | Read Chapter 3                     |
+|  |       |       |       | Do (on page 186 and 187) 3.18.     |
+|  |       |       |       | Simulate your code in TExaS.  Turn |
+|  |       |       |       | in your assembly file (*.ASM or    |
+|  |       |       |       | *.RTF) and your I/O device (*.io)  |
+|  |       |       |       | by uploading it to courses@dordt.  |
+|--+-------+-------+-------+------------------------------------|
+| 3|  1/31 |  2/07 |  2/09 | Read Chapter 2 Sec. 2.6 thrugh 2.12|
+|  |       |       |       | Do (on page 134) 2.2, 2.4          |
+|--+-------+-------+-------+------------------------------------|
+| 2|  1/19 |  2/02 |  2/07 | Read Chapter 2 Sec. 2.1 through 2.7|
+|  |       |       |       | Do (on page 133) 2.1 Turn in the   |
+|  |       |       |       | "List" file by uploading it to     |
+|  |       |       |       | the courses@dordt web page.        |
+|  |       |       |       |                                    |
+|  |       |       |       | You may use file "<A HREF=
+"../../S06/304/V2_1_TX.ASM"
+                                          >V2_1_TX.ASM</A>" as a|
+|  |       |       |       | start.  Delete the indicated       |
+|  |       |       |       | comments and insert code to finish |
+|  |       |       |       | the file.  Simulate your results.  |
+|  |       |       |       |                                    |
+|  |       |       |       | In order to download a file such as|
+|  |       |       |       | "V2_1_TX.ASM" right-click the link |
+|  |       |       |       | and click "Save Target As. . ."    |
+|  |       |       |       |                                    |
+|  |       |       |       | On Wed. 1/25 the due date was      |
+|  |       |       |       | changed from 1/26 to 1/31.         |
+|  |       |       |       |                                    |
+|  |       |       |       | On Mon. 1/30 the due date was      |
+|  |       |       |       | changed from 1/31 to 2/1           |
+|--+-------+-------+-------+------------------------------------|
+| 1|  1/10 |  1/17 |  1/24 | Read Chapter 1 Sections 1.1, 1.4,  |
+|  |       |       |  see  | 1.6, 1.7, 1.8, 1.9.                |
+|  |       |       | Note 4| Do (on page 77) 1.8                |
++---------------------------------------------------------------+
+Note 1) If a "#" follows the "returned" date, then the solution
+key is posted on the cork board across the hall from room S233.
+
+Note 2) Problems sets shown above with no "assigned" date are
+tentative.  More problems might be added, expected due dates
+might change, but problems shown will eventually be assigned.
+
+Note 3) If you are having difficulty reading the latest version
+of this page it may have to do with your browser's cached memory.
+Read this <A HREF=
+"../../ddb/notes00.htm">note on cached pages</A> to solve the 
+problem. 
+
+Note 4) Class did not meet on 1/19 due to the ASME tour.  Thus
+PS #1 was handed back at the next class meeting after it was due.
+</PRE> 
+<A           HREF = "../../index.html"> Back to Prof. De Boer's home page </A> 
+
+
+
+</BODY> 
+</HTML> 
+

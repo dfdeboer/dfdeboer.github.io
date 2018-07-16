@@ -1,0 +1,200 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>Network interface cards</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center>&nbsp;<img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+
+<p><img SRC="images/ethnicti.gif" ALT="Ethernet network interface cards" NOSAVE BORDER="2" HEIGHT="18" WIDTH="546">
+
+<p><h2>What do they do?</h2>
+
+<p><img SRC="images/nic.jpg" ALT="NIC.jpg" NOSAVE BORDER="2" HEIGHT="259" WIDTH="374">
+<p>Network
+interface cards (NICs) are installed in a computer to allow it to communicate
+with a network. They provide a transparent interface between the network
+and the computer. The computer gives the NIC a message for another networked
+device and the NIC formats that message for transport over the <a HREF="media.htm">media</a>.
+The reverse is also true, the NIC receives messages from the network and
+reformats them so that the computer can understand. NICs have their own
+<b>CPU</b> (central processing unit) and <b>RAM</b>
+(random access memory).
+
+<p>NICs come in many shapes and sizes. They can be installed internally
+or externally, although an internal installation is more likely. The picture
+illustrates an internally installed <b>combo </b><b>(more
+than one type of connection)</b> card. This card is somewhat unusual
+in that it supports three connections:
+<ul>
+<li>
+The upper connection is an <b>RJ45</b> female
+for <b>UTP</b> media.<br>
+<br></li>
+
+<li>
+The middle connection is a <b>BNC</b> connector
+for thin <b>coaxial</b> media.<br>
+<br></li>
+
+<li>
+The lower connection is a <b>DB-15</b> connector
+for a thick ethernet <b>viper tap</b>.</li>
+</ul>
+<h2>How do they do it?</h2>
+
+<p>The NIC has to be able to comply with the method of <a HREF="mac.htm">medium
+access control</a> (eg. CSMA/CD) for the network. The MAC methodology is
+represented at the <b>datalink sublayer</b><b>
+of the</b><b> network access layer</b> of the
+<a HREF="tcpip.htm">TCP/IP protocol suite</a>. Each NIC has it's own MAC
+address that is assigned to it by the manufacturer. It is up to the network
+administrator to assign an <a HREF="tcpippot.htm">IP</a> address to
+the device in which the NIC is installed.
+
+<p>In order for a NIC to operate effectively, it must be able to carry
+out its interface tasks with minimum disruption to the CPU of the computer
+in which it is installed. Four methods of NIC to computer data transfer
+are used:
+<ul>
+<li>
+<b>Bus mastering DMA (direct memory access)</b>:</li>
+
+<ul>
+<li>
+Data enters the NIC from the network.</li>
+
+<li>
+The NIC's own CPU stores data in the NIC's RAM.</li>
+
+<li>
+NIC's CPU sends data to computer's motherboard when the network transmission
+is complete.</li>
+
+<li>
+The computer's CPU is not interrupted - the NIC's CPU has ultimate responsibility
+for data transfer.<br>
+<br></li>
+</ul>
+
+<li>
+<b>DMA</b>:</li>
+
+<ul>
+<li>
+Data enters the NIC from the network.</li>
+
+<li>
+The NIC's CPU interrupts the computer's CPU.</li>
+
+<li>
+The computer's CPU stops other tasks and transfers the network data
+into its RAM.<br>
+<br></li>
+</ul>
+
+<li>
+<b>Programmed I/O (input/output)</b>:</li>
+
+<ul>
+<li>
+Data enters the NIC from the network.</li>
+
+<li>
+The NIC's CPU loads the network data into a motherboard I/O address.</li>
+
+<li>
+The computer's CPU checks the I/O address for any network data.</li>
+
+<li>
+If there is any data, the computer's CPU transfers the data to its RAM.<br>
+<br></li>
+</ul>
+
+<li>
+<b>Shared memory</b>:</li>
+
+<ul>
+<li>
+Data enters the NIC from the network.</li>
+
+<li>
+The NIC's CPU stores the data in the NIC's RAM.</li>
+
+<li>
+The NIC's CPU interrupts the computer's CPU.</li>
+
+<li>
+The computer's CPU stops other tasks and transfers the network data
+into its RAM.</li>
+</ul>
+</ul>
+<h2>What else can they do?</h2>
+<ul>
+<li>
+Some manufacturers have developed motherboards with <b>onboard
+NICs</b> (not a seperate card, but a device intrinsic in the motherboard).<br>
+<br></li>
+
+<li>
+<b>Dual cards</b> - some cards can support <b>two
+speeds of data transfer</b>, eg. 10/100 cards that can detect whether
+data is arriving at 10Mbps or 100Mbps.<br>
+<br></li>
+
+<li>
+<b>Multiport cards</b> - suited for servers where
+spare expansion slots are at a premium. The NIC can have upto four ports
+on a single card.</li>
+</ul>
+<p>&nbsp;
+<h2>Tell me more!</h2>
+<center><table BORDER WIDTH="90%">
+<tr>
+<td WIDTH="30%"><a HREF="http://www.3com.com/products/nics.html">3Com's
+NIC page</a></td>
+
+<td>Commercial page showing their client and server cards</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://www.cit.ac.nz/smac/winnt/pt1_2.htm#adapters">Adapters
+- Central Institute of Technology</a></td>
+
+<td>Network interface card information</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://www.hp.com:80/rnd/products/lanadpt/lanadpt.htm">Hewlett-Packard's
+NIC page</a></td>
+
+<td>H-P's commercial NIC page</td>
+</tr>
+</table></center>
+
+
+<p>
+<hr WIDTH="100%">
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

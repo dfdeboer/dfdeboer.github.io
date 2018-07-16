@@ -1,0 +1,203 @@
+<HEAD>
+<TITLE>EGR 322 Homework</TITLE>
+</HEAD>
+<BODY><PRE>
+               DORDT COLLEGE ENGINEERING DEPARTMENT
+                     ELECTRONICS I -- EGR 322
+                          (FALL 2006)
+
+                           PROBLEM SETS             (Last update:
+                           ------------        12/11/06  3:17 pm) 
++===============================================================+ 
+|PS|ASSIGNED| DUE |RETURNED| Problems Assigned (In Sedra &      |
+| #|        /     \        | (Smith unless otherwise noted.)    |
+|==+=======+=======+=======+====================================|
+|12| 12/06 | 12/13 |       | Read 5.1                           |
+|  |       |       |       |                                    |
+|  |       |       |       | Do +5.1, +5.3, +5.4, 5.5, +5.6,    |
+|  |       |       |       | 5.10, +5.12, +5.13                 |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Sedra_Smith/5th/S_S_5_ER.HTM#A5_1"
+                             >errata for +5.1</A> (Please       |
+|  |       |       |       | ignore the alternative in the      |
+|  |       |       |       | errata.)                           |
+|--+-------+-------+-------+------------------------------------|
+|11| 11/29 | 12/06 | 12/11#| Review 4.9, Read 4.10, 4.11        |
+|  |       |       |       |                                    |
+|  |       |       |       | Do 4.97, D4.98, +D4.99, 4.105,     |
+|  |       |       |       | +4.106, 4.115, 4.116               |
+|--+-------+-------+-------+------------------------------------|
+|10| 11/13 | 11/15 | 11/29#| Read 4.9, Do 4.94, +4.96           |
+|--+-------+-------+-------+------------------------------------|
+| 9| 11/03 | 11/08 | 11/29#| Read 4.8, 4.9                      |
+|  |       |       |       |                                    |
+|  |       |       |       | Do 4.90, +4.91                     |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint for 4.90:  There is enough    |
+|  |       |       |       | information given to compute the   |
+|  |       |       |       | overdrive voltage.  From this you  |
+|  |       |       |       | can determine the region of        |
+|  |       |       |       | operation even though you do not   |
+|  |       |       |       | know the threshold voltage.        |
+|  |       |       |       |                                    |
+|  |       |       |       | Note: Since we did not get to the  |
+|  |       |       |       | Miller Theorem in our class        |
+|  |       |       |       | discussion on Monday, 11/06, the   |
+|  |       |       |       | problems that were assigned in Sec.|
+|  |       |       |       | 4.9, namely 4.94, +4.96, 4.97,     |
+|  |       |       |       | were moved to the next assignment. |
+|  |       |       |       |                                    |
+|  |       |       |       | Study for test on Friday, 11/10    |
+|--+-------+-------+-------+------------------------------------|
+| 8| 10/27 | 11/01 | 11/08#| Read 4.7                           |
+|  |       |       |       |                                    |
+|  |       |       |       | Do +4.79, D4.80, +4.85, 4.86       |
+|  |       |       |       |                                    |
+|  |       |       |       | Note on 4.86:  The coaxial cable is|
+|  |       |       |       | just a (fancy) wire.  No current   |
+|  |       |       |       | flows from the center conductor to |
+|  |       |       |       | the shield.  The "50 ohm coaxial   |
+|  |       |       |       | cable" label on the figure will be |
+|  |       |       |       | explained in class.                |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Sedra_Smith/5th/S_S_5_ER.HTM#P371"
+                             >errata for 4.86</A>               |
+|--+-------+-------+-------+------------------------------------|
+| 7| 10/18 | 10/25 | 10/27#| Read 4.5, 4.6                      |
+|  |       |       |       |                                    |
+|  |       |       |       | Do *4.47, 4.49 see <A HREF=
+"../../errata/Sedra_Smith/5th/S_S_5_ER.HTM#P366"
+                                           >errata on 4.49</A>, |
+|  |       |       |       |                                    |
+|  |       |       |       | D4.55 except use 2.2 megohms for   |
+|  |       |       |       | the larger of RG1 and RG2.  (A     |
+|  |       |       |       | factor of 10X smaller than the text|
+|  |       |       |       | recommends--this is more practical)|
+|  |       |       |       |                                    |
+|  |       |       |       | +D4.65 and see errata on the       |
+|  |       |       |       | <A HREF=
+"../../errata/Sedra_Smith/5th/S_S_5_ER.HTM#A4_65"
+                        >answer to +D4.65</A>,                  |
+|  |       |       |       |                                    |
+|  |       |       |       | *4.67, 4.69, 4.74, 4.77, 4.78      |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Sedra_Smith/5th/S_S_5_ER.HTM#P369"
+                             >errata for 4.74</A>               |
+|  |       |       |       |                                    |
+|  |       |       |       | For problem 4.78 a generic sketch  |
+|  |       |       |       | with no numbers on the axes but    |
+|  |       |       |       | with critical points labeled is    |
+|  |       |       |       | desired.  The main part of the     |
+|  |       |       |       | problem is the proof ("Show. . .") |
+|  |       |       |       | and the sketch is intended to      |
+|  |       |       |       | illustrate the proof.  An initial  |
+|  |       |       |       | sketch might be easier to make if  |
+|  |       |       |       | you assume numeric values for the  |
+|  |       |       |       | transistor's parameters, but keep  |
+|  |       |       |       | the proof and final sketch generic.|
+|--+-------+-------+-------+------------------------------------|
+| 6| 10/11 | 10/18 | 10/23 | Read 4.3, 4.4                      |
+|  |       |       |       |                                    |
+|  |       |       |       | Do D3.99, **3.105 Also assume C is |
+|  |       |       |       | fully charged and operating in the |
+|  |       |       |       | steady state.  Hint: these diode   |
+|  |       |       |       | circuts can be quickly built and   |
+|  |       |       |       | tested in the lab or simulated in  |
+|  |       |       |       | PSpice.  (e.g. use 1N4004 diodes in|
+|  |       |       |       | the lab or an ideal model in PSpice|
+|  |       |       |       | along with 25 kohm resistors and   |
+|  |       |       |       | 1 uF non-polarized capacitors.)    |
+|  |       |       |       | +4.12, 4.18, +4.20, *4.33, +D4.34, |
+|  |       |       |       | +4.46, +4.51                       |
+|  |       |       |       |                                    |
+|  |       |       |       | Note errata on <A HREF=
+"../../errata/Sedra_Smith/5th/S_S_5_ER.HTM#P361"
+                                       >4.18</A> and the        |
+|  |       |       |       | <A HREF=
+"../../errata/Sedra_Smith/5th/S_S_5_ER.HTM#A4_34"
+                        >answers to +D4.34</A>                  |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint on 4.46 part (b):  Do not     |
+|  |       |       |       | carelessly round V4 and then use   |
+|  |       |       |       | that inaccurate value to find I3.  |
+|  |       |       |       | Also note <A HREF=
+"../../errata/Sedra_Smith/5th/S_S_5_ER.HTM#P365"
+                                  >errata on 4.46</A>           |
+|  |       |       |       |                                    |
+|  |       |       |       | +4.11 was accidentally double      |
+|  |       |       |       | posted in both PS#5 and PS#6.  On  |
+|  |       |       |       | Monday afternoon, 10/16, it was    |
+|  |       |       |       | deleted from PS#6.                 |
+|--+-------+-------+-------+------------------------------------|
+| 5|  9/27 | 10/04 | 10/09#| Review Ch 3, Read Ch 4 thru Sec 4.2|
+|  |       |       |       | *3.32, +3.37, +3.41, 3.49, 3.54,   |
+|  |       |       |       | 3.55, 3.78 note <A HREF=
+"../../errata/Sedra_Smith/5th/S_S_5_ER.HTM#A3_78"
+                                        >errata</A> but ignore  |
+|  |       |       |       | "Alternatively. . .",              |
+|  |       |       |       | 3.85, +4.4, +4.11                  |
+|--+-------+-------+-------+------------------------------------|
+| 4|  9/21 |  9/27 | 10/02#| Review Ch 2, Read 3.6 - 3.9        |
+|  |       |       |       | +*2.77, +D*2.89, 2.95, 2.98        |
+|  |       |       |       | +D*2.99, 2.112, D**2.126, 3.3,     |
+|  |       |       |       | 3.4 parts i, j, k only             |
+|--+-------+-------+-------+------------------------------------|
+| 3|  9/13 |  9/20 |  9/22#| Read 2.3 - 2.9, 3.1 - 3.5          |
+|  |       |       |       | Do *2.43, D2.51, +2.62, +2.73,     |
+|  |       |       |       | +3.2, 3.4 parts a, b, f only, +3.9,|
+|  |       |       |       | +D*3.15, +3.18, 3.22               |
+|--+-------+-------+-------+------------------------------------|
+| 2|  9/06 |  9/13 |  9/15#| Read 1.6 - 1.8, 2.1 - 2.2          |
+|  |       |       |       | Do 1.18, 1.23, 1.39, D*1.52, +1.66,|
+|  |       |       |       | 1.71, 2.7, 2.19, +D2.33 see <A 
+HREF="../../errata/Sedra_Smith/5th/S_S_5_ER.HTM#P127"
+                                                    >errata</A> |
+|--+-------+-------+-------+------------------------------------|
+|  |       |       |       | Read Chapter 1 thru Section 1.5    |
+|  |       |       |       | Refer to Appendix C and your       |
+|  |       |       |       | EGR 220 textbook as needed.        |
+| 1|  8/30 |  9/06 |  9/08#| Do Problems 1.5, 1.6, +D*1.9       |
++---------------------------------------------------------------+
+
+Note 1) The text includes "Exercises" embedded throughout the 
+reading assignments and "Problems" at the end of each chapter.  
+All the assignments refer to "Problems" unless they are prefixed 
+with "Ex".  Example:  Ex1.5 is found on page 10 but 1.5 is found 
+on page 51.
+
+Note 2) A "+" mark in front of the problem number means an answer 
+is in the text, in Appendix H.
+
+Note 3) The letter "D" in front of a problem number indicates a 
+design oriented problem.  The student may need to use some 
+judgment in understanding what the problem statement is 
+requesting.  (Ask Prof. De Boer if you are in doubt.)
+
+Note 4) Asterisks (*) indicate more difficult or more time-
+consuming problems.  The more asterisks, the more difficult.
+
+Note 5) If a "#" follows the "returned" date, then the solution
+key is posted on the cork board across the hall from room S233.
+Solution keys will usually be posted shortly after homework is 
+returned. 
+
+Note 6) Problems sets shown above with no "assigned" date are 
+tentative.  More problems might be added, expected due dates 
+might change, but problems shown will eventually be assigned.
+
+Note 7) If you are having difficulty reading the latest version
+of this page it may have to do with your browser's cached memory.
+Read this <A HREF=
+"../../ddb/notes00.htm">note on cached pages</A> to solve the problem.
+
+
+</PRE> 
+
+<A HREF = "../../index.html"> Back to Prof. De Boer's home page </A> 
+
+</BODY> </HTML> 
+ 
+

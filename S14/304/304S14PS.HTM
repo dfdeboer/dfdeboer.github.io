@@ -1,0 +1,606 @@
+<html>
+<head>
+<meta http-equiv="pragma" content="no-cache">
+<link rel="shortcut icon" href="../../favicon.ico">
+<title>EGR 304 Homework</title>
+<style type="text/css"><!--
+TABLE {
+   font-family: "verdana";
+   }
+TD {
+   font-family: "verdana"; /* for Netscape 4.7 */
+   font-size: 75%;
+   }
+A:link {
+   font-family: "verdana";
+   color:#CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:visited {
+   font-family: "verdana";
+   color: #CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:hover {
+   text-decoration: underline;
+   } -->
+</style>
+</head>
+
+<body>
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       border="0">
+                                             <TR><TD width="550">
+                                               <p align="center">
+   <A HREF="../../redirect/Dordt_Engineering.htm"
+
+         >DORDT COLLEGE ENGINEERING DEPARTMENT        </A><BR><B>
+        EMBEDDED MICROCOMPUTER SYSTEMS--EGR 304<BR>
+                       (Spring 2014)                     </B></P>
+
+                   <P style="text-align:center; margin-top: 10px; 
+                                       margin-bottom: 0px;"><U><B
+                       >PROBLEM SETS                 </B></U></P>
+
+                   <DIV style="text-align:right; margin-top: 0px;
+                              margin-bottom: 1px; font-size: 80%"
+
+                              >(Last update: 5/05/2014  2:29 pm)
+<!--  LAST UPDATE  ----------------------------- ---------->
+                                                 </DIV></TD></TR>
+</TABLE> 
+
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       cellpadding="2"
+       border="1">
+<!-- --------------------------HEADER-------------------- --><TR>
+   <!-- PS# -->  
+    <TD width="27" align="center" valign="bottom"><b><small>
+    PS</small><br>
+    #                                                  &nbsp;</b>
+   <!-- Assigned -->
+    </TD><TD width="54" align="center" valign="bottom"><small><b>
+    Assigned                                         </b></small>
+   <!-- Due -->
+    </TD><TD width="54" align="center" valign="bottom"><small><b>
+    Due                                              </b></small>
+   <!-- Returned -->
+    </TD><TD width="54" align="center" valign="bottom"><small><b>
+    Returned                                         </b></small>
+   <!-- Assignment -->
+               </TD><TD align="center" valign="bottom"><small><b>
+    Assignment                                       </b></small>
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+11
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        4/22
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        5/01
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <small>(Nothing<br>to<br>return.  
+        Solutons<br>available<br>from<br>the<br>assignment<br>
+        website)</small>
+
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics:  LCD flat-panels, matrixing, A/D, D/A  <br>&nbsp;
+                                                       <br>&nbsp;
+        Read: <a href=
+        "http://www.nxp.com/documents/data_sheet/PCF8532.pdf"
+            >Datasheet PCF8532 Universal LCD Driver</a><br>&nbsp;
+        See especially pages 3, 12, Section 7.3.3.1 on <br>&nbsp;
+        pages 14-15, Section 7.3.4 on pages 16-20.     <br>&nbsp;
+        Please also scan the rest of the datasheet.    <br>&nbsp;
+                                                       <br>&nbsp;
+        Read this <a href=
+        "http://www.allaboutcircuits.com/vol_4/chpt_13/1.html"
+                  >tutorial on d/a and a/d.</a> be sure<br>&nbsp;
+        to click on the "next" buttons to read all ten <br>&nbsp;
+        pages of it.                                   <br>&nbsp;
+                                                       <br>&nbsp;
+        Do these worksheets on <a href=
+        "http://www.allaboutcircuits.com/worksheets/dac.html"
+        >DAC</a> and <a href=
+        "http://www.allaboutcircuits.com/worksheets/adc.html"
+                     >ADC</a>. Feel free <br>&nbsp;
+        to "reveal" the answers after you have thought </br>&nbsp;
+        of your own answer.  E-mail Prof. De Boer a    <br>&nbsp;
+        note to tell him when you finished this        <br>&nbsp;
+        assignment.  (There is no need to send him the <br>&nbsp;
+        actual answers since they are already available.)
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+10
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        4/10
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        4/24
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href="http://courses.dordt.edu/file.php/688/S14/HW/304S14PA_key.PDF">4/29</a>
+
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Read notes from class about position encoding  <br>&nbsp;
+        including relative vs. absolute, two sensors,  <br>&nbsp;
+        binary vs. grey code, v-scan, u-scan.          <br>&nbsp;
+                                                       <br>&nbsp;
+        Write up a design for a rotary relative        <br>&nbsp;
+        encoder that has one degree of resolution and  <br>&nbsp;
+        can keep track of direction of rotation and    <br>&nbsp;
+        the position must not roll over before there   <br>&nbsp;
+        are 90 full turns of the encoder's shaft in    <br>&nbsp;
+        either direction from a reference position     <br>&nbsp;
+        of zero degrees.  Specify the number of teeth, <br>&nbsp;
+        the location of sensors and number of sensors, <br>&nbsp;
+        the connection to a micrcontroller including   <br>&nbsp;
+        any needed logic and the number of I/O bits    <br>&nbsp;
+        needed.  Also spcify the word witdh needed to  <br>&nbsp;
+        keep track of the relative position.           <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional related links:                        <br>&nbsp;
+        Details on a particular <a href=
+        "http://www.arduino.cc/playground/Main/RotaryEncoders"
+                               >relative encoder</a>   <br>&nbsp;
+        Wikipedia article: "<a href=
+        "http://en.wikipedia.org/wiki/Rotary_encoder"
+                           >Rotary encoder</a>"        <br>&nbsp;
+        Detail of a <a href=
+        "http://homepages.dordt.edu/~ddeboer//S10/304/c_at_d/304S10_RC_TRK.HTM"
+                >13-bit grey code absolute encoder</a>.<br>&nbsp;
+        Wikipedia on <a href=
+        "http://en.wikipedia.org/wiki/Single-track_Gray_code#Single-track_Gray_code"
+        >Single-track grey code</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 9
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        4/03
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        4/10
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href="http://courses.dordt.edu/file.php/688/S14/HW/PS_MOTOR_CONTROL_KEY.pdf">4/17</a>
+
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  AC Motor Control via thyristors        <br>&nbsp;
+        Read this tutorial on <a href=
+        "http://mysite.du.edu/~etuttle/electron/elect5.htm"
+                             >thyristors</a>.          <br>&nbsp;
+        And this on <a href=
+        "http://www.allaboutcircuits.com/vol_3/chpt_7/9.html"
+        >silicon controlled switches</a>        <br>&nbsp;
+        And this application note on <a href=
+        "http://www.littelfuse.com/data/en/Application_Notes/AN1001.pdf"
+                                      >triacs</a> (and<br>&nbsp;
+        some other thyristors).                       <br>&nbsp;
+        And read about <a href=
+        "http://en.wikipedia.org/wiki/Unijunction_transistor"
+                     >UJT and PUT's</a>               <br>&nbsp;
+        Do problems <a href=
+        "http://www.indiabix.com/electronic-devices/thyristors/"
+        target="_blank"
+            >2, 6, 8, 9, 13, 15, 16, 17, 18</a>.      <br>&nbsp;
+        Repeat as needed until you get it perfect.    <br>&nbsp;
+        Send an e-mail to Prof. De Boer when done.    <br>&nbsp;
+                                                      <br>&nbsp;
+        Optional: Wikipedia on <a href=
+        "http://en.wikipedia.org/wiki/TRIAC"
+        >triacs</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 8
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        3/27
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        4/03
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href="http://courses.dordt.edu/file.php/688/S14/HW/304_MOTORS_PS_KEY_S14.PDF">4/15</a>
+
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+Read Freescale's <a href=
+        "http://www.freescale.com/webapp/sps/site/training_information.jsp?code=WBT_MOTORCONTROL_TUT#"
+                        >tutorial on motors</a>.       <br>&nbsp;
+        (Click on the "launch" tab, then "Motor        <br>&nbsp;
+        Principles" and then use the navigation        <br>&nbsp;
+        buttons provided on the bottom of each page.)  <br>&nbsp;
+        A few caveats about the above tutorial. . .    <br>&nbsp;
+        In the illustration of the "Switched Rluctance"<br>&nbsp;
+        motor, the rotor will assume an induced        <br>&nbsp;
+        magnetic field to oppose the applied magnetic  <br>&nbsp;
+        field.  This is not illustrated, probably      <br>&nbsp;
+        because it might imply that the rotor is       <br>&nbsp;
+        permanently magnetized, which it is not.  It is<br>&nbsp;
+        just iron (or a steel alloy).                  <br>&nbsp;
+        In the illustration of the "AC Induction Motor"<br>&nbsp;
+        the coloration of the induced magnetic field   <br>&nbsp;
+        in the rotor is backwards.  According to Lens' <br>&nbsp;
+        Law, the induced field will oppose the applied <br>&nbsp;
+        magnetic feild from the stator.  Thus the red  <br>&nbsp;
+        (north) pole of the stator will face a green   <br>&nbsp;
+        (south) pole on the rotor, just as in any other<br>&nbsp;
+        motor.                                         <br>&nbsp;
+                                                       <br>&nbsp;
+        Also read this <a href=
+        "http://www.pacontrol.com/download/Tutorial-Motor-Basics-Lecture.pdf"
+                       >motor tutorial</a> and         <br>&nbsp;
+        optionally this <a href=
+        "http://www.pacontrol.com/download/Electric-Motor-Controls-Tutorial.pdf"
+                       >control tutorial</a> from      <br>&nbsp;
+        "Process Automation Control." Much of what is  <br>&nbsp;
+        described in the control tutorial can now be   <br>&nbsp;
+        done with microcontrollers.                    <br>&nbsp;
+                                                       <br>&nbsp;
+        Do these <a href=
+        "http://courses.dordt.edu/file.php/688/S14/HW/304_MOTORS_PS.PDF"
+                >problems on motors</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 7
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        3/06
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        3/27
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href="http://courses.dordt.edu/file.php/688/S14/HW/PS_MEMRY_KEY_S14.PDF">4/14</a>
+
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Read Chapter 7 on "AVR Memories" in this       <br>&nbsp;
+        <a href=
+        "file:///F:/classes/egr/304/Arduino/ATmega328P_datasheet_2009_doc8161.pdf"
+        >datasheet</a>.  Note that the Arduino uses the<br>&nbsp;
+        "328P" microcontroller.                 <br>&nbsp;<small>
+        Note, the above link only works on computers that have 
+                                        </small><br>&nbsp;<small>
+        a connection to the Dordt College network and have 
+                                        </small><br>&nbsp;<small>
+        the F: drive mounted.  It also does not work in some
+                                        </small><br>&nbsp;<small>
+        browsers.  If it does not work for you then download 
+                                        </small><br>&nbsp;<small> 
+        it directly <a href=
+        "http://www.atmel.com/dyn/resources/prod_documents/doc8161.pdf"
+        >from Atmel</a> but this will be slower.</small><br>&nbsp;
+                                                       <br>&nbsp;
+        Note errata in Ch. 7 on page 21. Register EEARH<br>&nbsp;
+        should show bit numbers labeled from 7 donwn   <br>&nbsp;
+        to 0, not from 15 down to 8.  Once that change <br>&nbsp;
+        is made, then bit 1 should be labeled as as    <br>&nbsp;
+        "EEAR9" (not "&ndash;"). This is a read/write  <br>&nbsp;
+        bit, "R/W" (not "R") which returns the stored  <br>&nbsp;
+        data, "X" or "&ndash;", (not "0"). A corrected <br>&nbsp;
+        illustration is shown <a href=
+        "Russel_correction_EEARH_Register.GIF"
+                                         >here</a>.           <br>&nbsp;
+        Do these <a href=
+        "../../S14/304/PS_MEMRY_S14.RTF"
+                 >problems on uC memory systems</a>  
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 6
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        2/25
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        3/06
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href="http://courses.dordt.edu/file.php/688/S14/HW/304S14P6.PDF">4/14</a>
+
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Interrupts                             <br>&nbsp;
+        Read this <a href=
+        "http://www.best-microcontroller-projects.com/hardware-interrupt.html"
+                 >overview on interrupts</a>,          <BR>&nbsp;
+        and this <a href=
+        "http://courses.dordt.edu/mod/resource/view.php?id=61020"
+                  >handout on density and invervals</a><br>&nbsp;
+        and this on <a href=
+        "http://arduino.cc/playground/Code/Interrupts"
+                  >Arduino interrupt programming</a>,  <br>&nbsp;
+        Optional: <a href=
+        "http://courses.dordt.edu/file.php/688/Smileys_Workshop/Workshop_8_-_Interrupts%2C_Registers%2C_and_the_Butterfly_Joystick%5B1%5D.pdf"
+              >article</a> for a more detailed and more<br>&nbsp;
+        typical approach to programming interrupts for <br>&nbsp;
+        Atmel AVR processors (but non-Arduino) using   <br>&nbsp;
+        the C language.  (Some links only work after   <br>&nbsp;
+        you have logged into courses@dordt.)  Code     <br>&nbsp;
+        supplements for the magazine article are       <br>&nbsp;
+        available on the web in a <a href=
+        "http://www.nutsvolts.com/index.php?/magazine/article/smileys_workshop_an_avr_c_programming_series_part_8"
+                                        >zip file</a>.)<br>&nbsp;
+                                                       <br>&nbsp;
+        Do these <a href=
+        "http://courses.dordt.edu/file.php/688/PS_INTER.RTF"
+                 >problems on interrupts</a>           <br>&nbsp;
+        Errata:  On problem 3.17 part (d) note that the<br>&nbsp;
+        only way for <i>T<sub>pi</sub></i> to be an average and 
+                                              a maximum<br>&nbsp;
+        at the same time is that the ISR takes exactly <br>&nbsp;
+        <i>T<sub>pi</sub></i> to execute every time it runs.  
+                                         This was the  <br>&nbsp;
+        author's intent.  (As opposed to allowing      <br>&nbsp;
+        actual execution times to sometimes exceed 
+                                <i>T<sub>pi</sub></i>.)
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 5
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        2/06
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        2/13
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href="http://courses.dordt.edu/file.php/688/S14/HW/304S14P5_key.PDF">3/06</a>
+
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Read this <a href=
+        "http://courses.dordt.edu/file.php/688/Stone/Stone_T_Lines_Landscape.PDF"
+                 >handout on transmission lines</a>.   <br>&nbsp; 
+        (<a href=
+        "http://courses.dordt.edu/file.php/688/Stone/Stone_T_Lines_Portrait.pdf"
+        >This copy</a> 
+                   might print better on your printer.)<br>&nbsp;
+                                                       <br>&nbsp;
+        Scan over these application notes from Texas   <br>&nbsp;
+        Instruments on transmission lines.  Read       <br>&nbsp;
+        The section in AN-807 on the "tabular method." <br>&nbsp;
+        <a href="http://www.ti.com/lit/an/snla026a/snla026a.pdf"
+        >AN-806</a>, and 
+        <a href="http://www.ti.com/lit/an/snla027b/snla027b.pdf"
+        >AN-807</a>, and 
+        <a href="http://www.ti.com/lit/an/snla028/snla028.pdf"
+        >AN-808</a>.                                   <br>&nbsp;
+                                                       <br>&nbsp;
+        Do 2.1 and 2.6 in the handout linked above.    <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:  <a href=
+        "http://allthingsd.com/20110404/texas-instruments-to-acquire-national-semiconductor-for-6-5-billion/"
+                 >TI has purchased National Semi</a>   <br>&nbsp;
+        The application notes linked above were        <br>&nbsp;
+        origianlly developed by National Semiconductor.<br>&nbsp;
+        There is <a href=
+        "http://en.wikipedia.org/wiki/National_Semiconductor"
+                >more on National Semi</a> in Wikipedia.
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 4
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        1/31
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        2/06
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href="http://courses.dordt.edu/file.php/688/S14/HW/PS_ETHER_USB_K.PDF">2/17</a>
+
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Read this <a href=
+        "http://homepages.dordt.edu/~ddeboer/BURKS/pcinfo/hardware/ethernet/contents.htm"
+                 >Ethernet Tutorial</a>.  Also,        <BR>&nbsp;
+        browse the USB Standard version 2.0 on reserve <BR>&nbsp;
+        in the library (It is on reserve.  Ask a librarian <BR>&nbsp;
+        for it by name, "Universal Serial Bus") or     <br>&nbsp;
+        available from <a href=
+        "http://www.usb.org/developers/docs"
+                       >USB.org</a>. If you download it<BR>&nbsp;
+        from USB.org be sure to read the 2.0 version.  <br>&nbsp;
+        (The 2.0 version superceeds the 1.0 version    <br>&nbsp;
+        which is now withdrawn.  However the 3.0 version<br>&nbsp;
+        is an addendum to the 2.0 version. It cannot   <br>&nbsp;
+        stand on its own.)                             <br>&nbsp;
+                                                       <BR>&nbsp;
+        Take this twenty-question <a href=
+        "http://homepages.dordt.edu/~ddeboer/BURKS/pcinfo/hardware/ethernet/qframe.htm"
+                                 >quiz</a>.            <BR>&nbsp;
+        E-mail your quiz grade to Prof. De Boer.       <BR>&nbsp;
+        You are encouraged to repeat the quiz until    <BR>&nbsp;
+        you get a perfect grade.  Turn in only your    <BR>&nbsp;
+        best grade.  Also. . .                         <BR>&nbsp;
+        do these <a href=
+        "PS_USB.RTF">short essays on USB</a>.          <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: <a href=
+        "http://courses.dordt.edu/mod/resource/view.php?id=10490"
+        >Books in Dordt's Library</a>                  <br>&nbsp;
+        Optional: Wikipedia article <a href=
+        "http://en.wikipedia.org/wiki/Ethernet"
+        >Ethernet</a>                                  <br>&nbsp;
+        Optional Reading: <a href=
+        "http://en.wikipedia.org/wiki/USB"
+                          >USB article in Wikipedia</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 3
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        1/23
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        1/30
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href="http://courses.dordt.edu/file.php/688/S14/HW/304S14P3_key.pdf">2/06</a>
+        
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Read <a href="http://en.wikipedia.org/wiki/RS-232"
+            >RS-232</a> in Wikipedia                   <BR>&nbsp;
+                                                       <br>&nbsp;
+        Do this problem:                               <br>&nbsp;
+        Plot voltage vs. time of the Tx line in RS-232 <br>&nbsp;
+        for sending this text: "Z#" (without the       <br>&nbsp;
+        quotation marks, with a capital "Z").  Assume  <br>&nbsp;
+        &plusmn;12 V signal voltages, 53 kbaud, eight data 
+                                                       <br>&nbsp;
+        bits, and one stop bit.  Be sure to label your <br>&nbsp;
+        axes properly.  An ASCII table can be found in <br>&nbsp;
+        many places, e.g. <a href="http://www.asciitable.com"
+                         >http://www.asciitable.com</a><br>&nbsp;
+        Note that the illustration in the Wikipedia    <br>&nbsp;
+        reading does not have properly labeled axes.   <br>&nbsp;
+        Specifically the the independent axis lacks    <br>&nbsp;
+        scale and units.                               <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:  Listen to a <a href=
+        "http://www.npr.org/templates/story/story.php?storyId=10554017"
+                              >Teletype machine</a>.   <br>&nbsp;
+        And see a <a href=
+        "http://www.youtube.com/watch?feature=player_detailpage&v=2B-U-5ylvWo"
+            >Teletype machine</a> connected to a       <br>&nbsp;
+        Digital Equipment Corporation (DEC, a brand)   <br>&nbsp;
+        model PDP-8/e computer.  This computer could be<br>&nbsp;
+        booted "manually" via a bank of switches that  <br>&nbsp;
+        allows the direct entry of machine code word-by<br>&nbsp;
+        word, executing each instruction as fast as the<br>&nbsp;
+        operator can enter the code. Wow, that's fast! <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:  Read about <a href=
+        "http://en.wikipedia.org/wiki/Teleprinter"
+                              >teleprinters</a>.       <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:  The entire RS-232 standard is       <br>&nbsp;
+        available from Dordt's library.  <i>Interface  <br>&nbsp;
+        Between Data Terminal Equipment And Data       <br>&nbsp;
+        Circuit-Terminating Equipment Employing Serial <br>&nbsp;
+        Binary Data Interchange</i> TK7887.5 .I57 1997  
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+2
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        1/16
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        1/23
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href="http://courses.dordt.edu/file.php/688/S14/HW/304S14P2.PDF">2/06</a>
+        
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Parallel interfacing, I/O Drivers      <br>&nbsp;
+        Read about <a href=
+        "http://www.divilabs.com/2013/06/led-array-multiplexing-charlieplexing.html"
+                   >multiplexing LED's</a> and also   <br>&nbsp;
+        <a href=
+        "http://extremeelectronics.co.in/avr-tutorials/4x3-matrix-keypad-interface-avr-tutorial/"
+        >multiplexing a keypad</a>.                   <br>&nbsp;
+                                                      <br>&nbsp;
+        Draw a schematic showing how to connect a two-<br>&nbsp;
+        digit common cathode 7-segment LED display    <br>&nbsp;
+        and a 4x4 keypad to an Arduion Uno.  There are<br>&nbsp;
+        many valid correct methods.  You may be able  <br>&nbsp;
+        to <a href="http://www.datasheetdir.com/Multiplexing-Led-Drive-And-4x4-Keypad-Sampling+Application-Notes"
+        >share rows or columns</a> between the 7-seg. <br>&nbsp;
+        display and the keypad.  You may search the   <br>&nbsp;
+        Web for additional help on this assignment.   <br>&nbsp;
+                                                      <br>&nbsp;
+        Optional: (posted 4/08/2014) "epic" guide to  <br>&nbsp;
+        <a href=
+        "http://www.overclock.net/t/491752/mechanical-keyboard-guide"
+        >keyboard internals</a>.
+<!-- ------------------------------------------ --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 1
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        1/14
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        1/16
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href="http://courses.dordt.edu/file.php/688/S14/HW/304S13P1_Key.rtf">1/23</a>
+        
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Read "<a href=
+        "http://en.wikipedia.org/wiki/Embedded_system"
+        >Embedded system</a>" from Wikipeadia          <BR>&nbsp;
+        Browse "<a href=
+        "http://arduino.cc/en/Guide/HomePage"
+        >Getting Started with Arduino</a>"             <BR>&nbsp;
+        Browse <a href=
+        "http://www.atmel.com/dyn/resources/prod_documents/doc8161.pdf"
+             >this datasheet.</a>                      <br>&nbsp;
+        Do the <a href="304S14P1.RTF"
+              >introductory problems</a>               <br>&nbsp;
+        Note the chip number of the uC on the Arduino  <br>&nbsp;
+        Uno is "ATMEGA328P-PV."                        <br>&nbsp;
+                                                       <br>&nbsp;
+        Turn this problem set in electronically via    <br>&nbsp;
+        courses@dordt. (Maximum file size is 1 MB)
+
+<!-- -----------------BOTTOM-OF TABLE-------------- --></TD></TR>
+</TABLE>
+<BR>
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       border="0">
+                                 <TR><TD width="60" valign="top">
+Note 1) 
+                                                        </TD><TD>
+Homework solutions are usually available one or two class periods 
+after the due date. Click the "returned date" on this page to 
+access the solutions. If the "Returned" date is not a link (is 
+black, not gold) then the solution is not yet posted. Check back 
+later. If you click the link and get a login screen instead of 
+the solutions, log in using your usual courses@dordt username and 
+password. Then use the back icon (or alt-left-arrow on the 
+keyboard) twice to get back to the link on this page and click 
+the link again. The link only works when you are logged in to 
+courses@dordt.           
+                         <BR><BR><TR><TD width="60" valign="top">
+
+Note 2) 
+                                                        </TD><TD>
+Problems sets shown above with no "assigned" date are 
+tentative.  More problems might be added, expected due dates 
+might change, but problems shown will eventually be assigned.
+
+                         <BR><BR><TR><TD width="60" valign="top">
+Note 3) 
+                                                        </TD><TD>
+If you are having difficulty reading the latest version of this 
+page it may have to do with your browser's cached memory. Read 
+this <a 
+href="http://homepages.dordt.edu/~ddeboer/ddb/notes00.htm">note on 
+cached pages</a> to solve the problem. 
+
+                                                   </P></TD></TR>
+</TABLE>
+</BODY>
+</HTML>
+

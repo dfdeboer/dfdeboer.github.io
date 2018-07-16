@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f16\froman\fcharset0\fprq2{\*\panose 02020404030301010803}Garamond;}{\f113\froman\fcharset238\fprq2 Garamond CE;}{\f114\froman\fcharset204\fprq2 Garamond Cyr;}{\f116\froman\fcharset161\fprq2 Garamond Greek;}{\f117\froman\fcharset162\fprq2 Garamond Tur;}
+{\f118\froman\fcharset186\fprq2 Garamond Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
+\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\adjustright \fs20\cgrid \snext0 Normal;}{
+\s1\qc\sa240\keepn\nowidctlpar\outlinelevel0\adjustright \f1\cgrid \sbasedon0 \snext0 heading 1;}{\*\cs10 \additive Default Paragraph Font;}}{\info{\title Dordt College Engineering Department}{\author Authorized Gateway Customer}
+{\operator Douglas F. De Boer}{\creatim\yr1997\mo7\dy10\hr11\min32}{\revtim\yr2005\mo8\dy23\hr16\min29}{\printim\yr2000\mo8\dy31\hr16\min55}{\version29}{\edmins1262}{\nofpages2}{\nofwords841}{\nofchars4794}{\*\company  }{\nofcharsws0}{\vern113}}
+\margl1440\margr1440\margt720\margb720 \widowctrl\ftnbj\aenddoc\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\hyphcaps0\formshade\viewkind1\viewscale120 \fet0\sectd \linex0\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang
+{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}
+{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9
+\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \qc\widctlpar\adjustright \fs20\cgrid {\b\f16\fs44 Dordt College Mathematics Department
+\par MATH 204, Differential Equations
+\par }\pard\plain \s1\qc\sa240\keepn\widctlpar\outlinelevel0\adjustright \f1\cgrid {\f16 Fall, 2005
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1800\clvertalt\cltxlrtb \cellx9450\pard\plain \sa160\widctlpar\intbl\adjustright \fs20\cgrid {\b\f16\fs22 2005-06\line Catalog\line Data:\cell }\pard \widctlpar\intbl\tqr\tx7434\adjustright {
+\b\f16\fs22 MATH 204 Differential Equations  (3 credit hours)}{\f16 \tab }{\f16\fs22  (Fall)
+\par }\pard \sa160\widctlpar\intbl\adjustright {\f16\fs22 An introduction to the theory and techniques of solving elementary differential equations and the use of these techniques in applied problems.  Prerequisite:  Mathematics 113.
+\par 
+\par \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1800\clvertalt\cltxlrtb \cellx9450\pard \sa160\widctlpar\intbl\adjustright {\b\f16\fs22 Textbook:\cell }{\f16\fs22 
+Polking, Boggess, and Arnold,}{\i\f16\fs22  Differential Equations}{\f16\fs22 , Second Edition, Pearson Prentice-Hall, 2006.
+\par 
+\par \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sa160\widctlpar\intbl\adjustright {\b\f16\fs22 Instructor:\cell }{\f16\fs22 Douglas De Boer
+\par 
+\par \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sa160\widctlpar\intbl\adjustright {\b\f16\fs22 Course Objectives and Outcomes:\cell }{\i\f16\fs22 Creational Structure}{\f16\fs22 
+:  Students will understand numeric and mathematical aspect of creation to the extent that they are able to solve several types of differ
+ential equations including first and second-order linear differential equations (homogeneous or not) They will also program at least one elementary algorithm for a digital computers to getting numerical solutions to differential equations. 
+\par 
+\par \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sa160\widctlpar\intbl\adjustright {\b\f16\fs22 Prerequisites by topic:\cell }{\f16\fs22 Calculus including techniques of integration, sequences, and series.  
+\par 
+\par \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sa160\widctlpar\intbl\adjustright {\b\f16\fs22 Computer use:\cell }{\f16\fs22 Matlab wi
+ll be the supported development environment for writing algorithms. Students are encouraged (but not required) to use programs such as Mathcad or Matlab for homework solutions when appropriate.
+\par 
+\par \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1800\clvertalt\cltxlrtb \cellx9450\pard \sa160\widctlpar\intbl\adjustright {\b\f16\fs22 Means of \line Evaluation:\cell }{\f16\fs22 
+Homework (10%), Two Tests (30% each), Final Exam (30%)\cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \qc\widctlpar\adjustright {\fs24 \page }{\b\f16\fs44 Dordt College Mathematics Department
+\par }{\b\f16\fs38 MATH 204, Differential Equations, Outline
+\par }\pard\plain \s1\qc\sa120\keepn\widctlpar\outlinelevel0\adjustright \f1\cgrid {\f16 Fall, 2005
+\par }\trowd \trgaph108\trleft-108 \clvertalt\clbrdrb\brdrs\brdrw30 \clshdng2000\cltxlrtb \cellx2250\clvertalt\clbrdrb\brdrs\brdrw30 \clshdng2000\cltxlrtb \cellx9000\clvertalt\clbrdrb\brdrs\brdrw30 \clshdng2000\cltxlrtb \cellx9540\pard\plain 
+\sb160\widctlpar\intbl\adjustright \fs20\cgrid {\f16\fs24 Dates\cell Class\cell \cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\trowd \trgaph108\trleft-108 \clvertalt\clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx2250\clvertalt\clbrdrb\brdrs\brdrw15 
+\cltxlrtb \cellx9000\clvertalt\clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx9540\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \tab 8/24\tab 8/26\cell Introduction \line }{\i\f16\fs22 Text: Chapters 1}{\f16\fs22 \cell }\pard 
+\fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\trowd \trgaph108\trleft-108 \clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx2250\clvertalt\clbrdrt
+\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx9000\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx9540\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 8/29\tab 8/31\tab 9/2\cell Fist-Order Equations\emdash 
+Seperable Equations\line }{\i\f16\fs22 Text:  Chapter 2}{\f16\fs22 \cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sb60\sa40\widctlpar\intbl\adjustright {
+\f16\fs22 9/5\tab 9/7\tab 9/9\cell First-Order Equations\emdash Exact Equations\line }{\i\f16\fs22 Text:  Chapter 2\cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row 
+}\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 9/12\tab 9/14\tab 9/16\cell First-Order Equations\emdash Initial Conditions, Stability\line }{\i\f16\fs22 Text:   Chapter 2}{\f16\fs22 \cell }\pard 
+\fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 9/19\tab 9/21\tab 9/23\cell Modeling and Applications\line }{\i\f16\fs22 
+Text:  Chapter 3\cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 9/26\tab 9/28\tab 9/30\line   }{\f16\fs22  }{
+\b\f16\fs22 Wed, 9/28}{\b\f16\fs22  Test}{\f16\fs22 \cell Second-Order Equations\emdash Linear, Homogenious\line }{\i\f16\fs22 Text:  Chapter 4}{\f16\fs22  }{\f16\fs22 \line Test on Wednesday}{\f16\fs22 \cell }\pard 
+\fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 10/3\tab 10/5\tab \line     (no class Friday, 10/7)\cell 
+Second-Order Equations\emdash Method of Undetermined Coefficients.  \line }{\i\f16\fs22 Text: Chapter 4}{\f16\fs22    \cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row 
+}\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 10/10\tab 10/12\tab 10/14\line \cell Second-Order Equations\emdash Method of variation of Parameters.  \line }{\i\f16\fs22 Text:  Chapter 4}{\f16\fs22 \cell }\pard 
+\fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 10/17\tab 10/19\tab 10/21\line \cell The Laplace Transform\emdash 
+Basic Properties\line }{\i\f16\fs22 Text Chapter 5\cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 10/24\tab 
+10/26\tab 10/28\line \cell The Laplace Transform\emdash Finding Inverses\line }{\i\f16\fs22 Text Chapter 5}{\f16\fs22 \cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row 
+}\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 10/31\tab 11/2\tab 11/4\line \cell The Laplace Transform\emdash Application to Solving Differential Equations.  }{\i\f16\fs22 Text Chapter 5}{\f16\fs22 \cell }\pard 
+\fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 11/7\tab 11/9\tab 11/11}{\f16\fs22  }{\f16\fs22 \line     }{\b\f16\fs22 
+Wed, 11/9}{\b\f16\fs22  Test}{\f16\fs22 \cell Numerical Methods\line Text Chapter 6 }{\f16\fs22 \line Test on Wednesday}{\f16\fs22 \cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {
+\f16\fs22 \row }\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 11/14\tab 11/16\tab 11/18\cell Matrix Algebra \line }{\i\f16\fs22 Text Chapter 7\cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard 
+\widctlpar\intbl\adjustright {\f16\fs22 \row }\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 11/21\tab \tab \line   (no class 11/23, 11/25)\cell An Introduction to Systems\emdash Definitions\line }{\i\f16\fs22 Text Chapter 8.}{\f16\fs22 \cell 
+}\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\trowd \trgaph108\trleft-108 \clvertalt\clbrdrt\brdrs\brdrw15 \cltxlrtb \cellx2250\clvertalt\clbrdrt\brdrs\brdrw15 \cltxlrtb 
+\cellx9000\clvertalt\clbrdrt\brdrs\brdrw15 \cltxlrtb \cellx9540\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \tab 11/30\tab 12/2\line   (no class Mon., 11/28)\cell An Introduction to Systems\emdash Examples and Geometric Interpretation\line }{
+\i\f16\fs22 Text Chapter 8\cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {\f16\fs22 \row }\trowd \trgaph108\trleft-108 \clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 
+\cltxlrtb \cellx2250\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx9000\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx9540\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 12/5\tab 12/7\tab \line 
+  (no class Fri., 12/9)\cell An Introduction to Systems\emdash Linear Systems.  \line }{\i\f16\fs22 Text Chapter 8.}{\f16\fs22 \cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {
+\f16\fs22 \row }\trowd \trgaph108\trleft-108 \clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx2250\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx9000\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 
+\cltxlrtb \cellx9540\pard \sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 Tuesday, 12/13\cell Final exam, 8:00 \endash  10:00 a.m.\cell }\pard \fi-432\li432\sb60\sa40\widctlpar\intbl\adjustright {\f16\fs22 \cell }\pard \widctlpar\intbl\adjustright {
+\f16\fs22 \row }\pard \widctlpar\adjustright {\fs16 
+\par Note:  Schedule may vary by up to two week in order to accommodate the dynamics of this particular cohort of students.
+\par }}

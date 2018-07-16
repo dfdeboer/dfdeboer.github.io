@@ -1,0 +1,434 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../favicon.ico">
+<TITLE>EGR 204</TITLE>
+</HEAD>
+<BODY><PRE>
+               DORDT COLLEGE ENGINEERING DEPARTMENT
+  INTRODUCTION TO MICROPROCESSORS AND DIGITAL CIRCUITS, EGR 204
+                           (Fall 2002)
+
+Click this <A HREF="noteF02.htm">note on cached pages and handouts</A> if you are 
+having difficulty seeing the latest version of this page.
+
+MAX+PLUS II Student Edition Software for simulating digital 
+logic, running VHDL code, and more, is available for <A 
+HREF="http://www.altera.com/education/univ/unv-software.html">downloading</A>.  
+(from <A HREF="http://www.altera.com">Altera</A>)
+
+                       READING ASSIGNMENTS      Last update:
+                       -------------------      11/25 at  1:53 pm 
++===============================================================+
+|RA|ASSIGNED| DUE |  Reading assigned in Mano's text unless     |
+| #|        /     \  otherwise noted.  (Section numbers shown)  |
+|==+=======+=======+============================================|
+| 1|  8/30 |  9/02 | Scan Chapter 1, Read section 1-2           |
+| 2|  9/02 |  9/04 | Read Chapter 1, Sections 1-3 thru 1-6      |
+| 3|  9/04 |  9/06 | Chapter 2, Sections 2-1, 2-2               |
+| 4|  9/06 |  9/09 | Chapter 2, Section  2-3                    |
+| 5|  9/09 |  9/11 | Chapter 2, Section  2-4                    |
+| 6|  9/11 |  9/13 | Chapter 2, Section  2-5                    |
+| 7|  9/16 |  9/18 | Chapter 2, Sections 2-6, 2-7, 2-8, 2-9     |
+| 8|  9/16 |  9/20 | Chapter 3, Sections 3-1, 3-2, 3-3          |
+| 9|  9/20 |  9/23 | Chapter 3, Sections 3-4, 3-5, 3-6          |
+|10|  9/23 |  9/25 | Chapter 3, Sections 3-7, 3-8, 3-9          |
+|11|  9/25 |  9/27 | Chapter 3, Sections 3-10, 3-11, 3-12, 3-15 |
+|12|  9/27 |  9/30 | Chapter 4, Sections 4-1, 4-2               |
+|13|  9/30 | 10/02 | Chapter 4, Section  4-3                    |
+|14| 10/07 | 10/09 | Chapter 4, Section  4-4                    |
+|15| 10/09 | 10/11 | Chapter 4, Section  4-5                    |
+|16| 10/11 | 10/14 | Handout:  <A HREF="204F02LR.DOC">Writing a Laboratory Report</A>      |
+|  |       |       |           (See note in LAB section below.) |
+|17| 10/14 |       | No reading (or finish reading the handout) |
+|18| 10/16 | 10/23 | Chapter 4, Section  4-6                    |
+|19| 10/23 | 10/25 | Chapter 4, Section  4-7                    |
+|20| 10/25 | 10/28 | Chapter 4, Section  4-10                   |
+|  | 10/28 |       | No reading                                 |
+|21| 10/30 |       | No reading                                 |
+|22| 11/01 | 11/04 | Chapter 5, Sections 5-1, 5-2, 5-3.         |
+|23| 11/04 | 11/06 | Chapter 6, up to but not including page 301|
+|  |       |       |   Slides used in class are available <A
+HREF="http://courses.ece.uiuc.edu/ece311/lectures/lecture9.pdf">here</A>. |
+|  |       |       |                                            |
+|  | 11/06 | 11/08 | Chapter 6, page 301 thru end of sec. 6-4   |
+|  |       |       | Optional, a <A 
+HREF="http://computers.cnet.com/hardware/0-1103-8-6220389-3.html"
+target="_blank">PC-centric article about RAM</A>   |
+|  |       |       |                                            |
+|24| 11/11 | 11/13 | Chapter 6, Section 6-5, 6-6                |
+|25| 11/22 | 11/25 | Chapter 6, Section 6-7, 6-8, 6-9 except    |
+|  |       |       |    note: Altera's "Flex" chip (the other   |
+|  |       |       |    chip on the UP board in lab) is an FPGA |
+|  |       |       |    similar to the Xilinx XC4000, 6-10.     |
+|  |       |       | Chapter 8, 8-1, 8-2, 8-3                   |
+|26| 11/25 | 11/27 | Chapter 9, Sections 9-1, 9-2               |
+|27| 11/25 | 12/04 | Chapter 9, Sections 9-3, 9-4               |
+|28| 11/25 | 12/06 | Chapter 9, Sections 9-5, 9-6               |
+|29| 11/25 | 12/09 | Chapter 9, Sections 9-8, 9-9               |
+|30| 11/25 | 12/11 | Chapter 9, Section  9-10                   |
+|--+-------+-------+--------------------------------------------| 
+                             
+                          PROBLEM SETS          Last update:
+                          ------------          12/12 at 10:11 am 
+
+Homework must conform to these <A 
+HREF="HWSTDF02.HTM">standards</A>.
+
+Problems in the text marked with an astersik (*) have solutions
+available at <A 
+HREF="http://cw.prenhall.com/bookbind/pubbooks/mano/">http://cw.prenhall.com/bookbind/pubbooks/mano/</A>
+
++===============================================================+
+|PS|ASSIGNED| DUE |RETURNED| Problems Assigned (In Mano's       |
+| #|        /     \        | Text (unless otherwise noted)      | 
+|==+=======+=======+=======+====================================|
+| 1|  9/02 |  9/04 |  9/06 | 1-2, 1-3, 1-4*, 1-5, 1-7*          |
+|--+-------+-------+-------+------------------------------------| 
+| 2|  9/04 |  9/06 |  9/09 | 1-8, 1-22, 1-23, 1-24, 1-26        |
+|--+-------+-------+-------+------------------------------------| 
+| 3|  9/06 |  9/09 |  9/11 | 1-16, 1-17*, 2-1*, 2-2*            |
+|--+-------+-------+-------+------------------------------------| 
+| 4|  9/09 |  9/11 |  9/13 | 1-10, 2-3 part a only, 2-11        |
+|  |       |       |       | +Lab problem w/ Lab ta's initials  |
+|  |       |       |       | Note: on 9/10 problem 1/16 was     |
+|  |       |       |       | deleted from this list because it  |
+|  |       |       |       | is included in PS #3               |
+|--+-------+-------+-------+------------------------------------| 
+| 5|  9/11 |  9/13 |  9/16 | 1-13, 2-6 part a only, 2-10 part a |
+|  |       |       |       | only, 2-14 part a only             |
+|--+-------+-------+-------+------------------------------------| 
+| 6|  9/13 |  9/16 |  9/18 | 2-3 part b, 2-7 part a, 2-14 part a|
+|  |       |       |       | 2-15 part a, 2-16 part a           |
+|--+-------+-------+-------+------------------------------------| 
+| 7|  9/16 |  9/18 |  9/20 | 2-10 parts b,c; 2-18 part a,       |
+|  |       |       |       | 2-19 part a, 2-24 part a, 2-27     |
+|--+-------+-------+-------+------------------------------------| 
+| 8|  9/18 |  9/20 |  9/23 | 2-3c; 2-7b,c,d; 2-14b, 2-15b,      |
+|  |       |       |       | 2-16b; 3-1; 3-6                    |
+|--+-------+-------+-------+------------------------------------| 
+| 9|  9/20 |  9/23 |  9/25 | 2-18b,c; 2-19b,c; 2-24b,c;         |
+|  |       |       |       | repeat 2-27 using NOR and NOT gates|
+|  |       |       |       | 3-4; 3-7; 3-10 hint: "part of a    |
+|  |       |       |       | full adder" (You say what part.)   |
+|--+-------+-------+-------+------------------------------------| 
+|10|  9/23 |  9/25 |  9/27 | 2-14c,d; 2-15c; 2-16c; 2-25a;      |
+|  |       |       |       | 3-18 hint: Use 11 NAND, 3 NOT      |
+|  |       |       |       | gates max.;                        |
+|--+-------+-------+-------+------------------------------------| 
+|11|  9/25 |  9/27 |  9/30 | 3-27, 3-28, 3-31, 3-38             |
+|--+-------+-------+-------+------------------------------------| 
+|12|  9/27 |  9/30 | 10/02 | 2-25b,c; 3-39, 3-49, 3-50          |
+|--+-------+-------+-------+------------------------------------| 
+|13|  9/30 | 10/02 | 10/07 | 3-51, 3-52, 4-1 (use "manual"      |
+|  |       |       |       | simulation)                        |
+|--+-------+-------+-------+------------------------------------| 
+|14| 10/07 | 10/09 | 10/14 | 4-3, 4-5, special problem below    |
+|  |       |       |       |                                    |
+|  |       |       |       | In Figure 4-8a replace each NAND   |
+|  |       |       |       | gate with a NOR gate.  Now obtain  |
+|  |       |       |       | a new function table (same style   |
+|  |       |       |       | as Figure 4-8b) to describe the    |
+|  |       |       |       | new latch.                         |
+|--+-------+-------+-------+------------------------------------| 
+|15| 10/09 | 10/11 | 11/01 | 4-2                                |
+|--+-------+-------+-------+------------------------------------| 
+|  | 10/11 |  ---  |  ---  | No problems--do the reading.       |
+|--+-------+-------+-------+------------------------------------| 
+|16| 10/14 | 10/16 | 10/25 | Do a manual simulation at the gate |
+|  |       |       |       | level of the flip-flop shown in    |
+|  |       |       |       | Figure 4-1, page 194.  Redraw the  |
+|  |       |       |       | figure to show all the gates.      |
+|  |       |       |       | Assume the inital state of the     |
+|  |       |       |       | Master latch is "reset" and that   |
+|  |       |       |       | the clock starts at logic-0.  Let  |
+|  |       |       |       | J=K=1 for all time.  Use a timing  |
+|  |       |       |       | diagram in the style of Figure 4-11|
+|  |       |       |       | to illustrate what the outputs of  |
+|  |       |       |       | the master and slave latches do.   |
+|  |       |       |       | Continue the simulation for two    |
+|  |       |       |       | complete clock cycles.             |
+|--+-------+-------+-------+------------------------------------| 
+|17| 10/16 | 10/23 | 10/25 | 4-6, 4-11 Hints:  See 4-12 and the |
+|  |       |       |       | solution for 4-12 available on the |
+|  |       |       |       | web (at the URL above).  Do 4-11   |
+|  |       |       |       | part (c) in the style of Figure    |
+|  |       |       |       | 4-20, not as two separate diagrams.|
+|  |       |       |       | In figure 4-20 the labels on each  |
+|  |       |       |       | branch are input(s)/outpu(s).  For |
+|  |       |       |       | Problem 4-11 that would be XY/Z.   |
+|--+-------+-------+-------+------------------------------------| 
+|18| 10/23 | 10/25 | 10/30 | 4-12, 4-19  Note the solution on   |
+|  |       |       |       | the web for 4-19 has an error.     |
+|  |       |       |       | In the K-map for DA minterm 7      |
+|  |       |       |       | should be minterm 6 giving         |
+|  |       |       |       | DA = sum of minterms 1, 4, 5, 6.   |
+|  |       |       |       | Then DA = A*Xbar + Bbar*X          |
+|--+-------+-------+-------+------------------------------------| 
+|19| 10/25 | 10/28 | 11/06 | Repeat 4-19 except use two JK      |
+|  |       |       |       | flip-flops.                        |
+|--+-------+-------+-------+------------------------------------| 
+|20| 10/28 | 10/30 | 11/01 | 4-30 Note: Most of the solution on |
+|  |       |       |       | the web is correct but there are   |
+|  |       |       |       | a few errors in that solution.     |
+|  |       |       |       | Write your own correct solution.   |
+|--+-------+-------+-------+------------------------------------| 
+|21| 10/30 | 11/01 | 11/04 | See <A 
+HREF="204PS21.PDF">handout</A> (Dates on the handout  |
+|  |       |       |       | *.pdf file are not accurate)       |
+|--+-------+-------+-------+------------------------------------| 
+|22| 11/01 | 11/04 | 11/06 | 5-3, 5-4, 5-5                      |
+|--+-------+-------+-------+------------------------------------| 
+|23| 11/04 | 11/06 | 11/08 | 5-8, 5-11, 6-1                     |
+|--+-------+-------+-------+------------------------------------| 
+|24| 11/08 | 11/11 | 11/13 | 6-2, 6-3, 6-4 except make it 1M X 1|
+|--+-------+-------+-------+------------------------------------| 
+|25| 11/11 | 11/13 | 11/15 | 6-9, 6-14                          |
+|--+-------+-------+-------+------------------------------------| 
+|26| 11/11 | 11/15 | 11/19 | 6-10, Repeat 6-14 except use the   |
+|  |       |       |       | logic functions from problem 3-17  |
+|  |       |       |       | and use an 8 X 3 ROM.              |
+|--+-------+-------+-------+------------------------------------| 
+|27| 11/13 | 11/18 | 11/19 | Design a PAL map for the state     |
+|  |       |       |       | machine shown in Figure 4-23 of    |
+|  |       |       |       | your text, page 215.  The resulting|
+|  |       |       |       | circuit must perform the same as   |
+|  |       |       |       | the one in Figure 4-25, page 216 of|
+|  |       |       |       | your text.  Design the fuse map for|
+|  |       |       |       | a 16R4 PAL by writing "X" marks    |
+|  |       |       |       | directly on a print-out of the     |
+|  |       |       |       | array.                             |
+|  |       |       |       |                                    |
+|  |       |       |       | Note that all the outputs are      |
+|  |       |       |       | inverted before they get to a pin. |
+|  |       |       |       | You must program the complement    |
+|  |       |       |       | logic functions.  (The circuit of  |
+|  |       |       |       | Figure 4-25 cannot be exactly      |
+|  |       |       |       | copied into the PAL.)  Also note   |
+|  |       |       |       | That each output pin has a tri-    |
+|  |       |       |       | state driver.  If no fuses are     |
+|  |       |       |       | programmed (no "X" marks) on an    |
+|  |       |       |       | enable line, the corresponding     |
+|  |       |       |       | output driver is always enabled.   |
+|  |       |       |       |                                    |
+|  |       |       |       | Hand in 1.) An explaination of how |
+|  |       |       |       | you derived your fuse map.  2.) The|
+|  |       |       |       | fuse map--show "X" marks directly  |
+|  |       |       |       | on the printout of the array.      |
+|  |       |       |       |                                    |
+|  |       |       |       | You can pick up a print-out of the |
+|  |       |       |       | array from one of the plastic bins |
+|  |       |       |       | near the engineering pod or you    |
+|  |       |       |       | can print page 6 of <A 
+HREF="http://www-s.ti.com/sc/psheets/srps019a/srps019a.pdf">the datasheet</A>. |
+|--+-------+-------+-------+------------------------------------| 
+|  | 11/18 | 11/20 |  ---  | Study for the test.  Problem sets  |
+|  |       |       |       | #26 and #27 are graded.  You may   |
+|  |       |       |       | pick yours up from one of the      |
+|  |       |       |       | plastic bins near the engineering  |
+|  |       |       |       | pod.                               |
+|--+-------+-------+-------+------------------------------------| 
+|28| 11/22 | 11/25 | 12/06 | 8-13--turn in the "list" only.     |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint: Use the table below for the  |
+|  |       |       |       | list.  Add rows as needed.         |
+|  |       |       |       |                                    |
+|  |       |       |       | STATE | P|  B |C|  A |  Q          |
+|  |       |       |       | ------+--+----+-+----+----         |
+|  |       |       |       | IDLE  |XX|1001|X|XXXX|1010         |
+|  |       |       |       | ------+--+----+-+----+----         |
+|  |       |       |       | MUL0  |11|1001|0|0000|1010         |
+|  |       |       |       | ------+--+----+-+----+----         |
+|  |       |       |       | MUL1  |11|1001|0|0000|1010         |
+|  |       |       |       | ------+--+----+-+----+----         |
+|  |       |       |       | MUL0  |10|1001|0|0000|0101         |
+|  |       |       |       | ------+--+----+-+----+----         |
+|  |       |       |       | MUL1  |10|1001|0|1001|0101         |
+|  |       |       |       | ------+--+----+-+----+----         |
+|  |       |       |       |   .   |  |    | |    |             |
+|  |       |       |       |   .                                |
+|  |       |       |       |   .                                |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------| 
+|29| 11/25 | 11/27 | 12/06 | 9-1, 9-2 Note: there is a typo in  |
+|  |       |       |       | problem 9-1.  Change "in Section   |
+|  |       |       |       | 9-1" to "in Section 9-2."          |
+|--+-------+-------+-------+------------------------------------| 
+|30| 11/25 | 12/06 | 12/09 | 9-5, 9-6                           |
+|  |       |       |       | In class on 12/04 the due date was |
+|  |       |       |       | changed from 12/04 to 12/06.       |
+|--+-------+-------+-------+------------------------------------| 
+|31| 11/25 | 12/06 | 12/09 | 9-3, 9-4, 9-18, 9-19               |
+|--+-------+-------+-------+------------------------------------| 
+|32| 11/25 | 12/09 | 12/11 | 9-29, 9-30                         |
+|--+-------+-------+-------+------------------------------------| 
+|33| 11/25 | 12/11 | 12/12 | 9-7, 9-28, 9-33                    |
++---------------------------------------------------------------+ 
+
+                               LAB                   Last Update:
+                               ---              12/12 at 10:11 am
+General information about the lab <A target="_blank"
+HREF="http://denis.dordt.edu/academics/departments/engineering/labguide.htm">equipment and procedures</A>.
+
+Information on Altera licensing is available <A 
+HREF="http://www.altera.com/support/licensing/lic-university.html">here</A>.
+Choose version 10.1.  After you get the license file via e-mail, 
+start MAX+Plus II (ignore warnings about the license file) and 
+from the options menu, choose license setup.  Note the path to 
+the license file.  Exit MAX+Plus II.  Use Windows Explorer or a 
+similar program to replace the old license file with the new one.  
+Restart MAX+Plus II--now it should work. 
+
+Report #1 was assigned on 9/23.  Report on the "Combinational 
+     logic" lab.  The report must include a complete schematic.  
+     The report was due in class on Wednesday, 10/23.  (On 10/2 
+     the due date was extended from 10/9 to 10/16.  On 10/11 it 
+     was again extended to 10/23.)  Handed back on 11/18.
+
+     A booklet on how to write a lab report was handed out in 
+     class on 10/11.  An electronic file of it is available <A 
+     HREF="204F02LR.DOC">here</A>.  
+     (It will not print, display, or paginate perfectly on 
+     Dordt's installation of Microsoft Word 2000.  It is designed 
+     to print folio style which is not supported and it uses some 
+     unsupported fonts.) 
+
+     You may improve your grade.  Here is what you need to do:     
+     
+     1.)  Read the comments in your graded report.  "WLR" refers 
+     to the booklet mentioned above.  "WFC" refers to the book 
+     "Write for College."  (This is item [3] in the reference 
+     section of WLR.)  
+     
+     2.)  Edit to improve the worst element of the grade.  The 
+     three elements, "Completeness," "Style," and "Accuracy," are 
+     described in WLR on page 6.  
+     
+     3.)  Turn the improved report back in on or before Dec. 11 
+     along with the original marked-up version of the report.  
+     Professor De Boer will regrade one element of the report, 
+     average the new grade with the old grade, and recompute the 
+     report grade.  
+     
+     Example:  The original grading is, "Completeness: B+, 
+     Style: F, Accuracy: A, Report Grade D+."  
+     
+     The report grade was brought down by the poor grade for 
+     Style.  Suppose that after editing, the Style grade 
+     becomes A-.  The average of A- (new grade) and F (old grade) 
+     is C.  The Report grade becomes the average of B+, C, and A.  
+     The final and only entry in the grade book for this report 
+     is B.  The B counts toward 7 percent of the course grade.  
+     (Report #2 on your state machine design counts for another 8 
+     percent giving the lab a total weight of 15 percent.)
+
+     A second example:  The original grading is, 
+     "Completeness: C, Style: C, Accuracy: C, Report Grade: C."  
+     The authors decide to improve the Accuracy of the report.  
+     Suppose the regraded paper gets an accuracy grade of B+.  
+     The average of B+ and C is B-.  The report grade becomes the 
+     average of C, C and B-.  The final report grade is C+. 
+
+
+
+Report #2 Was assigned on 11/4.  It was a report on the 
+     "Synchronous State Machine" lab.  It was due in class on 
+     Wednesday, 12/4.  You were requested to read the comments on 
+     your graded Lab report #1 before turning in Report #2.  
+     Report #2 was handed back on 12/12.
+
+
+                              TESTS                  Last Update:
+                              -----             11/25 at  2:19 pm
+All the tests and the final exam will be closed book with no crib 
+     sheets, no calculators, no computers allowed.
+
+Test #1, Friday 10/18, Covered Chapters 1, 2 and 3 except for 
+     a few paragraphs on transmission gates on pages 81 and 82 and 
+     sections 3-13, and 3-14 of Chapter 3.  A good pencil and an 
+     eraser were recommended.  Handed back on 10/30.
+     
+Test #2, Wednesday 11/20, Covered Chapter 4 through the end of 
+     Chapter 6, except for sections on HDL's.  The information 
+     covered by Test #1 was prerequisite knowledge for this test.  
+     The test was closed book, no notes, no calculators.  A good 
+     pencil and an eraser were recommneded.  Handed back 11/25.
+
+Final Exam, Saturday, 12/14, 8-10 am.  The exam will cover the 
+     entire course.  See the reading assignment list to see what 
+     the course covered.  The final exam will omit the sections 
+     on HDL's, specifically sections 3-13, 3-14, 4-8, 4-9, 5-7, 
+     5-8. The final exam will be in the same style and format as 
+     the tests, except for the longer time (2 hours).
+
+
+                   ERRATA LIST for the TEXTBOOK      Last Update:
+                   --------------------------11/28/01 at  5:05 pm
+
+This list is for the "Second Edition, Updated, 2nd printing."  
+     
+To find out if you have this version, first look on the cover for 
+"2ND EDITION UPDATED" in red print under the title.  Then turn to 
+page ii (the page before the table of contents) and look for a 
+list of numbers like "10 9 8 7 6 5 4 3."  The last digit that is 
+missing, "2" in the example above, is the printing.  (Each time 
+the book is printed, one of the numbers in this list is removed.)  
+
+Kime (an author of this book) also maintains <A HREF 
+="http://cwx.prenhall.com/bookbind/pubbooks/mano/chapter0/custom2/deluxe-content.html">other lists of errata</A> 
+for this book, including other editions and printings. 
+
+p222 Fig. 4-28 Labels on two flip-flops are missing.  Starting at 
+     the "FJKC" labels and going clockwise, the labels are Q, 
+     CLR, CK, K, J.  Each label to be placed inside the box that 
+     represents the flip-flop.  Also note: the use of the 
+     inverter at the output of the lower flip-flop is poor 
+     practice.  Use the Qbar output of the flip-flop instead. 
+
+p289 line 13 from the top, change "$" to "=".  Optional:  Add a 
+     marginal note: k = log(base2)(m).
+
+p300 line 7 from the bottom.  Change "32800" to "32783" and 
+     change "608" to "591".  (2^15 AND gates + 15 inverters = 
+     32783 gates.  2^9 AND gates + 9 inverters + 2^6 AND gates + 
+     6 inverters = 591 gates.  Compare to Fig. 3-13, p112.) 
+
+p310 line 3 from bottom.  Change "PDL" to "PLD."
+
+p320 line 12 from bottom (an equation).  
+     Change "(0,5,6,7" to "(0,5,6,7)" (add a closing parenthesis) 
+
+p375 Figure 7-20.  Signal AA is "0" instead of "6" in clock cycle 
+     2.  Signal BA is "6" instead of "0" in clock cycle 2 only.  
+     Signal BA remains "0" in clock cycles 3 and 4.  A crossover 
+     ("X") is missing in signal BA between clock cycles 2 and 3.   
+     A corrected figure appears in PDF format in Kime's <A HREF = " 
+     http://www.woodchuckimages.com/mano/errata_up_2.pdf">errata</A>
+     <A HREF = " 
+     http://www.woodchuckimages.com/mano/errata_up_2.pdf">list</A>. 
+
+p391 and following:  This errata list does not completely cover 
+     p391 and following, Chapters 8, 9, 10, and 11.  See Kime's
+     <A HREF="http://www.woodchuckimages.com/mano/errata_up_2.pdf">errata list</A> for additional errata on these chapters.  
+
+p505 Problem 9-1 change "Section 9-1" to "Section 9-2."
+
+p509 Problem 9-26 change "y=0.3x" to "y is about 0.3 x."
+
+p649 Index entry for "Three-state buffers" change p298 to p296.
+
+p643-650 In the index, most page numbers are wrong, generally 
+     about 2 to 6 pages too high. 
+
+
+
+(Previous offerings of this course had no Web content.)
+<a href="../F03/204F03.HTM">NEXT</a> offering of this course <a href="../F03/204F03.HTM">NEXT--></a>   
+
+
+
+</PRE> 
+<BR> 
+<A HREF="../index.html"> Back to Prof. De Boer's home page </A> 
+</BODY> 
+</HTML> 
+

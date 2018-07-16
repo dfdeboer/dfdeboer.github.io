@@ -1,0 +1,61 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f16\froman\fcharset0\fprq2{\*\panose 02020404030301010803}Garamond;}{\f237\froman\fcharset238\fprq2 Garamond CE;}{\f238\froman\fcharset204\fprq2 Garamond Cyr;}{\f240\froman\fcharset161\fprq2 Garamond Greek;}{\f241\froman\fcharset162\fprq2 Garamond Tur;}
+{\f242\froman\fcharset186\fprq2 Garamond Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
+\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\adjustright \fs20 \snext0 Normal;}{\*\cs10 
+\additive Default Paragraph Font;}}{\info{\title Dordt College Engineering Department}{\author Authorized Gateway Customer}{\operator Douglas F. De Boer}{\creatim\yr1997\mo7\dy10\hr11\min32}{\revtim\yr2006\mo1\dy9\hr11\min49}
+{\printim\yr1999\mo8\dy26\hr16\min11}{\version4}{\edmins30}{\nofpages2}{\nofwords710}{\nofchars4047}{\*\company  }{\nofcharsws0}{\vern113}}\margl1440\margr1440\margt864\margb864 \widowctrl\ftnbj\aenddoc\hyphcaps0\formshade\viewkind1\viewscale90 \fet0
+\sectd \linex0\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}
+{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \qc\widctlpar\adjustright \fs20 {\b\f16\fs40 Dordt College Engineering Department
+\par EGR 304, Microprocessor Interfacing
+\par }\pard \qc\sa120\widctlpar\adjustright {\f16\fs24 Spring Semester, 2006
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1530\clvertalt\cltxlrtb \cellx9450\pard \sb120\widctlpar\intbl\adjustright {\b\f16 2005-06\line Catalog\line Data:\cell EGR 304  Microprocessor Interfacing (4 credit hours)}{\f16 
+  An in-depth study of
+ design of microprocessor and microprocessor based circuits and systems.  Hardware issues such as parallel and serial I/O, bus structure, grounding and shielding and D/A and A/D conversion are studied.  Software topics such as assembly language, structure
+d programming, and interrupt driven systems are also covered.  Lab exercises provide design experience using a particular microprocessor or microcontroller.  Prerequisites: Engineering 204, 220.\cell }\pard \widctlpar\intbl\adjustright {\f16 \row }\trowd 
+\trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1530\clvertalt\cltxlrtb \cellx9450\pard \sb120\widctlpar\intbl\adjustright {\b\f16 Textbooks:\cell }{\f16 Valvano, Jonathan W., }{\i\f16 Embedded Microcomputer Systems:  Real Time Interfacing}{\f16 
+, Brooks/Cole, 2000.\line ISBN 0-534-36642-2\cell }\pard \widctlpar\intbl\adjustright {\f16 \row }\pard \sb120\widctlpar\intbl\adjustright {\b\f16 References:\cell }{\f16 Raj Shah, }{\i\f16 Microprocessor Design Made Easy Using the MC68HC11}{\f16 
+, Advanced Microcomputer Systems Inc., Pompano Beach, Florida, 2000.
+\par }\pard \sb60\widctlpar\intbl\adjustright {\f16 Motorola, }{\i\f16 M68HC11 Reference Manual}{\f16 , Revision 6, 4/2002
+\par Motorola, MC68HC11E Family Technical Data, John B. Peatman, }{\i\f16 Design with Microcontrollers}{\f16 , McGraw-Hill Book Company, 1988.
+\par John B. Peatman, }{\i\f16 Design with PIC Microcontrollers}{\f16 , Prentice-Hall Book Company, 1998.
+\par Sedra and Smith, }{\i\f16 Microelectronic Circuits
+\par }{\f16 William Stallings, }{\i\f16 Data and Computer Communications
+\par }{\f16 Harold S. Stone, }{\i\f16 Microcomputer Interfacing, }{\f16 
+\par Circuit Cellar Magazine and Circuit Cellar Online (http://www.circuitcellar.com)\cell }\pard \widctlpar\intbl\adjustright {\f16 \row }\pard \sb120\widctlpar\intbl\adjustright {\b\f16 Instructor:\cell }{\f16 Douglas De Boer\cell }\pard 
+\widctlpar\intbl\adjustright {\f16 \row }\pard \sb120\widctlpar\intbl\adjustright {\b\f16 Goals:\cell }{\i\f16 Creational Structure}{\f16 :  Students will design a system that us
+es an embedded processor.  The design will incorporate polled or interrupt driven input/output and a sensor to measure a physical quantity such as temperature, pressure, etc.  This is a primary goal of this course.
+\par }{\i\f16 Contemporary Response}{\f16 :  Students will consider the application of norms for the design of appropriate ergonomics for an I/O interface.
+\par }{\i\f16 Creational Development}{\f16 :  Students will study the historical development of some standards, such as for serial interfacing, and reflect on how these past developments now influence modern trends in computer engineering.  \cell }\pard 
+\widctlpar\intbl\adjustright {\f16 \row }\pard \sb120\widctlpar\intbl\adjustright {\b\f16 Prerequisites by topic:\cell }{\f16 Linear circuit analysis, elementary electronics, an
+d digital logic circuits.  Some experience with microprocessors is assumed but proficiency is not assumed.\cell }\pard \widctlpar\intbl\adjustright {\f16 \row }\pard \sb120\widctlpar\intbl\adjustright {\b\f16 Laboratory:\cell }{\f16 
+One or two design projects will be completed, each with a formal written report.  Design projects may be proposed by the students but mu
+st be approved in advance by the instructor.  Some laboratory time may be used to present project management and presentation techniques.  Grounds for lab project approval are based on the scope of the project and the relation of the project to the lectur
+e material in class.  Depending on the scope of the project work undertaken, there usually will also be a number of short lab exercises with informal reports graded as homework.\cell }\pard \widctlpar\intbl\adjustright {\f16 \row }\pard 
+\sb120\widctlpar\intbl\adjustright {\b\f16 Computer use:\cell }{\f16 A cross assembler or compiler will be used to support the microp
+rocessor or microcontroller used in the lab, or else a language such as C or tiny basic may be used, as appropriate to the projects selected by the students.  Students are encouraged (but not required) to use programs such as Mathcad or Matlab for homewor
+k solutions where appropriate.\cell }\pard \widctlpar\intbl\adjustright {\f16 \row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1530\clvertalt\cltxlrtb \cellx9450\pard \sb120\widctlpar\intbl\adjustright {\b\f16 Means of \line Evaluation:\cell }
+{\f16 Homework (10%), Two Tests (20% each) Laboratory Project(s) (26%), Final Exam (24%)\cell }\pard \widctlpar\intbl\adjustright {\f16 \row }\pard \sa80\widctlpar\adjustright {\f1\fs2 
+\par }\pard \qc\widctlpar\adjustright {\b\f16\fs44 \page }{\b\f16\fs40 Dordt College Engineering Department
+\par EGR 304, Microprocessor Interfacing\line Course Outline
+\par }\pard \qc\sa240\widctlpar\adjustright {\f16\fs24 Spring Semester, 2006
+\par }\trowd \trgaph108\trleft-108 \clvertalt\clbrdrb\brdrs\brdrw30 \clshdng2000\cltxlrtb \cellx2430\clvertalt\clbrdrb\brdrs\brdrw30 \clshdng2000\cltxlrtb \cellx7380\clvertalt\clbrdrb\brdrs\brdrw30 \clshdng2000\cltxlrtb \cellx9540\pard 
+\sb120\widctlpar\intbl\adjustright {\f16\fs24 Dates\cell Class  (Timing is approximate.  Adjustments are usually needed to facilitate lab work, etc.)\cell Laboratory \line (Example Schedule)\cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row 
+}\trowd \trgaph108\trleft-108 \clvertalt\clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx2430\clvertalt\cltxlrtb \cellx7380\clvertalt\clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx9540\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 1/10, 12\cell 
+Ch. 1, Introduction:  MC68HC11 Architecture\line Ch. 2, Software Development:  \cell No Lab\cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\trowd \trgaph108\trleft-108 \clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx2430
+\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx7380\clvertalt\clbrdrt\brdrs\brdrw15 \clbrdrb\brdrs\brdrw15 \cltxlrtb \cellx9540\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 1/17, 19\line (Lab on Monday, 1/16)\cell 
+Ch. 3, Interfacing methods\emdash Blind cycle counting and busy waiting techniques.  \cell Initial Set-up of 68HC11\cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 1/24, 26\cell 
+Ch. 4, Interrupts\cell Basic digital I/O,\line reading and writing bits\cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 1/31, 2/2\cell Ch. 4, Interrupt handling techniques\cell 
+Project I (4 weeks)\cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 2/7, 9\cell Ch. 6, Timing\emdash 
+measurements and scheduled events via dedicated hardware and tic clocks. (some content not in text)\cell \cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 2/14, 16\line }{\b\f16\fs24 
+TEST #1 Thurs. 2/16}{\f16\fs24 \cell Ch. 7. Serial Interfacing\emdash \line RS-232 and similar schemes\line Test #1\cell \cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 2/21, 23\cell 
+Serial Interfacing\emdash Ethernet (not in text)\cell \cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 2/28, 3/2\cell Ch. 8, Parallel interfaces\cell Project II (5 weeks)\cell }\pard 
+\widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 3/7, 9\line }{\f16\fs18 (no class 3/14, 16, spring break)}{\f16\fs24 \cell Position encoding and stepper motor theory (not in text)\cell \cell 
+}\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 3/21-23\cell Ch. 9, Memory Interfacing\cell (no lab on 3/21,\line Spring Break)\cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row 
+}\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 3/30\line }{\f16\fs18 (no class 3/28, assessment day)}{\f16\fs24 \cell Ch 11, Analog Interfacing\emdash analog amplifiers and filters needed for interfacing\cell \cell }\pard 
+\widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 4/4, 6 \line }{\b\f16\fs24 TEST #2, Thurs 4/6}{\f16\fs24 \cell \line Test #2\cell \cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard 
+\sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 4/11, 13\cell Ch. 11, Analog interfacing, analog to digital conversion and vice-versa \cell \cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {
+\f16\fs24 Week of 4/18, 20\cell Project presentations\cell (possible short lab)\cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \sb100\widctlpar\intbl\adjustright {\f16\fs24 Week of 4/25, 27\cell Project presentations, review\cell 
+(possible short lab)\cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\trowd \trgaph108\trleft-108 \clvertalt\clbrdrt\brdrs\brdrw15 \cltxlrtb \cellx2430\clvertalt\clbrdrt\brdrs\brdrw15 \cltxlrtb \cellx7380\clvertalt\clbrdrt\brdrs\brdrw15 
+\cltxlrtb \cellx9540\pard \sb100\widctlpar\intbl\adjustright {\b\f16\fs24 EXAM Thursday, 5/4}{\f16\fs24 \cell Final Exam, 8:00 \endash   10:00 AM\cell \cell }\pard \widctlpar\intbl\adjustright {\f16\fs24 \row }\pard \widctlpar\adjustright {\fs2 
+\par }}

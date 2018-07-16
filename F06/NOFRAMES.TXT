@@ -1,0 +1,32 @@
+These html code snippets are used in the courses@dordt page headers.
+They are saved here because the html editor in courses@dordt does 
+not correctly handle the non-viewable parts of these codes.
+
+
+<iframe border="0" align="center" src="http://homepages.dordt.edu/~ddeboer/F06/322F06.HTM" frameborder="0" width="440" height="620"><noframes>
+EGR 322, Electronics I<br>
+Professor De Boer<br>
+<br>
+Dordt College only supports Microsoft Internet Explorer for 
+veiwing courses@dordt web pages.
+</noframes>
+</iframe>&nbsp;
+
+
+<iframe border="0" align="center" src="http://homepages.dordt.edu/~ddeboer/F06/220F06.HTM" frameborder="0" width="440" height="620"><noframes>
+EGR 220, Linear Circuits and Electronics<br>
+Professor De Boer<br>
+<br>
+Dordt College only supports Microsoft Internet Explorer for 
+veiwing courses@dordt web pages.
+</noframes>
+</iframe>&nbsp;
+
+<iframe border="0" align="center" src="http://homepages.dordt.edu/~ddeboer/F06/M204F06.HTM" frameborder="0" width="440" height="620"><noframes>
+MATH 204, Differential Equations<br>
+Professor De Boer<br>
+<br>
+Dordt College only supports Microsoft Internet Explorer for 
+veiwing courses@dordt web pages.
+</noframes>
+</iframe>&nbsp;

@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../../favicon.ico">
+<TITLE>EGR 204 PROB 4-36</TITLE>
+</HEAD>
+<BODY>
+
+<H2>Read Sections 4-7, 4-9</H2>
+
+<H2>Comments on Section 4-7 in Mano & Kime 3rd edition.</H2>
+
+<P>You may want to review the "VHDL Exercise" in the Lab 4 
+handout in light of this section.  If you have any questions, 
+bring them to class. You should recognize that the lab exercise 
+made use of a "Structural Description." </P> 
+
+<P>Since we use TTL chips and Altera's programmable CPLD in our 
+lab, the Altera Maxplus2 library is more appropriate to our 
+situation than the generic lcdf_vhdl library suggested in our 
+text.  Since the port maps and component names are not exactly 
+the same in each library, one library is not a literal substitute 
+for the other.  When we use the Maxplus2 library we must specify 
+the TTL part numbers for the functions (e.g. a_7400) rather than 
+the generic names (e.g. NAND2).  Some of the generic parts in the 
+lcdf_vhdl library have no TTL equivalents and thus cannot be 
+built on a breadboard in our lab.</P> 
+
+<P>A key new concept introduced in this section is the "Dataflow 
+Description."  No homework is assigned on this topic, just read 
+it and see what you can get from it.</P> 
+
+<P>Our text does not use the common conventions for 
+capitalization in VHDL code.  This is not important since  VHDL 
+is case insensitive.</P> 
+
+
+
+
+<H2>The assignment to go along with the reading.</H2>
+
+<P>4-36 changed to read as follows:<BR><BR>
+
+Generate a functional netlist and simulate the 2-to-4-line 
+decoder with enable in Figure 4-27 for sequence 000, 001, 010, 
+011, 100, 101, 110, 111 on <font face="Courier New">E_n, A1, 
+A0</font>.  Verify that the circuit functions as a decoder.  
+
+<OL>
+
+<LI start="1" >In the text of Figure 4-27 substitute the "<font 
+face="Courier New" >altera</font>" library for the "<font 
+face="Courier New" >lcdf_vhdl</font>" library.  Also "<font 
+face="Courier New" >use</font>" the "<font face="Courier New" 
+>altera.maxplus2.all</font>" subset of the library rather than 
+"<font face="Courier New" >lcdf_vhdl.func_prims.all</font>".  
+(This avoids the need to install a new library and compile it in 
+Quartus II.  The Maxplus2 library comes installed and compiled 
+with Quartus II and more accurately simulates the parts in our 
+lab stock.)  </LI><BR><BR> 
+
+<LI>The components in the Altera library do not have the same 
+names as those in the lcdf_vhdl library.  Note. . .<BR>
+a_7400 is a 2-input NAND gate, <BR>
+a_7404 is an inverter, and <BR>
+a_7408 is a 2-input  AND gate.  <BR>
+Make appropriate changes in the VHDL code for the decoder.  
+(Don't attempt to edit the library to match the decoder.  That 
+will create more problems than you can imagine.  Instead, change 
+the code for the decoder to match the library.)</LI><BR><BR> 
+
+<LI>In Quartus II the "Generate Functional Netlist" command will 
+"Compile" your VHDL file.</LI><BR><BR>
+
+<LI>You may use this given <A HREF="MK4_36.vwf">MK4_36.vwf</A> 
+vector waveform file or write you own.  If you write your own it 
+must conform to the list given in the problem statement in your 
+text.  </LI><BR><BR> 
+
+<LI>Note this errata:  <BR>
+In the textbook's problem statement replace "E_n, A0, A1" with "E_n, A1, 
+A0."</LI><BR><BR>
+
+<LI>Hand in a print-out of your VHDL code and a printout of the 
+simulation's vector waveform file showing the four output signals 
+as simulated.  (With the "Simulation Report" open and having the 
+focus, select "File | Print" and in the Print list select 
+"Simulation Report | Simulator | Simulation Waveforms.) 
+
+</OL>
+
+<H2>HINTS</H2>
+
+<OL>
+<LI type="A" start="A">It is easiest if the project directory, 
+project name, and top-level <font face="Courier New" 
+><b>entity</b></font>  all have identical names.  As given in 
+Figure 4-27, in this case it is a long name (23 characters). 
+</LI><BR><BR> 
+
+<LI type="A">You may download the code in Figure 4-27 
+from the book's companion web site.  Right-click on 
+<A 
+HREF="http://www.writphotec.com/mano/HDL_code/VHDL/Chapter_4/decoder_2_to_4_st.vhd">decoder_2_to_4_w_enable.vhd</A> 
+and save target as that file name in 
+your project folder.  You will need to edit the file name to make 
+it correct before you save it.  In the file name your web 
+browser gives you, change "_st" to "_w_enable".  Also be sure the 
+extension is "vhd". </LI><BR><BR> 
+
+<LI type="A">You may write a first draft of your VHDL code using 
+any text editor.  Windows Notepad for example, works fine for 
+this.</LI> <BR><BR>
+ 
+<LI type="A">The Quartus II program is installed and supported on 
+the computers in the EE lab which you may use at any time when 
+the engineering building is open and a workstation is free, 
+except that scheduled labs have priority.  You may also <A HREF= 
+"https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp" 
+>download</A> and install a copy of Quartus Web edition on your 
+own computer.  Students can get a free license to use the 
+software for a limited time--about six months.  The license is 
+renewable for free too.  </LI> <BR><BR>
+
+<LI type="A">The port lists in the component statements of the decoder 
+need to be changed to match those of the actual components used 
+from the library.  If you cut and paste the component statements 
+from the library into the decoder's VHDL code (and delete the 
+existing component statements) you will avoid typos.  The 
+libraries are typically found in a folder with a name similar to 
+"c:\program files\altera\quartus41\libraries\vhdl. . ."</LI><BR><BR>
+
+<LI type="A">The port map statements in the given VHDL code use an 
+alternative syntax.  To use the syntax introduced in the lab, 
+just delete all the "in1 =>" and similar characters.  
+For example,</LI>
+
+<blockquote>
+    g0: NOT1 port map (in1 => A0, out1 => A0_n); 
+</blockquote>
+
+becomes
+  
+<blockquote>
+   g0: a_7404 port map (A0, A0_n);
+</blockquote>
+
+Here the entity "NOT1" from the lcdf_vhdl library was also 
+replaced with the "a_7404" entity from the Maxplus2 
+library.<BR><BR>
+
+<LI type="A">Professor De Boer discourages the use of the alternative syntax 
+because then more editing is needed when a library is changed.  
+(The editing is needed to change or remove the signal names 
+internal to the component, such as "in1".  The syntax De Boer 
+recommends connects to the signals internal to the component 
+automatically by inference from the component port list).  
+</LI><BR><BR>
+
+<LI type="A"><A HREF="priority_encoder_4_input.vhd" 
+>priority_encoder_4_input.vhd</A> is an example file 
+ready-to-simulate.  It illustrates the use of structural 
+components from the Maxplus2 library.  It is a VHDL file 
+equivalent to Figure 4-12 on page 155 of your text, and it uses a 
+structural description of the logic.  If you actually want to try 
+running that simulation, set up a project of that name and use 
+the <A HREF="priority_encoder_4_input.vwf" 
+>priority_encoder_4_input.vwf</A> for the simulation input.  
+Actually simulating this file is not necessary.  Just looking at 
+the VHDL code might help you work the assigned problem.</LI> 
+<BR><BR> 
+
+</OL> 
+<HR>
+<P>Use your web browser's "back" button (or ALT-left-arrow) to 
+return to the previous page you were viewing.
+</BODY>
+</HTML>
+

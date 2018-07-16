@@ -1,0 +1,587 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../../favicon.ico">
+<TITLE>EGR 204 Homework</TITLE>
+</HEAD>
+<BODY><PRE>
+               DORDT COLLEGE ENGINEERING DEPARTMENT
+ INTRODUCTION TO MICROPROCESSORS AND DIGITAL CIRCUITS -- EGR 204 
+                          (Spring 2006)
+
+                           PROBLEM SETS             (Last update:
+                           ------------         5/06/06  4:14 pm) 
++===============================================================+ 
+|PS|ASSIGNED| DUE |RETURNED| Problems Assigned (In Mano's       |
+| #|        /     \        | Text unless otherwise noted.)      |
+|==+=======+=======+=======+====================================|
+|--|  4/26 |  ---- |       | Last Day of Class,                 |
+|  |       |  ---- |  ---- | no new assignment                  |
+|  |       |       |       |                                    |
+|  |       |       |       | This class will be dedicated to    |
+|  |       |       |       | review for the exam.               |
+|--+-------+-------+-------+------------------------------------|
+|40|  4/26 |  4/28 |       | Review 11-9                        |
+|  |       |  4/28 |  4/29#| Do *11-27, 11-29                   |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#p_526"
+                             >errata on problem *11-27</A>      |
+|  |       |       |       |                                    |
+|  |       |       |       | This assignment will be due for    |
+|  |       |       |       | peer grading in class on Friday as |
+|  |       |       |       | per our usual practice.            |
+|  |       |       |       |                                    |
+|  |       |       |       | This assignment will be due for    |
+|  |       |       |       | regular grading at 5 PM on Friday. |
+|  |       |       |       | Place your homework in a box near  |
+|  |       |       |       | Prof. De Boer's office door.  The  |
+|  |       |       |       | box will be labeled "EGR 204       |
+|  |       |       |       | Homework."  This assignment will be|
+|  |       |       |       | graded and placed in a plastic bin |
+|  |       |       |       | labeled "EGR 204" near the         |
+|  |       |       |       | engineering pod by Noon Saturday.  |
+|  |       |       |       | You may pick up your homework at   |
+|  |       |       |       | your convenience after that.       |
+|--+-------+-------+-------+------------------------------------|
+|39|  4/24 |  4/26 |       | Review 11-8, <A HREF=
+"../../errata/Mano_Kime/3rd/P_CTRL.DOC"
+                                     >spplmnt to Table 11-7</A>,|  
+|  |       |  4/28 |  4/29#| Read 11-9                          |
+|  |       |       |       |                                    |
+|  |       |       |       | Do 11-24, 11-26                    |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint on 11-24:  The computer sets  |
+|  |       |       |       | flag bits the same no matter what  |
+|  |       |       |       | number format is in use.  The      |
+|  |       |       |       | computer is not a person--it does  |
+|  |       |       |       | not "know" what format the data is |
+|  |       |       |       | representing.  In particular, the  |
+|  |       |       |       | answers to parts (c) and (d) do not|
+|  |       |       |       | depend in any way on the number    |
+|  |       |       |       | formats in use.  The CPU treats all|
+|  |       |       |       | data the same.  The programmer     |
+|  |       |       |       | selects instructions based on the  |
+|  |       |       |       | number formats in use.             |
+|  |       |       |       |                                    |
+|  |       |       |       | This assignment will be graded and |
+|  |       |       |       | placed in a plastic bin labeled    |
+|  |       |       |       | "EGR 204" by noon Saturday.  You   |
+|  |       |       |       | may pickup your homework at your   |
+|  |       |       |       | convenience.                       |
+|  |       |       |       |                                    |
+|  |       |       |       | Please bring a #2 pencil (or HB    | 
+|  |       |       |       | lead in a mechanical pencil) on    | 
+|  |       |       |       | Wed. 4/26 so that you can fill in  | 
+|  |       |       |       | a course evaluation survey.        | 
+|--+-------+-------+-------+------------------------------------|
+|38|  4/21 |  4/24 |       | Review 11-6, <A HREF= 
+"../../errata/Mano_Kime/3rd/SHIFT_R.DOC"
+                                     >supplement</A>            |
+|  |       |  4/26 |  4/28#| Read 11-8, <A HREF=
+"../../errata/Mano_Kime/3rd/P_CTRL.DOC"
+                                   >supplement to Table 11-7</A>|  
+|  |       |       |       |                                    |
+|  |       |       |       | Do *11-17, also repeat 11-17 except|
+|  |       |       |       | start with 0110 1000 in the        |
+|  |       |       |       | register and the carry bit set to  |
+|  |       |       |       | logic-1 AND reverse the order      |
+|  |       |       |       | of the instructions.  In other     |
+|  |       |       |       | words, the first instruction is    |
+|  |       |       |       | ROLC, then RORC, etc. to SHR as the|
+|  |       |       |       | last instruction.                  |
+|  |       |       |       | Also do *11-23, *11-25             |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint:  For problem *11-23 assume   |
+|  |       |       |       | that the "16 bit register" is named|
+|  |       |       |       | register "R".                      |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint: For problem *11-25 a computer|
+|  |       |       |       | does subtraction A - B as A + (-B) |
+|  |       |       |       | and treats the numbers as twos     |
+|  |       |       |       | complement no matter what format   |
+|  |       |       |       | they are actually in.  Then        |
+|  |       |       |       | "borrow" is the NOT of the carry   |
+|  |       |       |       | out of that addition.  This borrow |
+|  |       |       |       | is saved in the carry flag bit.    |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#p_515"
+                             >errata in Table 11-9, p515</A>.   |
+|--+-------+-------+-------+------------------------------------|
+|37|  4/19 |  4/21 |       | Read 11-4, 11-5, 11-6, <A HREF= 
+"../../errata/Mano_Kime/3rd/SHIFT_R.DOC"
+                                               >supplement</A>  |
+|  |       |  4/24 |  4/26#| Do *11-3, 11-4, 11-15, 11-16       |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#p_506"
+                             >errata on page 506</A>            |
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#p_522_3"
+                             >errata on problem *11-3</A>       |
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#p_522_4"
+                             >errata on problem 11-4</A>        |
+|--+-------+-------+-------+------------------------------------|
+|36|  4/17 |  4/19 |       | Read 11-3                          |
+|  |       |  4/21 |  4/24#| Do 11-5, *11-6, 11-7               |
+|--+-------+-------+-------+------------------------------------|
+|35|  4/14 |  4/17 |       | Read 11-1, 11-2                    |
+|  |       |  4/19 |  4/21#| Do 11-1, *11-2                     |
+|  |       |       |       | Hint: Work *11-2 first.            |
+|  |       |       |       |                                    |
+|  |       |       |       | Note:  SUB and DIV work this way:  |
+|  |       |       |       |                                    |
+|  |       |       |       | 3 Address Instructions:            |
+|  |       |       |       | SUB R1,R2,R3   R1 <-- R2 - R3      |
+|  |       |       |       | DIV R1,R2,R3   R1 <-- R2/R3        |
+|  |       |       |       |                                    |
+|  |       |       |       | 2 Address Instructions             |
+|  |       |       |       | SUB T1,T2  M[T1] <-- M[T1] - M[T2] |
+|  |       |       |       | DIV T1,T2  M[T1] <-- M[T1]/M[T2]   |
+|  |       |       |       |                                    |
+|  |       |       |       | 1 Address Instructions             |
+|  |       |       |       | SUB X          ACC <-- ACC - M[X]  |
+|  |       |       |       | DIV X          ACC <-- ACC/M[X]    |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#p_522"
+                             >errata on problem 11-1</A>.       |
+|--+-------+-------+-------+------------------------------------|
+|34|  4/12 |  4/14 |       | Read 10-7, 10-8                    |
+|  |       |  4/17 |  4/19#| Do 10-13                           |
+|--+-------+-------+-------+------------------------------------|
+|33|  4/10 |  4/12 |       | Scan 10-4, 10-5, Read 10-6         |
+|  |       |  4/14 |  4/17#| Do 10-9                            |
+|  |       |       |       |                                    |
+|  |       |       |       | Hints:                             |
+|  |       |       |       |                                    |
+|  |       |       |       | Zero can be formed as the exclusive|
+|  |       |       |       | OR of two identical words.  For    |
+|  |       |       |       | example, R0 XOR R0 = 0.            |
+|  |       |       |       |                                    |
+|  |       |       |       | Assume numbers are signed integers |
+|  |       |       |       | in the two's complement number     |
+|  |       |       |       | system.  Then                      |
+|  |       |       |       |                     _              |
+|  |       |       |       |         X - Y = X + Y + 1          |
+|  |       |       |       |                                    |
+|  |       |       |       | It is possible that some bits in   |
+|  |       |       |       | the control word do not matter.    |
+|  |       |       |       | Mark those "X" for "Don't Care."   |
+|  |       |       |       |                                    |
+|  |       |       |       | Although *10-10 is not assigned,   |
+|  |       |       |       | understanding that problem and its |
+|  |       |       |       | solution on the web might help you |
+|  |       |       |       | understand and do 10-9.            |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#p_447"
+                             >errata in Tables 10-6, 10-7</A>   |
+|--+-------+-------+-------+------------------------------------|
+|32|  4/07 |  4/10 |       | Read 10-1, 10-2, 10-3              |
+|  |       |  4/12 |  4/14#| Do 10-1, *10-2                     |
+|  |       |       |       |                                    |
+|  |       |       |       | Note: In 10-1, "selection lines"   |
+|  |       |       |       | refers to "Destination Select,"    |
+|  |       |       |       | "A Select," and "B Select" in      |
+|  |       |       |       | Figure 10-1.                       |
+|  |       |       |       |                                    |
+|  |       |       |       | Note: For problem *10-2 assume     |
+|  |       |       |       | the ALU is designed to work with   |
+|  |       |       |       | numbers in twos complement format. |
+|  |       |       |       | Overflow detection is illustrated  |
+|  |       |       |       | on page 221 of your text.  The     |
+|  |       |       |       | result of your logic should be that|
+|  |       |       |       | N = 1 iff the output of the ALU    |
+|  |       |       |       | represents a negative number. Z = 1|
+|  |       |       |       | iff the output represents zero.    |
+|  |       |       |       | V = 1 iff there was overflow in    |
+|  |       |       |       | computing the output.  C = 1 iff   |
+|  |       |       |       | there is a carry out of the most   |
+|  |       |       |       | significant place.                 |
+|--+-------+-------+-------+------------------------------------|
+|31|  4/05 |  4/07 |       | Review 9-4, Read 9-6 (SDRAM,RAMBUS)|
+|  |       |  4/10 |  4/12#| Do. . .                            |
+|  |       |       |       | 9-10 EXCEPT Change                 |
+|  |       |       |       |    "512K x 16" to "256K x 32"      |
+|  |       |       |       |                                    |
+|  |       |       |       | 9-11 EXCEPT Change                 |
+|  |       |       |       |    "SDRAM" to "FPM DRAM" (FPM means|
+|  |       |       |       |    "Fast Page Mode.")              |
+|--+-------+-------+-------+------------------------------------|
+|30|  4/03 |  4/05 |       | Read 9-5 (Intro DRAM)              |
+|  |       |  4/07 |  4/10#| Do. . .                            |
+|  |       |       |       | 9-7 EXCEPT Change                  |
+|  |       |       |       |    "256Mb" to "128Kb" and change   |
+|  |       |       |       |    "4-bit" to "8-bit".             |
+|  |       |       |       |                                    |
+|  |       |       |       | 9-8 EXCEPT Change                  |
+|  |       |       |       |    "128 ms" to "256 ms" and change |
+|  |       |       |       |    "4096" to "16384".              |
+|--+-------+-------+-------+------------------------------------|
+|29|  3/31 |  4/03 |       | Read 9-3, 9-4 (SRAM and arrays of) |
+|  |       |  4/05 |  4/07#| Do 9-4 EXCEPT Change "64K X 16" to |
+|  |       |       |       |    1M X 4 and change "32000" to    |
+|  |       |       |       |    "196865".                       |
+|--+-------+-------+-------+------------------------------------|
+|28|  3/29 |  3/31 |       | Read 9-1, 9-2 (Memory Organization)|
+|  |       |  4/03 |  4/05#| Do *9-1, *9-2, *9-3                |
+|  |       |       |       |                                    |
+|  |       |       |       | See <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#p_427"
+                            >errata for prblms 9-2 thru 9-12</A>|
+|--+-------+-------+-------+------------------------------------|
+|27|  3/27 |  3/29 |       | Read 8-1, 8-2, 8-3, (ASM Charts)   |
+|  |       |  3/31 |  4/03#| Do *8-1, 8-3                       |
+|  |       |       |       |                                    |
+|  |       |       |       | See <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#p_393"
+                            >errata on Figure 8-18</A>          |
+|  |       |       |       | See <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#p_393_1"
+                            >errata on solution to *8-1</A>     |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint for problem *8-1:  The binary |
+|  |       |       |       | codes for the state assignments    |
+|  |       |       |       | are not given in Figure 8-18, thus |
+|  |       |       |       | they should be blank on the ASM    |
+|  |       |       |       | chart.                             |
+|--+-------+-------+-------+------------------------------------|
+|26|  3/24 |  3/27 |       | Read 7-7, 7-8, 7-9, 7-12           |
+|  |       |  3/29 |  3/31#|                                    |
+|  |       |       |       | Do 7-20  Hint:  Draw the register  |
+|  |       |       |       | cell.  Then use hierarchy to draw  |
+|  |       |       |       | the complete register.             |
+|--+-------+-------+-------+------------------------------------|
+|25|  3/22 |  3/24 |       | Read from "Ripple Counter" on page |
+|  |       |  3/27 |  3/29#| 331 to the end of Section 7-6.     |
+|  |       |       |       |                                    |
+|  |       |       |       | Do 7-10, 7-14                      |
+|  |       |       |       |                                    |
+|  |       |       |       | Note on Problem 7-10:  The word    |
+|  |       |       |       | "values" could just as well be     |
+|  |       |       |       | "states" in this context.          |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint for Problem 7-14:  You can    |
+|  |       |       |       | simplify the logic diagram and save|
+|  |       |       |       | time drawing by using hierarchy.   |
+|  |       |       |       | (See Figures 7-13 and 7-15 for an  |
+|  |       |       |       | example of the application of      |
+|  |       |       |       | hierarchy.)                        |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A 
+HREF="http://www.writphotec.com/mano/Text_Errata/Text_Errata_v4.2.pdf"
+                             >author's errata on Figure 7-14</A>|
+|  |       |       |       | also on <A 
+HREF="http://www.writphotec.com/mano/Text_Errata/Text_Errata_v4.2.pdf"
+                                >Problem Statement 7-14</A>     |
+|  |       |       |       | See <A HREF="MK_FIG_7_14.DOC"
+                            >corrected version of Fig. 7-14</A>.|
+|--+-------+-------+-------+------------------------------------|
+|24|  3/06 |  3/22 |       | Read 7-5, 7-6 up to "Ripple        |
+|  |       |  3/24 |  3/27#| Counter" on page 331.              |
+|  |       |       |       | Do 7-5, 7-6*, 7-7*                 |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#P_330"
+                             >errata in Table 7-7, page 330</A>.|
+|--+-------+-------+-------+------------------------------------|
+|23|  3/06 |  3/22 |       | Reflect on "<A HREF=
+"http://downlode.org/etext/power.html"
+                                    >The Feeling of Power</A>"  |
+|  |       |  3/22 |  3/24 | by Isaac Asimov.                   |
+|  |       |       |       |                                    |
+|  |       |       |       | "I cannot face the responsibility  |
+|  |       |       |       | involved in having invented        |
+|  |       |       |       | graphitics." --Aub                 |
+|  |       |       |       |                                    |
+|  |       |       |       | Write a paragraph or up to a page  |
+|  |       |       |       | essay on what Technician Aub's     |
+|  |       |       |       | options might have been and what   |
+|  |       |       |       | you would have recommended had Aub |
+|  |       |       |       | consulted with you.  (Wordprocess  |
+|  |       |       |       | and print.)                        |
+|  |       |       |       |                                    |
+|  |       |       |       | Study for Test #2  (See details on |
+|  |       |       |       | the <A HREF=
+"http://courses.dordt.edu/course/view.php?id=34#3" 
+                            >courses@dordt EGR 204</A> page)    |
+|--+-------+-------+-------+------------------------------------|
+|22|  3/03 |  3/06 |       | Read 7-1, 7-2, 7-3                 |
+|  |       |  3/22 |  3/24#| Do <A HREF="MK7_A.RTF"
+                           >7-A</A>                             |
+|  |       |       |       |                                    |
+|  |       |       |       | Here is a <A HREF=
+"http://www.fairchildsemi.com/ds/DM/DM74ALS175.pdf"
+                                  >datasheet</A> on the type    |
+|  |       |       |       | '175 (see especially the schematic |
+|  |       |       |       | on the right side of page 2).      |
+|  |       |       |       |                                    |
+|  |       |       |       | (On Monday, 3/6, Prof. De Boer     |
+|  |       |       |       | changed several dates on this page |
+|  |       |       |       | since he had forgotten to account  |
+|  |       |       |       | for spring break.)                 |
+|--+-------+-------+-------+------------------------------------|
+|21|  3/01 |  3/03 |       | Continue reading 6-5 from page 275 |
+|  |       |  3/06 |  3/22#| to the end of the section.  Also   |
+|  |       |       |       | read Section 6-9.                  |
+|  |       |       |       |                                    |
+|  |       |       |       | Do 6-14*  Note:  The solution to   |
+|  |       |       |       | 6-14 posted on the text's companion|
+|  |       |       |       | web site shows an extra term.      |
+|  |       |       |       | While still correct, it is not in  |
+|  |       |       |       | simplest from.   You can get full  |
+|  |       |       |       | credit for the answer on the web   |
+|  |       |       |       | or an answer in simplest form.     |
+|--+-------+-------+-------+------------------------------------|
+|20|  2/27 |  3/01 |       | Read 6-5 up to "Designing with     |
+|  |       |  3/03 |  3/06#| D Flip-Flops" on page 275.         |
+|  |       |       |       |                                    |
+|  |       |       |       | Do 6-8, <A HREF="MK6_C.RTF"
+                                >6-C</A>                        |
+|  |       |       |       |                                    |
+|  |       |       |       | Note 6-C is not in the text.       |
+|  |       |       |       | Click the link to view the problem |
+|  |       |       |       | statement.                         |
+|--+-------+-------+-------+------------------------------------|
+|19|  2/24 |  2/27 |       | Read 6-4                           |
+|  |       |  3/01 |  3/03#| Do 6-5, 6-6*                       |
+|  |       |       |       |                                    |
+|  |       |       |       | Optional supplemental reading:     |
+|  |       |       |       | <A HREF=
+"http://www.writphotec.com/mano/Supplements/JK_%26_T_Flip-flops_supp.pdf"
+                        >Design and Analysis Using JK and</A>   |
+|  |       |       |       | <A HREF=
+"http://www.writphotec.com/mano/Supplements/JK_%26_T_Flip-flops_supp.pdf"
+                        >T Flip-Flops</A>                       |
+|--+-------+-------+-------+------------------------------------|
+|18|  2/22 |  2/24 |       | Read 6-3                           |
+|  |       |  2/27 |  3/01#| Do these problems:                 |
+|  |       |       |       |                                    |
+|  |       |       |       | 6-A.  Draw a gate level logic      |
+|  |       |       |       | diagram (schematic) of the SR      |
+|  |       |       |       | master-slave flip-flop shown in    |
+|  |       |       |       | Figure 6-10.  (Note Figure 6-7.)   |
+|  |       |       |       |                                    |
+|  |       |       |       | 6-B.  Complete the timing diagram  |
+|  |       |       |       | <A HREF="MK6_B.DOC"
+                        >shown here. . .</A>                    |
+|--+-------+-------+-------+------------------------------------|
+|17|  2/20 |  2/22 |       | Read 6-1, 6-2                      |
+|  |       |  2/24 |  2/27#| Do 6-1 Note: Use the table below   |
+|  |       |       |       | for the input sequence.  Fill in   |
+|  |       |       |       | the outputs in the table.  The     |
+|  |       |       |       | complete table or the equivalent   |
+|  |       |       |       | information in a vector waveform   |
+|  |       |       |       | file print-out is the answer.      |
+|  |       |       |       |                                    |
+|  |       |       |       | Also do 6-2.  Again, use the table |
+|  |       |       |       | shown below for the sequence of    |
+|  |       |       |       | inputs.  Fill in the table or      |
+|  |       |       |       | provide a waveform printout.       |
+|  |       |       |       | _  _      _                      _ |
+|  |       |       |       | S  R | Q  Q         C  S  R | Q  Q |
+|  |       |       |       | -----+-----         --------+----- |
+|  |       |       |       | 1  0 |              0  0  1 |      |
+|  |       |       |       | 1  1 |              0  0  0 |      |
+|  |       |       |       | 0  1 |              0  1  0 |      |
+|  |       |       |       | 1  1 |              0  1  1 |      |
+|  |       |       |       | 0  1 |              1  0  1 |      |
+|  |       |       |       | 0  0 |              1  0  0 |      |
+|  |       |       |       | 0  1 |              1  1  0 |      |
+|  |       |       |       |                     1  0  0 |      | 
+|  |       |       |       | Table for 6-1       1  1  0 |      | 
+|  |       |       |       |                     1  1  1 |      | 
+|  |       |       |       |                     1  1  0 |      | 
+|  |       |       |       |                     1  1  1 |      | 
+|  |       |       |       |                     1  0  0 |      | 
+|  |       |       |       |                                    | 
+|  |       |       |       |                     Table for 6-2  | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#P_246"
+   >errata, text pages 246, 247</A>   | 
+|  |       |       |       |                                  _ | 
+|  |       |       |       | Note:  In Quartus II, use /X for X.| 
+|  |       |       |       | (Overbars are not supported.)      | 
+|  |       |       |       |                            _       | 
+|  |       |       |       | Note:  In VHDL use x_n for x.      | 
+|  |       |       |       | (Overbars are not supported.)      | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Optional supplemental reading:     |
+|  |       |       |       | <A HREF="http://www.play-hookey.com/digital"
+>http://www.play-hookey.com/digital</A> |
+|--+-------+-------+-------+------------------------------------|
+|16|  2/17 |  2/20 |       | Read Chapter 5, Sec 5-3, 5-4, 5-9  |
+|  |       |  2/22 |  2/27#|                                    |
+|  |       |       |       | Do 5-3*, 5-4, <A HREF=
+                       "M_K_P5_29.RTF">5-29</A> parts (a) - (f) | 
+|  |       |       |       |                                    |
+|  |       |       |       | Repeat 5-4 with the method given   | 
+|  |       |       |       | in the errata for 5-4 but now use  |
+|  |       |       |       | 1's complement math.               | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note:  Problem 5-29 is not in your | 
+|  |       |       |       | textbook.  Use the link to see the | 
+|  |       |       |       | problem statement.  As discussed in| 
+|  |       |       |       | class on Monday, 2/20, omit parts  | 
+|  |       |       |       | (g) and (h).                       | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note:  <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#P_236"
+                               >Errata on problem 5-4</A>       | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Optional supplemental reading:     | 
+|  |       |       |       | <A HREF=
+"http://www.writphotec.com/mano/Supplements/Decimal_Arithmetic_supp_corr1.pdf"
+                        >Decimal (BCD) Arithmetic</A>           | 
+|--+-------+-------+-------+------------------------------------|
+|15|  2/15 |  2/17 |       | Read Chapter 1 Section 1-3 and in  | 
+|  |       |  2/20 |  2/22#| Chapter 5, Sections 5-1 and 5-2    | 
+|  |       |       |       | but skip the subsection labeled    | 
+|  |       |       |       | "Carry Lookahead Adder."           | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Do 5-2* (use manual verification)  | 
+|--+-------+-------+-------+------------------------------------|
+|14|  2/13 |  2/15 |       | Read Ch 4 Sec 4-7, 4-9             |
+|  |       |  2/17 |  2/20#| Do 4-36 with <A HREF= "MK4_36.HTM"
+                                     >these changes</A>         |
+|--+-------+-------+-------+------------------------------------|
+|13|  2/10 |  2/13 |       | Read Ch 4 Sec 4-6                  |
+|  |       |  2/15 |  2/17#|                                    |
+|  |       |       |       | Do 4-35 except mark the fuses to   |
+|  |       |       |       | remain intact on the fuse map for  |
+|  |       |       |       | a TIBPAL16L8-25C part.  The fuse   |
+|  |       |       |       | map can be found on page 5 of the  |
+|  |       |       |       | <A HREF=
+"http://focus.ti.com/lit/ds/symlink/tibpal16r4-25c.pdf"
+                        >TIBPAL16L8 datasheet</A>.              |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint #1:  The output pins of the   |
+|  |       |       |       | TIBPAL16L8-25C are driven by       |
+|  |       |       |       | inverters.  You need to build the  |
+|  |       |       |       | inverse function in the array to   |
+|  |       |       |       | get the true function at the output|
+|  |       |       |       |                                    |
+|  |       |       |       | Hint #2:  If you put an "X" mark on|
+|  |       |       |       | an AND gate it signifies that all  |
+|  |       |       |       | the fuses on all the inputs for    |
+|  |       |       |       | that AND gate should remain intact.|
+|  |       |       |       | This forces the output of that AND |
+|  |       |       |       | gate to logic-0 always.            |
+|  |       |       |       |                                    |
+|  |       |       |       | Hint #3:  Tie pin 1 to ground.  Use|
+|  |       |       |       | that input signal to enable outputs|
+|--+-------+-------+-------+------------------------------------|
+|12|  2/06 |  2/10 |       | Read Ch 4 Sec 4-4, 4-5             |
+|  |       |  2/13 |  2/15#| Do 4-10*, 4-12 part a only         | 
+|  |       |       |       | Note:  "8 x 2" means 8 AND gates w/| 
+|  |       |       |       | 2 inputs per gate, followed by     | 
+|  |       |       |       | a single 8-input OR gate.          | 
+|  |       |       |       |                                    | 
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#P_193_10"
+                             >errata on problem 4-10</A>        | 
+|--+-------+-------+-------+------------------------------------|
+|--|  2/06 |  ---- |  ---- | Study for Test #1  (See details on |
+|  |       |       |       | the <A HREF=
+"http://courses.dordt.edu/course/view.php?id=34#3" 
+                            >courses@dordt EGR 204</A> page)    |
+|--+-------+-------+-------+------------------------------------|
+|11|  2/03 |  2/06 |       | Read Ch 4 Sec 4-1, 4-2, 4-3        |
+|  |       |  2/10 |  2/13#| Do 4-1*, 4-2                       |
+|--+-------+-------+-------+------------------------------------|
+|10|  2/01 |  2/03 |       | Read Ch 3 Sec 3-5, 3-6, 3-7        |
+|  |       |  2/06 |  2/08#| Do 3-23, 3-25                      |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM#P_138"
+                             >errata on problem 3-25</A>.       |
+|--+-------+-------+-------+------------------------------------|
+| 9|  1/30 |  2/01 |       | Read Ch 3 finish Sec 3-2, 3-3, 3-4 |
+|  |       |  2/03 |  2/06#| Do 3-10, 3-15                      |
+|--+-------+-------+-------+------------------------------------|
+| 8|  1/27 |  1/30 |       | Read Ch 3 Sec 3-1, 3-2 up to p101, |
+|  |       |  2/01 |  2/03#|    "Positive and Negative Logic"   |
+|  |       |       |       | Do 2-28, 3-1, 3-3                  |
+|  |       |       |       |                                    |
+|  |       |       |       | Note <A HREF=
+"../../errata/Mano_Kime/3rd/MK_3_ERR.HTM"
+                             >errata on problem 3-1</A>.        |
+|--+-------+-------+-------+------------------------------------|
+| 7|  1/25 |  1/27 |       | Read Ch 2 Sec 2-8, 2-9, 2-10       |
+|  |       |  1/30 |  2/01#| Do 2-8, 2-27, 2-32                 |
+|--+-------+-------+-------+------------------------------------|
+| 6|  1/23 |  1/25 |       | Read Ch 2 Sec 2-6, 2-7             |
+|  |       |  1/27 |  1/30#| Do 2-24, 2-25*, 2-29               |
+|--+-------+-------+-------+------------------------------------|
+| 5|  1/20 |  1/23 |       | Read Ch 2 Sec 2-5                  |
+|  |       |  1/25 |  1/27#| Do 2-15*, 2-16, 2-19*              |
+|--+-------+-------+-------+------------------------------------|
+| 4|  1/18 |  1/20 |       | Read Ch 2 Sec 2-4                  |
+|  |       |  1/23 |  1/25#| Do 2-7*, 2-11, 2-12*, 2-14         |
+|  |       |       |       |                                    |
+|  |       |       |       | Note on 2-12*:  The online answer  |
+|  |       |       |       | for part (b), the POS form, is     |
+|  |       |       |       | wrong.  The correct answer is the  |
+|  |       |       |       | same as for the SOP form,          |
+|  |       |       |       |            _       _               |
+|  |       |       |       |           (X + Y + Z)              |
+|  |       |       |       |                                    |
+|  |       |       |       |                                    |
+|  |       |       |       | Note on 2-14:  "Optimize" means to |
+|  |       |       |       | "Simplify," as shown by several    |
+|  |       |       |       | examples in section 2-4.           |
+|--+-------+-------+-------+------------------------------------|
+| 3|  1/16 |  1/18 |       | Read Ch 2 Sec 2-1, 2-2, 2-3        |
+|  |       |  1/20 |  1/23#| Do 2-1*, 2-2*, 2-10*               |
+|--+-------+-------+-------+------------------------------------|
+| 2|  1/13 |  1/16 |       | Read Ch 1 Sec 1-4 through 1-7      |
+|  |       |  1/18 |  1/20#| Do 1-8, 1-20, 1-22, 1-23           |
+|  |       |       |       |                                    |
+|  |       |       |       | Note on problem 1-8:  For parts (a)|
+|  |       |       |       | and (b) you should show three      |
+|  |       |       |       | digits to the right of the radix   |
+|  |       |       |       | point.  If the answer is not exact,|
+|  |       |       |       | round the third (least significant)|
+|  |       |       |       | digit based on what the fourth     |
+|  |       |       |       | digit would be.  For part (c) show |
+|  |       |       |       | ten digits right of the radix      |
+|  |       |       |       | point and round based on what the  |
+|  |       |       |       | eleventh digit would be.           |
+|  |       |       |       |                                    |
+|  |       |       |       | Note on problem 1-23.  Assume one  |
+|  |       |       |       | byte of storage per ASCII          |
+|  |       |       |       | character.  (See text p24, near the|
+|  |       |       |       | bottom of the page, for details.)  |
+|--+-------+-------+-------+------------------------------------|
+| 1|  1/11 |  1/13 |       | Scan Chapter 1, Read Section 1-2   |
+|  |       |  1/16 |  1/18#| Do 1-2, 1-3, 1-4*, 1-5, 1-7*       |
++---------------------------------------------------------------+
+Note 1) Homework must be ready for peer grading and discussion in
+class on the first listed due date.  It must be turned in for a
+final grade on the second listed due date.  Peer grading will be
+1/5 (20%) of the homework grade.
+
+Note 2) If a "#" follows the "returned" date, then the solution
+key is posted on the cork board across the hall from room S233.
+
+Note 3) Problems sets shown above with no "assigned" date are
+tentative.  More problems might be added, expected due dates
+might change, but problems shown will eventually be assigned.
+
+Note 4) If this page seems to be out-of-date and you think it 
+should have been updated then there may be a problem with your 
+browser's cached memory. Read this <A HREF= 
+"../../ddb/notes00.htm">note on cached pages</A> to 
+solve the problem. </PRE> 
+
+<A           HREF = "../../index.html"> Back to 
+Prof. De Boer's home page </A> 
+
+
+
+</BODY> 
+</HTML> 
+

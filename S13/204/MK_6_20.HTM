@@ -1,0 +1,123 @@
+<html>
+<head>
+<meta http-equiv="pragma" content="no-cache">
+<title>Discussion of 6-20</title>
+<style type="text/css"><!--
+TABLE {
+   font-family: "verdana";
+   }
+TD {
+   font-family: "verdana"; /* for Netscape 4.7 */
+   font-size: 75%;
+   }
+A:link {
+   font-family: "verdana";
+   color:#CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:visited {
+   font-family: "verdana";
+   color: #CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:hover {
+   text-decoration: underline;
+   } -->
+</style>
+</head>
+
+<body>
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       border="0">
+                                             <TR><TD width="550">
+<p>
+<b>Discussion of problem 6-20</b></p><p>
+
+<b>Tristate Inverting Output Driver</b><br>
+Notice that the output pins of the TIBPAL16L8-25C are driven by 
+tristate inverters. This has two consequences:  1.) You need to 
+build the complementary function into the array in order to get 
+correct outputs at the pins, and 2.)  You need to enable the 
+outputs.</p><p> 
+
+<b>1.) Building the complement into the array.</b><br>
+Suppose you want to create a three-input function like,<br> 
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<i>f</i>(<i>A</i>, <i>B</i>, <i>C</i>) = &#931;m(0,2,3,6)<br>
+<br>
+and you want that to be the output.  You need to program the 
+negation of this into the array.  Specifically you need to 
+program the function shown below into the array.<br>
+<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<img src="f_ital_bar.gif" alt="f_bar">(<i>A</i>, <i>B</i>, 
+<i>C</i>) = &#931;m(1,4,5,7)<br>
+<br>
+Once you have identified the complementary function that needs to 
+be programmed into the array, you should optimize it.  A K-map is 
+recommended. Then mark the appropriate fuses to program the 
+terms needed.</p><p> 
+
+<b>2.) You need to enable the outputs</b><br>
+Since these are tristate outputs, you need to enable them. You 
+can do this by connecting pin 1 to ground.  The input buffer 
+associated with pin 1 then provides a logic-1 on its inverted 
+output.  Use that logic-1 to enable outputs.  Mark fuses 
+accordingly.  </p><p> 
+
+<b>An "X" mark keeps a fuse and makes a connection</b><br>
+On the fuse map, make an "X" mark over each intersection where 
+you want a connection to remain.  Leave other intersections 
+unmarked.  The fuses at unmarked intersections are burned out by 
+the programming software, leaving behind only the desired 
+connections. </p><p> 
+
+<b>Unused AND gates and Shortcut Notation</b><br>
+It is unlikely that you will use all the AND gates in the array.  
+Unused AND gates must be programmed to produce a logic-0 at their 
+outputs.  This is usually done by leaving all fuses for that AND 
+gate intact.  This assures that the output of the AND gate will 
+always be logic-0 since each input and the complement of each 
+input is connected.  To do this you could put "X" marks on every 
+intersection along the input side of the unused AND gate.  
+Writing all those "X" marks would be tedious however.  There is a 
+short-cut form of notation for this situation.  Just put an "X" 
+mark on an AND gate itself.  That signifies that all the fuses on 
+all the inputs for that AND gate should remain intact, just as if 
+you had made "X" marks all along the row. 
+
+                                            </p><p><small><i> 
+(Use your browser's back arrow  or Alt-LeftArrow to return to 
+the web page you were previously viewing.)</i></small> 
+
+                                           </td></tr></table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

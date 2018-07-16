@@ -1,0 +1,135 @@
+<html>
+<head>
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+<meta http-equiv="pragma" content="no-cache">
+<title>Octave Installation Guide</title>
+<style type="text/css"><!--
+TABLE {
+   font-family: "verdana";
+   }
+TD {
+   font-family: "verdana"; /* for Netscape 4.7 */
+   font-size: 75%;
+   }
+A:link {
+   font-family: "verdana";
+   color:#CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:visited {
+   font-family: "verdana";
+   color: #CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:hover {
+   text-decoration: underline;
+   } -->
+</style>
+</head>
+
+<body>
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       border="0">
+                                             <TR><TD width="550">
+                                               <p align="center">
+   <A HREF="../redirect/Dordt_Engineering.htm"
+
+         >DORDT COLLEGE ENGINEERING DEPARTMENT        </A><BR><B>
+       Octave Installation Guide&mdash;Windows 7 <br><BR><br></b>
+     <a href="https://www.gnu.org/software/octave/"><img 
+     src="../../S14/363/GNU_Octave_logo.png"
+     height="150"
+     width ="150"
+     border="0"></a><small> &nbsp; &nbsp; &nbsp; 
+     (Last update, 1/16/2014)</small>   </P><p>
+
+GNU Octave for Windows requires the Visual C++ runtime libraries. 
+It is very likely that these have already been installed on your
+computer by some other program and are available for Octave's 
+use too.  To find out, <b>open Control Panel</b>, click on "<b>Programs 
+and Features</b>" (or "Add/remove programs" on some systems) and 
+look at the list of installed programs.  The runtime you need 
+shows up in the list as "<b>Microsoft Visual C++ Redistributable. . .</b>"
+There may be several versions of this installed, which is OK.  
+Just look at the list&mdash;don't make changes.  You need version 9.0
+or up.  These will have the number 9.0 or up in the filename.  If the 
+runtime does not show up in the list or if the number in the file 
+name is less than 9.0, you will need to <a href=
+"http://www.microsoft.com/en-us/download/details.aspx?id=5555"
+>install it</a> before installing Octave.  (Do not uninstall older
+versions of the C++ runtime.)                                  <br><br>
+
+
+After you have verified that version 9.0 or up of the the C++ 
+runtime is installed, Point your browser at <a href=
+"http://octave.sourceforge.net/" target="_blank"
+                               >Octave-Forge</a> and click the 
+link to "Windows installers."                            <br><br>
+
+In the list of downloadable files, click the link to the most 
+recent URL that is described as being, "<b>Octave x.x.x for 
+Microsoft Visual Studio</b>." this will usually be the top link in 
+the list (but not the "Parent folder").  Hover your mouse 
+cursor over the URL to read the complete URL if your browser 
+truncates the URL names.                                <br><br>
+
+Click on the "<b>octave-x.x.x-<some-stuff-goes-here>-setup.exe</b>" 
+link to start the download.  Depending on how your browser is
+set up, you may need to specify a location to save the download.
+The desktop is a fine location.  The "downloads" folder will also work 
+but might later entail more mousing around.               <br><br>
+
+If the file's destination is automatic in your browser, then 
+when the download is complete open the download window and then  
+double-click the "<b>octave-x.x.x-<some-stuff-goes-here>-setup.exe</b>" 
+file to start the installation.  If you needed to specify the
+download location, open "My Computer" or "Windows Explorer" and
+drill to the location and then double-click the file.     <br><br>
+
+After the installation is complete you may delete the 
+"<b>octave-x.x.x-<some-stuff-goes-here>-setup.exe</b>" file.<br><br>
+
+Hint:  If Octave seems to be hung, try typing "q".  <br><br>
+
+The "help" feature in Octave sometimes calls a Linux program (now 
+ported to Windows) called "less."  Less has a colon, ":" prompt.  
+If you see that prompt (or any time you are in "less") you 
+can exit to the Octave command prompt by typing "q" (for quit).  
+The "less" program allows the help file to be displayed page-by-page.
+You can use arrow keys and page-up, page-down keys to scroll
+through the help file that gets displayed.  Linux and Unix 
+users will feel right at home doing this.  Windows users might 
+feel confused until they try it for a while.  For more information
+about less, see the "<a href=
+"http://linux.about.com/library/cmd/blcmdl1_less.htm"
+>less man page</a>." ("More about less"&mdash; 
+don'tcha just love the language of Linux stuff?) <br><br>
+
+Hint: The proper way to exit GNU Octave is to issue the 
+"exit" command at the Octave command prompt. You can also
+"kill" Octave by using the Windows red X "close window" 
+button, but after you kill it Windows will probably then report
+that Octave is "not responding" and then allow you to clean
+up the mess (remove it all from memory).  Better to "exit"
+and let Octave clean itself out of memory.  <br><br>
+
+The main GNU Octave Web site is <a href=
+"https://www.gnu.org/software/octave/">here</a> (or click the logo 
+above).<br>
+The non-Linux installers for GNU Octave are separate "projects" hosted 
+on various servers.  "<a href=
+"http://octave.sourceforge.net/"
+>Octave-Forge</a>" is a project to build 
+installers for Windows and Apple operating systems.  
+
+<FORM><INPUT TYPE="button" 
+             VALUE="Back to main page" 
+             onClick="history.go(-1);return true;"> 
+</FORM>
+</TABLE>
+</BODY>
+</HTML>

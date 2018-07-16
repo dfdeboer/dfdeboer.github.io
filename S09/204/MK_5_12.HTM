@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta http-equiv="pragma" content="no-cache">
+<title>Discussion of 5-12</title>
+<style type="text/css"><!--
+TABLE {
+   font-family: "verdana";
+   }
+TD {
+   font-family: "verdana"; /* for Netscape 4.7 */
+   font-size: 75%;
+   }
+A:link {
+   font-family: "verdana";
+   color:#CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:visited {
+   font-family: "verdana";
+   color: #CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:hover {
+   text-decoration: underline;
+   } -->
+</style>
+</head>
+
+<body>
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       border="0">
+                                             <TR><TD width="550">
+<p>
+<b>Further discussion of problem 5-12</b></p><p>
+
+
+The heart of this problem has to do with what happens when power 
+is initially applied.  What initial state will the circuit assume 
+and how will that happen?  The text discusses this matter 
+starting on page 232 near the bottom of the page, the paragraph 
+that starts, "When the power in a digital system is first turned 
+on. . ." and continuing up to Example 5-3 on page 233.  The reset 
+signal discussed in this part of the textbook is active when the 
+power is first applied.  After the power is stable (at +5 volts 
+for example) and the clock has been running properly for at least 
+a few cycles (the clock itself usually will not run correctly if 
+the power is not stable) then the reset signal automatically 
+changes to be not active and normal operation of the state 
+machine begins from a known state that was forced by the reset 
+signal.  Most power supply circuits provide a reset signal like 
+this. </p><p> 
+
+In problem 5-12 a schematic is given.  A new input labeled 
+<i>R</i> (for "reset") needs to be added.  This signal needs to 
+connect into the schematic through wires with or without other 
+changes.  You could for example add a "reset" input to each of 
+the flip-flops.  (See the discussion in the text titled "Direct 
+Inputs" starting on page 221.)  You could change the number of 
+inputs on some of the gates.  (For example, change a 2-input gate 
+to a 3-input gate and connect <i>R</i> to the new gate input.)  
+You may add new gates to the next-state logic. You may even 
+re-design the next state logic entirely if this is the easiest 
+approach for you.  </p><p> 
+
+Although the final designs for parts <i>a</i> and <i>b</i> each 
+call for different logic diagrams), each should function the same 
+as the given design when <i>R</i> is not active, but should go to 
+the assigned state (given in the problem statement) and stay 
+there regardless of <i>X</i> when <i>R</i> is active.  The 
+problem statement specifies that for part <i>a</i>, <i>R</i> is 
+active when <br><i>R</i> = 1 and for part <i>b</i>, <i>R</i> is 
+active when <i>R</i> = 0. </p><p><small><i> 
+
+
+(Use your browser's back arrow  or Alt-LeftArrow to return to 
+the web page you were previously viewing.)</i></small> 
+
+                                           </td></tr></table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

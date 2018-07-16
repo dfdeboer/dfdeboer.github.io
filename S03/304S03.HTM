@@ -1,0 +1,235 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../favicon.ico">
+<TITLE>EGR 304 Course Page</TITLE>
+</HEAD>
+<BODY><PRE>
+               DORDT COLLEGE ENGINEERING DEPARTMENT
+               MICROPROCESSOR INTERFACING -- EGR 304
+                          (Spring 2003)
+
+Click this <A HREF="../ddb/notes00.htm">note on cached pages and handouts</A> if you are 
+having difficulty seeing the latest version of this page.
+
+          VARIOUS LINKS WITH INFO RELATED TO THIS COURSE
+          ----------------------------------------------
+(Links to Motorola often require Microsoft IE 5.0 or better)
+<A HREF = "http://e-www.motorola.com/brdata/PDFDB/docs/M68HC11RM.pdf">Motorola, 68HC11 Family Reference Manual</A> (Data Book, 650 pages)
+<A HREF = "http://e-www.motorola.com/brdata/PDFDB/docs/M68HC11E.pdf">Motorola, 68HC11E Family Technical Data</A> (Data Book, 336 pages)
+<A HREF = "http://e-www.motorola.com/webapp/sps/library/documentationlist.jsp?rootNodeId=03M0ym4t3ZGM0ynTpnLn&nodeId=03M0ym4t3ZGM98635&Product=Select+a+Product+or+Technology&Family=03M0ym4t3ZGM98635&SubFamily=No+further+options&Device=All&DocType=All&Results=150&submit=Go">Motorola, More documents on the 68HC11 family</A> (index page)
+<A HREF = "http://www.advancedmsinc.com/download/ezm-adv.pdf">Shah, Microprocessor Design Made Easy Using the MC68HC11</A> (Textbook)
+<A HREF = "http://z80.info/zip/z80cpu_um.pdf">Zilog, Z80 CPU User's Manual</A>
+<A HREF = "http://www.simtel.net/pub/pd/42741.html">Download PseudoSam 80z Assembler, an 8086 to Z80 Cross Assembler</A>
+<A HREF = "http://www.bh.com/companions/0750650648/">A Free Chapter on "Instruction Set and Code Assembly"</A> 
+    The above link is to a book, Embedded Systems by Wilson
+    (On the Book's page, click on the link to the free chapter) 
+<A HREF = "304s03sy.doc">The course syllabus</A> in MS-Word Format
+<A HREF = "http://e-www.motorola.com/brdata/PDFDB/docs/M68HC05TB.pdf">M68HC05 Family: Understanding Small Microcontrollers</A>
+    The above link was discovered by Matt Veenstra.  Prof. De 
+    Boer recommends especially the later chapters on programming 
+    and peripherals.  The language in this book Motorola specific.
+    For example, what they call an, "I/O memory location," is 
+    generally known as a "memory mapped I/O port."  Other than
+    these types of issues, the info in the book is generally 
+    applicable to all microcontrollers.
+<A HREF = 
+"http://www2.rad.com/networks/1995/rs232/rs232.htm">RS-232</A> A tutorial from Tel-Aviv University. 
+<A HREF = 
+"http://burks.brighton.ac.uk/burks/pcinfo/hardware/ethernet/contents.htm">Ethernet Tutorial</A> from The University of Brighton. 
+<A HREF = 
+"http://www.analog.com/library/analogDialogue/bestof/pdf/16_3.pdf">Understanding Interference-Type Noise</A> from Analog Devices Company
+<A HREF = 
+"http://www.analog.com/library/analogDialogue/bestof/pdf/17_1.pdf">Shielding and Guarding</A> from Analog Devices Company
+<A HREF = 
+"http://www.semiconductors.philips.com/acrobat/3049.pdf">A data sheet with information on LCD multiplexing</A> from Philips
+<A HREF = 
+"http://www.cs.uiowa.edu/~jones/step/index.html">A Tutorial on stepper motors<A> from Jones, ISU
+
+
+Homework must adhere to reasonable <A HREF =
+"hwstds03.htm">standards</A>.
+
+                           PROBLEM SETS             (Last update:
+                           ------------         5/01/03 11:19 am) 
++===============================================================+ 
+|PS|ASSIGNED| DUE |RETURNED| Problems Assigned                  |
+| #|        /     \        |                                    |
+|==+=======+=======+=======+====================================|
+| 1|  1/14 |  1/16 |  1/21 | Answer the questions at the end of |
+|  |       |       |       | Lesson One in Shah's book and these|
+|  |       |       |       | Additional questions:              |
+|  |       |       |       | 18.  What is the data bus width    |
+|  |       |       |       |      of the Z80?                   |
+|  |       |       |       | 19.  What is the address bus width |
+|  |       |       |       |      of the Z80?                   |
+|  |       |       |       | 20.  What is the data bus width    |
+|  |       |       |       |      of the M68HC11E?              |
+|  |       |       |       | 21.  What is the address bus width |
+|  |       |       |       |      of the M68HC11E?              |
+|  |       |       |       | (Use the manufacturer's User's     |
+|  |       |       |       | Manuals to answer questions 18-21.)|
+|--+-------+-------+-------+------------------------------------|
+| 2|  1/21 |  1/28 |  2/?? | Weekly progress reports on the RTC |
+|  |       |       |       | project as follows:                |
+|  |       |       |       |                                    |
+|  |       |       |       | Jeremy--Hardware to generate 60 Hz |
+|  |       |       |       | tic clock interrupt for Z-80       |
+|  |       |       |       |                                    |
+|  |       |       |       | Nate--Hardware to generate tic     |
+|  |       |       |       | clock interrupt via system clock   |
+|  |       |       |       | division                           |
+|  |       |       |       |                                    |
+|  |       |       |       | Philip--Software subroutine to     |
+|  |       |       |       | count seconds, minutes, hours      |
+|  |       |       |       |                                    |
+|  |       |       |       | Gabe--Software subroutine to       |
+|  |       |       |       | convert seconds, minutes, hours    |
+|  |       |       |       | to seven-segment display           |
+|  |       |       |       |                                    |
+|  |       |       |       | Brian:  Software main loop and     |
+|  |       |       |       | tic clock ISR.  Main loop must     |
+|  |       |       |       | display time-of-day and allow the  |
+|  |       |       |       | clock to be set.                   |
+|  |       |       |       |                                    |
+|  |       |       |       | Jonathan:  Subroutine to check for |
+|  |       |       |       | key-press.  If a key is pressed,   |
+|  |       |       |       | set the time-of-day in response to |
+|  |       |       |       | further key presses. (clock stops  |
+|  |       |       |       | running if time is changed--resumes|
+|  |       |       |       | on a certain key-press.)           |
+|  |       |       |       |                                    |
+|  |       |       |       | On 1/28 turn in a preliminary      |
+|  |       |       |       | description showing how others will|
+|  |       |       |       | interface to your portion of the   |
+|  |       |       |       | design.                            |
+|  |       |       |       |                                    |
+|  |       |       |       | New reading for all in the class,  |
+|  |       |       |       | Chapter 6 in Wilson's book (see    |
+|  |       |       |       | the link above).                   |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+| 3|  1/30 |  2/6  |  3/25 | A one page cover memo with attched |
+|  |       |       |       | documentation giving a complete    |
+|  |       |       |       | design proposal for your portion   |
+|  |       |       |       | of the lab project.                |
+|  |       |       |       |                                    |
+|  |       |       |       | New reading (unrelated to the lab  |
+|  |       |       |       | project): Shah, Lesson 10, pages   |
+|  |       |       |       | 10-1 through 10-3 only.  Also read |
+|  |       |       |       | "RS-232" a Tutorial from Tel-Aviv  |
+|  |       |       |       | University.  (There is a link in   |
+|  |       |       |       | the list above.)                   |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+| 4|  2/06 |  2/13 |  3/25 | A one page cover memo with attached|
+|  |       |       |       | final documentation for your       |
+|  |       |       |       | portion of the lab project.        |
+|  |       |       |       |                                    |
+|  |       |       |       | New Reading (unrelated to the lab  |
+|  |       |       |       | project): browse the "Ethernet     |
+|  |       |       |       | Tutorial" from the University of   |
+|  |       |       |       | Brighton.  In the "Contents Page"  |
+|  |       |       |       | Give special attention to the      |
+|  |       |       |       | Physical Topology, Medium Access   |
+|  |       |       |       | Control, and Frames and Packets.   |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+| 5|  3/12 |  3/27 |  4/15 | From the handout on T-lines by     |
+|  |       |       |       | Stone:  2.1, 2.2                   |
+|--+-------+-------+-------+------------------------------------|
+| 6|  3/25 |  3/27 |  ---  | Read "Understanding Interference-  |
+|  |       |       |       | Type Noise" (see link above)       |
+|  |       |       |       | Also read "Shielding and Guarding" |
+|  |       |       |       | (see link above)                   |
+|--+-------+-------+-------+------------------------------------|
+| 7|  4/03 |  4/15 |  4/22 | From the handout on T-lines by     |
+|  |       |       |       | Stone: 2.3, 2.5, 2.6               |
+|  |       |       |       | On 4/10 the due date was extended  |
+|  |       |       |       | from 4/10 to 4/15                  |
++---------------------------------------------------------------+
+
+                              LABS                  (Last Update:
+                              ----              4/15/03 11:26 am)
++===============================================================+ 
+|LB|ASSIGNED| DUE |RETURNED| Problems Assigned                  |
+| #|        /     \        |                                    |
+|==+=======+=======+=======+====================================|
+| 1|  1/16 |  1/16 |  1/21 | Introduction to the Logic Analyzer |
+|  |       |       |       |                                    |
+|  |       |       |       | Turn in annotated list output from |
+|  |       |       |       | the logic analyzer at end of lab.  |
+|  |       |       |       | (to be graded as homework)         |
+|--+-------+-------+-------+------------------------------------|
+| 2|  1/23 |  ---  |       | Interfacing static RAM to the Z-80 |
+|--+-------+-------+-------+------------------------------------|
+| 3|  1/30 |       |       | An interrupt driven real-time      |
+|  |       |       |       | clock with seven-seg. display for  |
+|  |       |       |       | a Z-80 CPU.  With project report.  |
+|  |       |       |       | (3 weeks of lab time was expected--|
+|  |       |       |       | the due date has been extended.)   |
+|--+-------+-------+-------+------------------------------------|
+| 4|  4/03 |  4/15 |       | Transmission Lines.                |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+|  |       |       |       |                                    |
+|  |       |       |       |                                    |
++---------------------------------------------------------------+
+
+Report #1 on project #1, the interrupt-driven real-time clock due
+   4/25.  Write up your assigned part of the over-all project 
+   as a formal report.  Include the code you have written and 
+   explain how to properly use it.  Also include a copy of the 
+   entire project code (as an appendix perhaps).  The due date on 
+   this project had been slipping each week.  On 4/15 it was 
+   firmly set at 11:40 am, 4/24.  Penalty--one letter grade at 
+   each 11:40 am Tu and Th.  (One report per person in the 
+   class.)
+
+
+Report #2 on project #2, the transmission line lab.  Each team 
+   must write a report that addresses the issues and questions in 
+   the lab handout.  The report should include photographs of the
+   reflections (as seen on the oscilloscope) with 
+   explanations.  (One report per team of 3.)  Due 5/1 at 11:40 
+   am.  Penalty: one letter grade per 24 hours (Sunday excepted).
+
+
+
+                              TESTS                 (Last Update:
+                              -----             5/01/03 11:15 am)
+Test #1, Thursday, 2/20.  Covered power supplies, interrupts and 
+     use of the stack, basic concepts in assembly language, RS-
+     232, ethernet.  One crib sheet and a calculator were 
+     allowed.  A booklet of tables similar to 2 through 16 from 
+     the Zilog Z-80 User's Manual was provided with the test. 
+     (The tables were corrected versions of what is in the Zilog 
+     manual.)  Handed back on 2/25. 
+
+Test #2, Thursday 4/17,  Covered Transmission lines, grounding, 
+     and shielding.  One crib sheet and a calculator were 
+     allowed.  (On april 3 the original test date of 4/10 was 
+     changed to 4/17.)  Handed back on 4/29.
+
+Final exam, Monday 5/5, 1:15 - 3:15, will cover the entire 
+     course.  Specifically, the topics listed for tests one and 
+     two plus hardware I/O techniques (LED,s, LCDs and 
+     multiplexing of LCD displays, protection from inductive 
+     loads), stepper motors, position sensing.  Two crib sheets 
+     and a calculator will be allowed.  The Zilog data sheets 
+     from the first test will again be provided with the exam.
+
+
+
+<a href="../S02/304S02.HTM"
+>&lt&mdash;PREVIOUS</a> offering of this course <a href=
+"../S04/304S04.HTM">NEXT&mdash;&gt;</a> 
+ 
+
+
+
+         
+</PRE> 
+<A HREF = "../index.html"> Back to Prof. De Boer's home page </A> 
+</BODY> 
+</HTML> 
+

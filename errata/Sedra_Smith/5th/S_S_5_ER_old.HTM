@@ -1,0 +1,184 @@
+<HEAD>
+<TITLE>Errata: Sedra & Smith 5th</TITLE>
+</HEAD>
+<BODY><PRE>
+                         TEXTBOOK ERRATA   (Last update  4/30/05) 
+                         ---------------
+  Sedra & Smith, Microelectronic Circuits, 5th Ed., Oxford, 2004. 
+
+                                              <A NAME="P127"></A>
+p127 Problem D2.33 part (c) add the word "Norton" between "a" and 
+       "current".  Also add, "Assume ideal operation without 
+       saturation" to the end of the problem statement.
+                                              <A NAME="P361"></A>
+p361 Problem 4.18, part (a) insert "(1/2)" between the equals 
+       sign and the k'.  The equation should be:
+
+                          1  W          2
+                      i = -k'-(v - |V |)
+                          2  L       t
+                                              <A NAME="P365"></A>
+p365 Problem 4.46.  In the first line of the problem statement
+       delete the space between the number 2.5 and the "mu".
+       Also, put the number in parenthesis.  The first line then
+       ends with this equation:
+
+                      u C   = (2.5)u C   = 
+                       n ox         p ox
+
+       Better: just specify what is intended directly:
+
+                      2                 2
+       u C   = 20 uA/V ,  u C   8 8 uA/V  
+        n ox               p ox
+
+                                    2
+       (As printed u C   = 2.5 uA/V  is a correct reading
+                    n ox
+
+       but that was not the author's intention.)
+                                              <A NAME="P366"></A>
+p366 Problem 4.49 part (c) replace the phrase, "and disregarding 
+       "the distortion caused by the MOSFET's square-law 
+       characteristic," with the phrase, "and by using equations 
+       valid for large signals," . . . 
+       
+       (The printed phrase is ambiguous.  It has at least two 
+       equally valid interpretations.  First, as the author 
+       intended, "disregard," meaning "do not use a small-signal 
+       approximation to eliminate the distortion from the 
+       calculation, instead allow the distortion to be included 
+       in the calculation.  Second, "disregard," meaning assume a 
+       linear approximation as if no distortion existed.) 
+                                              <A NAME="P369"></A>
+p369 Problem 4.74.  Replace the first sentence with:  "Model the 
+       NMOS amplifier shown in Fig. P4.74 using the T equivalent 
+       model shown in Fig. 4.39(d)."  
+
+       ("Replace the transistor. . ." misleads students into 
+       thinking that the DC sources, VDD and VSS play a part in 
+       the solution.  In the needed small-signal analysis those 
+       DC sources get set to zero (or ground).)
+                                              <A NAME="P593"></A>
+p593 Equation 6.67.  In the numerator, replace the last instance 
+       of Cgs with Cgd.
+
+                                              <A NAME="P672"></A>
+p672 Problem 6.57.  Change part (a) so that it reads as follows:
+
+       (a) Neglecting the DC current in the feedback network and 
+
+       the effect of r , find V  .  Then find the DC current in  
+                      o        GS
+       the feedback network and V  .  Verify that you were 
+                                 DS
+       justified in neglecting the current in the feedback 
+
+       network when you found V  .
+                               GS 
+
+       (Note:  Given the original wording, many students assume
+
+       V   = V   since there is "no current in the feedback 
+        DS    GS
+       network," but this gives incorrect results.)
+                                              <A NAME="P777"></A>
+p777 Problem D7.24.  Change "let the BJT B [beta] be very large:" 
+       to "let the BJT B [beta] = 100:"  (Part d requires that 
+       beta = 100, so the formulae developed in parts a-c should 
+       include finite beta.  (Also note that the answer in the 
+       back of the book is wrong.  See <A HREF="#A7_24"
+       >pH-4</A> below.)
+       (Posted 4/30/05)
+                                              <A NAME="A9_1"></A>
+p H-1, Answer to problem 1.9.  Change the second instance of 
+       "157" to "106".  Also fix the grammar:  Just before the 
+       first instance of "a 157" add the word "with".  
+                                              <A NAME="A3_9"></A>
+p H-2, Answer to problem 3.9 part b should be "-1.67 V; 0 A."
+       (A minus sign is missing in the text.)
+                                             <A NAME="A3_78"></A>
+p H-2, Answer to problem 3.78.  Change "94.7%" to "47.4%."
+       (Alternatively, change the question.  Specifically 
+       change, "For what fraction of a cycle does the diode 
+       conduct?" to, "For what fraction of a cycle is there 
+       conduction through the load?"  Answer: 94.7%)
+                                             <A NAME="A4_34"></A>
+p H-2, Answers given to problem 4.34 are wrong.
+
+       The correct answers are R  = 2.5 Kohms, R  = 500 ohms.
+                                D               S
+
+       (Alternatively, to find the answers given in the text, 
+       change "2.5 V" to "5 V" in two places on Fig. 4.20.)
+                                             <A NAME="A4_46"></A>
+p H-2, Answer to problem 4.46 (b) is inaccurate.  Change "4.8 uA" 
+       "to 4.5 uA"  Students should express answers to part (b) 
+       that are accurate to at least 3 significant figures. 
+                                             <A NAME="A4_65"></A>
+p H-2, Answers to problem 4.65 are inaccurate.  Correct answers 
+       are: 36 kohms, 195 uA, 1.99 V.  (Increasing RD cannot 
+       increase the current!) 
+                                              <A NAME="A5_1"></A>
+p H-3, In the answer to problem 5.1 change the last instance of 
+       the word "cutoff" to "active."  (Alternatively, in the 
+       problem statement for line 8, change the instance of "5.0" 
+       in the "B" column to "-0.5."  Then the answer is 
+       "cutoff.") (Posted 1/13/05)
+                                             <A NAME="A5_20"></A>
+p H-3, In the answer to problem 5.20 part (d), 
+       change "0.35 V" to "-4.475 V" (Posted 1/25/05)
+                                             <A NAME="A5_67"></A>
+p H-3, In the answer to problem 5.67 part (b) 
+       change "1.8 mA, 0.3 mA" to "0.2 mA; 2.3 mA" (1/25/05)
+                                             <A NAME="A7_24"></A>
+p H-4, In the answer to problem D7-24 change "I" to "[alpha]I" 
+       in each instance of parts a and b.  In part d change 
+       "0.4 mA, 10 kohms" to 0.404 mA, "9.90 kohms."
+       (Posted 4/30/05)
+                                             <A NAME="A7_37"></A>
+p H-4, In the answer to problem 7-37 change "40 V/V; 50 kohms" to
+       "33.0 V/V; 60.6 kohms." (Posted 4/25/05, edited 4/30/05)
+
+
+Additional notes:
+(Clarifications--not errata)
+----------------------------                  <A NAME="P169"></A>
+p169 In the statement of the example problem Vz = 6.8 V at Iz = 5 
+   mA is given.  This does not mean that the actual diode 
+   current, labeled in blue as "Iz" on the figure, is necessarily 
+   5 mA.  It only means that if Iz is 5 mA then Vz (and in the 
+   figure, Vo) will be 6.8 V. 
+                                              <A NAME="P805"></A>
+p805, Figure 8.10.  The circuit element h   has units of 
+                                         22
+   conductance (siemens).  The actual resistance is 1/h   ohms.
+                                                       22
+   This is not a miss-print since conductors and resistors share 
+
+   the same symbol.  (Applies to parts b and c of the figure.)
+
+   (posted 4/25/05)
+
+
+Disclaimer:  This list of errata is provided by Professor De Boer 
+   for the use of his students in his courses.  Professor De Boer 
+   has no connection to the book's publisher or the authors of 
+   the textbook.  This list is offered as is, with no guarantee 
+   of any kind.  It is likely to be incomplete at the least.
+
+</PRE> 
+<HR>
+Use your browser's "back" tracking feature (icon with arrow 
+pointing left or try the ALT-LEFT_ARROW key combination) to 
+return to the page you were previously viewing.
+
+<A HREF = "../index.htm"> Link to Prof. De Boer's home page </A> 
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+</BODY> </HTML> 
+ 
+

@@ -1,0 +1,640 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../favicon.ico">
+<TITLE>EGR 220 Course Page</TITLE>
+</HEAD>
+<BODY><PRE>
+               DORDT COLLEGE ENGINEERING DEPARTMENT
+            LINEAR CIRCUITS AND ELECTRONICS -- EGR 220
+                          (SPRING 2004)
+
+Course grades were turned in to the Registrar at 3:10 PM on
+Tuesday, 5/11. 
+
+Click this <A HREF="../ddb/NOTES00.HTM">note on cached pages and handouts</A> if you are 
+having difficulty seeing the latest version of this page.   
+
+                           PROBLEM SETS             (Last update:
+                           ------------         5/03/04  4:38 pm) 
+           Homework must adhere to reasonable <A HREF =
+                  "HWSTDS04.HTM">standards</A>.
+(Old notes on homework are archived at the end of this section.)
++===============================================================+ 
+|PS|ASSIGNED| DUE |RETURNED| Problems Assigned (In Dorf &       |
+| #|        /     \        | (Svoboda unless otherwise noted)   |
+|==+=======+=======+=======+====================================|
+|  |  4/28 |  ---  |  ---  | Review your notes, labs, homework. |
+|  |       |       |       | Plan to bring questions to the     |
+|  |       |       |       | review class on Friday, 4/30       |
+|--+-------+-------+-------+------------------------------------|
+|38|  4/28 |  4/30 |       | P11.5-3, P11.6-6, P12.4-1          |
+|  |       |  5/03 |  5/03#|                                    |
+|  |       |by Noon| 4:37pm| Hints on P11.6-6:                  |
+|  |       |       |Pick up| 1) The lamp and kitchen range are  |
+|  |       |       |your HW|    resistive loads.  They have     |
+|  |       |       |from   |    a power factor of 1.            |
+|  |       |       |the    | 2) In part c, you can disconnect   |
+|  |       |       |plastic|    the range without changing the  |
+|  |       |       |bin    |    neutral current.                |
+|  |       |       |near   |                                    |
+|  |       |       |the egr| (At the request of the class, the  |
+|  |       |       |pod.   | due date was changed from 5/4 to   |
+|  |       |       |       | 5/3 so that the homework could be  |
+|  |       |       |       | returned prior to class.)          |
+|--+-------+-------+-------+------------------------------------|
+|37|  4/26 |  4/28 |       | P11.3-3, P11.4-1, P11.4-4, P11.4-5 |
+|  |       |  4/30 |  5/01#|                                    |
+|  |       |       |Pick up| Note on P11.3-3--work this problem |
+|  |       |       |your HW| in the phasor domain to find node  |
+|  |       |       |from   | voltages.  Then convert to time    |
+|  |       |       |the    | domain and find the power.         |
+|  |       |       |plastic| Eq. 11.3-3 on page 472 is helpful. |
+|  |       |       |bin    |                                    |
+|  |       |       |near   | Hint for P11.4-4.  The form of the |
+|  |       |       |the egr| equation for i(t) in the first half|
+|  |       |       |pod.   | of its cycle is "A - Acos(wt)."    |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+|36|  4/23 |  4/26 |       | P10.8-3                            |
+|  |       |  4/28 |  4/30#| (In class on 4/26, problems        |
+|  |       |       |       | P11.3-3 and P11.4-1 were delayed   |
+|  |       |       |       | to the next assignment.)           |
+|--+-------+-------+-------+------------------------------------|
+|35|  4/21 |  4/23 |       | P10.5-4, P10.6-2, P10.7-3          |
+|  |       |  4/26 |  4/28#| Note on P10.5-4:  the "j15" in the |
+|  |       |       |       | exponent is 15 degrees.  It needs  |
+|  |       |       |       | to be converted to radians if your |
+|  |       |       |       | calculator takes radians.          |
+|  |       |       |       |                                    |
+|  |       |       |       | For problem P10.7-3 the answer is  |
+|  |       |       |       | a schematic--a redrawn version of  |
+|  |       |       |       | the given schematic with the       |
+|  |       |       |       | source values as phasors and the   |
+|  |       |       |       | circuit element values as          |
+|  |       |       |       | impedances.                        |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+|34|  4/19 |  4/21 |       | Three problems:                    |
+|  |       |  4/23 |  4/26#| P9.3-1, DP9.9, P10.3-6             |
+|  |       |       |       |                                    |
+|  |       |       |       | Notes on P9.3-1                    |
+|  |       |       |       | ---------------                    |
+|  |       |       |       | You have already done this one via |
+|  |       |       |       | the direct method.  Now repeat it  |
+|  |       |       |       | using the operator method.  Recall |
+|  |       |       |       | that you should solve for vC with  |
+|  |       |       |       | the "+" label on the top of the    |
+|  |       |       |       | capacitor.                         |
+|  |       |       |       |                                    |
+|  |       |       |       | Notes on DP9.9                     |
+|  |       |       |       | --------------                     |
+|  |       |       |       | You have already found the         |
+|  |       |       |       | differential equation.  Now finish |
+|  |       |       |       | the solution.  You may use PSpice  |
+|  |       |       |       | as the hint suggests our any other |
+|  |       |       |       | method you have confidence in.     |
+|  |       |       |       | Other computer programs that are   |
+|  |       |       |       | capable of solving this problem    |
+|  |       |       |       | include Matlab, Mathcad and Derive.|
+|  |       |       |       |                                    |
+|  |       |       |       | Some additional hints for PSpice...|
+|  |       |       |       | The initial conditions can be      |
+|  |       |       |       | included with the IC=x command e.g.|
+|  |       |       |       | C1 1 0 0.33333 IC=10               |
+|  |       |       |       | L1 1 2 (value) IC=(value)          |
+|  |       |       |       | For details, see <A 
+HREF="http://bwrc.eecs.berkeley.edu/Classes/IcBook/SPICE/UserGuide/elements.html#282">here</A> and <A 
+HREF="http://bwrc.eecs.berkeley.edu/Classes/IcBook/SPICE/UserGuide/elements.html#316">here</A>.    |
+|  |       |       |       | An appropriate transient analysis  |
+|  |       |       |       | can be invoked with this line:     |
+|  |       |       |       | .TRAN 0.5 5 0 0.01 UIC             |
+|  |       |       |       | For details on ".tran" see <A HREF=
+"http://www.seas.upenn.edu/~jan/spice/spice.overview.html#Transient">here</A>.   |
+|--+-------+-------+-------+------------------------------------|
+|33|  4/16 |  4/19 |       | P9.3-1 Note: The problem statement |
+|  |       |  4/21 |  4/23#| should read, "Find the differential|
+|  |       |       |       | equation for vC in the circuit..." |
+|  |       |       |       | Also, put the "+" label for vC on  |
+|  |       |       |       | the top node of the capacitor.     |
+|--+-------+-------+-------+------------------------------------|
+|32|  4/14 |  4/16 |       | P9.3-2 using the "operator method" |
+|  |       |  4/19 |  4/21#| as stated in the problem.  Recall  |
+|  |       |       |       | that you should solve for iL.      |
+|  |       |       |       | DP9.9 except only find the diff.   |
+|  |       |       |       | equation for i(t) given t > 0.     |
+|  |       |       |       | Leave L as an unknown constant.    |
+|  |       |       |       | You may use any method.            |
+|--+-------+-------+-------+------------------------------------|
+|31|  4/12 |  4/14 |       | P9.3-2, except use the "direct     |
+|  |       |  4/16 |  4/19#| method."  Note: The problem        |
+|  |       |       |       | statement should read, "Find the   |
+|  |       |       |       | differential equation for iL in the|
+|  |       |       |       | circuit shown. . . " (In class on  |
+|  |       |       |       | 4/12 this assignment was changed   |
+|  |       |       |       | to omit the "operator method.")    |
+|--+-------+-------+-------+------------------------------------|
+|30|  4/09 |  4/12 |  4/19#| P8.4-4, P8.6-1, P8.6-4             |
+|  |       |  4/14 |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+|29|  4/07 |  4/09 |       | P8.3-9, P8.4-1 Note: See errata for|
+|  |       |  4/12 |  4/14#| correct answer to P8.4-1           |
+|--+-------+-------+-------+------------------------------------|
+|28|  4/05 |  4/07 |       | P8.3-1, P8.3-8                     |
+|  |       |  4/09 |  4/12#| Note on P8.3-1: the correct answer |
+|  |       |       |       | is 6 - 2exp(-1333t) volts, t in s  |
+|  |       |       |       | or in better form,                 |
+|  |       |       |       |    6 - 2exp(-t/750 us) volts       |
+|--+-------+-------+-------+------------------------------------|
+|27|  3/31 |  4/05 |  4/09#| P7.6-3, P7.9-1, P7.9-5             |
+|  |       |  4/07 |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+|  |  3/31 |  4/02 |  ---  | Study for the test on Friday.      |
+|--+-------+-------+-------+------------------------------------|
+|26|  3/24 |  3/31 |       | P7.6-1, P7.7.1, P7.8-1             |
+|  |       |  4/07 |  4/09#| Note: on Thurs, 3/25 the due dates |
+|  |       |       |       | for this assignment were changed   |
+|  |       |       |       | from 3/26, 3/29 to 3/29, 3/31.  On |
+|  |       |       |       | 3/26 the dates were changed again  |
+|  |       |       |       | to 3/31, 4-05.  On 4/05 the last   |
+|  |       |       |       | due date was changed to 4/07.      |
+|--+-------+-------+-------+------------------------------------|
+|25|  3/10 |  ---- |       | Lab assignment.  Turn in one set   |
+|  |       |  3/24 |       | of solutions per team.  A set of   |
+|  |       |       |       | solutions includes a schematic with|
+|  |       |       |       | part names (R1, Vs, etc.) and node |
+|  |       |       |       | numbers shown (drawn by hand is OK)|
+|  |       |       |       | the *.OUT file, and for transient  |
+|  |       |       |       | solutions, a printout from "Probe."|
+|  |       |       |       |                                    |
+|  |       |       |       | SP4-3, SP5-3, SP8-1                |
+|  |       |       |       |                                    |
+|  |       |       |       | There will be no peer grading on   |
+|  |       |       |       | this assignment.                   |
+|--+-------+-------+-------+------------------------------------|
+|24|  3/10 |  3/24 |       | P7.4-1, P7.5-1, P7.5-2             |
+|  |       |  3/26 |  3/31#| More about p7.4-1:  "Determine"    |
+|  |       |       |       | means "find closed-form equations  |
+|  |       |       |       | for."  Also, a computer is highly  |
+|  |       |       |       | recommended for making the plots.  |
+|  |       |       |       | Either Mathcad or Matlab would be  |
+|  |       |       |       | a good choice.  In Mathcad, the    |
+|  |       |       |       | "if" function might be helpful.    |
+|  |       |       |       | You can look it up in the online   |
+|  |       |       |       | help system.  An even more elegant |
+|  |       |       |       | technique is to use a unit step    |
+|  |       |       |       | function (also in Matlab).         |
+|--+-------+-------+-------+------------------------------------|
+|23|  3/08 |  3/10 |       | P7.3-1, P7.3-6                     |
+|  |       |  3/24 |  3/29#|                                    |
+|--+-------+-------+-------+------------------------------------|
+|22|  3/05 |  3/08 |       | DP 6-5,                            |
+|  |       |  3/10 |  3/24#| More about DP 6-5:  "Unloaded      |
+|  |       |       |       | voltage" means the same thing as   |
+|  |       |       |       | "Thevenin equivalent open circuit  |
+|  |       |       |       | voltage."  Also, when you choose   |
+|  |       |       |       | R1 and R2, values below 100 ohms   |
+|  |       |       |       | and above 1 Megohm are impractical |
+|  |       |       |       | to build.  To design an inverting  |
+|  |       |       |       | circuit, connect x to a and b to   |
+|  |       |       |       | ground.  To design a non-inverting |
+|  |       |       |       | amplifier, connect x to b and a to |
+|  |       |       |       | ground.  The "resistance at        |
+|  |       |       |       | terminals x-y seen by the          |
+|  |       |       |       | microphone" is exactly the         |
+|  |       |       |       | resistance a DMM would show if it  |
+|  |       |       |       | was set to measure ohms and then   |
+|  |       |       |       | connected in place of the mic.     |
+|  |       |       |       | Your answer to this problem should |
+|  |       |       |       | include:                           |
+|  |       |       |       |   a> A recommendation for either   |
+|  |       |       |       |      the inverting or the non-     |
+|  |       |       |       |      inverting configuration.      |
+|  |       |       |       |   b) Rationale for your            |
+|  |       |       |       |      recommendation.               |
+|  |       |       |       |   c) Suggested values for R1 and   |
+|  |       |       |       |      R2.  It is best to keep       |
+|  |       |       |       |      resistances near 10 kilohms   |
+|  |       |       |       |      in value.   They must be      |
+|  |       |       |       |      greater than 100 ohms and less|
+|  |       |       |       |      than 1 megohm.                |
+|  |       |       |       |  Many different "correct" answers  |
+|  |       |       |       |  are possible for this problem.    |
+|--+-------+-------+-------+------------------------------------|
+|21|  3/03 |  3/05 |       | P6.5-4, P6.6-7                     |
+|  |       |  3/08 |  3/24#|                                    |
+|--+-------+-------+-------+------------------------------------|
+|20|  3/01 |  3/03 |       | Read Section 6.4, Do P6.4-1, P6.4-2|
+|  |       |  3/05 |  3/08#| Hint for P6.4-2.  The current from |
+|  |       |       |       | left to right through the 3 kohm   |
+|  |       |       |       | resistor is equal to i .           |
+|  |       |       |       |                       0            |
+|--+-------+-------+-------+------------------------------------|
+|19|  2/27 |  3/01 |       | DP5-1                              |
+|  |       |  3/03 |  3/05#|                                    |
+|--+-------+-------+-------+------------------------------------|
+|18|  2/23 |  2/27 |       | P5.7-1, P5.7-3, P5.7-5             |
+|  |       |  3/01 |  3/05#|                                    |
+|--+-------+-------+-------+------------------------------------|
+|  |  2/23 |  ---  |       | Study for test on Wednesday, 2/25  |
+|  |       |  ---  |  ---  |                                    |
+|--+-------+-------+-------+------------------------------------|
+|17|  2/20 |  2/23 |       | DP4-1, P5.6-2, P5.6-4,             |
+|  |       |  2/27 |  3/01#|                                    |
+|--+-------+-------+-------+------------------------------------|
+|16|  2/18 |  2/20 |  2/27#| DP3-1, P5.5-4, P5.5-6              |
+|  |       |  2/23 |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+|15|  2/16 |  2/18 |       | DP2-3, P5.4-3, P5.5-1              |
+|  |       |  2/20 |  2/23#| Note on DP2-3:  Additional power   |
+|  |       |       |       | resistor ratings are in a 2, 5, 10 |
+|  |       |       |       | sequence, namely 2 W, 5 W, 10 W... |
+|--+-------+-------+-------+------------------------------------|
+|14|  2/13 |  2/16 |       | P4.7-12 but change the CCVS from   |
+|  |       |  2/18 |  2/20#| "5" to "5000" times the current.   |
+|  |       |       |       | P5.3.3, P5.4-2                     |
+|--+-------+-------+-------+------------------------------------|
+|13|  2/11 |  2/13 |       | P4.7-4, P5.3-1, P5.3-5             |
+|  |       |  2/16 |  2/18#|                                    |
+|--+-------+-------+-------+------------------------------------|
+|12|  2/09 |  2/11 |       | P4.5-5, P4.6-1, P4.7-2             |
+|  |       |  2/13 |  2/16#|                                    |
+|--+-------+-------+-------+------------------------------------|
+|11|  2/06 |  2/09 |       | P3.4-4, P4.4-4, P4.5-1             |
+|  |       |  2/11 |  2/13#|                                    |
+|--+-------+-------+-------+------------------------------------|
+|10|  2/04 |  2/06 |       | P3.3-3, P4.4-1, P4.4-3             |
+|  |       |  2/09 |  2/11#|                                    |
+|--+-------+-------+-------+------------------------------------|
+| 9|  2/02 |  2/04 |       | P4.3-4, VP2-1                      |
+|  |       |  2/06 |  2/09#|                                    |
+|--+-------+-------+-------+------------------------------------|
+| 8|  1/30 |  2/02 |       | P3.3-2, P4.3-1                     |
+|  |       |  2/04 |  2/06#| (On 2/2 a note about using two     |
+|  |       |       |       | simultaneous equations was         |
+|  |       |       |       | retracted in class.  On 2.6 it was |
+|  |       |       |       | removed from this page.)           |
+|--+-------+-------+-------+------------------------------------|
+| 7|  1/28 |  1/30 |       | P2.7-1, P2.8-1                     |
+|  |       |  2/02 |  2/04#|                                    |
+|--+-------+-------+-------+------------------------------------|
+| 6|  1/26 |  1/28 |       | P2.6-2                             |
+|  |       |  1/30 |  2/02#|                                    |
+|--+-------+-------+-------+------------------------------------|
+| 5|  1/23 |  1/26 |       | P2.5-7, P2.6-1                     |
+|  |       |  1/28 |  1/30#|                                    |
+|--+-------+-------+-------+------------------------------------|
+| 4|  1/21 |  1/23 |       | DP1-1, Read section 2.3, Do P2.3-1 |
+|  |       |  1/26 |  1/28#|                                    |
+|--+-------+-------+-------+------------------------------------|
+| 3|  1/19 |  1/21 |       | P1.6-2                             |
+|  |       |  1/23 |  1/26#|                                    |
+|--+-------+-------+-------+------------------------------------|
+| 2|  1/16 |  1/19 |       | P1.6-3                             |
+|  |       |  1/21 |  1/23#|                                    |
+|--+-------+-------+-------+------------------------------------|
+| 1|  1/14 |  1/16 |       | P1.3-1, P1.3-3, P1.3-4             |
+|  |       |  1/19 |  1/21#|                                    |
++---------------------------------------------------------------+
+Note 1) Homework must be ready for discussion in class on the 
+first listed due date.  It must be turned in for a final grade on 
+the second listed due date.  Discussion will be 1/4 of the 
+homework grade.
+
+Note 2) If a "#" follows the "returned" date, then the solution
+key is posted on the cork board across the hall from room S233.
+Solution keys are generally posted soon after the homework is 
+returned.
+
+Note 3) Problems sets shown above with no "assigned" date are 
+tentative.  More problems might be added, expected due dates 
+might change, but problems shown will eventually be assigned.
+
+Note 4) On 2/6 the order of this list was changed from 
+chronological to reverse chronological.
+
+
+                           TEXTBOOK ERRATA           (last update
+                           ---------------               4/28/04)
+First, see the author's list at 
+   <A HREF="http://www.clarkson.edu/~svoboda/errata/6th.html">http://www.clarkson.edu/~svoboda/errata/6th.html</A>
+
+In addition, there are the following errata:
+
+
+Page 168, Table 5.6-1, method 2, part c,
+   add "Zero all independent sources, then" between the
+   "(c)" and the pharase "Connect a 1-A current source. . ."
+   The edited phrase will read:
+      "Zero all independent sources, then connect 
+      a 1-A source from terminal b to terminal a.  
+      Determine Vab.  Then Rt = Vab/1."
+
+
+Page 186, Problem P5.6-4, answer is i   = 1.13 A, ("A" not "V").
+                                     sc
+
+Page 285, Problem P7.7-1  There are at least two ways to fix this 
+   problem. 
+
+   1.) In the problem statement, change "mA" to "A" and "ms" to 
+   "s".  In particular, the line that starts with "where" should 
+   read:  "where the units of time are seconds and the units of 
+   current are Amperes."  After, "The units of p(t) are W and the 
+   units of w(t) are J." add "Time, t, is in seconds." 
+
+
+   2.) Alternatively: change the answers to match the given 
+   units. Then 
+
+          /
+          | 0         if t <= 0
+          |
+   p(t) = | 1.6t      if 0 < t < 0.001
+          |
+          | 0         if t >= 0.001
+          \
+
+          /         
+          | 0         if t <= 0
+          |     2
+   w(t) = | 0.8t      if 0 < t < 0.001
+          |       -5
+          | 8 x 10    if t >= 0.001
+          \
+   
+   Where in the answers, the units for p(t) are W, the units for 
+   w(t) are J, and t is in seconds. 
+
+
+Page 339, Problem P8.3-1, answer should be:
+
+                              -t/750 us
+                 v(t) = 6 - 2e          V, t >= 0
+
+Page 386, Table 9.14-2, In the overdamped natural response both 
+   exponents should be positive, as shown here:
+
+                     A exp(s t) + A exp(s t)
+                      1     1      2     2
+
+Page 387, Problem P9.3-1.  The problem statement should read:
+
+   "Find the differential equation for v  in the circuit..."
+                                        C
+   Also, label v  to the left of the capacitor with the "+"  
+                C
+   label on top.  (There are many differential equations "for the 
+
+   circuit." The v  equation is the one sought for the answer.)
+                  C
+
+Page 387, Problem P9.3-2.  The problem statement should read:
+
+   "Find the differential equation for i  in the circuit..."
+                                        L
+
+Page 456, Problem P10.7.3.  The unit on each current source
+
+   should be "A" for amperes, not "V."  (Two instances.)
+
+
+Page 514, Problem P11.4-4.  In the answer change 
+
+   "I    = 5 mA" to "I    = 4.33 mA"
+     rms              rms
+
+   Alternatively, change the illustration to show half cycles of
+   sin(wt) instead of full cycles of 0.5*(A - Acos(2wt)) for the 
+   non-zero portions of the waveform.  Then the correct answer 
+   will be 5 mA. 
+   
+                              
+                              TESTS        (Last update: 5/11/04)
+                              -----
+
+Test #1, Wednesday, 2/25. The test covered Chapters 1 through 
+   4 and through section 5-4 of Chapter 5. Preparation to solve 
+   systems of linear algebraic equations with at most three 
+   unknowns was expected.  Closed book, closed notes.  A 
+   calculator was allowed (and recommended).  Handed back on 2/27.
+   Lo = 41, Avg = 66, Hi = 98.
+   Test solutions are posted along with the homework.
+
+Test #2, Friday, 4/2.  Closed book, closed notes.  A calculator 
+   was allowed and recommended.  The test covered Chapter 5 
+   Section 5-5 through Chapter 7 Section 7-5, omitting the 
+   sections on MATLAB (sections 5-8 and 6-9).  Material in 
+   problem sets 15 through 24 and Labs 5, 6, and 8 which is 
+   related to the Chapter coverage listed above was also allowed 
+   on the test.  Material covered on Test #1 was prerequisite for 
+   this test.  (On Wednesday, 3/24 the test date was changed from 
+   3/31 to 4/2.)  Handed back on 4/7. Lo = 49, Avg = 78, 
+   Hi = 100. 
+
+Final Exam, Tuesday 5/4 from 8:00 am to 10:00 am.  Covered the 
+   entire course with emphasis on each topic roughly proportional 
+   to the time spent on the topic.  Closed book, closed notes.  A 
+   calculator was allowed and recommended.  Knowing how to use 
+   complex numbers with your calculator was also recommended.  
+   Tables 9.3-1 and 9-3-2 were included on the exam as given 
+   information--there was no need to memorize them.  Material 
+   covered on the final exam was everything covered in the lists 
+   above for Tests #1 and #2 plus all the lab handouts and 
+   homework assignments, plus Chapter 7 Section 7-6 through 
+   Chapter 12 Section 12-4 except for material on MATLAB, coupled 
+   inductors, and transformers.  Specifically, Sections 7-11, 10-
+   14, 11-9, and 11-10 were not covered on the final exam.  Raw 
+   scores:  Lo = 41, Avg = 74, Hi = 89. 
+
+Research Paper Grading is done.  Average grade was 2.8 ("C") on a 
+   scale of 4.0.  The low was 0.7 ("D-"), the high was 4.0 ("A").
+
+
+                               LAB         (Last update: 4/30/04)
+                               ---
+General information about the lab <A HREF = "../ddb/EE_LAB/electronics_lab_page.htm">equipment and procedures</A>.
+(Requires Internet Explorer 5.x)
+
+Information about future assignments is tentative until the
+"ASSIGNED" date.
++===============================================================+ 
+|LB|ASSIGNED| DUE |RETURNED| Problems Assigned (In Dorf &       |
+| #|        /     \        | (Svoboda unless otherwise noted)   |
+|==+=======+=======+=======+====================================|
+| 1|  1/14 |  ---  |  ---  | Safety and introduction to the     |
+|  |       |       |       | instrumentation                    |
+|--+-------+-------+-------+------------------------------------|
+| 2|  1/21 |  ---  |  ---  | Uncertainty, Tolerances & Loading..|
+|--+-------+-------+-------+------------------------------------|
+| 3|  1/28 |  ---  |  ---  | Power Supplies and Batteries       |
+|  |       |       |       |                      (no handout)  |
+|--+-------+-------+-------+------------------------------------|
+| 4|  2/04 |       |       | DC Battery tester project          |
+|  |  2/11 |  Wed. |       |    (3 weeks)                       |
+|  |  2/18 |  3/10 |       | Report due on Wednesday, 3/10      |
+|--+-------+-------+-------+------------------------------------|
+| 5|  2/25 |  ---  |  ---  | Introduction to the Oscilloscope   |
+|  |       |       |       | and signal generator               |
+|--+-------+-------+-------+------------------------------------|
+| 6|  3/03 |  ---  |  ---  | Op amps                            |
+|--+-------+-------+-------+------------------------------------|
+| 7|  3/10 |  3/24 |       | Introduction to circuit simulation |
+|  |       |       |       |                                    |
+|  |       |       |       | Related links:                     |
+|  |       |       |       | <A HREF = 
+"http://www.seas.upenn.edu/~jan/spice/spice.overview.html">SPICE--A Brief Overview</A>, U Penn    |
+|  |       |       |       | <A HREF = 
+"\\defender3\data\Apps_Egr\OrcadLite\Document\rel92pdf.pdf">Orcad online manuals</A> (DENIS only)  |
+|  |       |       |       | <A HREF = 
+"http://bwrc.eecs.berkeley.edu/Classes/IcBook/SPICE/">The Spice Page</A>, UC Berkeley        |
+|--+-------+-------+-------+------------------------------------|
+| 8|  3/24 |  ---  |  ---  | RL and RC Circuits, step and pulse |
+|  |       |       |       | responses                          |
+|--+-------+-------+-------+------------------------------------|
+| 9|  3/31 |  ---  |  ---  | RLC Circuits                       |
+|--+-------+-------+-------+------------------------------------|
+|10|  4/07 |  ---  |  ---  | Diodes and Rectifiers              |
+|--+-------+-------+-------+------------------------------------|
+|11|  4/14 |  ---  |  ---  | Transistors                        |
+|--+-------+-------+-------+------------------------------------|
+|12|  4/21 |  ---  |  ---  | Sinusoidal Steady State and Phasors|
+|--+-------+-------+-------+------------------------------------|
+|  |  4/28 |  ---  |  ---  | Common Emitter Amplifier           |
+|  |       |       |       | (On 4/28 this lab was cancelled.)  |
++---------------------------------------------------------------+
+
+
+                         RESEARCH PAPER    (Last update: 1/21/04)
+                         --------------
+Assigned on the first day of class, 1/14.  
+
+Write a paper about a person who contributed to the development 
+of electrical theory.  The paper must explain what motivated the 
+person to do the work done or how the person's work influenced
+culture.  Some biographic exposition will be necessary, but the 
+paper need not be a complete biography.
+
+Graded in two parts:  One-third of the grade will be from a 
+preliminary draft which includes the thesis, outline, and an 
+annotated bibliography.  
+
+FIRST PART, DUE 2/18
+Do a literature search.  Based on the literature search, write a 
+thesis statement and outline.  Turn this part of the assignment 
+in when you are done.  (Any time before the due date.) 
+
+Document your sources of support for your thesis statement with 
+an annotated bibliography of the relevant literature that you 
+found.  For each source, describe the essence of the content and 
+how you will use it in your paper.  (E.g.  "The author believes 
+that the Federal Energy Regulatory Commission has not done its 
+job properly.  This supports point A1 in my outline.") 
+
+Your annotated bibliography must include at least two peer-
+reviewed sources and at least five sources in total. Prof. De
+Boer has an annotated list of recommended sources available on
+the Web at <A 
+HREF="../ddb/DORDTLIT.HTM">https://dfdeboer.github.io/ddb/DORDTLIT.HTM</A> 
+
+Grading:
+
+
+Your thesis with outline and annotated bibliography will be
+graded as follows:
+
+"A" Thesis statement has a limited and manageable scope.  It 
+    is no more than three sentences and no more than 100 
+    words.  It also expresses a specific and legitimately 
+    debatable point-of-view.  The paper will either defend 
+    that point-of-view or present an analysis of the point-of-
+    view, describing the conditions under which it is likely 
+    to succeed best and the opposing points-of-view. 
+
+    Your thesis statement must meet the guidelines found in
+    Write for College.  Particularly see 024, 111, 113,
+    287, and 288.
+
+    The thesis is grammatically correct.
+
+    The outline clearly supports the thesis.  (See Write 
+    for College 116.) 
+
+    The bibliography contains at least two peer-reviewed sources
+    and at least five sources over-all.  At least two peer-
+    reviewed sources and five sources over-all are independent of
+    each other.  (Examples of non-independent sources are two
+    sources by the same author or publisher.)
+
+    The annotations for each source show clearly the essential
+    content of the source that is relevant to your paper and how
+    you will use the source.
+
+"B" The bibliography requirements for five independent sources 
+    are met and two are peer reviewed.  One or a few other 
+    requirements are not met in full. 
+
+"C" Serious problems with the Thesis, although a good-faith
+    effort shows. --OR-- Inadequate Bibliography --OR-- A good-
+    faith effort on the outline is not evident.
+
+"D" (This grade will not be given.)
+
+"F" Anything less than a "C"
+
+("Good faith" means that several of the parts of the item relate
+    logically to the context or each other.  Conversely, a list
+    of independent items or equations or quotations taken out-of-
+    context, etc. show bad faith.)
+
+
+
+SECOND PART
+Write the final copy of the paper, Due 4/23 at the latest.
+Turn this paper in when you are done.  (Any time before the due 
+date.)  The final copy of the paper must follow the thesis of the 
+first part of the work.  If you discover that the thesis is 
+unworkable, you may resubmit the first part for a new first-part
+grade based on a new thesis.   
+
+
+
+
+          VARIOUS LINKS WITH INFO RELATED TO THIS COURSE
+          ----------------------------------------------
+<A HREF = "220S04SY.DOC">Course Syllabus</A> (MS-Word format)
+
+Government Sources on the SI system: 
+   <A HREF = "http://www.bipm.fr/enus/3_SI/si.html">Bureau International des Poids et Mesures</A> (France)
+   <A HREF = "http://physics.nist.gov/cuu/index.html">National Institute of Standards and Technology</A> (USA)
+
+Writing Style Guidelines:
+   <A HREF = 
+   "http://www.ieee.org/portal/cms_docs/pubs/transactions/auinfo03.pdf">IEEE Information for Authors</A> <--Use this for your lab report. 
+   <A HREF = "http://www.asme.org/pubs/MS4.html">ASME Journal Publication Guidelines</A>  (Listed here FYI.)
+
+Other links:
+   Russ Rowlett's dictionary of units <A HREF = "http://www.unc.edu/~rowlett/units/index.html">How Many?</A>
+   National Center for Atmospheric Research e-book, 
+      <A HREF = "http://www.asp.ucar.edu/colloquium/1992/notes/part1/course.html">The Analysis of Observations</A>
+      See especially <A HREF = "http://www.asp.ucar.edu/colloquium/1992/notes/part1/node6.html">Chapter 2</A>
+
+
+       SOME ITEMS ON RESERVE IN THE LIBRARY FOR THIS COURSE 
+       ----------------------------------------------------
+Robbins, Allan H., <I>Circuit Theory and Practice</I>
+   This is a non-calculus based textbook.  
+
+Edmininster, Joseph, <I>Schaum's Outlines--Electric Circuits</I> 
+   This book has many worked examples in it.
+
+Note:  You can <A HREF = 
+"../ddb/RESERVE.HTM">read more about these books and others</A>.
+
+<a href="../S03/220S03.HTM"><--PREVIOUS</a> offering of this course <a href="../F04/220F04.HTM">NEXT--></a>
+</PRE> 
+
+<A HREF = "../index.html"> Back to Prof. De Boer's home page </A> 
+
+</BODY> </HTML> 
+ 
+

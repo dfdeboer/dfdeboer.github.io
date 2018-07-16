@@ -1,0 +1,157 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>Switched ethernet</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center>&nbsp;<img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+
+<p><img SRC="images/switetht.gif" ALT="Switched Ethernet" NOSAVE BORDER="2" HEIGHT="17" WIDTH="292">
+
+<p><h2>What is switched ethernet?</h2>
+
+<p><img SRC="images/switch.jpg" ALT="Switch.jpg" NOSAVE BORDER="2" HEIGHT="108" WIDTH="303">
+<p>Switched
+ethernet is a packet-switching technology that <b>dramatically
+reduces the network congestion</b> caused by using the CSMA/CD <a HREF="mac.htm">medium
+access control</a> over shared media. Sometimes known as a <b>switched
+hub</b>, a switch offers guaranteed bandwidth per port and operates
+at the medium access control sublayer of the network access layer of the
+<a HREF="tcpip.htm">TCP/IP protocol suite</a>.
+
+<p>The introduction of switching can overcome congestion, due to the
+non-deterministic nature of CSMA/CD, by <b>dynamically
+routing frames</b> across networks. Don't confuse switches with <a HREF="router.htm">routers</a>
+- strictly speaking, switches are layer two devices and routers operate
+at layer three. Just to confuse matters, layer three switches are being
+developed to support the growing needs of large corporate intranets. The
+first generation of layer 3 switches were known as <b>High
+Function</b> switches. These devices employed a mixture of hardware
+switching and software routing. This represented a compromise because the
+performance benefits of switching were sometimes lost with the reliance
+on slow software. The new generation of layer three switches route using
+hardware only.
+
+<p><img SRC="images/aniswitc.gif" ALT="AniSwitch.gif" NOSAVE BORDER="2" HEIGHT="300" WIDTH="453">
+<p>A switch will examine the incoming <a HREF="framepac.htm">frame</a>'s
+MAC header to determine the physical address of the destination device.
+Whereas a <a HREF="switch.htm">hub</a> simply repeats an incoming frame
+out of all its ports, the switch creates a <b>virtual
+path</b> to forward frames to the port where it knows the destination
+device exists.
+
+<p>CSMA/CD is no longer required, each device on a switched network
+has guaranteed access to the media through the switch. Switches can also
+provide some flow control to network traffic by temporarily storing frames
+in a buffer. Flow control is necessary when switches are used between clients
+operating over 10BaseT and servers using 100BaseT.
+
+<p>Switches can also generate <b>backpressure </b>to
+cause transmitting devices to wait long enough for the switch to deal with
+backlogged traffic. To create backpressure, the switch broadcasts false
+collision detection signals to cause network interface cards to back off.
+It is ironic that switches must sometimes mimic the <b>CSMA/CD</b>
+access methodology that they negate.</h2>
+
+<p>In order to operate effectively, switches maintain their own MAC
+look-up tables. These table illustrate which network device is at which
+port on the switch. The look-up tables are constantly updated. When a switch
+is newly installed, it will construct its table via an <a HREF="tcpippot.htm">Address
+Resolution Protocol</a> (ARP) broadcast. ARP is a <a HREF="tcpip.htm">TCP/IP</a>
+layer 3 protocol.
+
+<p>The animated gif image shows the essential
+difference between a switch and a hub. Note how the switch routes the frame
+to the right hand segment, whereas the hub merely repeats the frame out
+of both ports.
+
+<h2>What sort of switches are there?</b></h2>
+
+<p>There are three sorts of layer 2 switches:
+<ul>
+<li>
+<b>Cut-through switches</b>.
+These switches only examine the address in the MAC header. The switch consults
+its <b>MAC address look-up table</b>
+to decide which port to forward the frame to. It then creates a <b>virtual
+link</b> (point-to-point connection) and forwards
+the frame. Cut-through switches do not examine the frame's check sequence
+(<b>cyclic redundancy check</b>)
+to ascertain if it is corrupt, therefore they can <b>forward
+corrupted data</b>. The destination will then
+request a retransmission. This, and the resultant retransmission will increase
+network traffic.<br>
+<br></li>
+
+<li>
+<b>Store and forward switches</b>.
+A store and forward switch <b>reads the whole
+incoming frame into a buffer</b> and calculates
+its own frame check sequence. The switch then <b>compares
+its CRC figure to the frame's CRC</b>. If the
+two CRCs are the same, the switch will consult its address look-up table,
+create the virtual link and then forward the frame. <b>Store
+and forward is slower than cut-through</b>, but
+it won't forward corrupted frames.<br>
+<br></li>
+
+<li>
+<b>Error-free cut-through switches</b>.
+These switches <b>read the MAC address and the
+CRC for each frame</b>. If the CRC is correct,
+the switch configures its port for cut-through (fast) switching. If the
+CRC is incorrect, the switch configures its port for store and forward
+(error-checked) switching. As the amount of corrupted frames diminishes
+to a pre-set threshold, the switch will reconfigure the store and forward
+port back to cut-through.</li>
+</ul>
+<br>&nbsp;
+<h2>Tell me more!</h2>
+<center><table BORDER WIDTH="90%">
+<tr>
+<td WIDTH="30%"><a HREF="http://www.lantronix.com/htmfiles/mrktg/catalog/swtutor.htm">Lantronix
+switch tutorial</a></td>
+
+<td>Good switching tutorial</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.cit.ac.nz/smac/winnt/pt1_9.htm#start">Switches
+- Central Institute of Technology</a></td>
+
+<td>General switched ethernet information</td>
+</tr>
+
+<tr>
+<td><a HREF="http://www.xylan.com/sb/start.html">Xylan switching information</a></td>
+
+<td>Another good commercial resource</td>
+</tr>
+</table></center>
+
+
+<p>
+<hr WIDTH="100%">
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

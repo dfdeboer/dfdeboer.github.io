@@ -1,0 +1,613 @@
+<html>
+<head>
+<meta http-equiv="pragma" content="no-cache">
+<link rel="shortcut icon" href="../../favicon.ico">
+<title>EGR 304 Homework</title>
+<style type="text/css"><!--
+TABLE {
+   font-family: "verdana";
+   }
+TD {
+   font-family: "verdana"; /* for Netscape 4.7 */
+   font-size: 75%;
+   }
+A:link {
+   font-family: "verdana";
+   color:#CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:visited {
+   font-family: "verdana";
+   color: #CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:hover {
+   text-decoration: underline;
+   } -->
+</style>
+</head>
+
+<body>
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       border="0">
+                                             <TR><TD width="550">
+                                               <p align="center">
+                   <A HREF="../../redirect/Dordt_Engineering.htm"
+
+         >DORDT COLLEGE ENGINEERING DEPARTMENT        </A><BR><B>
+        EMBEDDED MICROCOMPUTER SYSTEMS--EGR 304<BR>
+                       (Spring 2017)                     </B></P>
+
+                   <P style="text-align:center; margin-top: 10px; 
+                                       margin-bottom: 0px;"><U><B
+                       >PROBLEM SETS                 </B></U></P>
+
+                   <DIV style="text-align:right; margin-top: 0px;
+                              margin-bottom: 1px; font-size: 80%"
+
+                              >(Last update: 5/01/2017 8:34 pm)
+<!--  LAST UPDATE  - - - - - - - - - - - - - - - - - - - - -  -->
+                                                 </DIV></TD></TR>
+</TABLE> 
+
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       cellpadding="2"
+       border="1">
+<!-- - - - - - - - - - - - - -HEADER- - - - - - - - - - - --><TR>
+   <!-- PS# -->  
+    <TD width="27" align="center" valign="bottom"><b><small>
+    PS</small><br>
+    #                                                  &nbsp;</b>
+   <!-- Assigned -->
+    </TD><TD width="54" align="center" valign="bottom"><small><b>
+    Assigned                                         </b></small>
+   <!-- Due -->
+    </TD><TD width="54" align="center" valign="bottom"><small><b>
+    Due                                              </b></small>
+   <!-- Returned -->
+    </TD><TD width="54" align="center" valign="bottom"><small><b>
+    Returned                                         </b></small>
+   <!-- Assignment -->
+               </TD><TD align="center" valign="bottom"><small><b>
+    Assignment                                       </b></small>
+<!-- - - - - - - - - - - - - - - - - - - - - -  --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 10
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        4/20
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        4/27
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href=
+        "https://dordt.instructure.com/files/106833436/download?download_frd=1"
+        >5/01</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: A/D and D/A conversion                   <br>&nbsp;
+		Read: Slides from class.                         <br>&nbsp;
+		Scan through Chapters 2 and 3 of <a href=
+		"http://www.analog.com/en/education/education-library/data-conversion-handbook.html"
+		><i>The Data </i></a><br>&nbsp;
+        <a href=
+		"http://www.analog.com/en/education/education-library/data-conversion-handbook.html"
+		><i>Conversion Handbook, 2005</i></a> ed. Walt Kester.<br>&nbsp;
+		                                                 <br>&nbsp;
+		Work the following problems;                     <br>&nbsp;
+        1.) A cell-phone quality voice signal was        <br>&nbsp;
+        converted from analog to digital with a sampling <br>&nbsp;
+        rate of 8 kHz and 8 bits-sample.  Unfortunately  <br>&nbsp;
+        the anti-aliasing filter used was improperly     <br>&nbsp;
+        designed.  It actually had a cutoff frequency of <br>&nbsp;
+        of 8 kHz.  Using graphs, show what happens if a  <br>&nbsp;
+        5 kHz sinusoid is passed through this poorly     <br>&nbsp;
+        designed digital to analog converter.  (Ref: class<br>&nbsp;
+		slides from 4/13 and Ch. 2 of handbook, pages    <br>&nbsp;
+		2.27-31 or pages 29-33 in some PDF readers.      <br>&nbsp;
+		Especially note Figure 2.30 in the handbook.)    <br>&nbsp;
+		                                                 <br>&nbsp;
+        2.) An 8-bit dual-slope analog to digital is     <br>&nbsp;
+		desired to operate at 1000 samples per second.   <br>&nbsp;
+		Specify the necessary minimum clock rate for the <br>&nbsp;
+		used in this converter.  Explain your answer.    <br>&nbsp;
+		(Ref:  Ch 3 of handbook, pages 3.96, 3.97 or     <br>&nbsp;
+        pages 98 and 99 in some PDF readers.)            <br>&nbsp;
+                                                         <br>&nbsp;	
+		3.)  Design a R-2R D/A converter with an 8-bit   <br>&nbsp;
+		unsigned binary input to produce an output that  <br>&nbsp;
+		spans from 0 volts to 2.55 volts maximum.        <br>&nbsp;
+		Provide a complete schematic in the style of the <br>&nbsp;
+		slide from class on 4/18.  Show resistor values. <br>&nbsp;
+		Assume a precision 3.3 volt reference supply is  <br>&nbsp;
+		available but that it can supply no more than    <br>&nbsp;
+		50 mA.  Assume the operational amplifier has     <br>&nbsp;
+		adequate power supplies and is ideal.  Assume    <br>&nbsp;
+        that resistor values above 200 k&Omega; are too  <br>&nbsp;
+        large (dimensionally) to be practical.     		
+<!-- - - - - - - - - - - - - - - - - - - - - -  --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 9
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        3/21
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        4/04
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href=
+        "https://dordt.instructure.com/files/106833352/download?download_frd=1"
+        >4/10</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Read Freescale's tutorials on motors.          <br>&nbsp;
+		<a href=
+		"http://www.nxp.com/files/microcontrollers/doc/train_ref_material/MOTORDCTUT.html"
+		>DC Motors</a>                                  <br>&nbsp;
+		<a href=
+		"http://www.nxp.com/assets/documents/data/en/supporting-information/MOTORBLDCTUT.html"
+		>Brushless DC Motors</a>                        <br>&nbsp;
+		<a href=
+		"http://www.nxp.com/assets/documents/data/en/supporting-information/MOTORSTEPTUT.html"
+		>Stepper Motors</a>                             <br>&nbsp;
+		<a href=
+		"http://www.nxp.com/assets/documents/data/en/supporting-information/MOTORSRTUT.html"
+		>Switched Reluctance Motors</a>                 <br>&nbsp;
+		<a href=
+		"http://www.nxp.com/assets/documents/data/en/supporting-information/MOTORBLACTUT.html"
+		>Brushless AC Motors</a>                        <br>&nbsp;<small>
+        (Now hosted by NXP, which bought out Freescale.)</small><br>&nbsp;
+		A few caveats about the above tutorials. . .   <br>&nbsp;
+		In the illustration of the "Switched Reluctance"<br>&nbsp;
+		motor, the rotor will assume an induced        <br>&nbsp;
+        magnetic field to oppose the applied magnetic  <br>&nbsp;
+        field.  This is not illustrated, probably      <br>&nbsp;
+        because it might imply that the rotor is       <br>&nbsp;
+        permanently magnetized, which it is not.  It is<br>&nbsp;
+        just iron (or a steel alloy).                  <br>&nbsp;
+        In the illustration of the "AC Induction Motor"<br>&nbsp;
+        the coloration of the induced magnetic field   <br>&nbsp;
+        in the rotor is backwards.  According to Lens' <br>&nbsp;
+        Law, the induced field will oppose the applied <br>&nbsp;
+        magnetic field from the stator.  Thus the red  <br>&nbsp;
+        (north) pole of the stator will face a green   <br>&nbsp;
+        (south) pole on the rotor, just as in any other<br>&nbsp;
+        motor.                                         <br>&nbsp;
+                                                       <br>&nbsp;
+        Also read this <a href=
+        "http://www.pacontrol.com/download/Tutorial-Motor-Basics-Lecture.pdf"
+                       >motor tutorial</a> and         <br>&nbsp;
+        also read <a href=
+        "http://homepage.cs.uiowa.edu/~jones/step/"
+                 >Jones on Stepping Motors</a> and     <br>&nbsp;
+        optionally this <a href=
+        "http://www.pacontrol.com/download/Electric-Motor-Controls-Tutorial.pdf"
+                       >control tutorial</a> from      <br>&nbsp;
+        "Process Automation Control." Much of what is  <br>&nbsp;
+        described in the control tutorial is done via  <br>&nbsp;
+        microcontrollers and relays, etc.              <br>&nbsp;
+                                                       <br>&nbsp;
+        Do these <a href=
+        "https://dordt.instructure.com/files/104537713/download?download_frd=1"
+                >problems on motors</a>                <br>&nbsp;
+        Helpful link:  Lin model <a href=
+        "http://www.linengineering.com/products/stepper-motors/211-series/211-13-01/"
+                                >211-13-01</a> and note<br>&nbsp;
+        the "Torque Curves" tab.                       <br>&nbsp;
+													   <br>&nbsp;<small>
+		On 3/23 the due date on this assignment was delayed <br>&nbsp;
+		from 3/28 to 4/03.</small>
+		
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - -  --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 8
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        2/28
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        3/21
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <!--4/10<!-- --><a href=
+        "https://dordt.instructure.com/files/106833166/download?download_frd=1"
+        >4/10</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Interrupts                             <br>&nbsp;
+        Read this <a href=
+        "http://www.best-microcontroller-projects.com/hardware-interrupt.html"
+                 >overview on interrupts</a>          <BR>&nbsp;
+        and this on <a href=
+        "http://playground.arduino.cc/Code/Interrupts"
+                  >Arduino interrupt programming</a>  <br>&nbsp;
+		and this on <a href=
+		"https://www.raspberrypi.org/forums/viewtopic.php?f=44&t=9207"
+		          >Raspberry Pi interrupt handling</a><br>&nbsp;
+		and this on <a href=
+		"https://projects.drogon.net/raspberry-pi/wiringpi/functions/"
+		          >WireingPiFunctions</a>              <br>&nbsp;
+                                                       <br>&nbsp;
+        Do these <a href=
+        "../../S17/304/PS_INTER.pdf"
+                 >problems on interrupts</a>           <br>&nbsp;
+        Errata:  On problem 3.17 part (d) note that the<br>&nbsp;
+        only way for <i>T<sub>pi</sub></i> to be an average and 
+                                              a maximum<br>&nbsp;
+        at the same time is that the ISR is requested  <br>&nbsp;
+        exactly every <i>T<sub>pi</sub></i>.  
+                          This was the author's intent.<br>&nbsp;
+        (As opposed to allowing actual request      <br>&nbsp;
+        intervals to sometimes exceed 
+                                <i>T<sub>pi</sub></i>.)<br>&nbsp;
+								                <br>&nbsp;<small>
+		(On 3/02 the due date was extended from 3/14 to 3/21)</small>
+<!-- - - - - - - - - - - - - - - - - - - - - -  --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 7
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        2/21
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        2/28
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href=
+        "https://dordt.instructure.com/files/106832701/download?download_frd=1"
+        >4/28</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Browse the USB Standard version 2.0 on reserve <BR>&nbsp;
+        in the library (Ask a librarian for it by      <BR>&nbsp;
+        name, "Universal Serial Bus Revision           <br>&nbsp;
+        2.0 Specification."  Also available from <a href=
+                 "http://www.usb.org/developers/docs/usb20_docs/"
+                                         >USB.org</a>. <BR>&nbsp;
+        If you download it from USB.org be sure to     <br>&nbsp;
+        read the 2.0 version. (The 2.0 version         <br>&nbsp;
+        superceeds the 1.0 version which is now        <br>&nbsp;
+        withdrawn.  However the 3.0 version is an      <br>&nbsp;
+        addendum to the 2.0 version. It cannot stand   <br>&nbsp;
+        on its own.)                                   <br>&nbsp;
+                                                       <br>&nbsp;
+        Do answer some essay questions on USB.         <br>&nbsp;
+		To turn in your work, edit <a href= 
+		"PS_USB.RTF"              >this file</a> of essay<br>&nbsp;
+		questions to insert your answers, save it to   <br>&nbsp; 
+		your local hard disk (or other media) and then <br>&nbsp; <a href=
+		"https://dordt.instructure.com/courses/2032745/assignments/12520260"
+		>upload it to Canvas</a> from your local storage.<br>&nbsp;
+				                                       <br>&nbsp;
+        Optional Reading: <a href=
+        "http://en.wikipedia.org/wiki/USB"
+                          >USB article in Wikipedia</a>
+<!-- - - - - - - - - - - - - - - - - - - - - -  --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 6
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        2/14
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        2/21
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href=
+        "https://dordt.instructure.com/files/106832541/download?download_frd=1"
+        >4/28</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Study for the Test on Thursday, 2/16. Then. . .<br>&nbsp;
+        Read this <a href=
+        "../../BURKS/pcinfo/hardware/ethernet/contents.htm"
+                 >Ethernet Tutorial</a>.               <BR>&nbsp;
+                                                       <BR>&nbsp;
+        Take this twenty-question <a href=
+        "../../BURKS/pcinfo/hardware/ethernet/qframe.htm"
+                                 >quiz</a> on Ethernet.<BR>&nbsp;
+        E-mail your quiz grade to Prof. De Boer.       <BR>&nbsp;
+        You are encouraged to repeat the quiz until    <BR>&nbsp;
+        you get a perfect grade.  Turn in only your    <BR>&nbsp;
+        best grade.                                    <BR>&nbsp;
+                                                       <br>&nbsp;
+		Optional: Example <a href=
+		"https://docs.python.org/release/2.5.2/lib/socket-example.html"
+		>Python sockets</a> using TCP/IP  <br>&nbsp;
+        Optional: <a href=
+        "BOOKS_LAN.HTM"
+        >Books in Dordt's Library</a>                  <br>&nbsp;
+        Optional: Wikipedia article <a href=
+        "http://en.wikipedia.org/wiki/Ethernet"
+        >Ethernet</a>
+<!-- - - - - - - - - - - - - - - - - - - - - -  --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 5
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        2/07
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        2/14
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href=
+        "https://dordt.instructure.com/files/106832367/download?download_frd=1"
+        >4/10</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Read <a href=
+        "http://www.eng.utah.edu/~cs5780/debouncing.pdf"
+              >A Guide to Debouncing</A>               <br>&nbsp;
+        Read <a href="http://en.wikipedia.org/wiki/RS-232"
+            >RS-232</a> in Wikipedia                   <BR>&nbsp;
+                                                       <br>&nbsp;
+        Do this problem:                               <br>&nbsp;
+        Plot voltage vs. time of the Tx line in RS-232 <br>&nbsp;
+        for sending this text: "Z#" (without the       <br>&nbsp;
+        quotation marks, with a capital "Z").  Assume  <br>&nbsp;
+        &plusmn;12 V signal voltages, 53 kbaud, eight data 
+                                                       <br>&nbsp;
+        bits, and one stop bit.  Be sure to label your <br>&nbsp;
+        axes properly.  An ASCII table can be found in <br>&nbsp;
+        many places, e.g. <a href="http://www.asciitable.com"
+                         >http://www.asciitable.com</a><br>&nbsp;
+        Note that the illustration in the Wikipedia    <br>&nbsp;
+        reading does not have properly labeled axes.   <br>&nbsp;
+        Specifically the the independent axis lacks    <br>&nbsp;
+        scale and units.                               <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:  The entire RS-232 standard is       <br>&nbsp;
+        available from Dordt's library.  <i>Interface  <br>&nbsp;
+        Between Data Terminal Equipment And Data       <br>&nbsp;
+        Circuit-Terminating Equipment Employing Serial <br>&nbsp;
+        Binary Data Interchange</i> TK7887.5 .I57 1997 <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:  Read about <a href=
+        "http://en.wikipedia.org/wiki/Teleprinter"
+                              >teleprinters</a>.       <br>&nbsp;
+                                                       <br>&nbsp;
+        Very Optional:  Listen to a <a href=
+        "http://www.npr.org/templates/story/story.php?storyId=10554017"
+                              >Teletype machine</a>.   <br>&nbsp;
+        And see a <a href=
+        "http://www.youtube.com/watch?feature=player_detailpage&v=2B-U-5ylvWo"
+            >Teletype machine</a> connected to a       <br>&nbsp;
+        Digital Equipment Corporation (DEC, a brand)   <br>&nbsp;
+        model PDP-8/e computer.  This computer could be<br>&nbsp;
+        booted "manually" via a bank of switches that  <br>&nbsp;
+        allows the direct entry of machine code word-by<br>&nbsp;
+        word, executing each instruction as fast as the<br>&nbsp;
+        operator can enter the code. Wow, that's fast! <br>&nbsp;
+		                                               <br>&nbsp;
+		Optional: Example of RS-232 products.  Many in <br>&nbsp;
+		<a href=
+		"http://www.vaddio.com/library?path=cat&file=ProAV_Brochure-Print.pdf" 
+		>this brochure</a> support RS-232 for remote control.
+<!-- - - - - - - - - - - - - - - - - - - - - -  --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 4
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        1/31
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        2/07
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href=
+        "https://dordt.instructure.com/files/102797305/download?download_frd=1"
+        >2/14</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Parallel interfacing, I/O Drivers      <br>&nbsp;
+        Read about <a href=
+        "http://www.divilabs.com/2013/06/led-array-multiplexing-charlieplexing.html"
+                   >multiplexing LED's</a> and also   <br>&nbsp;
+        <a href=
+        "http://extremeelectronics.co.in/avr-tutorials/4x3-matrix-keypad-interface-avr-tutorial/"
+        >multiplexing a keypad</a>. Also read about   <br>&nbsp;
+        <a href="http://www.ganssle.com/debouncing.htm"
+        >Debouncing a switch or keyboard</a> (don't miss 
+        <a href="http://www.ganssle.com/debouncing-pt2.htm"
+                                              >p2</a>)<br>&nbsp;
+                                                      <br>&nbsp;
+        Draw a schematic showing how to connect a two-<br>&nbsp;
+        digit common cathode 7-segment LED display    <br>&nbsp;
+        and a 4x4 keypad to up to 12 bits of general  <br>&nbsp;
+		I/O.  Specify how each bit is used (Input,    <br>&nbsp;
+		output, or bidirectional)  There are many     <br>&nbsp;
+        many valid correct methods.  You may be able  <br>&nbsp;
+        to <a href="http://www.datasheetdir.com/Multiplexing-Led-Drive-And-4x4-Keypad-Sampling+Application-Notes"
+        >share rows or columns</a> between the 7-seg. <br>&nbsp;
+        display and the keypad.  You may ignore the   <br>&nbsp;
+        matter of key bounce.  You may search the     <br>&nbsp;
+        Web for additional help on this assignment.   <br>&nbsp;
+                                                      <br>&nbsp;
+        Optional: "epic" guide to <a href=
+        "http://www.overclock.net/t/491752/mechanical-keyboard-guide"
+        >keyboard internals</a>.
+<!-- - - - - - - - - - - - - - - - - - - - - -  --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 3
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        1/24
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        1/31
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        <a href=
+        "https://dordt.instructure.com/files/102797306/download?download_frd=1"
+        >2/14</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+Read this <a href=
+        "https://dordt.instructure.com/files/101128312/download?download_frd=1"
+                 >handout on transmission lines</a>.   <br>&nbsp; 
+        (<a href=
+        "https://dordt.instructure.com/files/101128313/download?download_frd=1"
+        >This copy</a> 
+                   might print better on your printer.)<br>&nbsp;
+                                                       <br>&nbsp;
+        Scan over these application notes from Texas   <br>&nbsp;
+        Instruments on transmission lines.  Read       <br>&nbsp;
+        The section in AN-807 on the "tabular method." <br>&nbsp;
+        <a href="http://www.ti.com/lit/an/snla026a/snla026a.pdf"
+        >AN-806</a>, and 
+        <a href="http://www.ti.com/lit/an/snla027b/snla027b.pdf"
+        >AN-807</a>, and 
+        <a href="http://www.ti.com/lit/an/snla028/snla028.pdf"
+        >AN-808</a>.                                   <br>&nbsp;
+                                                       <br>&nbsp;
+        Do 2.1 and 2.6 in the first handout linked above.<br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: <a href=
+        "http://www.antenna-theory.com/tutorial/txline/transmissionline.php"
+                 >A transmission line theory tutorial</a><br>&nbsp;
+        Optional:  Animation of <a href=
+        "http://www.keysight.com/upload/cmc_upload/All/Wave_Propagation_along_a_Transmission_Line.htm?&cc=US&lc=eng"
+                               >VSWR on a T-line</a>   <br>&nbsp;
+        If the above java app will not run, look <a href=
+        "http://www.math.ucsd.edu/~crypto/fixjava.html"
+                                            >here</a>. <br>&nbsp;<small>
+        <small> Optional note: The application notes linked above were        <br>&nbsp;
+        origianlly developed by National Semiconductor.<br>&nbsp;
+        There is <a href=
+        "http://en.wikipedia.org/wiki/National_Semiconductor"
+                >more on National Semi</a> in Wikipedia.<br>&nbsp;
+        Optional:  <a href=
+        "http://allthingsd.com/20110404/texas-instruments-to-acquire-national-semiconductor-for-6-5-billion/"
+                 >TI has purchased National Semi</a>   </small><br>&nbsp;
+<!-- - - - - - - - - - - - - - - - - - - - - -  --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 2
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        1/17
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        1/24
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        2/14<br><br>
+		Since this was an elec- tronic sub- miss- ion, no 
+		physical item to return
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+		We will collaboratively document some of Git.  <br>&nbsp;
+		                                               <br>&nbsp;
+		On your own computer or on your "G: drive"     <br>&nbsp;
+		create an <i>empty</i> folder called "PS-2".  Do not<br>&nbsp;
+		inialize this folder as a repository in Git.   <br>&nbsp;
+		Using Git Bash's "cd" command, change the      <br>&nbsp;
+		working directory to your new empty "PS-2"     <br>&nbsp;
+		folder.  From Git Bash, clone Prof. De Boer's  <br>&nbsp;
+		public respository named "PS-2" into your new  <br>&nbsp;
+		"PS-2" folder.  The URL to Prof. De Boer's     <br>&nbsp;
+		public repository is                   <br>&nbsp; <a href=
+		"https://github.com/dfdeboer/PS-2.git"
+		>https://github.com/dfdeboer/PS-2.git</a>.     <br>&nbsp;
+		The specific git command you need to do the    <br>&nbsp;
+		clone operation is:                            <br>&nbsp;
+		                                               <br>&nbsp;
+		git clone https://github.com/dfdeboer/PS-2.git .<br>&nbsp;
+		                                               <br>&nbsp;
+		Notice the space and dot (period) on the end   <br>&nbsp;
+		of the command.  That causes the clone to be   <br>&nbsp;
+		created in Git's current working directory.    <br>&nbsp;
+		After cloning the remote repo to your filespace<br>&nbsp;
+		open your local copy of "Git_Commands. . ." and<br>&nbsp;
+		continue to follow instructions from there.
+<!-- - - - - - - - - - - - - - - - - - - - - -  --></TD></TR><TR>
+
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 1
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        1/10
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        1/12
+        
+   <!-- Returned -->        </TD><TD align="center" valign="top">
+        1/17<!--<a href=
+        "https://dordt.instructure.com/files/80063195/download?download_frd=1"
+        >1/21</a>--><br><br>
+		Since this was an elec- tronic sub- miss- ion, no 
+		physical item to return
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Read "<a href=
+        "http://en.wikipedia.org/wiki/Embedded_system"
+        >Embedded system</a>" from Wikipeadia          <BR>&nbsp;
+        Read "<a href=
+        "https://en.wikipedia.org/wiki/System_on_a_chip"
+        >System on a Chip</a> from Wikipedia"             <BR>&nbsp;
+        Briefly browse <a href=
+        "https://www.raspberrypi.org/"
+             >the Raspberry Pi web site.</a>           <br>&nbsp;
+        Do the <a href="304S17P01.docx"
+              >introductory problems</a>               <br>&nbsp;
+        Note the SoC chip on the R-Pi is the Broadcom  <br>&nbsp;
+        part number "BCM2837R1FBG"               <br>&nbsp;
+                                                       <br>&nbsp;
+        Turn this problem set in electronically.       <br>&nbsp;
+        Save your answers as doc or docx format.       <br>&nbsp;
+        Enter this page via Canvas and click <a href=
+		"https://dordt.instructure.com/courses/2032745/assignments/11959774#"
+		>here</a>,                                     <br>&nbsp;
+        then follow instructions from Canvas to turn   <br>&nbsp;
+		the assignment in.  
+<!-- - - - - - - - - -BOTTOM-OF TABLE- - - - - - -  --></TD></TR>
+</TABLE>
+<BR>
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       border="0">
+                                 <TR><TD width="60" valign="top">
+Note 1) 
+                                                        </TD><TD>
+Homework solutions are usually available one or two class periods 
+after the due date. Click the "returned date" on this page to 
+access the solutions. If the "Returned" date is not a link (is 
+black, not gold) then the solution is not yet posted. Check back 
+later. If you click the link and get a login screen instead of 
+the solutions, log in using your usual courses@dordt username and 
+password. Then use the back icon (or alt-left-arrow on the 
+keyboard) twice to get back to the link on this page and click 
+the link again. The link only works when you are logged in to 
+courses@dordt.           
+                         <BR><BR><TR><TD width="60" valign="top">
+
+Note 2) 
+                                                        </TD><TD>
+Problems sets shown above with no "assigned" date are 
+tentative.  More problems might be added, expected due dates 
+might change, but problems shown will eventually be assigned.
+
+                         <BR><BR><TR><TD width="60" valign="top">
+Note 3) 
+                                                        </TD><TD>
+If you are having difficulty reading the latest version of this 
+page it may have to do with your browser's cached memory. Read 
+this <a 
+href="http://homepages.dordt.edu/~ddeboer/ddb/notes00.htm">note on 
+cached pages</a> to solve the problem. 
+
+                                                   </P></TD></TR>
+</TABLE>
+</BODY>
+</HTML>
+

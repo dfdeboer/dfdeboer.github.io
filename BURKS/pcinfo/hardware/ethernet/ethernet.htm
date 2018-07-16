@@ -1,0 +1,188 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>Ethernet</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center>&nbsp;<img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+
+<p><img SRC="images/ethernet.gif" ALT="Ethernet" NOSAVE BORDER="2" HEIGHT="17" WIDTH="141">
+<br>&nbsp;
+<br><h2>What is ethernet?</h2>
+<ul>
+<li>
+Ethernet is a <b>baseband</b> networking technology
+that has been defined by various <a HREF="standard.htm">standards</a>.
+A baseband technology devotes the entire <b>bandwidth</b>
+of the media to one channel. Simplistically, bandwidth can be defined as
+a measure of network capacity - the greater the available bandwidth, the
+greater the network's resilience to loading. The inclusion of the word
+&quot;base&quot; in 10BaseT, 10Base5 etc., simply refers to ethernet's baseband nature.<br>
+<br></li>
+
+<li>
+There are no levels of priority for transmission. All computers on an
+ethernet network are considered equal in terms of their access to the media.
+In contrast to <a HREF="token.htm">token ring</a>, there is no monitoring
+station that controls the network.<br>
+<br></li>
+
+<li>
+Unless it is <a HREF="switch.htm">switched</a> :</li>
+
+<ul>
+<li>
+ethernet uses carrier sensed multiple access with collision detection
+(CSMA/CD) as its method of <a HREF="mac.htm">medium access control</a>.</li>
+
+<li>
+data in the ether is accessable to all connected devices.</li>
+
+<li>
+high loading on a LAN segment can lead to <a HREF="framepac.htm">packet</a>
+collisions and a marked drop in network efficiency.</li>
+
+<li>
+ethernet has a broadcast logical topology - data is sent to all nodes
+on the network simultaneously:</li>
+
+
+<p><img SRC="images/anibroad.gif" ALT="AniBroadcast.gif" NOSAVE BORDER="2" HEIGHT="238" WIDTH="297"></ul>
+
+<li>
+As shown in the diagram, ethernet is the most dominant LAN technology:</li>
+
+
+<p><img SRC="images/piechart.jpg" ALT="PieChart.jpg" NOSAVE BORDER="2" HEIGHT="251" WIDTH="411" ALIGN="RIGHT">The
+figures represented in the pie chart are relatively out of date, although
+ethernet still remains the most common LAN architecture. <a HREF="atm.htm">ATM</a>
+has become important as a LAN technology in areas of the computing industry
+where high data tranfer rates are required. Multimedia, computer graphics
+and video conferencing all need fast networks, therefore ATM is a good
+choice, but the emergent <a HREF="future.htm">gigabit ethernet</a> may
+challenge ATM.
+<br>&nbsp;
+<li>
+Ethernet conforms to the <a HREF="osi.htm">OSI model</a> and covers
+<b>layer 1 - physical</b>, and <b>layer
+2 - datalink (medium access control)</b>.<br>
+<br></li>
+
+<li>
+Interfaces have been developed to connect all types of computer, across
+many types of <a HREF="media.htm">media</a>, to ethernet. PCs use a <a HREF="nic.htm">network
+interface card</a> to manage <a HREF="mac.htm">medium access control</a>
+and communicate with the layer 2 process.</li>
+</ul>
+<h2>Give me some examples!</h2>
+<ul>
+<li>
+<b>10Base5</b>. Commonly
+known as <b>thick ethernet</b>,
+it is characterised by its thick coaxial cable (<b>RG-8</b>).
+A <b>viper-tap</b> is
+required to pierce the tough outer armour, allowing a computer to connect
+via an interface card. It operates at <b>10Mbps</b>,
+with a maximum segment (between repeaters) length of <b>500
+metres</b>. Thick ethernet is largely a legacy
+installation, but it was once used as a <b>LAN
+backbone</b> - a backbone is usually an installation
+in a bulding from which segments radiate. 10Base5 uses a<b>
+bus</b> physical <a HREF="topology.htm">topology</a>.<p>
+</li>
+
+<li>
+<b>10Base2</b>. Commonly
+known as <b>thin ethernet</b>,
+<b>thinnet</b> or <b>cheapernet</b>,
+it is characterised by its thin coaxial cable (<b>RG-58</b>).
+Thin ethernet uses <b>BNC T-piece</b>
+connectors to link the interface card to the coaxial. It operates at <b>10Mbs</b>,
+with a maximum segment length of <b>185 metres</b>.
+Thin ethernet is also a legacy installation, having been superceded by
+10BaseT and 100BaseT. 10Base2 uses a <b>bus</b>
+physical topology. BNC <b>terminators</b>
+are placed at the end of each segment. They prevent signal reflections
+which could cause interference in the ether.<p>
+</li>
+
+<li>
+<b>10BaseT</b>. Simply referred
+to as 10BaseT. It uses <b>unshielded twisted
+pair</b> cabling (commonly category 5 grade) and
+<b>RJ45</b> connectors.
+UTP cable resembles domestic telephone wire. The RJ45 connectors are American
+telephone connectors. They look similar to the British connectors, although
+RJ45 is a little bigger. 10BaseT operates at <b>10Mbps</b>,
+with a maximum <b>100 metres</b>
+segment length. 10BaseT uses a <b>star</b>
+physical topology.<p>
+</li>
+
+<li>
+<b>100BaseT</b>. This is
+a logical progression from 10BaseT, it is fully compatible with 10BaseT
+and often referred to as <b>fast ethernet</b>.
+It uses <b>category 5 UTP</b>
+cable, <b>RJ45</b> connectors
+and operates at <b>100Mbps</b>
+across a <b>star</b>
+physical topology.</li>
+</ul>
+<h2>Tell me more!</h2>
+<center><table BORDER COLS="2" WIDTH="90%">
+<tr>
+<td WIDTH="30%"><a HREF="http://www.cit.ac.nz/smac/winnt/defaultn.htm">Central
+Institute of Technology</a></td>
+
+<td>Excellent Windows NT networking site</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://wwwhost.ots.utexas.edu/ethernet">Charles
+Spurgeons's Ethernet Web Site</a></td>
+
+<td>Very good University of Texas ethernet site&nbsp;</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://pclt.cis.yale.edu/pclt/COMM/ETHER.HTM">PC
+Lube and Tune Ethernet Page</a></td>
+
+<td>Good ethernet introduction&nbsp;</td>
+</tr>
+
+<tr>
+<td WIDTH="30%"><a HREF="http://tara.unl.ac.uk/~hxgzcamerog/DataComm.htm">University
+of North London</a></td>
+
+<td>Data communications and networking information</td>
+</tr>
+</table></center>
+
+
+<p>
+<hr WIDTH="100%">
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

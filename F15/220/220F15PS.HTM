@@ -1,0 +1,1498 @@
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="shortcut icon" href="../../favicon.ico">
+<title>EGR 220, PHYS 206 Homework</title>
+<style type="text/css"><!--
+TABLE {
+   font-family: "verdana";
+   }
+TD {
+   font-family: "verdana"; /* for Netscape 4.7 */
+   font-size: 75%;
+   }
+A:link {
+   font-family: "verdana";
+   color:#CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:visited {
+   font-family: "verdana";
+   color: #CC9900;
+   font-weight:bold;
+   text-decoration: none;
+   }
+A:hover {
+   text-decoration: underline;
+   }
+A.tooltip{ 
+   /* a typical application is as follows:
+       <a class=tooltip href="#">RMS<span>root-mean-square</span></a>
+   */           
+   position:relative; /*info for tooltip formatting*/   
+   z-index:24; 
+   color:#CC9900;
+   background-color:#FFFFFF;
+   text-decoration: none;
+   }
+a.tooltip:hover{z-index:25; 
+   background-color:#CC9900;
+   color:#000000;
+   }
+a.tooltip span{display: none
+   }
+a.tooltip:hover span{ /*the span will display only on :hover state*/
+   display:block;
+   position:absolute;
+   top:2em; left:-12em; width:15em; 
+   border:2px solid #CC9900;
+   background-color:#FFFFFF; 
+   color:#CC9900;
+   text-decoration: none;
+   text-align: center;
+   } -->
+</style>
+</head>
+
+<body>
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       border="0">
+                                             <TR><TD width="550">
+                                               <p align="center">
+                   <A HREF="../../redirect/Dordt_Engineering.htm" 
+
+         >DORDT COLLEGE ENGINEERING DEPARTMENT        </A><BR><B>
+    LINEAR CIRCUITS AND ELECTRONICS -- EGR 220, PHYS 206     <BR>
+                       (FALL 2015)                       </B></P>
+
+                   <P style="text-align:center; margin-top: 10px;
+                                       margin-bottom: 0px;"><U><B
+                       >PROBLEM SETS                 </B></U></P>
+
+                   <DIV style="text-align:right; margin-top: 0px;
+                              margin-bottom: 1px; font-size: 80%"
+
+                              >(Last update:  12/13/2015 1:02 sm)  
+<!-- ------------------------------------------- --------- -->
+                                                </DIV></TD></TR>
+</TABLE>
+
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       cellpadding="2"
+       border="1">
+<!-- --------------------------HEADER-------------------- --><TR>
+   <!-- PS# -->  
+   <TD width="27" align="right" valign="bottom"><b><small>
+   PS                                     </small><BR>#&nbsp;</B>
+   <!-- Assigned -->
+    </TD><TD width="54" align="center" valign="bottom"><small><b>
+    Assigned                                         </b></small>
+   <!-- Due -->
+    </TD><TD width="54" align="center" valign="bottom"><small><b>
+    Due                                              </B></small>
+   <!-- Returned -->
+    </TD><TD width="54" align="center" valign="bottom"><small><b>
+    Returned                                          </b><small>
+   <!-- Assignment -->
+               </TD><TD align="center" valign="bottom"><small><b>
+   Topics, Reading, and End of Chapter "Problems"                 </b><br>
+   (In "Mastering Engineering" or <br>
+   Nilsson &amp; Riedel unless otherwise noted.)   </b></small>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+35
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        12/07
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        12/08<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Initial Condidtions with <i>L</i> transforms<br>&nbsp;
+        Read Chapter 13 Section 1                      <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1282573"
+        >PS#35</a>                                     <br>&nbsp;
+        (*13.2, 13.3                                   <br>&nbsp;
+        diff. 1.0, 20m)                                <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: An entertaining rant in which many   <br>&nbsp;
+        concepts from this course are pulled together  <br>&nbsp;
+        <a href=
+        "https://www.youtube.com/watch?v=hoqF3gjLIyI"
+        >Free Energy Bullshit</a>                      <br>&nbsp;
+        Optional: The $5 <a href=
+        "https://www.youtube.com/watch?v=NFFQmdUc5Vg"
+                         >Raspberry Pi Zero</a>       <br>&nbsp;
+                                                      <br>&nbsp;
+        Note: this is the last assignment for this    <br>&nbsp;
+        course.  
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+Lab<br>
+rprt
+   <!-- Assigned --><BR></TD><TD align="center" valign="top">
+        10/20
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        12/11<br>
+        at<br>
+        11:59 PM
+        
+   <!-- Returned -->    </TD><TD align="center" valign="top"><br>
+        &nbsp;
+
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Write a lab report about your "Mixer Board"     <br>&nbsp;
+        project.  <a href=
+        "https://dordt.instructure.com/courses/1660831/assignments/7770351"
+        >Turn this report in electronically</a>  <small><br>&nbsp;
+                                                        <br>&nbsp;
+        Upload one file for each team of students.  BE  <br>&nbsp;
+        SURE YOUR NAMES ARE INCLUDED IN THE FILE SO THAT<br>&nbsp; 
+        WHEN PROF. DE BOER PRINTS YOUR FILE YOUR NAMES  <br>&nbsp;
+        ARE ON THE COVER PAGE OF THE PRINT-OUT. Your    <br>&nbsp;
+        file must be in Microsoft Word doc or docx      <br>&nbsp;
+        format.                               <br>&nbsp;<br>&nbsp;
+
+        If you use Apple Computer's "Pages," see <a href=
+        "http://osxdaily.com/2014/08/06/save-pages-file-as-word-format/"
+        >here</a>                             <br>&nbsp;<br>&nbsp;
+
+        If you use LibreOffice, see <a href=
+        "http://pcunleashed.com/converting-libreoffice-writer-files-to-ms-word/"
+        >here</a>.   
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+34
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        12/04
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        12/07<br>
+        at start<br>
+        of class<br>
+        <br>12/09
+        &nbsp;<br>
+        at start<br>
+        of class
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/77922221/download?download_frd=1"
+        >12/14</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Inverse L trans., Poles and Zeros,     <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Initial and Final Value Theorems       <br>&nbsp;
+        Read Ch. 12 Sec. 7, 8, 9                       <br>&nbsp;
+                                                       <br>&nbsp;
+        Do (on paper) one of these end-of-chapter sets:<br>&nbsp;
+        10th edition: {12.34 Part (a) only, 12.47}<br>&nbsp; &nbsp;        
+         9th edition: {12.35 Part (a) only, 12.47}     <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:  "<a href=
+        "https://www.youtube.com/watch?v=YbEZOT8rVW4"
+        >How to wire a split-phase elec. panel</a>"   <br>&nbsp;
+        Optional:  "<a href=
+        "https://www.youtube.com/watch?v=bx7alt0gvLM"
+        >How to add a Circuit Breaker</a>"            <br>&nbsp;
+        Note:  Never! open! a! live! panel!           <br>&nbsp;
+        This guy should have turned the power  <br>&nbsp;
+        off first, and he should be wearing safety <br>&nbsp;
+        glasses and other personal protective <br>&nbsp; 
+        gear at least until he can make measurements <br>&nbsp;
+        to prove that the busses are de-energized.<br>&nbsp;
+        (See "<a href=
+        "http://www.powershow.com/view/3bf3dd-ZGRkN/I_ll_Be_Done_in_a_Flash_An_Arc-blast_Incident_powerpoint_ppt_presentation"
+        >arc blast</a>" tutorials for what can go <br>&nbsp;
+        wrong.)  
+
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+33
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        12/02
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        12/03<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Applications of <i>L</i> transf.       <br>&nbsp;
+        Read Chapter 12 Section 6                      <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1281764"
+        >PS#33</a>                                     <br>&nbsp;
+        (*12.22, 12.32                                   <br>&nbsp;
+        diff. 1.0, 44m, <small>but DDB thinks it's harder than that.)</small><br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: <a href=
+        "http://kiwaradio.com/local-news/sioux-center-residents-experience-another-power-outage/"
+                 >A 2nd power failure in Sioux Center</a><br>&nbsp;
+        Sioux County gets <a href=
+        "http://www.stormlakeradio.com/2015/11/24/sioux-county-disaster-declaration/"
+                  http://www.stormlakeradio.com/2015/11/24/sioux-county-disaster-declaration/        >disaster declariation</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+32
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        11/23
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        12/01<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Review Singularity functions, <i>L</i> transf.<br>&nbsp;
+        Reveiw Chapter 12 Sections 1 through 4         <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1280365"
+        >PS#32</a>                                     <br>&nbsp;
+        (12.4, 12.14                                   <br>&nbsp;
+        difficulty 3.0, 78m)                           <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: <a href=
+        "http://www.ktiv.com/story/30577557/2015/11/21/sioux-center-substation-failure-leaves-thousands-without-power"
+                 >Sioux Center Substation Failure</a> 
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+31
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        11/20
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        11/23<br>
+        at start<br>
+        of class<br>
+        <br>12/02
+        &nbsp;<br>
+        at start<br>
+        of class
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/77922220/download?download_frd=1"
+        >12/14</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Singularity Function: <i>&delta;</i>(<i>t,</i>), 
+                                                       <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Definition of Laplace transform        <br>&nbsp;
+        Read Ch. 12 Sec. 3, 4           <br>&nbsp;
+                                                       <br>&nbsp;
+        Do (on paper) one of these end-of-chapter sets:<br>&nbsp;
+        10th edition: {12.8, 12.15}             <br>&nbsp; &nbsp;        
+         9th edition: {12.9, 12.13}                    <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: U of Tenn <a href=
+        "http://fnetpublic.utk.edu/anglecontour.html"
+                           >grid angle map</a>         <br>&nbsp;
+        U of Tenn <a href=
+        "https://www.youtube.com/watch?v=KmK2VMG57gw&feature=youtu.be"
+                  >Tornados disturb the grid</a>       <br>&nbsp;
+        Prof. Overbye: <a href=
+        "https://www.youtube.com/watch?v=NK06IGnqQcU"
+                       >Genesis of the 2003 blackout</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+30
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        11/18
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        11/19<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Review Bal.3-Phase Power, Y-Y, Y-&Delta;<br>&nbsp;
+        Read Chapter 12 Sections 1, 2                  <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1279633"
+        >PS#30</a>                                     <br>&nbsp;
+        (12.1, Tutorial "unit step"                    <br>&nbsp;
+        difficulty 3.0, 78m)                          <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: <a href=
+        "https://www.youtube.com/watch?v=olXI3Rni5dQ&list=PLD1DD9123802FDC9C"
+                 >14 videos from Bonneville Power</a> 
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+29
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        11/16
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        11/17<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Review Bal.3-Phase Power, Y-Y, Y-&Delta;<br>&nbsp;
+        Review Chapter 11 Sections 1 &ndash; 5         <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1279254"
+        >PS#29</a>                                     <br>&nbsp;
+        (Tutorial "Analysis of Y-&Delta;," 11.23, *11.25<br>&nbsp;
+        difficulty 3.3, 112m)                           <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional reading: <a href=
+        "http://www.cewd.org/toolkits/teacher/eeipub_keyfacts_electric_industry.pdf"
+                          >Key facts about electric Power</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+28
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        11/11
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        11/16<br>
+        at start<br>
+        of class<br>
+        <br>11/18
+        &nbsp;<br>
+        at start<br>
+        of class
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/77922218/download?download_frd=1"
+        >11/23</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Y &ndash; &Delta; Transformation, 3-Ph. Power Calcs<br>&nbsp;
+        Read Ch. 3, Sec. 7, Ch. 11 Sec. 4, 5           <br>&nbsp;
+                                                       <br>&nbsp;
+        Do (on paper) one of these end-of-chapter sets:<br>&nbsp;
+        10th edition: {*11.15, 11.17}           <br>&nbsp; &nbsp;        
+         9th edition: {*11.13, 11.15}                  <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: <a href=
+        "http://www.midamericanenergy.com/virtual_tour.aspx?tour=coal&stage=100"
+        >Virtual Tour, Coal-fired power plant</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+27
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        11/09
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        11/10<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Balanced 3-Phase Power, Wye-Wye        <br>&nbsp;
+        Read Chapter 11 Sections 1, 2, 3               <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1277698"
+        >PS#27</a>                                     <br>&nbsp;
+        (11.1, 11.4, 11.10;<br>&nbsp;
+        difficulty 2.0, 46m)                           <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional reading: <a href=
+        "http://www.cewd.org/toolkits/teacher/eeipub_keyfacts_electric_industry.pdf"
+                          >Key facts about electric Power</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+26
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        10/29
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        11/02<br>
+        at start<br>
+        of class<br>
+        <br>11/09
+        &nbsp;<br>
+        at start<br>
+        of class
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/77922230/download?download_frd=1"
+        >11/20</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Maximum Power Transfer&mdash;Phasor Domain<br>&nbsp;
+        Read Chapter 10, Section 6               <br>&nbsp;
+                                                       <br>&nbsp;
+        Do (on paper) one of these end-of-chapter sets:<br>&nbsp;
+        10th edition: {*10.41, 10.43} <br>&nbsp; &nbsp;        
+         9th edition: {10.44, 10.45}                   <br>&nbsp;
+                                                       <br>&nbsp;<small>
+        Note: on Thursday evening the due date for regular <br>&nbsp;
+        grading was extended from 11/06 to 11/09.  </small>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+25
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        10/28
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        10/29<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Sinusoidal Steady-State Power Calcs    <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                RMS Voltage and Current                <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Complex power, Various Formulii        <br>&nbsp;
+        Read Chapter 10 Sections 3, 4, 5               <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1275464"
+        >PS#25</a>                                     <br>&nbsp;
+        (10.12, 10.15, 10.21;<br>&nbsp;
+        difficulty 2.0, 38m)                           <br>&nbsp;
+                                                       <br>&nbsp;
+        Opt'l:  Yet another video on "power savers" <a href=
+        "http://www.youtube.com/watch?v=tIThybewb_o"
+                                   >here</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+24
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        10/26
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        10/27<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Sinusoidal Steady-State Power Calcs    <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        Real, Reactive, Apparent Power.<br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        Power Angle, Power Factor      <br>&nbsp;
+        Read Chapter 10 Sections 1, 2                  <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1275055"
+        >PS#24</a>                                     <br>&nbsp;
+        (Tutorial "Avg &amp; Reactive Pwr," 10.4, 10.5;<br>&nbsp;
+        difficulty 2.7, 74m)                           <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:  What do you think of <a class=tooltip href=
+        "http://www.youtube.com/watch?v=89oHs2nHb78&NR=1" 
+                                       >this video<span>
+        "You see it's aah... drawin' about two amps of power... 
+        now I'm gona plug this in... and it's gone down to about 
+        one and a half amps of power..." <i>(Quotation from the 
+        video.)</i></span></a>?  And,                  <br>&nbsp;
+        if you liked that one, you might also like <a 
+        class=tooltip href =
+        "http://www.youtube.com/watch?v=UGylD0T-c_4&NR=1"
+        >this one! <span>"...converts one power source and 
+        puts it into four, each costing 25% of the electricty..."  
+        <i>(Quotation from the video.)            </i></span></a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+23
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        10/23
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        10/26<br>
+        at start<br>
+        of class<br>
+        <br>10/28
+        &nbsp;<br>
+        at start<br>
+        of class
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/77922228/download?download_frd=1"
+        >11/04</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: KCL, KVL, ||, Series, etc. w/ Phasors  <br>&nbsp;
+        Read Chapter 9, Sections 5, 6, 7               <br>&nbsp;
+                                                       <br>&nbsp;
+        Do (on paper) one of these end-of-chapter sets:<br>&nbsp;
+        10th edition: {9.18, 9.24, 9.29} <br>&nbsp; &nbsp;        
+         9th edition: {9.17, 9.25, 9.29}              <br>&nbsp;<small>
+        Note: At 11:14 PM on Sat. 10/24 Prof. DB corrected   <br>&nbsp;
+        a mistake in the 9th ed. set.  He changed the        <br>&nbsp;
+        last problem from 9.23 to 9.29.                        </small>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+22
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        11/21
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        10/22<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Sinusoidal Steady State Analysis (SSSA):<br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        Def'n of a Phasor,             <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        Impedance of R, L, C           <br>&nbsp;
+        Read Chapter 9 Sections 3, 4                   <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1273662"
+        >PS#22</a>                                     <br>&nbsp;
+        (Tutorial "Passive Ccts in Freq Domain," 9.14; <br>&nbsp;
+        difficulty 2.5, 90m)                           <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: Java applets on phasors <a href=
+        "http://ptolemy.eecs.berkeley.edu/eecs20/berkeley/phasors/demo/phasors.html"
+                                          >1</a>, <a href=
+        "http://people.clarkson.edu/~jsvoboda/eta/phasors/Phasor10.html"
+                                             >2</a>, <a href=
+        "http://people.clarkson.edu/~jsvoboda/eta/phasors/MatchPhasors10.html"
+                                         >3</a>.      <br>&nbsp;
+        Optional (recommended for the above phasors   <br>&nbsp;
+        applets):  <a href=
+        "https://www.java.com/en/download/help/java_blocked.xml"
+        >Bypass Java security settings</a>.     <br>&nbsp;<small>
+        Note: The above phasor applets might not work on your<br>&nbsp;
+        browser no matter what you do.  Java applets are being<br>&nbsp;
+        "<a href=
+        "http://www.techrepublic.com/article/java-gets-browser-eviction-notices-from-spartan-and-chrome-42/"
+        >depreciated</a>" (phased out) by browser vendors.</small>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+21
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        10/19
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        10/20<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Sinusoidal Steady State Analysis (SSSA):<br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        The Sinusoidal Source, and     <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        The Sinusoidal Response        <br>&nbsp;
+        Read Chapter 9 Sections 1, 2                   <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1273662"
+        >PS#21</a>                                     <br>&nbsp;
+        (Tutorial "The Sinusoidal Source," 9.3, 9.9;   <br>&nbsp;
+        difficulty 2.0, 142m)<br>&nbsp;                <br>&nbsp;
+        NOTE: PROBLEM 9.9 IS RETRACTED FROM THIS       <br>&nbsp;
+        PROBLEM SET.  There are errors in Mastering    <br>&nbsp;
+        Engineering on Problem 9.9 You will eventually <br>&nbsp;
+        be given full credit for this problem if you   <br>&nbsp;
+        attempt the other two problems.  See your Dordt<br>&nbsp;
+        e-mail for details.                            <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional Reading:                              <br>&nbsp;
+        Prof. De Boer's <a href=
+        "../../Canvas_common/CN.PDF"
+                        >notes on complex numbers</a>  <br>&nbsp;
+        Optional videos:                               <br>&nbsp;
+        A.) <a href=
+        "https://www.youtube.com/watch?v=1_Jl5vI8bmo"
+        >A non-conventional intro. to complex #s</a><br>&nbsp;
+        B.) A conventional <a href=
+        "https://www.youtube.com/watch?v=yUdiM3j1W9k"
+                           >lecture on phasors</a> ~38 mins.<br>&nbsp;<small>
+        Note two typos in the above lecture on phaosrs.</small><br>&nbsp;<small>
+        1.) at 5:45 "cos(&omega;<i>t</i> + <img src="pi.gif">/2)"should be "cos(&omega;<i>t</i> + <img src="pi.gif">/4)"</small><br>&nbsp;<small>
+        2.) at 21:58 in two instances, the word "conductive" in </small><br>&nbsp;<small>
+        blue text should be replaced by "capacitive" in blue text.</small><br>&nbsp;<small>
+        (Note that the word "conductance" is correct.  The words </small><br>&nbsp;<small>
+        to change are "conductive" in blue text in the graphs.)</small>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+20
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        16
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        10/19<br>
+        at start<br>
+        of class<br>
+        <br>10/21
+        &nbsp;<br>
+        at start<br>
+        of class
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/77922224/download?download_frd=1"
+        >10/29</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Forced response of RLC, Series RLC ccts<br>&nbsp;
+        Read Chapter 8, Sections 3, 4                  <br>&nbsp;
+                                                       <br>&nbsp;
+        Do (on paper) one of these end-of-chapter sets:<br>&nbsp;
+        10th edition: {8.27, *8.28, 8.29, 8.55} <br>&nbsp; &nbsp;        
+         9th edition: {*8.29, 8.30, *8.31, 8.54}       <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional video: <a href=
+        "https://www.youtube.com/watch?v=ZqedDWEAUN4"
+                       >Damped Mass On A Spring</a>        
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+19
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        10/14
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        10/15<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  RLC Circuits, Natural Response Of. . . <br>&nbsp;
+        Read Chapter 8 Sections 1, 2                   <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1272685"
+        >PS#19</a>                                     <br>&nbsp;
+        (Tutorial "Intro RLC Natural Response," 8.4;   <br>&nbsp;
+        difficulty 2.5, 98m)<br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:  <a href=
+        "https://www.youtube.com/watch?v=JDnNmLkQ3Bc,playlist?v=BE827gwnnk4"
+                  >Resonance Experiment</a>            <br>&nbsp;
+           &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                  <a href=
+                  "https://www.youtube.com/watch?v=BE827gwnnk4"
+                  >Wine glass resonance in slow motion</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+18
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        10/12
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        10/13<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topic:  Sequential switching in RL, RC Ccts    <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                op-amp as an integrator                <br>&nbsp;
+        Read Chapter 7 Sections 5, 7                   <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignment?assignmentID=1272222"
+        >PS#18</a>                                     <br>&nbsp;
+        (Tutorial "Sequential Switching," 7.92;       <br>&nbsp;
+        difficulty 3, 58m)<br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: <a href=
+        "https://www.youtube.com/watch?v=lph5zAdcwi8"
+                 >Panel of Neon Relaxation Oscillators</a>        
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+17
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        10/09
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        10/12<br>
+        at start<br>
+        of class<br>
+        <br>10/14
+        &nbsp;<br>
+        at start<br>
+        of class
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/75586934/download?download_frd=1"
+        >10/23</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics:  Review Chapter 6 on L, C             <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                 Step response of an RL or RC circuit <br>&nbsp;
+        Read Ch 6 as needed, Ch 7 Section 3           <br>&nbsp;
+                                                      <br>&nbsp;
+        Do (on paper) one of these end-of-chapter sets:<br>&nbsp;
+        10th edition: {6.12, 7.37, 7.41}       <br>&nbsp; &nbsp;        
+         9th edition: {6.13, 7.37, 7.39}              <br>&nbsp;
+        In addition, turn in Problems 3.15, 3.18 from <br>&nbsp; <a href=
+        "https://dordt.instructure.com/courses/1660831/files/74014398/download"
+        >Lab #4</a>                                      <br>&nbsp;<small>
+        Note errata in 10th ed. Figure P7.37 on p252,           <br>&nbsp;
+        A 5 ohm resistor is not shown properly in some          <br>&nbsp;
+        printings of the textbook.  Add it in the obvious       <br>&nbsp;
+        place (in series with 10 mH) under the 5 ohm label.       </small>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+16
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        10/07
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        10/08<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: RL &amp; RC natural responses, Time Const.<br>&nbsp;
+        Read Chapter 7 Sections 1, 2, 3                <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignmentHome?assignmentID=1270960"
+        >PS#16</a>                                     <br>&nbsp;
+        (*7.3, Tutorial, *7.23, *7.29; difficulty 2.5, 152m)<br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: <a href=
+        "https://www.youtube.com/watch?v=UdV_fEbRqss"
+                 >Fun with a high-voltage capacitor</a>        
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+15
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/28
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        Tu.<br>
+        10/06
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics:  Mutual Inductance and Transformers    <br>&nbsp;
+        Read Ch. 6 Sections 4, 5.                      <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignmentHome?assignmentID=1268241"
+        >PS#15</a>                                     <br>&nbsp;
+        (6.39, 6.43, 6.47, 6.48; difficulty 1.0, 58m)  <br>&nbsp;
+                                               <br>&nbsp;<small>
+        The due date, originally Sat. 10/3, was extended to <br>&nbsp;
+        Tuesday, 10/06 at 11:59 pm.            </small>
+
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+14
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/25
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/28<br>
+        at start<br>
+        of class<br>
+        <br>10/05
+        &nbsp;<br>
+        at start<br>
+        of class
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/75525663/download?download_frd=1"
+        >10/09</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Inductors and Caps in || and series    <br>&nbsp;
+        Read: Review Ch 6 Sec. 1, 2, Read Sec. 3       <br>&nbsp;
+                                                       <br>&nbsp;
+        Do (on paper) one of these end-of-chapter sets:<br>&nbsp;
+        10th edition: {6.9, *6.21, *6.27}       <br>&nbsp; &nbsp;
+         9th edition: {6.5, *6.16, *6.26, 6.27}        <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: <a href=
+        "https://www.youtube.com/watch?v=CXogtrK4g5s"
+                 >Diesel engine governers explained</a><br>&nbsp;
+        Optional:  Find out  about <a href=
+        "../../F14/220/Power_Steering.htm">power steering</a>.
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+13
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/23
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/24<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics:  Inductors and Capacitors              <br>&nbsp;
+        Read Ch. 6 Sections 1, 2.                      <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignmentHome?assignmentID=1267063"
+        >PS#13</a>                                     <br>&nbsp;
+        (6.2, 6.12, 6.14; difficulty 1.3, 108m)         <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional Videos:  <a href=
+        "https://www.youtube.com/watch?v=-GLidgxMr4s"
+                        >Capacitors and Inductors</a> <br>&nbsp;
+        <a href="https://www.youtube.com/watch?v=keWUN6-H2S4"
+        >Super Inductor Simple Joule Thief</a>        <br>&nbsp;
+        Optional: More sensible explanation from     <br>&nbsp;
+        Wikipedia, <a href=
+        "https://en.wikipedia.org/wiki/Joule_thief"
+                                               >Joule Thief</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+12
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/21
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/22<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***<!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->&nbsp;
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Op-amp non-inverting, summing,         <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                difference, non-ideal op-amps          <br>&nbsp;
+        Read Ch. 5 Sections 4-7                        <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignmentHome?assignmentID=1266253"
+        >PS#12</a>                                      <br>&nbsp;
+        (5.17, 5.18, *5.27, 5.48; difficulty 1.3, 76m) <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional video on <a href=
+        "http://www.youtube.com/watch?v=RXJKdh1KZ0w"
+                            >encabulator</a> technology.<br>&nbsp;
+        Optional reading on <a href=
+        "http://en.wikipedia.org/wiki/Turboencabulator"
+                            >encabulator</a> technology.                                                     
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+11
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/18
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/21<br>
+        at <br>
+        start<br>
+        of<br>
+        class<br>
+        <br>9/23
+        &nbsp;<br>
+        at<br>
+        start<br>
+        of<br>
+        class
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/74013601/download?download_frd=1"
+        >9/25</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Review, Op-amps, Inverting Circuit     <br>&nbsp;
+        Review Ch 4, Read Ch. 5, Sec 1-3.              <br>&nbsp;
+                                                       <br>&nbsp;
+        Do (on paper) one of these end-of-chapter sets:<br>&nbsp;
+        10th edition: {4.103, 5.5, 5.9}          <br>&nbsp &nbsp;
+         9th edition: {4.103, 5.2, 5.8}                <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:  View this animated tutorial From ASU<br>&nbsp;
+        on the topic of the <a target="_blank" href=
+        "http://holbert.faculty.asu.edu/ece201/opamp.html"
+                           >ideal op-amp</a>.  <br>&nbsp;<small>
+        The tutorial uses the word <i>impedance</i>.  This is a <br>&nbsp;
+        generalization of resistance.  We will study impedance  <br>&nbsp;
+        later in this course.  For now, just consider it to mean <br>&nbsp;
+        the same thing as resistance. (<i>Z</i> = <i>R</i>)</small><br>&nbsp;
+        Optional video from Bell Telephone in 1965 <br>&nbsp; <a href= 
+        "http://www.youtube.com/watch?v=LRJZtuqCoMw"
+        >The Genesis of the Transistor</a> (~17 min.)<br>&nbsp;
+        Optional video from PBS, Ira Flatow<br>&nbsp; <a href=
+        "https://www.youtube.com/watch?v=U4XknGqr3Bo"
+        >Transistorized!</a>                           <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:                                      <br>&nbsp;
+        It does not cost a fortune to <a href=
+        "http://articles.latimes.com/print/2009/jan/25/business/fi-cover25"
+                                   >look like $1M</a>.<br>&nbsp;
+        Optional:  If you plan to go a       <br>&nbsp;
+        <a href=
+        "http://www.engineering.iastate.edu/ecs/career-fair/"
+        >career fair</a>, consider this <a href=
+        "http://www.career.vt.edu/JobSearchGuide/JobCareerFairPrep.html"
+                                  >advice from VT</a>.<br>&nbsp;
+        Dress code at most career fairs is   <br>&nbsp; <a href=
+        "http://www.career.vt.edu/Interviewing/InterviewAppearance.html"
+                                >interview attire</a>!<br>&nbsp;
+                                                      <br>&nbsp;
+        Optional:                                        <a href=
+        "http://images.ucomics.com/comics/db/2006/db060504.gif"
+        >Thevenin's theroem in pop culture</a>.       
+      
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+10
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/16
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/17<br>
+        at<br>
+        11:59<br>
+        pm
+        
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Max Pwr Transfer, Review Nodal, Mesh   <br>&nbsp;
+        Read Ch 4 Sec. 12, Review all of Ch. 4          <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignmentHome?assignmentID=1264048"
+        >PS#10</a>                                      <br>&nbsp;
+        (4.71, 4.84, 4.85, 4.87, 4.101;                 <br>&nbsp;
+        difficulty 2.3, 114m)                           <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional video:                                <br>&nbsp; 
+        Good information on clothing from MNSU <a href=
+        "http://www.mnsu.edu/cdc/students/jobs_and_internships/interviewpreparation_attire.html"
+                                      >here</a>.
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 9
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/14
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/15<br>
+        at<br>
+        11:59<br>
+        pm
+        
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Superposition, Thevenin, Norton    <br>&nbsp;
+        Read Ch 4 Sec. 13, 10, 11                      <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignmentHome?assignmentID=1264048"
+        >PS#9</a>                                      <br>&nbsp;
+        (4.93, 4.97, 4.64, 4.68, 4.69;                 <br>&nbsp;
+        difficulty 2.0, 86m)                           <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional video:                      <br>&nbsp; <a href=
+        "https://www.youtube.com/watch?v=pcp0IggRqC0"
+        >Introduction to Thevenin Equivalent Circuits</a><br>&nbsp;
+        Optional video: <a href= 
+        "https://www.youtube.com/watch?v=ZdooBTdW5bM"
+                       >Huffman Coding</a>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 8
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/11
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/14<br>
+        at <br>
+        start<br>
+        of<br>
+        class<br>
+        <br>9/16
+        &nbsp;<br>
+        at<br>
+        start<br>
+        of<br>
+        class
+
+        
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/74013596/download?download_frd=1"
+        >9/14</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Review Nodal &amp; Mesh, Equivalent Sources<br>&nbsp;
+        Read Ch 4 Sec. 8, 9                            <br>&nbsp;
+                                                       <br>&nbsp;
+        Do (on paper) one of these end-of-chapter sets:<BR>&nbsp;
+        10th edition: {*4.54, 4.58, *4.62, 4.63}       <br>&nbsp;&nbsp;
+         9th edition: {*4.53, 4.57, *4.60, 4.62 and    <br>&nbsp;&nbsp;
+         change 4.57 as follows:                       <br>&nbsp;&nbsp;
+         Re-label Part (b) as Part (c).                <br>&nbsp;&nbsp;
+         Re-label Part (a) as Part (b).                <br>&nbsp;&nbsp;
+         Add a new Part (a), "Would you use the node-  <br>&nbsp;&nbsp;
+         voltage or mesh-current method to find  Vdc?  <br>&nbsp;&nbsp;
+         Explain your choice.} difficulty 2.3, 80m     <br>&nbsp;
+                                                       <br>&nbsp;
+         Optional Video:  <a href=
+        "https://www.youtube.com/watch?v=4iEshd6izgk"
+                         >How to Debunk A Product</a> <br>&nbsp;
+                                                      <br>&nbsp;
+        Note: An asterisk (*) at the front of a       <br>&nbsp;
+        problem number means an answer is available   <br>&nbsp;
+        in an appendix of your textbook.        
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 7
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/09
+        
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/10<br>
+        at<br>
+        11:59<br>
+        pm
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Mesh Analysis with Supermeshes and     <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                dependent sources                      <br>&nbsp;
+        Read Ch 4 Sec. 5, 6, 7                         <br>&nbsp;
+                                                       <br>&nbsp;
+        Log in to <a href=
+		    "http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		    >Mastering Engineering</a>, then do <a href=
+        "https://session.masteringengineering.com/myct/assignmentHome?assignmentID=1262794"
+        >PS#7</a>                                      <br>&nbsp;
+        (4.32, 4.39, 4.43, 4.52; difficulty 1.8, 106m) <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional video: <a href=
+        "https://www.youtube.com/watch?v=jwHpes00-Vs"
+        >Nodal Analysis with Supernode</a>             <br>&nbsp;
+        Optional video: <a href= 
+        "http://www.youtube.com/watch?v=A_0s1nPg8Es"
+                       >The greatest Engineering</a>   <br>&nbsp;
+        <a href=
+        "http://www.youtube.com/watch?v=A_0s1nPg8Es"
+        >Achievements of the 20th Century</a>.  (~9 min.)
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 6
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/07
+        
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/08<br>        
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        ***
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Nodal Analysis with Supernodes, and    <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                dependent sources                      <br>&nbsp;
+        Read Ch 4 Sec. 4                               <br>&nbsp;
+                                                       <br>&nbsp;
+		Do  PS#6 in <a href=
+		"http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		>Mastering Engineering</a>.                        <br>&nbsp;
+        (4.20, 4.28, 4.30; difficulty 3.0, 58m)        <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional:                                      <br>&nbsp;
+        Video lecture: <a href=
+        "http://www.youtube.com/watch?v=tz85DzXoSUQ"
+                      >The Passive Sign Convention</a> <br>&nbsp;
+
+        Video lecture: <a href=
+        "http://www.youtube.com/watch?v=JIrpdwPIXag"
+                      >Passive Sign Cnvntn Examples</a>
+                                                       <br>&nbsp;
+        <small>Note: The passive sign convention is easy once you  
+                                                       <br>&nbsp;
+        clearly understand it.  However, there are lots of bad 
+                                                       <br>&nbsp;
+        descriptions of it floating around on the Internet.  
+                                                       <br>&nbsp;
+        Stick with the IEE handout, the videos above, or ask in 
+                                                       <br>&nbsp;
+        class rather than searching the Internet yourself on 
+                                                       <br>&nbsp;       
+        this matter.</small>
+
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 5
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/04
+        <br>
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/07<br>
+        at <br>
+        start<br>
+        of<br>
+        class<br>
+        <br>9/09
+        &nbsp;<br>
+        at<br>
+        start<br>
+        of<br>
+        class<!--
+        9/03-->&nbsp;
+        
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/74013593/download?download_frd=1"
+        >9/11</a>
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Review of passive convention etc.      <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Meters, Nodal Analysis, Supernodes     <br>&nbsp;
+        Read Ch 3 Sec. 3.5, 3.6; Ch 4 Sec 1, 2, 3.     <br>&nbsp;
+                                                       <br>&nbsp;
+        Do one of the end-of-chapter sets below        <br>&nbsp;
+             10th edition: {3.45, 4.1, 4.13, 4.6}      <br>&nbsp;
+        &nbsp; 9th edition: {3.43, 4.1, 4.8, 4.9}      <br>&nbsp;<small>
+        Note: The authors suggest that you may use PSpice or    <br>&nbsp;
+        Multisim to check your answers.  We have not yet studied<br>&nbsp;
+        these computer programs.  You may check your answers    <br>&nbsp;
+        by considering KVL and KCL in the original circuit.</small><br>&nbsp
+                                                       <br>&nbsp;
+        Optional: <a href=
+        "https://www.youtube.com/watch?v=bPA-yQQDi9Q"
+                >Interview tips from GE</a>
+
+        
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 4
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        9/02
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/03<br>
+        at<br>
+        11:59<br>
+        pm
+        
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->***
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Series and parallel, V and I division  <br>&nbsp;
+        Read:  Nilsson & Riedel Ch 3 Sections 1, 2, 3, 4<br>&nbsp;
+                                                       <br>&nbsp;
+		Do  PS#4 in <a href=
+		"http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		>Mastering Engineering</a>.                        <br>&nbsp;
+                                                       <br>&nbsp;
+        Optional: Why become an engineer?  Watch this  <br>&nbsp;
+        short film titled <a href= 
+        "https://www.youtube.com/watch?v=EMZ8NfmccwA"
+                          >Design Our Future</a>.               <br>&nbsp;<small>
+        Prof. De Boer does not endorse every statement made     <br>&nbsp;
+        in this video, but it does provoke thought.             <br>&nbsp;
+        (The link at the end of the video is defunct.  A similar<br>&nbsp;
+        link ending in ".info" instead of ".us" is a phishing   <br>&nbsp;
+        site&mdash;don't go there!)                             </small>
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 3
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        8/31
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        9/02<br>
+        at<br>
+        11:59<br>
+        pm        
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <!--<a href="https://dordt.instructure.com/courses/1408440/files/55942849/download?wrap=1"
+        >9/05</a>-->***
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Dependent srcs, switches, Kirchhoff's laws<br>&nbsp;
+        Read:  Nilsson & Riedel Chapter 2              <br>&nbsp;
+                                                       <br>&nbsp;
+    		Do PS#3 in <a href=
+	    	"http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+	    	>Mastering Engineering</a>.                    <br>&nbsp;
+        
+        
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 2
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        8/28
+        <br>
+        <!--See<br>
+        note<br>
+        1<br>
+        below-->
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        8/31<br>
+        at <br>
+        start<br>
+        of<br>
+        class<br>
+        <br>
+        9/02<br>
+        at<br>
+        start<br>
+        of<br>
+        class<!--
+        9/03-->&nbsp;
+        
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <a href="https://dordt.instructure.com/files/72871170/download?download_frd=1"
+        >9/04</a><!--9/04-->
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Review of passive convention etc.      <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                SI units, Switches, Meters, Bandwidth  <br>&nbsp;
+        Read Chapter 1 in your textbook as needed.     <br>&nbsp;
+		        Review sections 1 though 8 in the handout, <br>&nbsp;
+        "<a href=
+        "https://dordt.instructure.com/files/71227564/download?download_frd=1"
+        >An Introduction to Electrical Engineering</a>."<sup>5</sup><br>&nbsp;
+        Do the end-of-chapter problems listed below    <br>&nbsp;
+        either from the 9th or 10th edition textbook.  <br>&nbsp;
+        Write them out on paper using a pencil and     <br>&nbsp;
+        eraser.  Be sure to follow homework <a href=
+        "../../F15/HWSTDF15.HTM" 
+        target="_blank">standards</a>.                 <br>&nbsp;
+        <a href=
+        "https://dordt.instructure.com/files/72465380/download?download_frd=1"
+        >Here is an example</a> of what good quality 
+                                                       <br>&nbsp;
+        homework looks like.                           <br>&nbsp;
+                                                       <br>&nbsp;
+             10th edition: 1.3, 1.15, 1.31             <br>&nbsp;
+        &nbsp; 9th edition: 1.5, 1.11, 1.28            <br>&nbsp;   
+                                                       <br>&nbsp;
+        Optional <a href=
+        "http://www.youtube.com/watch?v=tYjerS0JJYU"
+                >video</a> ~3 minutes:  "Every question<br>&nbsp;
+        harbors a latent question."  (What if?) 
+<!-- ------------------------------------------ --></TD></TR><TR>
+   <!-- PS#  -->                  <TD align="right" valign="top">
+ 1
+
+   <!-- Assigned --><BR><BR></TD><TD align="center" valign="top">
+        8/26
+
+   <!-- Due -->             </TD><TD align="center" valign="top">
+        8/29<BR>
+		at<br>
+		11:59<br>
+		PM<br><br>
+		
+        See<br>
+        note<br>
+        2<br>
+        below
+
+   <!-- Returned -->    </TD><TD align="center" valign="top"><BR>
+        <!--<a href="https://dordt.instructure.com/courses/1408440/files/55819836/download?wrap=1"
+        >9/03</a><br>-->
+        ***<br>
+        See<br>
+        notes<br>
+        4, 5, &amp; 7<br>
+        below
+
+   <!-- Assignment -->  </TD><TD align="left" valign="top">&nbsp;
+        Topics: Review defn. of charge, current,       <br>&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                voltage, resistance, power, KVL, KCL   <br>&nbsp;
+		        Review sections 1 though 8 in the handout, <br>&nbsp;
+        "<a href=
+        "https://dordt.instructure.com/files/71227564/download?download_frd=1"
+        >An Introduction to Electrical Engineering</a>."<sup>5</sup><br>&nbsp;
+                                                       <br>&nbsp;
+        Scan Chapter 1 in your textbook                <br>&nbsp;
+		                                               <br>&nbsp;
+		Note <a href=
+        "../../errata/Nilsson_Riedel/10th/N_R_A_ER.HTM"
+        >errata</a> on page 15 in your textbook.      <br>&nbsp;
+        
+		Do the <a href=
+		"http://www.pearsonmylabandmastering.com/northamerica/masteringengineering/"
+		>PS#1 Introduction to 'Mastering       <br>&nbsp;
+		Engineering'"</a> assignment.           <br>&nbsp;
+    Note:  Prof. De Boer inadvertently included     <br>&nbsp;
+    some problems twice.  Please skip problems that <br>&nbsp;
+    are redundant.                                  <br>&nbsp;
+		                                                <br>&nbsp;
+		Optional: <a href=
+        "https://www.youtube.com/watch?v=foxD6ZQlnlU"
+                 >Fractal Zoom... Mandelbrot</a> (10:01)<br>&nbsp;
+                                                <br>&nbsp;<small>
+    Note: On 8/27 at 9:55 PM the due date of this  <br>&nbsp;
+    assignment was changed from 8/27 to 8/29 due to <br>&nbsp;
+    technical difficulties with the Mastering Engineering <br>&nbsp;
+    Web site.                          </small>
+<!-- -----------------BOTTOM-OF TABLE-------------- --></TD></TR>
+</TABLE>
+<BR>
+<TABLE align="center" 
+       width="550"
+       cellspacing="0"
+       border="0">
+                                 <TR><TD width="60" valign="top">
+
+
+Note 1) 
+                                                        </TD><TD>
+Assignments shown above with no "assigned" date are 
+tentative.  More problems might be added, expected due dates 
+might change, but problems shown will eventually be assigned.
+
+                         <BR><BR><TR><TD width="60" valign="top">
+Note 2) 
+                                                        </TD><TD>
+Homework in "Mastering Engineering" is always due at 11:59 PM on 
+the date shown.                 
+                         <BR><BR><TR><TD width="60" valign="top">
+Note 3) 
+                                                        </TD><TD>
+End-of-chapter homework must be ready for peer grading and 
+discussion in class on the first listed due date.  It must be 
+turned in for a final grade on the second listed due date.  
+Peer grading will be 1/5 (20%) of the homework grade.               
+                         <BR><BR><TR><TD width="60" valign="top">
+Note 4)
+                                                        </TD><TD>
+If the "Returned" date is shown as a link, then solutions are 
+available by clicking the link.  
+
+                         <BR><BR><TR><TD width="60" valign="top">
+Note 5)                                                 
+                                                        </TD><TD>
+If you click the link and get a login screen, use your usual 
+Canvas@Dordt login.  If that leads you to a contents page (not 
+what you wanted), then use the back icon (or alt-left-arrow 
+on the keyboard) <i>twice</i> if necessary to get back to the 
+link on this page and click it again.  The link only works 
+after you are logged into Canvas@Dordt.
+                                                       
+
+
+
+                         <BR><BR><TR><TD width="60" valign="top">
+Note 6) 
+                                                        </TD><TD>
+If you are having difficulty reading the latest version of this 
+page it may have to do with your browser's cached memory. Read 
+this <a 
+href="../../ddb/notes00.htm">note on 
+cached pages</a> to solve the problem. 
+
+                         <BR><BR><TR><TD width="60" valign="top">
+Note 7) 
+                                                        </TD><TD>
+If the "Returned" date is just three asterisks, then there is
+nothing to return.  Feedback on this homework set was immediately
+given online as you worked the assignment. 
+
+
+
+                                                   </P></TD></TR>
+</TABLE>
+</BODY>
+</HTML>
+

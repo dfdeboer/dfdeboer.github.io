@@ -1,0 +1,77 @@
+body {
+	font-family: verdana, arial, sans-serif;
+	font-size: 0.95em;
+	color: #000000;
+	background-color: #ffffcc;
+	margin: 0px;
+}
+.red {color: #FF0000}
+.centered {
+	text-align: center;
+}
+p.footer {
+	text-align: center;
+	font-size: small;
+}
+H3 {
+	font-family: verdana, arial, sans-serif;
+	color: #000000;
+	font-size: 1.5em;
+}
+H4 {
+	font-family: verdana, arial, sans-serif;
+	color: #000000;
+	font-size: 1.2em;
+}
+H5 {
+	font-family: verdana, arial, sans-serif;
+	color: #015229;
+	font-size: 1.1em;
+}
+span.pageRef {
+	font-family: verdana, arial, sans-serif;
+	color: #000000;
+	font-size: small;
+	font-weight: normal;
+}
+.timesNewRomanFont {
+	font-family: "Times New Roman";
+}
+.symbolFont {
+	font-family: "Symbol";
+}
+.syntaxSpec {
+	font-family: "courier new";
+	font-size: 1em;
+	font-weight: normal;
+}
+.codeSnippet {
+	font-family: "courier new";
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: normal;
+	background-color: #000099;
+	padding: 0px 5px;
+}
+.programOutput {
+	font-family: "courier new";
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: normal;
+	background-color: #000000;
+	padding: 0px 5px;
+}
+li {
+	font-family: verdana, arial, sans serif;
+}
+li.selfTest {
+	list-style-type: none;
+	margin-top: 10px;
+}
+li.wisconsinOnlinelLearningObject {
+	list-style-type: none;
+	margin-top: 10px;
+}
+table {
+	background-color: #ffffcc;
+}

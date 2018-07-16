@@ -1,0 +1,433 @@
+<HTML>
+<HEAD>
+<TITLE>ERRATA: Mano &amp; Kime 3rd</TITLE>
+<style type="text/css">
+A:link {color:#CC9900; font-weight:bold; text-decoration: none;}
+A:visited {color: #CC9900; font-weight:bold;
+          text-decoration: none;}
+</style>
+</HEAD>
+<BODY>
+<table align="center" width=504><tr><td width="504">
+<p align="center"><A HREF=
+"http://www.dordt.edu/academics/departments/engineering/">
+            DORDT COLLEGE ENGINEERING DEPARTMENT</A><br>
+                       TEXTBOOK ERRATA<br>
+                     (last update 6/8/06)<br>
+                               <br>
+   <img src="Mano_Kime_Text_3E.jpg" width="108" height="143"><br>
+  Mano and Kime, <I>Logic and Computer Design Fundamentals</I>, 
+                       Third Edition, <br> 
+         ISBN 0-13-140539-X, Pearson Prentice Hall, 2004.<br><br>
+
+              Before using the list below review the 
+    <A HREF="http://www.writphotec.com/mano/text_errata.html"
+                   >publisher's errata list</A>.<br>
+      In addition, the errata listed below have been found.
+</p>
+                                          <A NAME="P_133"></A><b>
+Page 133, Problem 3-1.</b><br>
+   The second function should be labeled <i>G</i>, not 
+   <i>F</i>.  <br>(Change the second <i>F</i> to a <i>G</i>.)
+                                  <br><br><A NAME="P_138"></A><b>
+Page 138-9, Problems 3-24, 3-25.</b><br>
+   The publisher's errata (see link above) is not sufficient to 
+   correct all the errors students encounter when working this 
+   problem.  Instead of referring to Figure 4-10, Students should 
+   use the datasheet for the type '139 2-to-4 decoder, for 
+   example the one from <A 
+   HREF="http://www.fairchildsemi.com/ds/74%2F74F139.pdf" 
+   >Fairchild Semiconductor</A>.  <br><br>
+
+   Note that <i>O</i><sub>1</sub>  = <i>D</i><sub>1</sub>, &nbsp;
+   <i>O</i><sub>2</sub> = <i>D</i><sub>2</sub>, &nbsp;etc.
+                                                         <br><br>
+
+   Also note that the truth tables given in datasheets typically 
+   refer to signals such as <img src="O_bar.gif"><sub>1</sub>.  
+   (Notice the overbar for negation.) That label refers to the 
+   signal present on the wire that connects outside the 
+   bubble&#8212;in other words, it is the label for the pin of 
+   the chip.  The same label, when it is shown inside the 
+   schematic box representing the function of the chip does not 
+   include the overbar but there will be a bubble or arrow symbol 
+   on the output line in place of the overbar. <br><br> 
+
+   <blockquote><small>
+   (<i>Further detail on why Figure 4-10 is not adequate</i>:  
+   The use of "bubbles" for negation in Figure 3-34 is 
+   inconsistent with Figure 4-10.  Figure 4-10 does not correctly 
+   describe the decoders used on Figure 3-34.  To modify Figure 
+   4-10, for use with these problems only, each of the four AND 
+   gates at the outputs should be NAND gates.  Also, there should 
+   be a third inverter located on the schematic above the 
+   existing two inverters and in the EN signal line.  Finally, in 
+   the truth table in Figure 4-10 (a), in each of the columns EN, 
+   D<sub>0</sub>, D<sub>1</sub>, D<sub>2</sub>, and 
+   D<sub>3</sub>, replace each "1" with a "0" and vice versa.  
+   The modified figure is useful only for these two problems 
+   however.) 
+   </small></blockquote>
+                                          <A NAME="P_193"></A><b>
+Page 193, Problem 4-8.</b><br>
+   In the text, add a asterisk at the beginning of the 
+   problem statement since the answer to this problem is posted 
+   on the book's companion web site.  (Change<br>
+   "<b>4-8</b> &nbsp; A special 4-to-6-line decoder. . ." to<br>
+   "<b>4-8</b> *A special 4-to-6-line decoder. . ." )<br><br>
+
+   Also In the PDF file containing the solution (on the book's 
+   companion web site) change the label "4-10.*" to "4-8*."  
+   Underneath the schematic diagram but above the truth table 
+   and K-maps, add a horizontal line.  Just under the horizontal 
+   line, add the label "4-10.*" (The solution to 4-8 is only the 
+   schematic.) 
+                               <br><br><A NAME="P_193_10"></A><b>
+Page 193, Problem 4-10.</b><br>
+   The answer posted on the book's companion web site is 
+   improperly labeled and is also incomplete.  <br><br>
+   
+   <i>Correct the labels</i>.<br>
+   In the PDF file for this answer, change the label "4-10.*" 
+   to 4-8.*".  Below the schematic diagram but above the truth 
+   table and K-maps, add a horizontal line.  Just below this 
+   horizontal line add the label "4-10*".  <br><br> 
+
+   <i>The answer shown for 4-10* is incomplete</i>.<br>  
+   Students' solutions must also include a gate-level schematic 
+   of the logic.  This part of the answer is not given in the PDF 
+   file. 
+                                  <br><br><A NAME="P_196"></A><b>
+Page 196, Problem 4-36.</b><br>
+   Replace &nbsp;&nbsp;"<font face="Courier New">E_n, A0, 
+   A1</font>"&nbsp;&nbsp; with &nbsp;&nbsp;"<font face=
+   "Courier New">E_n, A1, A0</font>."<br><br> (It is conventional 
+   in this text to list the most significant bits first.  Doing 
+   it in the other order confuses students.) 
+                                  <br><br><A NAME="P_236"></A><b>
+Page 236, Problem 5-4.</b><br>
+   Add these instructions for working the problem. . . <br>
+   <blockquote>
+       Work the problem in this order:  <br><br>
+   
+       1)  The given numbers are unsigned binary.  Pad each with 
+           zeros until <br>&nbsp;&nbsp;&nbsp;&nbsp; they 
+           are each 8-bits wide.  <br><br> 
+   
+       2)  Negate subtrahends by taking the 2's complement.  <br><br>
+       
+       3)  Add.  <br><br>
+       
+       4)  For each case, note "overflow" or "no overflow" as 
+           <br>&nbsp;&nbsp;&nbsp; the case may be. <br><br> 
+
+   </blockquote>
+
+   <small>
+   (Several of the given unsigned numbers are too large in 
+   magnitude to properly represent as signed integers with the 
+   same number of bits.  That "correct" answers can be obtained 
+   in these instances by using the methods shown in some 
+   examples in the textbook is only because people can interpret 
+   the bits in the context of a modular number system.  Digital 
+   hardware does not act like that.  The four-step method 
+   described above emulates what 8-bit digital hardware would do 
+   to add the numbers.) 
+   </small>
+                                  <br><br><A NAME="P_246"></A><b>
+Page 246 and p247, Labels <img src="S_bar_bold.gif"> and <img
+   src="R_bar_bold.gif">
+   <!--next line forces a few extra points of vertical space-->
+   <sub>&nbsp;</sub></b><br>
+   Labels for the <img src="S_bar.gif"> <img src="R_bar.gif"> 
+   Latch are missing overbars in four places inside Figure 6-6.  
+   The same problem exists in three places in the text that 
+   discusses this Figure. <br><br>
+
+   Page 246, 9 lines from the bottom, add overbar to <i>S</i>.<br>
+   Page 246, 8 lines from the bottom, add overbar to <i>S</i>.<br>
+   Page 246, 7 lines from the bottom, add overbar to <i>R</i>.<br>
+   (Other instances of <i>S</i> and <i>R</i> on these pages are 
+   correct as printed with or without the overbars.)  
+                                  <br><br><A NAME="P_250"></A><b>
+Page 250-283, Figures and a table containing latches</b><br>
+   Specifically, Figures 6-10, 6-12, 6-13, 6-14, 6-15, 6-17, 6-18, 6-23, 
+   6-27, Table 6-7.  <br><br>
+
+   To be consistent with symbols used in Chapter 9 (e.g. Figure 
+   9-4) add label <i>Q</i> at each output inside the block diagram 
+   symbol for each latch. <br><br>
+   
+   Also note the publisher's errata for figure 6-14, the last two 
+   symbols in part (b).  <br><br>  
+
+   <blockquote><small>
+   <i>A note to students on block symbols</i>:  The absence of a 
+   name in the block diagram symbol, along with no postponement 
+   symbols or dynamic symbol, implies a latch.  Postponement or 
+   dynamic symbols are used to imply a master-slave or edge-
+   triggered flip-flop, as shown in Figure 6-14 and described on 
+   page 255.
+   </small></blockquote>
+                                          <A NAME="P_300"></A><b>
+page 300, Problem 6-4.</b><br>
+   In the text add an asterisk at the beginning of the problem 
+   statement since the answer is posted on the book's companion 
+   web site.  In the PDF file with the solution (on the book's 
+   companion web site) change the label "6-6.*" to "6-4.*".  
+   Underneath part (d) but above the table and state diagram add 
+   a horizontal line.  Under the added horizontal line but above 
+   the table and state diagram, add a label, "6-6.*".  
+                                  <br><br><A NAME="P_301"></A><b>
+Page 301, Problem 6-6.</b><br>
+   The answer posted on the book's companion web site is 
+   improperly labeled.  On the PDF file for this answer, change 
+   the label "6-6.*" to "6-4.*".  Underneath part (d) but above 
+   the table and state diagram add a horizontal line.  Under the 
+   added horizontal line, add a label, "6-6.*".  
+                                <br><br><A NAME="P_301_9"></A><b>
+Page 301, Problem 6-9.</b><br>
+   Place an asterisk at the start of the word "Draw."  <br>
+   (The answer is posted on the web.) 
+                                  <br><br><A NAME="P_330"></A><b>
+Page 330, Table 7-7.</b><br>
+   Change "Figure 7-7" to "Figure 7-11".
+                                  <br><br><A NAME="P_336"></A><b>
+Page 336, Figure 7-14.</b><br>
+   Note the errata for this figure described in the author's list 
+   of errata.  A corrected figure is shown <A 
+   HREF="MK_FIG_7_14.DOC">here</A>. 
+                                <br><br><A NAME="P_393_1"></A><b>
+Page 393, Problem *8-1.</b><br>
+   The solution given on the companion web site is incorrect.  
+   The state transition branch leading into the left side of 
+   state S2 should be redirected into state S1. 
+                                  <br><br><A NAME="P_393"></A><b>
+Page 393, Figure 8-18.</b><br>
+   Add a key showing input and output variables.  The key will 
+   show a circle representing a generic state.  A state name 
+   will appear in the top half of the circle and the outputs (for 
+   example <i>Z</i><sub>1</sub> <i>Z</i><sub>2</sub>) will appear 
+   in the bottom half.  An arrow representing a state transition 
+   will extend from the circle and the inputs (for example 
+   <i>X</i><sub>1</sub> <i>X</i><sub>2</sub>) will be labeled 
+   along the arrow.  See this <A HREF="MK8_1.DOC">corrected 
+   figure</A>. 
+                                  <br><br><A NAME="P_427"></A><b>
+Page 427 through p428. Problems 9-2 through 9-12.</b><br>
+   Each problem statement should be preceded by an asterisk since 
+   all the solutions for all the problems in this chapter are 
+   available on the companion web site.  
+                                  <br><br><A NAME="P_447"></A><b>
+Page 447 Table 10-6.</b><br>
+   In the line with the micro-operation 
+   "<i>R</i>7 <img src="left_arrow.gif"> <i>R</i>7 + 1" and in 
+   the column "MB," change the word "Register" to a dash.  
+                                <br><br><A NAME="P_447_7"></A><b>
+Page 447 Table 10-7.</b><br>
+   In the line with the micro-operation "<i>R</i>7 <img 
+   src="left_arrow.gif"> <i>R</i>7 + 1" and in the column "MB," 
+   change the "0" to an "<font face="verdana">X</font>". 
+                                  <br><br><A NAME="P_506"></A><b>
+Page 506 Descriptions of shift operations</b><br>
+   There are a number of omissions in the description of shift 
+   operations.  An improved version of the text on page 506 under 
+   the heading "Shift Instructions" can be found <A 
+   HREF="MK3_P506.RTF">here</A>, and here is a <A 
+   HREF="SHIFT_R.DOC">supplemental figure</A> to further clarify 
+   this matter. 
+   
+   <blockquote><small>
+   These are the most substantive of the changes made in the 
+   improved text linked above: 
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+        Line 8 (starts with "the")  Insert these sentences after 
+   the existing period:  "It shifts the out-going bit into the 
+   carry flag bit.  The old carry flag bit is overwritten." 
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+        Line 9.  (starts with "shifting two's") Replace the word  
+   "shifting" with the phrase, "multiplying and dividing" and at 
+   the end of that sentence add the words "by two" just before 
+   the period.   
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   
+        Line 12. (starts with "unchanged")  Insert these 
+   sentences after the existing period:  "The outgoing bit is 
+   shifted into the carry flag bit.  This operation divides the 
+   number in the register by two."  
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        Line 18. (starts with "the")  After the existing period 
+   insert this sentence:  "The outgoing bit is also copied into 
+   the carry flag 
+   bit."
+
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        The line numbers above are counted down from the heading 
+   "Shift Instructions" in the original text and do not count 
+   blank lines. 
+   </small></blockquote> 
+                                          <A NAME="P_512"></A><b>
+Page 512 Table 11-7.</b><br>
+   No errata, however Table 11-7 has little content.  <br>
+   Here is a <A HREF="P_CTRL.DOC" >supplement to Table 11-7</A>.
+                                  <br><br><A NAME="P_515"></A><b>
+Page 515 Table 11-9.</b><br>
+   Two lines in the middle of the table are incorrectly shown in 
+   the text as: </td></tr></table> 
+
+   <table align="center" width=504 
+   cellpadding="0" cellspacing="0">
+   <tr>
+   <td width="210">Branch if lower</td>
+   <td width="100">BL</td>
+   <td width="100"><i>A</i> &lt; <i>B</i></td>
+   <td width="94"><i>C</i> = 1</td>
+   </tr>
+
+   <tr>
+   <td>Branch if lower or equal</td>
+   <td>BLE</td>
+   <td><i>A</i> <img src="le.gif"> <i>B</i></td>
+   <td><i>C</i> + <i>Z</i> = 1</td>
+   </tr>
+   </table><br>
+
+   <table align="center" width=504 
+   cellpadding="0" cellspacing="0"><tr><td width="504">
+   Correct the above lines to read as follows:</td></tr>
+   </table>
+
+   <table align="center" width=504 
+   cellpadding="0" cellspacing="0">
+
+   <tr>
+   <td width="210">Branch if lower</td>
+   <td width="100">BLO</td>
+   <td width="100"><i>A</i> &lt; <i>B</i></td>
+   <td width="94"><i>C</i> = 1</td>
+   </tr>
+
+   <tr>
+   <td>Branch if lower or same</td>
+   <td>BLS</td>
+   <td><i>A</i> <img src="le.gif"> <i>B</i></td>
+   <td><i>C</i> + <i>Z</i> = 1</td> 
+   </tr>
+   </table><br>
+
+   <table align="center" width=504><tr><td width="504">
+   <i>Summary</i>: <br>
+   Change "BL"  to "BLO"<br>
+   Change "BLE" to "BLS"<br>
+   Change "equal" to "same" in the second instance.<br><br>
+   
+   <blockquote><small>
+   (As written the same instruction mnemonic, "BL," stands for 
+   two separate and unique instructions.  The "BL" instruction in 
+   table 11-9 is not the same as the "BL" instruction shown table 
+   11-10.  Similarly for "BLE."  &nbsp; The switch to mnemonics 
+   BLO and BLS follows Motorola style for assembly language.)
+   </small></blockquote>
+                                          <A NAME="P_522"></A><b>
+Page 522. Problem 11-1.</b><br>
+   Change "Section 11-1" to "Section 11-2". Also add The text 
+   indented below: 
+   
+   <blockquote>
+   SUB and DIV are not described in section 11-2.  They work as 
+   described below: <br><br> 
+
+   Three Address Instructions:<br>
+
+   SUB <i>R</i>1, <i>R</i>2, <i>R</i>3 &nbsp;&nbsp;&nbsp;&nbsp; 
+    <i>R</i>1 <img src="left_arrow.gif"> <i>R</i>2 &#8211; <i>R</i>3<br>
+
+   DIV &nbsp;<i>R</i>1, <i>R</i>2, <i>R</i>3 &nbsp;&nbsp;&nbsp;&nbsp; 
+    <i>R</i>1 <img src="left_arrow.gif"> <i>R</i>2/<i>R</i>3<br><br>
+
+   
+   Two Address Instructions:<br>
+
+   SUB <i>T</i>1, <i>T</i>2 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <i>M</i>[<i>T</i>1] <img src="left_arrow.gif"> 
+    <i>M</i>[<i>T</i>1] &#8211; <i>M</i>[<i>T</i>2]<br>
+
+   DIV &nbsp;<i>T</i>1, <i>T</i>2 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i>M</i>[<i>T</i>1] <img src="left_arrow.gif"> 
+    <i>M</i>[<i>T</i>1]/<i>M</i>[<i>T</i>2]<br><br>
+
+
+   One Address Instructions:<br>
+
+   SUB X &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <i>ACC</i> <img src="left_arrow.gif"> 
+    <i>ACC</i> &#8211; <i>M</i>[<i>X</i>]<br>
+
+   DIV X &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <i>ACC</i> <img src="left_arrow.gif"> 
+   <i>ACC</i>/<i>M</i>[<i>X</i>]<br>
+   </blockquote>
+
+                                        <A NAME="P_522_3"></A><b>
+Page 522. Problem *11-3.</b><br>
+   The solution given on the companion web site is incomplete.  
+   For part "b,c" the very last instruction is missing.  Add "POP 
+   X" after the last "MUL" and show that the stack is then empty.  
+   (The result that was on the stack is stored in variable 
+   <i>X</i> and then removed from the stack by the POP 
+   instruction.)  
+                                <br><br><A NAME="P_522_4"></A><b>
+Page 522. Problem 11-4.</b><br>
+   Add "<i>Y</i> = " to the start of the expression
+   so that it reads:  <br>
+   "<i>Y</i> = (<i>A</i> + <i>B</i>) &#215; <i>C</i> &#247; 
+   (<i>D</i> - (<i>E</i> &#215; <i>F</i>))" 
+                                  <br><br><A NAME="P_524"></A><b>
+Page 524. Problem *11-17.</b><br>
+   The answer posted on the textbook's companion web site is 
+   wrong.  The column labeled "C" should have these entries 
+   (going down), " 1 1 0 0 0 0 0 0 0" (It is also conventional to 
+   show the "C" column on the left of the register rather than to 
+   the right, but this is only a convention.) 
+                                  <br><br><A NAME="P_526"></A><b>
+Page 526. Problem *11-27.</b><br>
+   Change "located in memory at address 2000" to "located in 
+   memory at address 1000".  Change the solution shown on the 
+   textbook's companion web site to: 
+   <pre>
+                              PC     SP     TOS
+           a) Initially      1000   2000   3000
+           b) After Call     0301   1999   1002
+           c) After Return   1002   2000   3000
+                                                           </pre>
+   <blockquote><small>
+   (As written this problem would execute code stored on the 
+   stack.  This is not typical and could mislead students as to 
+   what a stack is typically used for.  The changes mentioned 
+   above solve this problem.)
+   </small></blockquote>
+
+<hr>   
+<b>Disclaimer:</b>  This list of errata is provided by Professor 
+   De Boer for the use of his students in his courses.  Professor 
+   De Boer has no connection to the book's publisher or the 
+   authors of the textbook.  This list is offered as is, with no 
+   guarantee of any kind.  It is likely to be incomplete at the 
+   least. 
+</td></tr></table>
+<BR> 
+<A HREF="http://homepages.dordt.edu/~ddeboer"> Prof. De Boer's home page </A> 
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+</BODY> 
+</HTML> 
+

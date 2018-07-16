@@ -1,0 +1,214 @@
+<html>
+<head>
+   
+   <meta NAME="Author" CONTENT="Paul Spandler">
+   <meta NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <meta NAME="Classification" CONTENT="learning,resource">
+   <meta NAME="Description" CONTENT="Ethernet tutorial for information systems students">
+   <meta NAME="KeyWords" CONTENT="ethernet,tutorial">
+   <title>TCP/IP Protocols</title>
+</head>
+<body BACKGROUND="images/marble.gif">
+
+<center>&nbsp;<img SRC="images/title.gif" ALT="Ethernet Tutorial" NOSAVE BORDER="2" HEIGHT="25" WIDTH="429"></center>
+
+<hr WIDTH="100%" align="center">
+<br><img SRC="images/tcpippro.gif" ALT="TCP/IP Protocols" NOSAVE BORDER="2" HEIGHT="17" WIDTH="254">
+
+<p><h2>What happens to data in the protocol stack?</h2>
+<ul>
+<li>
+Data starts at the user application and descends as packet(s) through
+the layers of the source's protocol stack.<br>
+<br></li>
+
+<li>
+Each layer adds some information to the packet(s) of data, until it
+is assembled into a frame(s) at the network access layer.<br>
+<br></li>
+
+<li>
+Each frame is then broadcast across the network, where the destination
+device moves the packet up its own protocol stack, &quot;decoding&quot; the data
+at each level, until it is in a form that can be understood by the user
+application running above the stack. Each destination layer removes the
+information placed by the equivalent source layer.</li>
+</ul>
+In this way, a document can become increasingly fragmented as it descends
+through the stack and it increased in size as each layer adds its own piece
+of information. A discussion on frames and packets can be found <a HREF="framepac.htm">here</a>.
+
+<p><h2>What are they?</h2>
+
+<p><img SRC="images/tcpip001.gif" ALT="TCPIPProtocols.gif" NOSAVE BORDER="2" HEIGHT="486" WIDTH="499">
+<h2>Layer
+5 - Application</b></h2>
+
+<h3>File Transfer Protocol</h3>
+
+<p>FTP was developed to allow reliable transfer
+of files across different platforms. To ensure reliability, FTP uses <b>TCP</b>
+at the transport layer. FTP provides simple commands and makes the differences
+in storage methods across networks transparent to the user. The FTP client
+is able to communicate with any FTP server, therefore the FTP server must
+also be able to communicate with any FTP client. FTP does not provide a
+user interface, but it does provide an application program interface (API)
+for file transfer. The client part of the protocol is known as FTP and
+the server part of the protocol is sometimes known as <b>FTPd</b>.
+The &quot;d&quot; suffix means <b>Daemon</b>
+- this is a legacy from Unix computing where a daemon is a piece of software
+running on a server that provides a service.
+
+<p>Different operating systems use different commands.
+For example, in a DOS to Unix file transfer, DOS uses the &quot;dir&quot; command
+to list the contents of the current directory. The FTP client translates
+this to the &quot;list&quot; command which is transported across the network. A Unix
+server does not recognise &quot;list&quot;, so the FTP server has to translate &quot;list&quot;
+into &quot;ls&quot;, which the Unix machine understands. The Unix machine lists the
+current directory, the FTPd transmits this as a &quot;list&quot; back across the
+network and the FTP client translates the results into DOS format.
+<br>&nbsp;
+
+<h3>Hyper Text Transfer Protocol</h3>
+
+<p>HTTP enables applications, such as browsers,
+to upload and download web pages. It uses <b>TCP</b>
+at the transport layer, again to ensure reliability. HTTP is a connectionless
+protocol that transmits a request, receives a response and then terminates
+the connection. HTTP transfers <b>HTML</b>
+(Hyper Text Markup Language) documents plus all of the other components
+supported within HTML - such as Javascript, Visualscript and applets.</h2>
+
+<h3>Simple Mail Transfer Protocol</h3>
+
+<p>SMTP transmits email, using <b>TCP</b>,
+to other computers
+that support the TCP/IP protocol suite. SMTP extends the local mail services
+that existed in the early years of LANs. It manages the transfer of email
+from the local mail host to a remote mail host, it is not responsible for
+accepting mail from local users or distributing received mail to recipients
+- this is the responsibilty of the local mail system.
+
+<p>SMTP uses TCP to establish a connection to
+the remote mail host, the mail is sent, any waiting mail is requested and
+then the connection is closed. SMTP can also return a forwarding address
+if the intended recipient no longer receives email at that destination.
+To enable mail to be transferred across differing systems, a mail gateway
+is used. A gateway exists at the University of Brighton to enable staff
+Macintosh machines to email students using the NT mailhost.
+
+<h3>Simple Network Management Protocol</h3>
+
+<p>SNMP is a standardised protocol for the transort
+of network management information. <a HREF="managed.htm">Managed network
+devices</a> can be interrogated by a computer running to return details
+about their status and level of activity. Monitoring software can also
+trigger alarms if certain performance criteria drop below acceptable limits.
+This protocol uses <b>UDP </b>at
+the transport layer. As discussed below, the use of UDP results in lower
+network traffic overheads. This is important when attempting to ascertain
+performance information - what use is a management protocol that dramatically
+increases network traffic load?
+
+<h3>Telnet</h3>
+
+<p>Telnet is a terminal emulating application
+program interface. It allows remote computers to connect to a server running
+Telnetd (the Telnet daemon). If the remote computer is not a dumb terminal
+(a terminal that has no processing power, just a keyboard and a screen),
+then Telnet convinces the server that it is. Telnet uses <b>TCP</b>
+for reliability.
+
+<h2>Layer 4 - Transport</h2>
+
+<h3>Transmission Control Protocol</h3>
+
+<p>TCP offers <b>reliable,
+connection oriented transmission</b> for upper
+layer protocols by establishing a connection between source and destination
+machines and terminating the connection when transmission is complete.</h2>
+The protocol offers data flow control, error checking of packets, acknowledgement
+of successful receipt of packets after error checking and packet sequencing.
+Those applications that do not require such a reliable, connection oriented
+service will use <b>UDP</b>.
+
+<h3>User Datagram Protocol</h3>
+
+<p>In contrast to TCP, UDP provides an unreliable,
+connectionless service for upper layer protocols such as <b>SNMP</b>.
+The additional functionality of TCP is provided by a larger packet header
+than that required by UDP.
+
+<h2>Layer 3 - Internet</h2>
+
+<h3>Address Resolution Protocol and Reverse Address
+Resolution Protocol</h3>
+
+<p>These two protocols resolve the differences
+in protocol suite layer addressing. There are two forms of addressing:
+<ul>
+<li>
+The <b>Internet Protocol
+(logical) </b>address of a device is assigned
+by the network administrator when that device is installed and configured.<br>
+<br></li>
+
+<li>
+The <b>Medium Access
+Control (physical) </b>address of a network interface
+card is unique to each card and determined by the card's manufacturer.
+There has to be some means of obtaining one address with the other, in
+much the same way that we use a phone book to find a persons telephone
+number from their name and address.</h2></li>
+</ul>
+ARP is used if the IP address is known but its
+MAC address is required. Conversely, RARP is used if the MAC address is
+known but its IP address is required.</h2>
+
+<h3>Internet Protocol</h3>
+
+<p>IP is used to provide the addressing functionality
+that is required to ensure packets reach their correct destination. All
+network devices should be uniquely identified by their IP address. If you
+are sitting at a networked Windows95 PC, goto the Run command from the
+Start menu and type winipcfg.exe - an IP Configuration window should appear.
+Amongst other things, it will tell you your <a HREF="nic.htm">interface
+card</a>'s IP address. As mentioned above, the IP address of a device is
+set by the network administrator. The IP address is used by <a HREF="router.htm">routers</a>
+to determine the best delivery path for each, individual, <a HREF="framepac.htm">packet</a>.
+IP is defined as an <b>unreliable, connectionless
+protocol</b> as it leaves resequencing and error
+checking of data to upper level protocols such as <b>TCP</b>.
+IP does not guarantee that packets will arrive at their destination in
+sequence, if at all.
+
+<h2>Layers 2 and 1 - Network Access</h2>
+
+<p>Both physical media and CSMA/CD appear at the
+network access level. Strictly speaking, there are no protocols at this
+level - the physical media has its own specifications and CSMA/CD is really
+an access methodology operating at the datalink layer. Follow these links
+to <a HREF="media.htm">media</a> and <a HREF="mac.htm">medium access control</a>.
+
+<h2>Tell me more!</h2>
+
+<p>Follow <a HREF="tcpip.htm">this link</a> to
+the TCP/IP page and use its hyperlinks.
+
+<p>
+<hr WIDTH="100%">
+<center><table BORDER>
+<tr>
+<td><a HREF="index.htm"><img SRC="images/home.gif" ALT="Home Page" NOSAVE HEIGHT="17" WIDTH="77"></a></td>
+
+<td><a HREF="javascript:history.back()"><img SRC="images/back.gif" ALT="Back One Page" NOSAVE HEIGHT="17" WIDTH="75"></a></td>
+
+<td><a HREF="contents.htm"><img SRC="images/contpage.gif" ALT="Contents Page" NOSAVE HEIGHT="17" WIDTH="145"></a></td>
+
+<td><a HREF="sitemap.htm"><img SRC="images/sitemapl.gif" ALT="Site Map" NOSAVE HEIGHT="17" WIDTH="126"></a></td>
+
+</tr>
+</table></center>
+&nbsp;
+</body>
+</html>

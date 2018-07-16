@@ -1,0 +1,323 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../favicon.ico">
+<TITLE>EGR 304</TITLE>
+</HEAD>
+<BODY><PRE>
+               DORDT COLLEGE ENGINEERING DEPARTMENT
+               MICROPROCESSOR INTERFACING -- EGR 304
+                          (Spring 2005)
+
+Click this <A HREF="../ddb/notes00.htm">note on cached pages and handouts</A> if you are 
+having difficulty seeing the latest version of this page. 
+
+Homework must adhere to reasonable <A HREF =
+"hwstds05.htm">standards</A>.
+
+Note 1) Problem sets with no "ASSIGNED" date are tentative.  More 
+problems might be added, expected due dates might change, but 
+problems shown will eventually be assigned.  
+
+                           PROBLEM SETS             (Last update:
+                           ------------         4/26/05  9:19 am) 
+ # after "RETURNED" date means a solution is posted outside S233
++===============================================================+ 
+|PS|ASSIGNED| DUE |RETURNED| Problems Assigned                  |
+| #|        /     \        | (Choose 6811 if there is a choice) |
+|==+=======+=======+=======+====================================|
+| 8|  4/05 |  4/26 |       | Do 8.5, 8.6                        |
+|  |       |       |       | Note on 8.5:  Parts available to   |
+|  |       |       |       |   you are any parts in Dordt's     |
+|  |       |       |       |   lab stock.  Power is available   |
+|  |       |       |       |   at +5 V, +12 V, and -12 V, all   |
+|  |       |       |       |   with a common ground return.     |
+|  |       |       |       | Note on 8.6:  For the diode,       |
+|  |       |       |       |   specify how to calculate the     |
+|  |       |       |       |   minimum rating needed for the    |
+|  |       |       |       |   Peak Forward Surge Current, I   ,|
+|  |       |       |       |                                FSM |
+|  |       |       |       |   and specify how to calculate the |
+|  |       |       |       |   rating needed for the Peak       |
+|  |       |       |       |   Repetitive Reverse Voltage, V   .|
+|  |       |       |       |                                PRM |
+|  |       |       |       |   Since the problem does not give  |
+|  |       |       |       |   any particular details, assume   |
+|  |       |       |       |   that an inductive load draws     |
+|  |       |       |       |   100 mA in steady-state.  Then    |
+|  |       |       |       |   find a suitable protection diode |
+|  |       |       |       |   that meets these specs. and give |
+|  |       |       |       |   the part number.  Most diode data|
+|  |       |       |       |   sheets can be found at           |
+|  |       |       |       |   <A
+REF="http://www.fairchildsemi.com">http://www.fairchildsemi.com</A>.    |
+|  |       |       |       |   Just put a part number into the  |
+|  |       |       |       |   search box on that page and then |
+|  |       |       |       |   pursue the search to the data    |
+|  |       |       |       |   sheet.                           |
+|--+-------+-------+-------+------------------------------------|
+| 7|  4/05 |  4/21 |  4/26#| Read Chapter 7.  Skip sections     |
+|  |       |       |       | specific to non-68HC11 micro-      |
+|  |       |       |       | controllers.  Also omit examples of|
+|  |       |       |       | C code.                            |
+|  |       |       |       |                                    |
+|  |       |       |       | Useful supplemental reading:       |
+|  |       |       |       | <A 
+HREF="http://www2.rad.com/networks/1995/rs232/rs232.htm"
+>RS-232</A>, A Tutorial from Tel-Aviv U. |
+|  |       |       |       |                                    |
+|  |       |       |       | Do <A
+HREF="304/PS_USB.DOC">Problems on USB</A>                 |
+|--+-------+-------+-------+------------------------------------|
+| 6|  4/05 |  4/14 |  4/19 | Read Chapter 6.  Skip sections     |
+|  |       |       |       | specific to non-68HC11 micro-      |
+|  |       |       |       | controllers.  Also omit examples of|
+|  |       |       |       | C code.                            |
+|  |       |       |       |                                    |
+|  |       |       |       | Write a 68HC11 assembly program to |
+|  |       |       |       | measure the width of a pulse.  The |
+|  |       |       |       | width can range from 1 to 65535 E- |
+|  |       |       |       | clock cycles.  Include the setup-  |
+|  |       |       |       | ritual and any other necessary     |
+|  |       |       |       | code.  The "answer" is an assembled|
+|  |       |       |       | list file. ("TheList.RTF file from |
+|  |       |       |       | TEXAS or the *.txt file from AS11.)|
+|  |       |       |       | A suggested outline for your       |
+|  |       |       |       | program is given <A 
+HREF="304/PS_PULSE.ASM">here</A>.  (Right-    |
+|  |       |       |       | click, then "Save Target As        |
+|  |       |       |       | PS_PULSE.ASM" to use the file.)    |
+|--+-------+-------+-------+------------------------------------|
+| 5|  2/10 |  2/22 |  3/31#| Read Chapter 4                     |
+|  |       |       |       | Do (on page 261-2) 4.1a, v4.2-a    |
+|  |       |       |       | and from Peatman's text, <A 
+HREF="304/PS_INTER.RTF">3.17, 3.19</A>|
+|--+-------+-------+-------+------------------------------------|
+|  |  2/10 |  ---  |  ---  | Study for test on Thursday, 2/17   |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+| 4|  2/01 |  2/8  |  2/10#| Read Chapter 3                     |
+|  |       |       |       | Do (on page 180) 3.3,  3.19b-c     |
+|  |       |       |       | Note:  Answer to 3.19a is found    |
+|  |       |       |       | in the E-Family Tech Manual on page|
+|  |       |       |       | 6-6, which might help with pts b-c.|
+|--+-------+-------+-------+------------------------------------|
+| 3|  1/27 |  2/1  |  2/10#| Read Chapter 2 Sectns 2.5 thru 2.12|
+|  |       |       |       | Do (on page 134) 2.2, 2.4          |
+|--+-------+-------+-------+------------------------------------|
+| 2|  1/20 |  1/27 |  2/01#| Read Chapter 2 Sectns 2.1 thru 2.4 |
+|  |       |       |       | Do (on page 133-4) 2.1             |
+|  |       |       |       |                                    |
+|  |       |       |       | You may use file "<A HREF = 
+"304/V2_1.ASM">V2_1.ASM</A>" as a   |
+|  |       |       |       | start.  All you have to do here is |
+|  |       |       |       | delete the existing "FUZZY"        |
+|  |       |       |       | subroutine and add your own.       |
+|  |       |       |       |                                    |
+|  |       |       |       | For the TEXAS simulator, as        |
+|  |       |       |       | explained in class...  "<A HREF =
+"304/V2_1TX.ASM">V2_1TX.ASM</A>"|
+|  |       |       |       |                                    |
+|  |       |       |       | To use the file, right-click on the|
+|  |       |       |       | link and choose "Save Target As..."|
+|  |       |       |       | This file is in ASCII format, a    |
+|  |       |       |       | standard format used by Motorola   |
+|  |       |       |       | and recognized by "TEXAS."  You may|
+|  |       |       |       | open the file from within "TEXAS"  |
+|  |       |       |       | or you may drag the file icon and  |
+|  |       |       |       | drop it on a desktop icon for      |
+|  |       |       |       | "TEXAS."  The first time you save  |
+|  |       |       |       | the file from within "TEXAS" it    |
+|  |       |       |       | be converted to RTF format.  Be    |
+|  |       |       |       | sure you change the extension to   |
+|  |       |       |       | RTF too--manually if necessary.    |
+|  |       |       |       | (TEXAS cannot save ASCII format    |
+|  |       |       |       | files.)                            |
+|  |       |       |       |                                    |
+|  |       |       |       | If you experience <A HREF = 
+"304/PH_ERROR.HTM">phasing errors...</A>|
+|  |       |       |       |                                    |
+|  |       |       |       | Note: On Monday, 1/24, the due date|
+|  |       |       |       | was delayed from 1/25 to 1/27.     |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+| 1|  1/11 |  1/18 |  1/25#| Read Chapter 1 Sections 1.1, 1.4,  |
+|  |       |       |       | 1.6, 1.7, 1.8, 1.9.                |
+|  |       |       |       | Do (on page 77) 1.8                |
++---------------------------------------------------------------+
+
+                              TESTS                  (Last update
+                              -----                      4/05/05)
+Test #1, Thursday 2/17.  The test will cover Valvano's textbook, 
+   Ch 1 Sections 1.1, 1.4, 1.6, 1.7, 1.8, 1.9.
+   Ch 2 Sections 2.1, 2.2, 2.3
+   Ch 3 Sections 3.1, 3.2, 3.3, 3.4
+   Open Book, Open Notes, a calculator is required.
+
+Test #2, Thursday, 4/7  The test will cover the following:
+   Ch 4 Section  4.1, 4.5, plus class notes on interrupts.
+   Ch 6 (all of Ch. 6)
+   RS-232 and Ethernet--from class notes and Ch 7  
+   Open book, open notes.  A calculator is required. 
+   
+Final Exam, Thursday, 5/5, 8-10 AM.
+   Will cover all the material covered on tests #1 and #2 plus 
+   Chapter 8.  It will also cover position sensing (relative, 
+   direction, absolute, Grey code, V-scan).  
+   The exam will be open book, open notes, and a calucator is 
+   required. 
+
+                                               <A NAME="LAB"></A>
+                               LABS                  Last update:
+                               ----              3/07 at  3:29 pm
++===============================================================+
+|LAB|ASSIGNED| DUE |RETURNED| Lab Topic                         |
+| # |        /     \        |                                   |
+|===+=======+=======+=======+===================================|
+| 4 |  3/07 |  ---  |       | Build the hardware needed to      |
+|   |       |       |       | derive a tic-clock interrupt from |
+|   |       |       |       | the 60 Hz power line.  (This      |
+|   |       |       |       | includes a transformer, half-wave |
+|   |       |       |       | rectifier, limiter, schmitt       |
+|   |       |       |       | trigger and state machine.)       |
+|   |       |       |       |                                   |
+|   |       |       |       | Also write a main program to      |
+|   |       |       |       | do any necessary initialization,  |
+|   |       |       |       | and an ISR to test the hardware.  |
+|   |       |       |       | The ISR should toggle an output   |
+|   |       |       |       | pin for each interrupt.           |
+|---+-------+-------+-------+-----------------------------------|
+| 3 |  1/31 |       |       | Write a subroutine in assembly    |
+|   |       |       |       | code to drive the 4-digit LED     |
+|   |       |       |       | seven-segment display you built   |
+|   |       |       |       | last week.  The subroutine should |
+|   |       |       |       | make use of a global buffer to    |
+|   |       |       |       | store the display's contents.     |
+|   |       |       |       |                                   |
+|   |       |       |       | Write a main program which calls  |
+|   |       |       |       | the above described subroutine    |
+|   |       |       |       | repeatedly in order to keep the   |
+|   |       |       |       | display visible.                  |
+|---+-------+-------+-------+-----------------------------------|
+| 2 |  1/24 |  ---  |  ---  | Build and test display hardware   |
+|   |       |       |       | that uses one 8-bit port to       |
+|   |       |       |       | drive a 4-digit LED seven-segment |
+|   |       |       |       | display.  In particular, see      |
+|   |       |       |       | page 451 in your text, Fig 8.39.  |
+|   |       |       |       | Adapt the design shown there for  |
+|   |       |       |       | parts we have in our lab and to   |
+|   |       |       |       | show 4 digits rather than three.  |
+|---+-------+-------+-------+-----------------------------------|
+| 1 |  1/17 |  ---  |  ---  | Creating a Development Environment|
+|   |       |       |       |                                   |
+|   |       |       |       | File:  <A HREF = 
+"304/L1/INVERTER.ASM">INVERTER.ASM</A>               |
+|   |       |       |       |                                   |
+---------------------------------------------------------------+
+Note:  To use a file, right-click on the link, then choose 
+"Save Target As. . ." or equivalent. 
+
+
+          VARIOUS LINKS WITH INFO RELATED TO THIS COURSE
+          ----------------------------------------------
+Links marked "*" only work on campus or via a proxy server
+<A
+             HREF = "http://www.ece.utexas.edu/~valvano/book.HTML"
+>Valvano's companion web pages for our textbook</A>.
+<A
+             HREF = "304/304S05SY.DOC"
+ >The course syllabus</A> in MS-Word Format
+<A
+             HREF = "304/HC11REG.ASM"
+ >HC11REG.ASM</a> Register Block Header File (right-click, Save target as. . .)
+<A
+             HREF = "http://www.freescale.com/files/microcontrollers/doc/ref_manual/M68HC11RM.pdf"
+ >Freescale, 68HC11 Family Reference Manual</A> (Data Book, 650 pages)
+<A
+             HREF = "http://www.freescale.com/files/microcontrollers/doc/data_sheet/M68HC11E.pdf"
+>Freescale, 68HC11E Family Technical Data</A> (Data Book, 336 pages) 
+<A
+             HREF = "http://www.freescale.com/webapp/sps/library/docu_lib.jsp"
+>Freescale, More documents on the 68HC11 family</A> (index page) 
+<A
+             HREF = "\\Defender3\DATA\classes\egr\304\68HC11 Documentation\M68HC11RM HC11 Reference Manual rev 4.1.pdf"
+>Motorola, 68HC11 Reference Manual</A>* (Older edition)
+<A
+             HREF = "\\Defender3\DATA\classes\egr\304\68HC11 Documentation\M68HC11E E Family Technical Data rev 3_2.pdf"
+>Motorola, 68HC11E Family Technical Data</A>* (Older edition)
+<A
+             HREF = "http://z80.info/zip/z80cpu_um.pdf"
+>Zilog, Z80 CPU User's Manual</A> 
+<A
+             HREF = "http://www.simtel.net/product.php[id]42741[cid]50[SiteID]simtel.net"
+>Download PseudoSam 80z Assembler, A DOS to Z80 Cross Assembler </A> 
+    (PseudoSam 80z is also known as "psz80a13.zip")
+<A
+             HREF = "http://www.bh.com/companions/0750650648/"
+>A Free Chapter on "Instruction Set and Code Assembly"</A> 
+    The above link is to a book, Embedded Systems by Wilson
+    (On the Book's page, click on the link to the free chapter) 
+<A
+             HREF = "http://e-www.motorola.com/files/microcontrollers/doc/ref_manual/M68HC05TB.pdf"
+>M68HC05 Family: Understanding Small Microcontrollers</A>
+    The above link was discovered by Matt Veenstra.  Prof. De 
+    Boer recommends especially the later chapters on programming 
+    and peripherals.  The language in this book Motorola specific.
+    For example, what they call an, "I/O memory location," is 
+    generally known as a "memory mapped I/O port."  Other than
+    these types of issues, the info in the book is generally 
+    applicable to all microcontrollers.
+<A
+             HREF = "http://www2.rad.com/networks/1995/rs232/rs232.htm"
+>RS-232</A> A tutorial from Tel-Aviv University. 
+<A
+             HREF = "http://burks.brighton.ac.uk/burks/pcinfo/hardware/ethernet/contents.htm"
+>Ethernet Tutorial</A> from The University of Brighton. 
+<A
+             HREF = "http://www.analog.com/library/analogDialogue/bestof/pdf/16_3.pdf"
+>Understanding Interference-Type Noise</A> from Analog Devices Company
+<A
+             HREF = "http://www.analog.com/library/analogDialogue/bestof/pdf/17_1.pdf"
+>Shielding and Guarding</A> from Analog Devices Company
+<A
+             HREF = "http://www.semiconductors.philips.com/acrobat/datasheets/OM4085_2.pdf"
+>A data sheet with information on LCD multiplexing</A> from Philips
+<A
+             HREF = "http://www.cs.uiowa.edu/~jones/step/index.html"
+>A Tutorial on stepper motors<A> from Jones, ISU
+<A
+             HREF = "http://www.nwlink.com/~dickens5/tom/68hc11/manuals/instructions.html"
+>68HC11 instruction reference--alphabetic order<A> (Link is Broken)
+<A
+             HREF ="http://www.nwlink.com/~dickens5/tom/68hc11/68hc11_opcode_map.html"
+>68HC11 instruction refernece--op code order</A> plus other tidbits (Link is Broken)
+
+                              ERRATA                      Last update:
+                              ------                          1/12/05
+Valvano, <I>Embedded Microcomputer Systems: Real Time Interfacing</I>,
+Brooks Cole, 2000
+
+First, see the author's list of errata at:
+<A HREF = "http://www.ece.utexas.edu/~valvano/typo/"
+>http://www.ece.utexas.edu/~valvano/typo/</A>
+
+Additional Errata. . .
+
+p8, about 1/3 of the way down the page.  Change,
+     "ldaa $0001    RegA=[$0001] copy to values of PortB into RegA"
+     to
+     "ldaa $0001    RegA=[$0001] copy the values of PortB into RegA"
+
+
+
+<a href="../S04/304S04.HTM"
+>&lt&mdash;PREVIOUS</a> offering of this course <a href=
+"../S06/304S06.HTM">NEXT&mdash;&gt;</a> 
+ 
+
+
+</PRE> 
+<A           HREF = "../index.html"> Back to Prof. De Boer's home page </A> 
+
+</BODY> 
+</HTML> 
+

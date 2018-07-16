@@ -1,0 +1,267 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../favicon.ico">
+<TITLE>EGR 221 ASSIGNMENTS</TITLE>
+</HEAD>
+<BODY><PRE>
+               DORDT COLLEGE ENGINEERING DEPARTMENT
+               LINEAR SYSTEMS ANALYSIS -- EGR 221
+                         (Fall of 2002)
+
+Click this <A HREF="noteF02.htm">note on cached pages and handouts</A> if you are having 
+difficulty seeing the latest version of this page. 
+
+There is a web site including errata to supplement the text book 
+at <A HREF="http://www.mhhe.com/engcs/electrical/lindner">http://www.mhhe.com/engcs/electrical/lindner</A> 
+Additional errata are noted at the bottom of this page.
+
+Homework must conform to certain <a 
+href="../F02/hwstdf02.htm">standards</a>.
+
+                           PROBLEM SETS  (Last update this table:
+                           ------------       12/12/02  12:55 pm) 
++===============================================================+ 
+|PS|ASSIGNED| DUE |RETURNED| Problems Assigned (In Lindner      |
+| #|        /     \        | (unless otherwise noted)           |
+|==+=======+=======+=======+====================================|
+| 1|  8/30 |  9/04 |  9/06 | 2.1.2, 2.1.3, 2.2.3, 2.3.1,        |
+|--+-------+-------+-------+------------------------------------|
+| 2|  9/04 |  9/11 |  9/18 | 3.1.1, 3.1.2, 3.1.5, 3.1.6, 3.1.7, |
+|  |       |       |       | 3.2.1, 3.2.5, 3.2.6                |
+|--+-------+-------+-------+------------------------------------|
+| 3|  9/11 |  9/18 |  9/23 | Prove that a quadratic polynomial  |
+|  |       |       |       | with all real coefficients must    |
+|  |       |       |       | have either two real roots or two  |
+|  |       |       |       | complex conjugate roots.           |
+|  |       |       |       |                                    |
+|  |       |       |       | 4.1.1, 4.1.2, 4.1.3, 4.2.1, 4.2.2, |
+|  |       |       |       | 4.2.3, 4.2.4                       |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+| 4|  9/18 |  9/25 |  9/30 | 5.2.1, 5.3.6, 5.4.1                |
+|  |       |       |       | Helps:                             |
+|  |       |       |       | To use Matlab as requested in part |
+|  |       |       |       | b of problem 5.2.1 I recommend that|
+|  |       |       |       | you use a function M-file for each |
+|  |       |       |       | function.  Sometimes Matlab will   |
+|  |       |       |       | not have the function you need.    |
+|  |       |       |       | In that case you need to write your|
+|  |       |       |       | own m-file to extend Matlab's      |
+|  |       |       |       | capability.                        |
+|  |       |       |       |     As an example, here is a       |
+|  |       |       |       | function M-file for a <A HREF="u.m">step</A>.        |
+|  |       |       |       | (Right-click on the link, and save |
+|  |       |       |       | the M-file to your current         |
+|  |       |       |       | directory in Matlab.  You can read |
+|  |       |       |       | M-files with Notepad, M-editor, etc|
+|  |       |       |       | but it will probably be unformatted|
+|  |       |       |       | if you try to read it via your web |
+|  |       |       |       | browser.)  Be sure to read the help|
+|  |       |       |       | comments in the file.              |
+|  |       |       |       |                                    |
+|  |       |       |       | Other notes:                       |
+|  |       |       |       | 5.2.1-part (i), rp(t) is defined   |
+|  |       |       |       |       in your text on page 23.     |
+|  |       |       |       |      -part (iv), definition is on  |
+|  |       |       |       |       page 23 again.  Also, rect(t)|
+|  |       |       |       |       is an alternative way to     |
+|  |       |       |       |       denote the unit pulse.       |
+|  |       |       |       |                                    |
+|  |       |       |       | sgn(t) is the signum function.     |
+|  |       |       |       |       the notation in our text is  |
+|  |       |       |       |       just as standard as sin(t).  |
+|  |       |       |       |       In Matlab it is called       |
+|  |       |       |       |       sign. Try "help sign".       |
+|  |       |       |       |                                    |
+|  |       |       |       | 5.2.2 Sometimes you can find good  |
+|  |       |       |       |       M-files on the web.  Here is |
+|  |       |       |       |       <A HREF="SINC.M">one I found</A>.  However, the   |
+|  |       |       |       |       point of the problem is to   |
+|  |       |       |       |       learn how to write these     |
+|  |       |       |       |       files, not how to find them. |
+|  |       |       |       |       Since reading the work of    |
+|  |       |       |       |       others is instructive, you   |
+|  |       |       |       |       may use found files. (If they|
+|  |       |       |       |       are not from a classmate!)   |
+|  |       |       |       |       In that case, be sure they   |
+|  |       |       |       |       work right and give credit   |
+|  |       |       |       |       where due.  (The web is full |
+|  |       |       |       |       of crappy examples, out-dated|
+|  |       |       |       |       info, and just plain errors.)|
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+| 5|  9/25 | 10/02 | 10/14 | 6.2.1; 6.2.2; 6.3.1 parts a thru e |
+|  |       |       |       | for Fig. b only; 6.4.1 parts a thru|
+|  |       |       |       | d for <A HREF="P6_4_1C.GIF">Fig. c only</A> (Fig. c is not   |
+|  |       |       |       | in your text--click the link to    |
+|  |       |       |       | view it.)                          |
+|--+-------+-------+-------+------------------------------------|
+| 6| 10/09 | 10/16 | 10/23 | 6.4.1 Fig. a only, 7.2.1, 7.3.1    |
+|  |       |       |       | Note: in 7.3.1 the vertical axis of|
+|  |       |       |       | the plot of x(t) is not labeled.   |
+|  |       |       |       | The vertical extents of x(t) should|
+|  |       |       |       | be 2 and -2.  (This is noted in the|
+|  |       |       |       | errata.)                           |
+|--+-------+-------+-------+------------------------------------|
+| 7| 10/16 | 10/23 | 11/1  | 7.3.4, 7.3.7 Note:  "Find the F.S."|
+|  |       |       |       | is not the same as asking "Find the|
+|  |       |       |       | F.S. coefficients."  The F.S. is   |
+|  |       |       |       | a weighted sum of basis functions  |
+|  |       |       |       | in the form of one of the synthesis|
+|  |       |       |       | equations shown in Definition 7.2.1|
+|  |       |       |       | Definition 7.2.2, or Definition    |
+|  |       |       |       | 7.2.4.  (Summary in table 7.2.1)   |
+|  |       |       |       | The F.S. coefficients are a series |
+|  |       |       |       | of numbers such as "Xm = 1/m for   |
+|  |       |       |       | all integers m."  They are also the|
+|  |       |       |       | weighting factors used in a F.S.   |
+|--+-------+-------+-------+------------------------------------|
+| 8| 10/23 | 10/30 | 11/07 | 7.4.4 (note "show" means "prove")  |
+|  |       |       |       | 7.4.6 parts a and b only           |
+|--+-------+-------+-------+------------------------------------|
+| 9| 10/30 | 11/06 | 11/12 | 7.4.6 all parts.  (a and b were    |
+|  |       |       |       | assigned previously.  If you had   |
+|  |       |       |       | them correct, just turn them in    |
+|  |       |       |       | again and they will count for      |
+|  |       |       |       | credit again--you will be able to  |
+|  |       |       |       | "double dip."  Otherwise, write new|
+|  |       |       |       | and correct solutions--don't mark  |
+|  |       |       |       | up your old solutions to correct   |
+|  |       |       |       | them.)                             |
+|  |       |       |       | Also work 7.5.1 parts i, vi and x  |
+|--+-------+-------+-------+------------------------------------|
+|10| 11/08 | 11/13 | 11/20 | 7.5.1 part ix only, 7.5.2,         |
+|  |       |       |       | 7.5.3 part ii only--but do it      |
+|  |       |       |       | these two way: a) use properties   |
+|  |       |       |       | and known pairs, Tables 7.6.2 and  |
+|  |       |       |       | 7.6.3.  b) use the definition of   |
+|  |       |       |       | the Inverse FT, Defn. 7.4.1        |
+|--+-------+-------+-------+------------------------------------|
+|11| 11/15 | 11/20 | 12/04 | 8.1.6, Find the energy in the      |
+|  |       |       |       | signal x(t) = Sa(t).  Hint: Use    |
+|  |       |       |       | Parseval's theorem.                |
+|--+-------+-------+-------+------------------------------------|
+|12| 11/20 | 11/27 | 12/11 | 9.2.1 (near the bottom of the page)|
+|  |       |       |       | 9.2.5, 9.4.1 parts i and vii only  |
+|  |       |       |       | 9.4.3 part ii only                 |
+|--+-------+-------+-------+------------------------------------|
+|13| 11/27 | 12/11 | 12/12 | 10.1.2, 10.1.3, 10.1.6, 10.1.9     |
+|  |       |       |       | Note a typographic error in prob.  |
+|  |       |       |       | 10.1.9.  The equation 7 lines from |
+|  |       |       |       | the bottom of the page (Just under |
+|  |       |       |       | "Summing the forces on the mass we |
+|  |       |       |       | obtain" should be labeled i.).     |
+|  |       |       |       | Similarly, the equation 5 lines    |
+|  |       |       |       | from the bottom (Just under        |
+|  |       |       |       | "Rewriting this equation. . ."     |
+|  |       |       |       | Should be labeled ii.).  These     |
+|  |       |       |       | labels are needed to understand the|
+|  |       |       |       | question in part a).               |
++---------------------------------------------------------------+
+
+                              TESTS       (Last update this list:
+                              -----            12/11/02  5:16 pm)
+All tests will be closed book.  No crib sheets, calculators or 
+computers will be allowed.  Copies of certain tables of 
+transforms and properties will be provided with the tests.  You 
+will be told which tables these are about a week in advance of 
+the test.
+
+Test #1, Friday 10/18.  Covered Chapters 1-6. Handed back 11/1.
+
+Test #2, Friday 11/22.  Covered Chapters 7.  Tables 7.6.3 and
+     7.6.3 were provided at the test along with a table of 
+     trigonometric ID's.  Handed back on 11/25.
+
+Final exam, Saturday 12/14, 10:30 am - 12:30 pm.  Will cover the 
+     content of tests 1 and 2 above, plus sections 8.1 through 
+     8.5 of Chapter 8, all of Chapter 9, and sections 10.1 
+     through 10.4 of chapter 10.  In addition to the tables given
+     with tests #1 and #2, Tables 9.6.1 (corrected) and 9.6.2 
+     will be provided at the test.
+
+     
+
+                         LAB ASSIGNMENTS (Last update this table:
+                         ---------------      12/10/02   3:18 pm) 
++===============================================================+ 
+|LB|ASSIGNED| DUE |RETURNED| Problems Assigned (In Lindner      |
+| #|        /     \        | (unless otherwise noted)           |
+|==+=======+=======+=======+====================================|
+| 1|  9/3  |  ---  |  ---  | Introduction to Matlab, nothing    |
+|  |       |       |       | to hand in.                        |
+|--+-------+-------+-------+------------------------------------|
+| 2|  9/10 |  9/16 |       | Plotting Signals--assignment on the|
+|  |       |       |       | lab handout.                       |
+|--+-------+-------+-------+------------------------------------|
+|  |  9/17 |  ---  |  ---  | Lab canceled due to IEEE meeting   |
+|  |       |       |       | in Brookings.                      |
+|--+-------+-------+-------+------------------------------------|
+| 3|  9/23 |  ---  |  ---  | Building a Matlab Toolbox          |
+|  |       |       |       | useful m-files:                    |
+|  |       |       |       | <A HREF="u.m">u.m</A>, <A HREF="sinc.m">sinc.m</A>, <A HREF="gearbox.m">gearbox.m</A>             |
+|--+-------+-------+-------+------------------------------------|
+|  | 10/1  |  ---  |  ---  | Lab canceled                       |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+| 4| 10/8  |  ---  |  ---  | Manipulating *.wav files           |
+|  |       |       |       | A useful *.wav file: <A HREF="band1.wav">band1.wav</A>     |              
+|--+-------+-------+-------+------------------------------------|
+| 5| 10/15 |  ---  |  ---  | Fourier Series                     |
+|  |       |       |       | Useful m-files are <A HREF="rect.m">rect.m</A> and <A HREF="sa.m">sa.m</A> |
+|  |       |       |       | Here is an <A HREF="EX221L5.M">example script</A>.         |
+|--+-------+-------+-------+------------------------------------|
+|  | 10/22 |  ---  |  ---  | Lab canceled                       |
+|  |       |       |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+|  | 10/29 |       |       | Project                            |
+|  | 11/05 |       |       |                                    |
+|  | 11/12 |       |       |                                    |
+|  | 11/19 |       |       |                                    |
+|  | 11/26 | 12/04 |       |                                    |
+|--+-------+-------+-------+------------------------------------|
+|  | 12/10 |  ---  |  ---  | Lab canceled                       |
+|  |       |       |       |                                    |
++---------------------------------------------------------------+
+
+
+                   MORE ERRATA TO LINDER'S TEXT     (Last Update:
+                   ----------------------------12/10/02  3:33 pm)
+This list of errata is in addition to the <A 
+          HREF="http://www.mhhe.com/engcs/electrical/lindner/errata_dkl.pdf">publisher's list</A>.
+
+Page 3,   12 lines of text up from the bottom of the page, 
+          "Its" should be "It is". 
+
+Page 25,  Definition 2.2.6:  Change "t + 1/2" to "1 + 2t" also
+                             Change "1/2 - t" to "1 - 2t".
+
+Page 121, The last sentence of text on this page reads:
+          "ratio of the input signal over the output signal. . ."
+          It should read:
+          "ratio of the output signal over the input signal. . ."
+
+Page 286, There are two problems labeled "9.2.1."  The first of 
+          these should be labeled "9.1.2."  (This one is noted in
+          (Lindner's list of errata, but he does not note that 
+          there are two such problems, only one of which has the
+          error in it.)
+
+Page 341, In problem 10.1.9 two labels are missing from 
+          equations.  The equation 7 lines from the bottom of the 
+          page (Just under "Summing the forces on the mass we 
+          obtain" should be labeled "i.)".  The equation 5 lines 
+          from the bottom of the page (Just under, "Rewriting 
+          this equation in terms of <i>z</i>(<i>t</i>) yields" 
+          should be labeled "ii.)".  These labels are used in 
+          part (a) of the problem.
+
+</PRE> 
+<A HREF = "../index.html"> Back to Prof. De Boer's home page </A><br><br> 
+
+This is the first offering of this course that had Web content.<br>
+This is also the last semester when this course was offered by Professor De Boer at Dordt College.<br>
+<br><br>&nbsp;
+</BODY> 
+</HTML> 
+

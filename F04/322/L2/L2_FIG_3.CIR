@@ -1,0 +1,23 @@
+A simple model of a uA741 op-amp, augmented for simulation
+*
+* Connections:
+*     Node 1 is the inverting input
+*     Node 2 is the non-inverting input
+*     Node 4 is the output
+*
+*      From  To    From  To     <--(for current sources)
+*Part  or    or    or    or
+*Name  +     -     +     -     value
+Gm     0     3     2     1     0.2msiemens
+R1     3     0                 1Gohm
+C1     3     0                 30pf
+Eout   4     0     3     0     1
+Iopen1 0     1                 0amps
+Iopen2 0     2                 0amps
+*
+* Elements added to provide stimulus and response
+Vin    2     0                 1E-5volts
+V0     1     0                 0volts
+Rload  4     0                 1kohm
+.end
+

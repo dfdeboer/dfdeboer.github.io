@@ -1,0 +1,99 @@
+<HTML>
+<HEAD>
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+<TITLE>EGR 204 Instructions for downloading Quartus II</TITLE>
+<style type="text/css">
+A:link {
+   color:#CC9900; 
+   font-weight:bold; 
+   text-decoration:none;
+   }
+A:visited {
+   color: #CC9900; 
+   font-weight:bold; 
+   text-decoration:none;
+   }
+A:hover {
+   text-decoration:underline;
+   }
+TABLE {
+   font-family:"verdana"; 
+   font-size:10pt;
+   }
+</style>
+</HEAD>
+
+                                                           <BODY>
+                       <table align="center" width="420"><tr><td>
+                                               <P Align="Center">
+                                                              <B>
+                                                 <A target="_top"
+     HREF="../../redirect/Dordt_Engineering.htm">
+
+    Dordt College Engineering & Department</A>               <BR>
+                                                             <BR>
+         INTRODUCTION TO MICROPROCESSORS AND                 <BR>
+             DIGITAL CIRCUITS, EGR 204                       <BR>
+                                                         </B></P>
+                                               </td></tr></table>
+                    <table align="center" width="420" border="0">
+                                                             <tr>
+
+<td align="center" valign="bottom" width=420>
+<BR><BR><BR>
+
+
+
+             A FEW WORDS ABOUT THE 74LS138 DECODER  <br>
+                        AND <BR>
+            FIGURE 3-33 ON PAGE 144 IN OUR TEXTBOOK   <br></td></tr>
+                            <tr><td align="left" width="420"><p><br>
+Perhaps you might find it interesting to know that the homework 
+problems in the textbook can be done using realistic parts actually
+available in the marketplace.  Figure 3.33 on Page 144 of our texbook 
+shows the functional logic of a real part that is commercially for 
+sale today.  One example is the TTL logic part with a part number 
+in the '138 series.  </p><p>
+
+However, the author of our textbook took out some double negations 
+and made some other minor changes to make the logic easer to 
+understand, compared to the actual commercially available part.  
+You can view the actual schematic of real parts on 
+any of a number of datasheets for these parts.  For example, in 
+<a href="http://www.datasheetcatalog.org/datasheets/90/232315_DS.pdf"
+>Fairchild's datasheet</a>, see the lower left quadrant of page 2.  In 
+this datasheet you can see that each input to the part goes to only 
+one logic gate.  The non-inverted inputs are derived from the 
+inverted inputs by another set of inverters.  This reduces the 
+amount of current that flows through each input pin, but it has no 
+effect on the logical outcome.  </p><p>
+
+The author of our textbook choose 
+to ignore this detail and removed the extra inverters from his 
+schematic.  If built as shown in our textbook however, the decoder
+would cause more heating of the chips connected to it because of 
+the increased current flow through it's input pins.  You can use 
+either schematic since logically they are equivalent.  (Use our 
+textbook's because it is simpler!)</p><p>
+
+Since the '138 part has "negative true outputs" (all outputs are
+logic-1 except the single output that is addressed&mdash;see the 
+"function table" in the datasheet linked above) you will need
+to use a NAND gate to functionally OR a set of minterms together.
+This is the case because a logic-0 on any input to a NAND gate 
+will force the output of the gate to go to logic-1.
+
+<b></p><p>
+
+<FORM><INPUT TYPE="button" 
+             VALUE="Back to main page" 
+             onClick="history.go(-1);return true;"> 
+</FORM>
+
+
+
+
+       
+         
+</td></tr></table></body></html>          
+          

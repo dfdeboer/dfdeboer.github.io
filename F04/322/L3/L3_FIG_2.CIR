@@ -1,0 +1,21 @@
+Plot a Diode’s I-V Characteristic
+*
+*--------------------------------------------
+* Circuit Description
+VD        1   0   DC   700mV
+Dtest     1   0   Diode_Under_Test
+*
+*--------------------------------------------
+* Diode Model Here
+.MODEL Diode_Under_Test  D  (N=1.5)
+*
+*
+* Simulation control statements
+*Sim     Supply                   Step
+*type    Swept   From   To        size
+.DC      VD      0V     800mV     10mV
+*
+* Output type
+.probe
+*
+.END

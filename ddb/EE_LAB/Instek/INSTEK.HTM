@@ -1,0 +1,227 @@
+<html>
+<HEAD><TITLE>Instek GFG-3015 quick start guide</TITLE></HEAD>
+<BODY><PRE>
+<b>GwInstek GFG-3015 quick start guide:</b>
+
+------------------------------------------------------
+<b>To clear all settings (RESET):</b>
+
+To RESET the signal generator: press "SHIFT" and 
+then "RS-232/DEFAU."  This will set the signal generator to a 
+10 KHz sine wave with 5 V peak output (if no load).  This will 
+also clear any other unusual settings a previous user might 
+have made.  
+
+------------------------------------------------------
+<b>To control the MAIN output:</b>
+
+The MAIN output can produce signals up to 15 MHz with up to 
+10 volts peak-to-peak open circuit voltage.  The actual (peak-
+to-peak) open circuit source voltage for the MAIN output 
+is TWICE the displayed amplitude.  If the load resistance 
+attached to the signal generator is 5000 &Omega; or more, then
+just set the displayed output for HALF of the desired peak-to-
+peak output voltage.  For example, if you want a sine wave
+such s 4.00sin(1000*2*pi*t) volts, which is an 8 V peak-to-
+peak sine wave, set the amplitude to 4 Vpp.  
+
+The MAIN output has an internal 50 &Omega; Thevenin resistance 
+in series with it.  (The 50 &Omega; resistor is inside the signal
+generator.  You cannot avoid it.)  If the load attached to the 
+signal generator is less than 5000 &Omega;, then this resistance may 
+cause the signal voltage at the MAIN terminals to be less than the 
+open circuit voltage.  In fact, if the load is 50 &Omega;, that is, 
+matched to the signal generator, then the displayed peak-to-peak 
+amplitude is the correct <i>terminal</i> voltage and the peak-to-
+peak open circuit voltage is, as always, twice the displayed amount.  
+
+WAVEFORM:
+1.) First, be sure "modulation" and "trigger" are not turned on.  
+Look in the lower left corner of the display for the "MOD/SWP" 
+rectangle.  In there look for the "ON/OFF" display.  The little 
+circle should be dark.  If there is a green indicator lit, press 
+the large grey "MOD ON" button to turn the modulation off.  
+
+2.) To the left of the "MOD/SWP" box on the display there is a 
+"TRIG" box.  If the "ON/OFF" indicator here is not dark, press 
+the white "TRIG ON" button to extinguish the indicator.  
+
+3.) Look along the very top row of the display.  The waveform is 
+displayed here just to the right of the word "FUNC."  A sine, 
+triangle, or square wave may be selected by pressing the large 
+grey "FUNC" button.  Every press of the "FUNC" button changes the 
+waveform. 
+
+4.) Press "DUTY."  The word "DUTY" blinks in the display to 
+indicate that you may now change the duty factor.  Normally you 
+will want a 50% duty factor and normally that will be the 
+default--in which case you may go on to the next step.  There are 
+two ways to change the duty factor when the "DUTY" indicator is 
+blinking in the display: 
+
+   Press number buttons and then "DEG %." (The units are %.)
+
+                   or
+
+   Rotate the knob.
+
+   The duty factor may be anything from 20% to 80% at 
+   frequencies up to 1 MHz.  Above 1 MHz duty factors other
+   than 50% are not supported but can be set, usually causing
+   frequency errors.
+
+
+FREQUENCY:
+Press the large grey "FREQ" button.  The word "FREQ" blinks in 
+the display to indicate that you may now change the frequency.  
+There are two ways to change the frequency:
+
+   Press number buttons and then a units button such as 
+   "MHz dbm" or "KHz Vrms" or "Hz Vpp"
+
+                   or
+
+   Rotate the knob.
+
+   The frequency may be anything from 
+   0.01 Hz to 15.0 MHz
+
+
+AMPLITUDE:
+Press the large grey "AMPL" button.  The word "AMPL" blinks in 
+the display to indicate that you may now change the amplitude.
+There are two ways to change the amplitude:
+
+   Press number buttons and then a units button such as 
+   "MHz dbm" or "KHz Vrms" or "Hz Vpp"
+
+                   or
+
+   Rotate the knob.
+
+   The amplitude may be set for:
+     0.01 Vpp  to  10.0  Vpp  or
+     0.01 Vrms to   5.00 Vrms or
+   -32.9  dBm  to +26.9  dBm 
+   The above assumes the offset is zero.  (See OFFSET, below.)
+   The output voltage is only accurate if there is a 50 ohm load 
+   connected.  If the there is no load or if the load is greater 
+   than 5000 ohms, then the output will be twice the 
+   displayed amount.  (e.g. you set 5.00 Vpp.  With no load you 
+   will actually have 10.00 Vpp.)
+
+
+OFFSET:
+Press the large grey "OFFSET" button.  The word "OFFS" blinks in 
+the display to remind you that you may change the DC offset.  
+There are two ways to change the DC offset.
+
+   Press number buttons and then "Hz Vpp"
+
+                   or
+
+   Rotate the knob.
+
+   The magnitude of the offset decreases the maximum available 
+   amplitude and vice-versa.  The sum of the magnitude of the 
+   offset plus half the peak-to-peak amplitude (as displayed on 
+   the face of the signal generator) must always be less than or 
+   equal to 5.00 volts. (If you enter the amplitude in volts RMS 
+   or dbm then a more complicated relationship holds.  Distortion 
+   is also possible if the equivalent peak voltage and the offset 
+   magnitude add up to more than 5.00 V.)  
+   
+   The maximum range of the offset is
+   -4.99 V to 4.99 V 
+   if the amplitude is set to to its minimum, 0.01 Vpp.
+   
+   The offset voltage is only accurate if there is a 50 ohm load 
+   connected.  If the there is no load or if the load is greater 
+   than 5000 ohms, then the offset will be twice the 
+   displayed amount.  (e.g. you set a 2.00 V offset.  With no 
+   load you will actually have a 4.00 V offset.) 
+
+
+------------------------------------------------------
+<b>How to use the KNOB</b>
+
+Generally, the knob will change the quantity indicated by a 
+blinking word on the display.  Pressing the white "<<" or ">>" 
+buttons allows you to control which digit changes when you turn 
+the knob.  Pressing "HOLD" disables the knob.  When the knob is 
+disabled, "HOLD" is illuminated in the upper right corner of the 
+display.  (The keypad still works when "HOLD" is on.)  Press 
+"HOLD" again to re-enable the knob.  
+
+
+-------------------------------------------------------
+<b>To control the MOD output</b>
+
+The MOD output can be used as a second signal generator.  It is
+of lower quality than the MAIN output.  The maximum frequency 
+is limited to 10 kHz.  The amplitude is not adjustable.  It has
+an open circuit voltage of about 4 Vpp and a thevenin equivalent
+source resistance of about 10 k&Omega;.
+
+Note:  To use the MOD output you usually DO NOT want to 
+turn the "modulator" on.  Turn the modulation on if and only 
+if you want the MAIN output to be modulated by the MOD output.
+If you do not understand what this is, you do not want MOD on!  
+Look in the lower left corner of the display for the 
+"MOD/SWP" rectangle.  In there look for the "ON/OFF" display.  
+The little circle will be dark if the modulator is off.  If it 
+has a lit green indicator, press the large grey "MOD ON" button 
+to turn the modulation off.  (Unless you really do want the 
+modulator on.)  
+
+WAVEFORM
+Look in the lower left area of the display for the "MOD/SWP" box.
+The selected waveform is displayed here or "EXT" is displayed.  
+
+1.) If "EXT" shows, press "SHIFT" "RATE (MOD INT/EXT)" to 
+    extinguish the "EXT" display and show a waveform instead. 
+
+2.) To change the waveform, press "SHIFT," then "SPAN (SOURCE)."
+    Every press of these two buttons changes the waveform.  You 
+    may select sine, triangle, or square waves. 
+
+3.) Press "SYM."  "SYM" blinks in the display to indicate that 
+    you may change the duty factor of the MOD output.  Usually 
+    you will want 50% duty.  There are two ways to change the 
+    duty factor of the MOD output.  
+
+    Press number buttons and then "DEG %." (the units)
+
+                    or
+
+    Rotate the knob.
+
+    The duty factor may be anything from 10% to 90%.
+
+
+FREQUENCY
+Press "RATE".  "RATE" blinks in the display to indicate that you 
+may change the frequency (rate) of the MOD output.  There are two 
+ways to change the frequency: 
+
+   Press number buttons and then a units button such as 
+   "MHz dbm" or "KHz Vrms" or "Hz Vpp" 
+
+                   or 
+
+   Rotate the knob. 
+
+   The frequency may be anything from 
+   0.01 Hz to 10.0 KHz 
+
+
+AMPLITUDE
+Not adjustable.  Always close to 2.0 Vpp into a 10 kohm load or 
+4.0 Vpp into an open circuit.  
+
+OFFSET
+Not adjustable.  Always zero.
+
+</BODY>
+</HTML>
+
