@@ -16,7 +16,7 @@ HREF="https://www.dordt.edu/academics/undergraduate-programs/4-year-programs/eng
               DORDT COLLEGE ENGINEERING DEPARTMENT</b></A><br><a href=
 			  "../../err.htm"
                        >TEXTBOOK ERRATA</a><br>
-                    (last update 2/11/2017)<br> 
+                    (last update 9/05/2018)<br> 
                                <br>
     <img src="Sedra_Smith_7_Cover_120x150.jpg" width="120" height="150"
                    alt="Photo of textbook"><br>
@@ -1077,18 +1077,25 @@ The problem statement continues on page 128. &nbsp; &nbsp; &nbsp;
 
 <b>Clarification #2</b>                 <br> &nbsp; &nbsp; &nbsp;
 The two resistors connected to the non-inverting ("+") inputs of
-the op-amps are not the optimal values.  For this circuit, the 
-non-inverting input of the top op-amp should be connected to node
-A through a 6.67 k<img src=omega_uc.gif alt="ohm"> resistor.  The 
+the op-amps are for the purpose of reducing the non-ideal effects
+of input bias currents to the op-amps.  The assumption of an 
+"ideal" op-amp makes these resistors unimportant to the operation 
+of the circuit, no matter what their values are.  If the op-amps 
+are ideal these resistors may be set to zero (replaced with wires) 
+without any change to the operation of the circuit.  Additionally, 
+although the two 10 k<img src=omega_uc.gif alt="ohm"> resistors as 
+shown will reduce the harmful non-ideal effects of input bias 
+currents, these resistors are not shown with their optimal values.  
+For this circuit, the non-inverting input of the top op-amp should 
+be connected to node A through a 
+6.67&nbsp;k<img src=omega_uc.gif alt="ohm"> resistor.  The 
 non-inverting input of the bottom op-amp should be connected to 
-ground through a 7.5 k<img src=omega_uc.gif alt="ohm"> resistor.  
-The assumption of an "ideal" op-amp makes these resistors 
-unimportant to the operation of the circuit, no matter what their 
-values are.  If the op-amps are not ideal, these two resistors 
-reduce the effect of input bias currents.  If this makes no sense 
-to you and you are further interested, ask professor De Boer about 
-it. &nbsp; &nbsp; &nbsp; &nbsp; <small><i>
-(Posted 8/16/2016)                             </i></small><br><br>
+ground through a 7.5&nbsp;k<img src=omega_uc.gif alt="ohm"> 
+resistor.  These are the Thevenin-equivalent resistances seen by
+the inverting inputs of the op-amps.  If this makes no sense to 
+you and you are further interested, ask professor De&nbsp;Boer 
+about it. <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <small><i>
+(Posted 8/16/2016, updated 9/05/2018)         </i></small><br><br>
 
                                            <A NAME="P130_A"></A><b>
 Page 130.  Problem D**2.93</b><br>
