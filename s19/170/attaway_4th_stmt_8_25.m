@@ -13,4 +13,4 @@ kit(1).name = 'rst';
 kit(1).lens = 5:6;
 kit(1).sub.id = 33;
 kit(1).sub.wt = 11.11;
-kit(1).sub.code = 'q';
+kit(1).sub.code = 'q'; 
