@@ -1,0 +1,144 @@
+% Nelson, Lucas, and
+% Young, Charles
+%
+#Charley Young and Lucas Nelson
+from gpiozero import LED
+from time import sleep
+led = LED(6)
+led2=LED(4)
+while True:
+    led.on()
+    sleep(1)
+    led.off()
+    led2.on()
+    sleep(1)
+    led2.off
+
+%----------------------------------------------------
+% Kelly, Dan, and
+% Sanford, Zachary
+%
+# railroad ties lights. Using 150 ohm resistors and two red LED's
+# Dan Kelly && Zachary Sanford
+
+from gpiozero import LED
+from time import sleep
+
+led1 = LED(17)
+led2 = LED(22)
+
+
+while True:
+    led1.on()
+    sleep(1)
+    led1.off()
+    sleep(1)
+    led2.on()
+    sleep(1)
+    led2.off()
+    sleep(1)
+
+
+%------------------------------------------------------
+% Tinklenberg, Shane and 
+% Van Eps, Matthew
+%
+from gpiozero import LED
+from time import sleep
+
+led3 = LED(22)
+led2 = LED(17)
+led1 = LED(4)
+
+while True:
+    led1.on()
+    sleep(1)
+    led1.off()
+    led2.on()
+    sleep(1)
+    led2.off()
+    led3.on()
+    sleep(1)
+    led3.off()
+    led2.on()
+    sleep(1)
+    led2.off()
+
+
+%-------------------------------------------------------
+% Vande Griend, Nolan, and
+% Walicord, Stefan
+%
+from gpiozero import LED
+from time import sleep
+
+led =LED(17)
+led2 = LED(4)
+led3 = LED(27)
+led4 = LED(22)
+led5 = LED(5)
+led6 = LED(6)
+led7 = LED(13)
+led8 = LED(19)
+
+
+hellothere = [led2, led, led3, led4, led5, led6, led7, led8]
+
+x=0
+y = 0
+
+while True:
+    if y % 2 == 0  and x < 7:
+        x +=1
+    elif y % 2 == 1 and x > 0:
+        x -= 1
+    
+    if x == 7:
+        y = 1
+    if x == 0:
+        y = 0
+    hellothere[x].on()
+    sleep(0.25)
+    hellothere[x].off()
+
+
+%------------------------------------------------------------
+% Munsey, Patrick, and 
+% Waas, Kyle
+%
+#Kyle Waas and Patrick Munsey
+#Lab 4
+
+from gpiozero import LED
+from time import sleep
+
+led1 = LED(22)
+led2 = LED(6)
+
+while True:
+    led1.on()
+    sleep(1)
+    led1.off()
+    led2.on()
+    sleep(1)
+    led2.off()
+
+
+%-------------------------------------------------
+% White, Tyler, and 
+% Zevenbergen, Ryan
+%
+from gpiozero import LED
+from time import sleep
+
+led1 = LED(17)
+led2 = LED(22)
+
+while True:
+	led1.on()
+	sleep(0.5)
+	led1.off()
+	led2.on()
+	sleep(0.5)
+	led2.off()
+

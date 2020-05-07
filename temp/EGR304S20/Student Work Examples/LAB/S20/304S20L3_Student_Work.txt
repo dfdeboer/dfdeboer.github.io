@@ -1,0 +1,320 @@
+// Kelly, Dan and 
+// Sanford, Zachary
+//
+// Zachary Sanford && Dan Kelly LAB 3
+
+// Set up variables
+int Lights = 0;
+int i = 0;
+
+// talk to the arduino
+void setup() {
+
+// Initiate all the ports 0 thru 7
+  DDRD = B11111111;
+
+}
+
+
+// start void loop()
+void loop() {
+// initalize the bits
+Lights = B00000001;
+PORTD = Lights;
+
+  // increment up
+  for(int i = 0; i < 7; i++)
+    {
+     Lights = Lights << 1;
+     PORTD = Lights;
+     delay(300);
+    }
+
+  // decrement down
+  for(int i = 0; i < 7; i++)
+    {
+      Lights = Lights >> 1;
+      PORTD = Lights;
+      delay(300);
+    }
+// end void loop()
+}
+
+
+//----------------------------------------------------------
+// Nelson, Lucas and 
+// Young, Charles
+//
+// Charles young and lucas nelson collaborated together on this program. 
+
+
+int temp = 0;
+int i =0;
+
+void setup() {
+  // put your setup code here, to run once:
+  
+  DDRD = B11111111;             // tells the board that pin 0-7 are outputs
+                                // links the variable lights to pin 0-7
+  //Serial.begin(9600);
+  
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+temp = B00000001;
+PORTD = temp;
+
+
+  for( i = 0; (i < 7); i=i+1)
+    {
+      temp = temp << 1;
+      PORTD = temp;
+      delay(300);
+      //Serial.println(i);
+      
+    }
+
+  for( i = 0; i <  7; i++)
+    {
+       temp = temp >> 1;
+       PORTD = temp;
+       delay(300); 
+    } 
+    
+
+
+    }
+
+    
+//------------------------------------------------------------------
+// Vande Griend, Nolan, and
+// Walicord, Stefan
+//
+int x = 100;
+int LEDs = B10000000;
+int direc = -1;
+
+void setup() {
+  // put your setup code here, to run once:
+DDRD = B11111111;
+pinMode(10, INPUT); digitalWrite(10, HIGH);
+pinMode(9, INPUT);  digitalWrite(9, HIGH);
+pinMode(8, INPUT);  digitalWrite(8, HIGH);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+if(digitalRead(9) == LOW && digitalRead(10) == LOW){
+  x = 700;
+}
+if(digitalRead(9) == LOW && digitalRead(10) == HIGH){
+  x = 250;
+}
+if(digitalRead(9) == HIGH && digitalRead(10) == LOW){
+  x = 100;
+}
+if(digitalRead(9) == HIGH && digitalRead(10) == HIGH){
+  x = 50;
+}
+
+while(digitalRead(8) == HIGH){
+  
+}
+
+delay(x);
+
+PORTD = LEDs; 
+
+if (direc == 1){
+  if (LEDs == B10000000){
+    LEDs = LEDs >> 1;
+    direc = -1;
+  }
+  else{
+    LEDs = LEDs << 1;
+  }
+}
+else if (direc == -1){
+  if (LEDs == B00000001){
+    LEDs = LEDs << 1;
+    direc = 1;
+  }
+  else{
+    LEDs = LEDs >> 1;
+  }
+}   
+
+}
+
+
+//-------------------------------------------------------------
+// Tinklenberg, Shane, and 
+// Van Eps, Matthew
+// 
+/*************************************************** 
+* Shane Tinklenberg and Matthew Van Eps Lab #2 
+* EGR 304 January 22, 2020
+***************************************************/
+void setup() {
+  DDRD = 0b11111111;
+
+  PORTD = 0b00000001;
+
+  pinMode(13, INPUT);
+  pinMode(12, INPUT);
+}
+
+void loop()
+{
+  if(HIGH == digitalRead(13) && //Checks the switch state and calls CylconEyes() with the proper speed
+    HIGH == digitalRead(12))
+    {
+      //Do Nothiing
+    }
+  else if(HIGH == digitalRead(13) &&
+     LOW == digitalRead(12))
+    {
+     CyclonEyes(400);
+    }
+   else if(LOW == digitalRead(13) &&
+           HIGH == digitalRead(12))
+    {
+      CyclonEyes(200);
+    }
+   else
+    {
+      CyclonEyes(25);
+    }
+
+}
+
+void CyclonEyes(int speed) // Performs one up and down loop of the LEDs
+{
+ PORTD = 0b00000001;
+ int i;
+ for(i = 0;i < 7; i++)
+ {
+  PORTD = PORTD << 1;
+  delay(speed);
+ }
+
+ for(i = 0; i < 7; i++)
+ {
+  PORTD = PORTD >> 1;
+  delay(speed);
+ }
+}
+
+//--------------------------------------------------------------
+// Munsey, Patrick and 
+// Waas, Kyle
+//
+/*
+ * Kyle Waas and Patrick Munsey
+ * Cyclone Eyes 2.0
+ * 
+ */
+ void setup() {
+pinMode(9, INPUT);
+pinMode(10, INPUT);
+}
+
+void loop() {
+int wait = 100;
+
+DDRD = B11111111;
+
+PORTD = 0b00000001;
+
+for(int j = 0; j < 7; j++){
+  PORTD = PORTD << 1;
+  delay(wait);
+  }
+
+for(int i = 0; i < 7; i++){
+  PORTD = PORTD >> 1;
+  delay(wait);
+}
+  
+}
+
+
+//-------------------------------------------------------
+// White, Tyler, and 
+// Zevenbergen, Ryan
+//
+int is_running = 0;
+int delay_time = 1000;
+int input1 = 10; //connect switch to ground and 10
+int input2 = 11; //connect switch to ground and 11
+int led_move, ones_complement_led_move;
+int temp = 0;
+
+void setup() {
+  DDRD = B11111111;
+  pinMode(input1, INPUT_PULLUP);
+  pinMode(input2, INPUT_PULLUP);
+  led_move = B00000001; //a 1 means light is off
+  PORTD = led_move;
+//  Serial.begin(9600);
+}
+
+void loop() {
+  if(is_running == 0) {
+    checkInput();
+    led_move = led_move << 1;
+
+    ones_complement_led_move = getOnesComplement(led_move);
+    PORTD = ones_complement_led_move;
+    delay(delay_time);
+    if(led_move == B10000000) {
+      is_running = 1;
+    }
+  }
+  if(is_running == 1) {
+    checkInput();
+    led_move = led_move >> 1;
+
+    ones_complement_led_move = getOnesComplement(led_move);
+    PORTD = ones_complement_led_move;
+    
+    delay(delay_time);
+    if(led_move == B00000001) {
+      is_running = 0;
+    }
+  }
+}
+
+int checkInput() {
+  int var;
+  if(digitalRead(input1) == LOW) {
+    if(digitalRead(input2) == LOW) {
+      //Stop
+      var = 1;
+      if(var = 1) {
+        checkInput();
+        var = 1;
+      }
+    } else {
+      var = 0;
+      delay_time = 100;  
+    }
+  } else {
+    if(digitalRead(input2) == LOW) {
+      var = 0;
+      delay_time = 300;  
+    } else {
+      var = 0;
+      delay_time = 50;  
+    }
+  } 
+}
+
+int getOnesComplement(int n) {
+   return n^B11111111;
+}
+
+ 

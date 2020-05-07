@@ -1,0 +1,92 @@
+Below are some git commands, more than one for each student in EGR 304.
+Add your name just below one of the commands listed below.
+Write some documentation for that command on a few lines underneath 
+your name.   
+
+Save the file, add it, commit it, and push it back up to professor De Boer's repository.
+If your push is rejected, use "git pull origin <filename>" to merge the work of 
+others into your file and then add (stage), commit, and push the file again. 
+
+The "add" command has been documented by Professor De Boer as an example. 
+
+Commands to briefly document
+----------------------------
+add
+Douglas De Boer
+The command, "git add <filespec>" converts the targeted file(s) from 
+tracked-modified status or from untracked status to tracked-staged status.  
+The files are now ready for a commit (snapshot), presuming they are not 
+further edited before the commit.  
+
+branch
+Ryan Zevenbergen
+The command "git branch <name>" creates a new commit off of a previous commit.
+This allows new edits to occur in a parallel version of the software. Said
+edits may be committed as normal, but they will only occur on the <name> branch.
+
+checkout
+Stefan Walicord
+The checkout command lets you switch between branches on your project. The contents of the file are updated to the 
+branch you just checked out.
+
+Zachary Sanford
+The command "git checkout <feature_branch/HASH>" means looking at previous snapshots
+made on any branch. The checkout command will bring you to the TIP of a branch or using
+the HASH will bring you to a "dettached-head". When you are using "dettached-head" it is
+wise not to edit until you create a new branch.
+
+clone
+Nolan Vande Griend
+The command "git clone <url>" will bring into your directory a repository
+copied exactly as it was from the url. The files will arrive in a tracked
+and unmodified condition and also initialize the directory into a repository. 
+
+commit
+Matthew Van Eps
+The "git commit" commamnd takes a snapshot of the current state of the git repo. Associated with each commit
+is a hash that allows users to go back and checkout that specific snapshot in the past and to view 
+previous snapshots. Included with each commit is a message that allows usersto indicate what changes were made 
+in that specific snapshot.
+
+config
+Kyle Waas 
+The command is a function that is used to set git configuration values on a global or local project.
+Example we set a global config to what editor we would using for every git we commit. 
+
+diff
+
+init
+Lucas Nelson
+This command creates a new repository. It can create from existing files or
+make a empty repository.
+
+log
+Charles Young
+The command "git log" will display of all previous commits along with their hash codes
+
+merge 
+Ty White
+The command "git merge topic" will relay the changes made on the topic branch 
+since it diverged from the master branch until its current commit on top of 
+master, and record the result in a new commit.
+
+push
+
+remote
+
+rm
+Dan Kelly
+the command 'git rm' operates on the working directory and staging index. is 
+used to remove a file from a Git repository.
+
+stash
+Shane Tinklenberg
+A "git stash" is a method of storing uncommitted changes on a branch away so that they
+can later be applied on a branch of your choosing. Stashes are able to be applied later
+when necessary.
+
+status
+Patrick Munsey
+The "git status" command will display the current stage that each of your documents within a 
+file are currently sitting. Whether they are Untracked, Tracked unmodified, Tracked modified, 
+or staged; the document will show up with a color code and related labels.

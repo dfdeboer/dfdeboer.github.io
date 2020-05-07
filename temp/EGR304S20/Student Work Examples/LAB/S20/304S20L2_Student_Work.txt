@@ -1,0 +1,592 @@
+// Nelson, Lucas and 
+// Young, Charles
+//
+// This code is made by the pleasure and hard work of Charles J Young and Lucas J Nelson under the care and guidance of Professor Douglas Deboer.
+// Thank you for helping us to write our first program using C++
+
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin 13 as an output.
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(4, INPUT);
+  pinMode(3, INPUT);
+  
+}
+
+void loop() {
+  int delayt;
+  while (digitalRead(4) == HIGH && digitalRead(3) == HIGH)
+{    }
+  
+  if 
+
+    (digitalRead(4) == HIGH && digitalRead(3) == LOW)
+    {
+      delayt = 700; //slow
+    }
+    else if (digitalRead(4) == LOW && digitalRead(3) == HIGH)
+    {
+      delayt = 160; //medium
+    }
+    else if (digitalRead(4) == LOW && digitalRead(3) == LOW)
+    {
+      delayt = 12; //fast
+    }
+// the loop function runs over and over again forever
+
+  digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(delayt);              // wait for a second
+  digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
+                // wait for a second
+  digitalWrite(12, HIGH);
+  delay(delayt);
+  digitalWrite(12, LOW);
+ 
+  digitalWrite(11, HIGH);
+  delay(delayt);
+  digitalWrite(11, LOW);
+ 
+  digitalWrite(10, HIGH);
+  delay(delayt);
+  digitalWrite(10, LOW);
+
+  digitalWrite(9, HIGH);
+  delay(delayt);
+  digitalWrite(9, LOW);
+
+  digitalWrite(8, HIGH);
+  delay(delayt);
+  digitalWrite(8, LOW);
+ 
+  digitalWrite(7, HIGH);
+  delay(delayt);
+  digitalWrite(7, LOW);
+
+  digitalWrite(6, HIGH);
+  delay(delayt);
+  digitalWrite(6, LOW);
+
+  digitalWrite(7, HIGH);
+  delay(delayt);
+  digitalWrite(7, LOW);
+
+  digitalWrite(8, HIGH);
+  delay(delayt);
+  digitalWrite(8, LOW);
+
+  digitalWrite(9, HIGH);
+  delay(delayt);
+  digitalWrite(9, LOW);
+
+  digitalWrite(10, HIGH);
+  delay(delayt);
+  digitalWrite(10, LOW);
+
+  digitalWrite(11, HIGH);
+  delay(delayt);
+  digitalWrite(11, LOW);
+
+  digitalWrite(12, HIGH);
+  delay(delayt);
+  digitalWrite(12, LOW);
+  digitalWrite(13, HIGH);
+
+ 
+}
+//---------------------------------------------------------------------------------
+// Tinklenberg, Shane, and 
+// Van Eps, Matthew
+//
+/*************************************************** 
+* Shane Tinklenberg and Matthew Van Eps Lab #2 
+* EGR 304 January 22, 2020
+***************************************************/
+void setup() {
+  pinMode(12, OUTPUT); //Setup Pins as needed
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
+
+  pinMode(4, INPUT);
+  pinMode(3, INPUT);
+}
+
+void loop()
+{
+  if(HIGH == digitalRead(4) && //Checks the switch state and calls CylconEyes() with the proper speed
+    HIGH == digitalRead(3))
+    {
+      //Do Nothiing
+    }
+  else if(HIGH == digitalRead(4) &&
+     LOW == digitalRead(3))
+    {;
+     CyclonEyes(400);
+    }
+   else if(LOW == digitalRead(4) &&
+             HIGH == digitalRead(3))
+    {
+      CyclonEyes(200);
+    }
+   else
+    {
+      CyclonEyes(25);
+    }
+
+}
+
+void CyclonEyes(int speed) // Performs one up and down loop of the LEDs
+{
+      int i;
+      for(i = 12; i > 5; i--)
+      {
+         WriteLed(i);
+         delay(speed);
+      }
+
+      for(i = 4; i < 12; i++)
+      {
+         WriteLed(i);
+        delay(speed);
+      }
+}
+
+void WriteLed(int Pin) //Turns on the LED pin passed in as a parameter and turns all others off.
+{
+  for(int j = 4; j < 13; j++)
+      {
+        if(Pin == j)
+        {
+          digitalWrite(j, HIGH);
+        }
+        else
+        {
+          digitalWrite(j, LOW);
+        }
+      }
+}
+
+//-----------------------------------------------------------------------
+// Kelly, Dan, and
+// Vande Griend, Nolan, and 
+// Walicod, Stefan
+//
+// Stefan Walicord, & Dan Kelly, & Nolan Vande Griend all suffered through this project cause of a stupid switch
+
+int x = 250;
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(13, OUTPUT);
+pinMode(12, OUTPUT);
+pinMode(11, OUTPUT);
+pinMode(10, OUTPUT);
+pinMode(9, OUTPUT);
+pinMode(8, OUTPUT);
+pinMode(7, OUTPUT);
+pinMode(6, OUTPUT);
+pinMode(5, OUTPUT);
+// these are all the buttons that shall be pushed for the need for speed
+pinMode(4, INPUT);
+pinMode(3, INPUT);
+//kill loop
+pinMode(2, INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+if(digitalRead(4)== LOW && digitalRead(3)== LOW){
+  x = 100;
+}
+if(digitalRead(4)== LOW && digitalRead(3)== HIGH){
+  x = 500;
+}
+if(digitalRead(4)== HIGH && digitalRead(3)== LOW){
+  x = 428;
+}
+if(digitalRead(4)== HIGH && digitalRead(3)== HIGH){
+  x = 200;
+}
+while(digitalRead(2) == HIGH){
+  digitalWrite(12, HIGH);
+}
+
+digitalWrite(12, HIGH);
+delay(2*x);
+digitalWrite(12, LOW);
+digitalWrite(11, HIGH);
+delay(x);
+digitalWrite(11, LOW);
+digitalWrite(10, HIGH);
+delay(x);
+digitalWrite(10, LOW);
+digitalWrite(9, HIGH);
+delay(x);
+digitalWrite(9, LOW);
+digitalWrite(8, HIGH);
+delay(x);
+digitalWrite(8, LOW);
+digitalWrite(7, HIGH);
+delay(x);
+digitalWrite(7, LOW);
+digitalWrite(6, HIGH);
+delay(x);
+digitalWrite(6, LOW);
+digitalWrite(5, HIGH);
+delay(2*x);
+digitalWrite(5, LOW);
+digitalWrite(6, HIGH);
+delay(x);
+digitalWrite(6, LOW);
+digitalWrite(7, HIGH);
+delay(x);
+digitalWrite(7, LOW);
+digitalWrite(8, HIGH);
+delay(x);
+digitalWrite(8, LOW);
+digitalWrite(9, HIGH);
+delay(x);
+digitalWrite(9, LOW);
+digitalWrite(10, HIGH);
+delay(x);
+digitalWrite(10, LOW);
+digitalWrite(11, HIGH);
+delay(x);
+digitalWrite(11, LOW);
+}
+
+
+//--------------------------------------------------------------------
+// Munsey, Patrick, and
+// Sanford, Zachary, and
+// Waas, Kyle
+//
+/*
+ * Kyle Waas and Patrick Munsey
+ * Cyclone Eyes
+ * 
+ */
+void setup() {
+
+pinMode(6, OUTPUT);
+pinMode(7, OUTPUT);
+pinMode(8, OUTPUT);
+pinMode(9, OUTPUT);
+pinMode(10, OUTPUT);
+pinMode(11, OUTPUT);
+pinMode(12, OUTPUT);
+pinMode(13, OUTPUT);
+
+pinMode(5, INPUT);
+pinMode(4, INPUT);
+  
+
+}
+
+void loop() {
+
+  char myCount = 5;
+  int wait;
+
+  while(myCount){
+
+    
+    if(digitalRead(4) == HIGH && digitalRead(5) == HIGH){
+    wait = 0;
+    for(;;){
+      if(digitalRead(4) == HIGH && digitalRead(5) == HIGH){
+         digitalWrite(13, HIGH);
+        }
+        else{
+          break;
+        }
+      }
+    }
+    else if(digitalRead(4) == HIGH && digitalRead(5) == LOW){
+      wait = 250;
+    }
+    else if(digitalRead(4) == LOW && digitalRead(5) == HIGH){ 
+      wait = 500;
+    }
+    else{
+      wait = 50;
+    }
+    
+     digitalWrite(13, HIGH);
+     delay(wait);
+     digitalWrite(13, LOW);
+
+     digitalWrite(12, HIGH);
+     delay(wait);
+     digitalWrite(12, LOW);
+
+     digitalWrite(11, HIGH);
+     delay(wait);
+     digitalWrite(11, LOW);
+
+     digitalWrite(10, HIGH);
+     delay(wait);
+     digitalWrite(10, LOW);
+
+     digitalWrite(9, HIGH);
+     delay(wait);
+     digitalWrite(9, LOW);
+
+     digitalWrite(8, HIGH);
+     delay(wait);
+     digitalWrite(8, LOW);
+
+     digitalWrite(7, HIGH);
+     delay(wait);
+     digitalWrite(7, LOW);
+     
+     digitalWrite(6, HIGH);
+     delay(wait);
+     digitalWrite(6, LOW);
+
+      digitalWrite(7, HIGH);
+     delay(wait);
+     digitalWrite(7, LOW);
+
+     digitalWrite(8, HIGH);
+     delay(wait);
+     digitalWrite(8, LOW);
+
+     digitalWrite(9, HIGH);
+     delay(wait);
+     digitalWrite(9, LOW);
+
+     digitalWrite(10, HIGH);
+     delay(wait);
+     digitalWrite(10, LOW);
+
+     digitalWrite(11, HIGH);
+     delay(wait);
+     digitalWrite(11, LOW);
+
+     digitalWrite(12, HIGH);
+     delay(wait);
+     digitalWrite(12, LOW);
+
+  }
+  
+  while(1);
+}
+
+
+//--------------------------------------------------------------
+// White, Tyler, and 
+// Zevevnbergen, Ryan
+int led_1 = 2; //connect all LEDs in series with a 1kohm resistor
+int led_2 = 3;
+int led_3 = 4;
+int led_4 = 5;
+int led_5 = 6;
+int led_6 = 7;
+int led_7 = 8;
+int led_8 = 9;
+int input1 = 10; //connect switch to ground and 10
+int input2 = 11; //connect switch to ground and 11
+int delayTime = 100;
+
+void setup() {
+  pinMode(input1, INPUT_PULLUP);
+  pinMode(input2, INPUT_PULLUP);
+  pinMode(led_1, OUTPUT);
+  pinMode(led_2, OUTPUT);
+  pinMode(led_3, OUTPUT);
+  pinMode(led_4, OUTPUT);
+  pinMode(led_5, OUTPUT);
+  pinMode(led_6, OUTPUT);
+  pinMode(led_7, OUTPUT);
+  pinMode(led_8, OUTPUT);
+}
+
+void loop() {
+  checkInput();
+  
+  digitalWrite(led_1, HIGH); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, HIGH); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, HIGH);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, HIGH);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, HIGH);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, HIGH); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, HIGH); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, HIGH); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, HIGH); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, HIGH);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, HIGH);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, LOW); 
+  digitalWrite(led_3, HIGH);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+  
+  digitalWrite(led_1, LOW); 
+  digitalWrite(led_2, HIGH); 
+  digitalWrite(led_3, LOW);
+  digitalWrite(led_4, LOW);
+  digitalWrite(led_5, LOW);
+  digitalWrite(led_6, LOW); 
+  digitalWrite(led_7, LOW); 
+  digitalWrite(led_8, LOW); 
+  delay(delayTime);
+  checkInput();
+}
+
+int checkInput() {
+  int var;
+  if(digitalRead(input1) == HIGH) {
+    if(digitalRead(input2) == HIGH) {
+      //Stop
+      var = 1;
+      if(var = 1) {
+        checkInput();
+        var = 1;
+      }
+    } else {
+      var = 0;
+      delayTime = 100;  
+    }
+  } else {
+    if(digitalRead(input2) == HIGH) {
+      var = 0;
+      delayTime = 300;  
+    } else {
+      var = 0;
+      delayTime = 50;  
+    }
+  } 
+}
+
+
+
+
