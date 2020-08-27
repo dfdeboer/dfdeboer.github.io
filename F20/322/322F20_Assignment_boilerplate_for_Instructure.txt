@@ -1,0 +1,21 @@
+<p>
+   The description of this and all other homework assignments, along with due dates, etc. 
+   is best viewed via the "Homework Assignments" link in the main window of 
+   <a style="color: #cc9900; text-decoration: none;" 
+      href="https://dordt.instructure.com/courses/2899971"><strong
+      >this Course's Canvas page</strong>
+   </a>.&nbsp; 
+   For convenience, below is a copy of that link.
+</p>
+<p style="text-align: center;">
+   <a style="color: #cc9900; text-decoration: none;" 
+      href="https://dfdeboer.github.io/F20/322/322F20PS.HTM"><strong
+      >Homework Assignments</strong>
+   </a>
+</p>
+<p>
+   To turn an assignment in, click the "due date" in the assignment list 
+   found at the golden-colored "Homework Assignments" link above, or click 
+   the blue "Submit Assignment" link found elsewhere on this page (usually 
+   it is toward the upper left of this text).&nbsp;
+</p>
