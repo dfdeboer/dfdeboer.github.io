@@ -1,0 +1,374 @@
+<HTML>
+<HEAD>
+   <link rel="shortcut icon" href="favicon_HOW.ico">
+   <TITLE>HOW Sound--Gain Structure</TITLE> 
+   <style type="text/css">
+      body {
+         font: normal 13px "Verdana";
+         }
+      H1 {
+         font-family: "verdana";
+         font-size: 14px;
+         font-weight: bold;
+         }
+      P  {
+         font-size:  10pt;
+         font-family: "verdana";
+         }
+      DIV{
+         font-size:  10pt;
+         font-family: "verdana";
+         }
+      A:link {
+         color:#6693B1; 
+         font-weight:bold;
+         text-decoration:none;
+         }
+      A:visited {
+         color:#4E5228;
+         font-weight:bold;
+         text-decoration:none;
+         }
+      A:hover {
+         text-decoration:underline;
+         }
+   </style>
+   <!--preferred colors:      Brown #844D36,   DarkGrey #474853, SkyBlue #6693B1
+                          LightGrey #AAA0A0, OliveGreen:#4E5228 -->
+</HEAD>
+
+<BODY>
+<!-- Banner -->
+<table align="center" BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="590"><tr><td>
+    <a href="../HoW_S.html"><img width="590" height="147" src="HOW_S_Banner.png"></a>
+	<hr>
+</td></tr>
+<tr><td><br>
+<h1>Gain Structure</h1><p>
+
+How does one get the loudness correct when there are so many ways to adjust 
+loudness?  <i>Gain Structure</i> is the theory behind getting the loudness of 
+the signals in the mixer board to optimal levels at all points.<br><br>
+
+Imagine that the sermon is in progress.  Only one microphone is being used to pick 
+up the pastor's voice, the ear-set wireless microphone.  Also imagine that the sound 
+operator wants to turn up the volume.  There are a number of ways to do this.  The 
+illustration below shows five different ways to change the pastor's volume.  
+(The pastor's mike is connected to channel 1, the left-most channel on our mixer.)<br><br>
+
+1.)  The <i>line pad</i> push-button (grey, near the top of the board) will change 
+the volume by 20 dB (Louder if you let it up, softer if you press it down.)<br><br>
+
+2.)  The <i>gain trim</i> knob (red, near the top of the board) will change the pastor's 
+volume.<br><br>
+
+3.)  The <i>channel fader</i> (black, slider near the bottom of the board) will change the 
+pastor's volume.<br><br>
+
+4.)  The <i>LR master faders</i> (the two left-most yellow sliders) will change the pastor's 
+volume<br><br>
+
+5.)  The <i>M master fader</i> (the right-most yellow slider) will change the pastor's volume.  
+(We use the "M" or "Monitor" output to create the mono mix for the sanctuary's loudspeakers.)<br>
+</td></tr></table><p align="center">
+
+<img src="./A_H_GS2400_gain_structure.png"><br>
+<i>Above: The five different blue arrows point to five different ways to change the pastor's volume.</i></p><br><br>
+<table align="center" BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="590"><tr><td><p>
+
+But the five items mentioned above are not the only ways to change the pastor's volume.  
+On the pastor's wireless bodypack there is a gain switch.  We usually set it to the middle 
+position.  This will also change the pastor's volume.<br><p align="center"><br><br>
+
+<img src="./Shure_SLX1_bodypack_gain.png"><br>
+<img src="./Shure_SLX1_bodypack_gain_2.png"><br>
+<i>Above:  The gain switch on the pastor's wireless bodypack.  (We set it a "0")</i></p><p><br><br>
+
+In addition, there is the gain control on the power amplifier which will also change the 
+pastor's volume.</p><p align="center">
+
+<img src="./Crown_CDI4000_gain.png"><br>
+<i>Above:  Gain control on the power amplifier.</i></p><p><br>
+
+That brings the total to seven different ways to change the pastor's volume.  Of course, in 
+routine operation we somehow intuitively <i>just know</i> that the channel fader (black slider)
+is the item to adjust.  We have always done it that way, so it seems obvious.  <i>Gain Structure</i>
+is the explanation for why the adjustment should be done this way in routine operation.  More 
+specifically, <i>gain structure explains how to set all the other possible adjustments correctly
+so that the channel fader (black slider) does what we expect.</i></p><br>
+
+<h1>Description of gain structure</h1><p>
+The <i>signal chain</i> is the sequence of circuits and adjustments that the signal passes through 
+on the way to the loudspeaker, recording, video stream, or any other final destination.  At every 
+point along the way of the signal chain the signal must be strong enough to overcome electronic 
+noise such as hum coupled into microphone cables, static background noise in a radio-channel, etc.
+The signal must stay strong enough to swamp out these noises.  On the other hand, there is a 
+maximum amount of signal that is possible at each point in the signal chain.  If the signal ever 
+goes over that maximum level, distortion sets in.  At every point along the way in the signal chain, 
+the signal must not be too strong or too weak.<br><br>
+
+Getting the signal strength within bounds all along the signal chain starts at the very first 
+gain adjustment.  In the case of the pastor's mic example above, that is the gain switch on the 
+pastor's bodypack.  If that is set too high (e.g. in our case, "mic") then there will be distortion in the 
+radio-signal.  No gain adjustment later in the signal chain can remove that distortion.  If it 
+is set too low ("&ndash;10" in our case) then the signal will be too weak in the radio channel 
+and some hissing and static will be audible in the signal.  No gain adjustment later in the 
+signal chain can remove the noise.<br><br>
+
+That first gain adjustment in the signal chain, wherever it may be, is critical.  It matches the 
+source.  In this example, the combination of the particular brand and model of the pastor's 
+ear-set microphone and the pastor's style of talking (or shouting or whispering) is matched 
+to the electronics that will follow the gain adjustment.  Usually, once this one is somewhat 
+near optimal the rest of the gain adjustments will be about right too just because previous 
+users of the system have set them reasonably.  But any gain adjustment that runs the signal 
+level below the noise level or above the distortion level will cause a problem that cannot 
+be corrected well by any other gain control.<br><br>
+
+The last gain adjustment in the signal chain has a special role.  Instead of adapting the signal 
+level to the following electronics, it adapts the signal level to the hearing levels of the people in 
+the room!  In the example of the pastor's mic channel, the last gain control in the signal chain 
+is the one on the power amplifier.  This is the gain control that establishes the maximum loudness 
+in the sanctuary (or other destination) that can be achieved.  If this is too low, no amount of 
+adding gain before it will add enough loudness.  Those earlier gain controls will only end up 
+adding distortion.  If this final gain control is too high, there will be hiss and noise in the 
+background of the sound.  No gain control in the signal chain before the final one will do a good 
+job of reducing that background noise.  If this gain control is set correctly there will be 
+enough loudness to bring on feedback in practically any situation (if the faders are pushed up 
+too high for example) and to cause the audience to perceive more than enough loudness, yet the 
+signal will be undistorted during normal operations and when there is supposed to be silence, 
+the system will not be humming or hissing or letting spurious radio signals get through.  <br><br>
+
+Once all the channels are correctly gain trimmed the rest of the board will generally behave
+well in terms of overall signal levels.  The general strategy should be to use the master and 
+group faders (red and yellow sliders) to control the desired overall loudness of the 
+mix and to use the channel faders (black) to get a pleasing balance within the mix. In many 
+cases one can put the group master faders (red) to good creative use in managing the 
+instruments vs. vocal balance and the L-R master faders (two left-most yellow) to control 
+overall loudness.  As one is doing this one should be careful not to over-drive or under-drive 
+the internal mixer busses leading into and out of the master section of the mixer board, but as 
+I've mentioned, if the individual channels are all properly gain-trimmed and the final power-amplifier
+is properly gain trimmed, then everything in-between will tend to stay in-bounds for any 
+reasonable mix.</p><br> 
+
+<h1>How to get the gain structure right</h1><p>
+
+Each gain adjustment along the signal chain will have some type of indicator of signal level.  
+In general, <font color="red">if a red light is blinking, the signal is too strong, reduce the associated 
+gain setting.</font>  <font color="green">If green lights are never blinking, the gain is too low, increase the associated
+gain control.</font>  One should read the <i>user's manual</i> for the equipment to discover how to 
+deal with yellow indicators.  These vary from device-to-device.  In general, on 
+analog equipment <font color="#CC9900">occasional blinking of yellow is usually considered acceptable</font> but does 
+mean that some inaudible or nearly inaudible distortion has happened.  The rules above apply to all 
+the equipment on our sound desk except the CD recorder and the Behringer audio interface to the 
+Facebook stream because those two items have digital aspects.   
+<br><br>
+
+A side note:  Alan &amp; Heath recommends that optimal levels for our mixer ideally should be 
+high enough to make the +6 dB (yellow) LED blink occasionally on the loudest parts of the signal.  
+At Covenant Church we run a little lower than that (keep peaks at 0 dB or less if practical) 
+because some of our equipment is digital, such as the CD recorder and the Behringer computer 
+audio interface for the Facebook stream.<br><br>
+
+Digital equipment takes various approaches to color-coding signal levels.  As usual, green is good,
+red is bad, but yellow is different.  Some digital equipment does not use yellow on the VU meters. 
+This is because the boundary between bad distortion and a practically perfect signal is very narrow 
+on all digital systems.  The signal either clips (indicated by red) or is near perfect (indicated by 
+green or any color other than red).  For some other digital equipment the yellow lights indicate a 
+desirable level for the loudest portions of the program.  In this case the loudest parts of the 
+signal should routinely and frequently cause yellow to be displayed.  In still other digital 
+equipment the yellow represents a reserve headroom amount that should not be routinely used.  
+In this case an occasional flash of yellow is OK, but one does not want to see it routinely, not 
+even on the loudest parts of the program.  Read the equipment manual(s) to figure out the 
+recommended settings.</p><br>
+
+<h1>Behringer computer audio interface and CD player</h1><p>
+Our entire sound system is analog except for the CD recorder and the Behringer computer audio 
+interface that delivers audio for the Facebook stream.  On the CD recorder we desire to see the 
+loudest parts of the signal at &ndash;12 to &ndash;3 dB but not routinely above &ndash;3 dB.  (The CD recorder has
+no yellow colors on its meters.)  On the Behringer computer audio interface the "peak" LEDs (red) 
+and the gain adjustments on this audio interface are on the analog side and should be adjusted 
+according to the analog rules above, but it is a little difficult because there are no green
+or yellow LEDs, just one red led on each channel to warn of clipping.  The red should never blink, 
+but the gain should be high enough so that they are on the verge of blinking.  (If it blinks 
+rarely, leave it alone until a practice session later.  It is a touchy adjustment and it is 
+easy to make it worse.)  The OBS software that receives the USB audio stream uses the convention that
+the louder portions of the signal should drive the VU meter into the yellow.  Yellow is goal to
+achieve, but red is to be avoided.</p><br>
+
+<h1>Shure SLX wireless mic--pastor's mic</h1><p>
+In the example of the pastor's microphone, the indicator for the bodypack's gain switch is on
+the receiver.  On the left-hand side of the receiver there is a small LED bar-graph style VU 
+meter.  If the green lights on this meter never flash, the gain is too low, switch the gain 
+on the bodypack to a higher setting.  If the yellow light on this meter are frequently
+blinking or if the red light is occasionally blinking, switch to a lower gain setting on the bodypack.
+</p><p align="center">
+
+<img src="./Shure_SLX1_bodypack_gain_3.png"><br>
+<i>Above:  Each gain adjustment has some type of indicator to help set it correctly.</i></p><br>
+
+
+<h1>Alan &amp; Heath mixer&mdash;line pad</h1><p>
+
+Following the signal chain from the pastor's microphone, through the pastor's bodypack and the 
+associated receiver, the signal then enters the Allan &amp; Heath mixer.  Once inside the mixer
+the signal passes through the <i>line pad</i> attenuator which is controlled by a small grey 
+pushbutton at the top of the mixer board.  If this switch is down, then the signal is attenuated 
+(weakened) by 20 dB.  (That's quite a lot.)  The general rule is that these buttons should be down 
+(line pad should be in use) unless the gain trim adjustment (discussed next) cannot be done 
+correctly with the button down.  The first amplifier in the mixer needs to be very sensitive 
+in order to handle the weakest microphone signals.  That means that this first amplifier can 
+clip (distort) rather easily.  With the line pad switch the mixer channel can be adapted to 
+any type of signal from the weakest microphone (signals of just a few hundredths of a volt) 
+to headphone-jack level signals from consumer electronics such as a smartphone (a signal of 
+about a volt or two.) and everything in-between.<br><br>
+
+
+<i>Alan &amp; Heath mixer&mdash;gain trim (red)</i><br>
+
+After the line pad, the signal goes through the gain trim adjustment.  This is used to match the
+signal level closely to the characteristic of the channel's first amplifier.  To monitor 
+the signal level at this point, watch the mini-VU meter just above the black fader (slider) for 
+that channel.  You want to see as much green as possible but rarely or never yellow and certainly 
+never red.  If the line-pad button is down and the gain trim is fully clockwise without getting 
+enough signal to activate two green LEDs on the mini-VU then it is necessary to let the line-pad 
+button up (take the line pad out of the circuit and give up its headroom).  Now it will be 
+possible to correctly set the gain trim.  
+<br><br>
+
+Each channel of the mixer should be checked for gain-trim before each event.  This is because 
+vocalists and microphone setups vary.  If you presume that last week's settings will be OK, 
+you will probably run into a situation sooner or later where the board is just hard to manage.  
+A hard-to-manage board might be one that seems to want to break out in feedback with every little
+twiddle or one that just will not produce enough loudness in one or more channels while other channels 
+are blasting through.  A well-gain-trimmed board will usually produce a pleasing mix when most
+faders (black sliders) are between 1/2 and 2/3 of the way up.  In this range the faders will have 
+a good feel.  That is, moving the faders will produce the expected proportional amounts of change 
+in the sound, not sudden unexpected changes. </p><br>
+
+<h1>Alan &amp; Heath mixer&mdash;using the stereo VU meter</h1><p>
+There is a stereo VU meter in the master section of the mixer.  This meter can be used along 
+with the pre-fade listener (PFL) and after-fader listener (AFL) buttons to monitor signal 
+levels at various points in the mixer board.  It has higher resolution than the mini-VU meters 
+built into each channel, so it is well worth learning how to use it.  This stereo VU meter works
+in conjunction with the headphone buss.  The headphone jack near the VU meter sends the signal 
+from the VU meter to your ears.</p></td></tr></table>
+
+<table align="center" BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="590"><tr height="560"><td width="115">
+<img width="109" height="555" src="A_H_GS2400_headphone.png"></td><td align="left" valign="top"><p>
+<br><br><br>
+&larr; The sigal from the stereo VU meter goes to the headphones.<br>
+<br><br><br><br>
+At covenant Church<br>
+&larr; <i>Always</i> set 2TRK REPLAY fully counterclockwise.<br>
+<br>
+At Covenant church<br>
+&larr; <i>Always</i> set 2TRK TO LR up (green LED extinguished).<br>
+&nbsp;&nbsp; (We <i>never</i> want to hear the recording mix in the L-R mix.)<br>
+<br><br>
+Stereo VU meter.<br>
+&larr; Blinking red is bad.  Do something about it.<br>
+&larr; Occasionally bouncing into yellow is marginally OK.<br><br>
+&larr; Bouncing up to &ndash;3 dB or 0 dB is as good as it gets.<br>
+&nbsp; &nbsp; &nbsp; Between &ndash;12 and &ndash;3 dB?  Meh... weak but maybe let it ride.<br>
+&larr; Bouncing up to at least &ndash;12 dB should usually be achieved.<br><br>
+&larr; Bouncing below &ndash;12 dB?  Either it should be quiet or you <br>
+&nbsp;&nbsp; should do something about it.  
+<br><br>
+&larr; Red PFL/AFL LED tells you a PFL or AFL button is down.<br>
+<br><br>
+&larr; Headphone volume control.  Adjust to your personal preference.<br>
+&nbsp;&nbsp; This knob does not change the signal level at any VU meter.<br>
+<br>
+At covenant church<br>
+&larr; This white button should <i>always</i> be down.<br>
+&nbsp;&nbsp; (Sets default monitor mix to the recording mix.)<br>
+<br></td></tr></table>
+<table align="center" BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="590"><tr><td><p>
+<i>Above:  Stereo VU meter and headphone controls in the master section</i><br><br><br>
+
+To use the stereo VU meter and headphones to good advantage, first make sure that all the 
+pre-fader listener (PFL) and after-fader listener (AFL) buttons are up.  These PFL and AFL 
+buttons are near every fader and near every master "send" in the master section.  On the 
+Alan &amp; Heath GL2400 mixer if a button is round (not square or rectangular) it is a PFL 
+or AFL button.  All these round buttons need to be up to start with.  All their associated 
+yellow LEDs must be extinguished.  Additionally, just below the main VU meters in the master 
+section of the mixer board there is a red LED labeled PFL/AFL.  This LED must be extinguished 
+also.  If it is illuminated, there is a PFL and/or AFL button down and a yellow PFL or AFL 
+indicator still illuminated somewhere.<br><br>
+
+Now press the single PFL button for the channel you want to gain trim.  The yellow LED
+near the PFL button should light and the red PFL/AFL LED under the main VU meters should light. 
+The stereo VU meter is now monitoring that channel's gain trim, and that channel only.  Adjust
+the gain trim and if necessary, the line-pad switch, for maximum green with no yellow or a 
+rare yellow flicker.  While you are doing this, you will be able to hear that channel, and 
+that channel only, in the headphones.  Perhaps the headphones are too loud or soft for 
+your taste when the gain trim is adjusted correctly according to the stereo VU meter.  The 
+headphone MONITOR knob (red) below the stereo VU meter is just for you.  Adjust that to your taste.  
+It has no effect on the signal strength anywhere in the mixer board, except for the amount 
+of signal that is sent from the stereo VU meter to your headphones.  <br><br>
+
+After you have gain-trimmed a channel using the stereo VU meter, let that channel's PFL button 
+up again and observe that the PFL/AFL red LED is extinguished again.  The stereo VU meter 
+and the headphones now default to monitoring either the L-R buss or the recording mix 
+(also known as the 2TRK mix), as selected by the small white button just below the headphone 
+MONITOR knob.  In our situation the need to monitor the L-R mix in the headphones is rare 
+because the overall sound balance is in the sanctuary can be much better evaluated by 
+listening to the room without headphones.  Why use technology when there is a more perfect 
+way to monitor that sound!  Thus, for all practical purposes the white square button below 
+the headphone MONITOR knob should always be down so that the headphones and the stereo VU 
+meter monitor the recording (2TRK) mix by default.</p><br>
+
+
+<h1>A bit off-topic:  Gain structure of the recording mix</h1><p>
+
+For a variety of reasons, if all channels have been properly gain-trimmed and a reasonable  
+mix is in progress, the VU levels of the recording mix (2TRK) will take care of themselves 
+and land in &ndash;3 to &ndash;12 range rather naturally.  Thus, monitoring the VU levels 
+of the recording mix is not a priority.  However, listening in the headphones to the 
+recording mix is a good thing to do periodically.  The recording mix normally will track 
+the sanctuary mix, but the AUX 5 and AUX 6 sends may be used to add additional signal to 
+the recording mix.<br><br>
+
+Normally the AUX 5 and AUX 6 sends (Yellow knobs that are above brown knobs) should be off 
+(fully counterclockwise).  There are two exceptions.<br><br> 
+
+<i>Exception 1.)  Spoken word, AUX 5 &amp; AUX 6 each to 2 o'clock</i><br>
+If a channel has a spoken-word signal on it, then turn each of those AUX 5 and AUX 6 
+sends to the 2 o'clock position to couple an <i>extra</i> amount of that signal into 
+the recording mix.  This is done to bring the spoken-word part of the worship service 
+to the same overall loudness as the praise-and-worship parts of the service.  Musical 
+vocal parts and instruments like guitars that are being amplified should not have extra 
+signal coupled into the recording mix.  They are going to be plenty loud in the 
+recording mix because they will be strongly present in the L-R mix.<br><br>  
+
+<i>Exception 2.)  Miking of a musical source for the recording only</i><br>
+It is also possible to couple a signal only into the recording mix.  We usually do this 
+with the piano and the ambience channels (channels 23 and 24) and we do it in stereo.  
+In this case leave the L-R, 1-2, and 3-4 buss coupler buttons near the associated fader up.  
+The signal now cannot get into the L-R main mix nor will it be reproduced in the sanctuary 
+loudspeakers.  But by adding an <i>extra</i> amount of it to the recording mix via the 
+AUX 5 and AUX 6 sends (yellow knobs) these signals can still be mixed into the recording 
+mix via the channel faders.  Very often we use two microphones for these types of signals 
+and mix them in stereo.  Then the right microphone should have the AUX 5 send set to the 
+3 o'clock setting and the AUX 6 send set to full counterclockwise, coupling that signal 
+only into the right channel of the recording mix.  Similarly, the channel with the left 
+microphone should have the AUX 5 send fully counterclockwise and the AUX 6 fader at 
+3 o'clock.  (If only one microphone is used set all three coupler buttons up as for 
+stereo but set the associated AUX 5 and AUX 6 sends each to 2 o'clock.)</p><p><br>
+
+<h1>To be continued</h1></p><p>
+
+
+
+
+<h1 align="right"><a href=../HoW_S.html>Return to HoW Sound homepage</a></h1><p>
+		   
+		   
+		 
+<br><br><br></td></tr></table>
+</BODY>
+</HTML>
+
+
+
+
