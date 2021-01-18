@@ -48,7 +48,8 @@
 
 How does one get the loudness correct when there are so many ways to adjust 
 loudness?  <i>Gain Structure</i> is the theory behind getting the loudness of 
-the signals in the mixer board to optimal levels at all points.<br><br>
+the signals in the mixer board to optimal levels at all points.  (Gain Structure 
+is also known as <i>Gain Staging</i><br><br>
 
 Imagine that the sermon is in progress.  Only one microphone is being used to pick 
 up the pastor's voice, the ear-set wireless microphone.  Also imagine that the sound 
@@ -97,15 +98,26 @@ is the explanation for why the adjustment should be done this way in routine ope
 specifically, <i>gain structure explains how to set all the other possible adjustments correctly
 so that the channel fader (black slider) does what we expect.</i></p><br>
 
+
 <h1>Description of gain structure</h1><p>
+
 The <i>signal chain</i> is the sequence of circuits and adjustments that the signal passes through 
 on the way to the loudspeaker, recording, video stream, or any other final destination.  At every 
-point along the way of the signal chain the signal must be strong enough to overcome electronic 
-noise such as hum coupled into microphone cables, static background noise in a radio-channel, etc.
-The signal must stay strong enough to swamp out these noises.  On the other hand, there is a 
-maximum amount of signal that is possible at each point in the signal chain.  If the signal ever 
-goes over that maximum level, distortion sets in.  At every point along the way in the signal chain, 
-the signal must not be too strong or too weak.<br><br>
+point along the way of the signal chain the signal must be at an acceptable level, not too strong 
+and not too weak.<br><br>
+
+&bull; If the signal is <font color="red">too strong</font>, it becomes <font color="red">distorted</font> at that point.  No gain adjustment 
+after that point can remove the distortion.  Furthermore, no gain adjustment before this point 
+can eliminate the distortion without adding needless noise.  There is only one gain adjustment 
+that will correctly mitigate the problem of the signal being too strong at this point.<br><br>
+
+&bull; If the signal is <font color="blue">too weak</font> at some point, it cannot overpower background <font color="blue">noise, hiss, 
+buzzes and/or humming</font> sounds that exist at extremely low levels in any electronic circuit. 
+(Even in digital circuits quantization noise becomes an issue.)  Once this noise is apparent 
+in the signal, no gain adjustment after this point can eliminate the noise.  Furthermore, no 
+gain adjustment before this point can solve the noise problem without adding needless 
+distortion.  There is only one gain adjustment that will correctly mitigate the problem of 
+the signal being too weak at this point.<br><br> 
 
 Getting the signal strength within bounds all along the signal chain starts at the very first 
 gain adjustment.  In the case of the pastor's mic example above, that is the gain switch on the 
@@ -195,7 +207,9 @@ easy to make it worse.)  The OBS software that receives the USB audio stream use
 the louder portions of the signal should drive the VU meter into the yellow.  Yellow is the goal to
 achieve, but red is to be avoided.</p><br>
 
+
 <h1>Shure SLX wireless mic--pastor's mic</h1><p>
+
 In the example of the pastor's microphone, the indicator for the bodypack's gain switch is on
 the receiver.  On the left-hand side of the receiver there is a small LED bar-graph style VU 
 meter.  If the green lights on this meter never flash, the gain is too low, switch the gain 
@@ -205,6 +219,70 @@ blinking or if the red light is occasionally blinking, switch to a lower gain se
 
 <img src="./Shure_SLX1_bodypack_gain_3.png"><br>
 <i>Above:  Each gain adjustment has some type of indicator to help set it correctly.</i></p><br>
+
+
+<h1>Shure LX wireless mics&mdash;handheld wireless mics</h1><p>
+Our handheld wireless microphones also have gain trim adjustments in them.  The VU meter that 
+responds to the gain trim in the microphone is the "AUDIO" VU meter on the corresponding 
+receiver.</p><p align="center">
+
+<img width="580" src="./Shure_LX2_gain_pot.png"><br>
+<img width="580" src="./Shure_LX4_receiver_VU.png"<br>
+<i>Above:  Each gain adjustment has some type of indicator to help set it correctly.</i><p><br>
+
+Many wireless receivers have additional gain adjustments on the receiver itself.  One can be
+seen on the front panel of the "LX receiver" shown above, labeled "LEVEL."  In our case, Turn 
+this front-panel level control all the way up.  Then adjust the corresponding gain trim at the 
+top of the mixer board (red) as usual.  Shure provides this front-panel LEVEL control just in 
+case the device the receiver is connected to does not have a gain trim adjustment.  The only 
+reason to set the LEVEL control on the front panel of the receiver below maximum is if you 
+cannot prevent overloading (red LED flashing or audible distortion) any other way.</p><br>
+
+<h1>Electro-acoustic musical instruments</h1><p>
+
+Some electro-acoustic musical instruments have gain controls on them.  Musicians may use 
+these for creative control.  However if you are having difficulty getting enough signal at 
+the first gain trim of the sound board (see next paragraph), an adjustment on the musical 
+instrument is the likely problem.  Most instruments cannot produce such a strong signal 
+that it necessarily overloads a mixer board, but weak signals can be an issue.  With this 
+in mind, <u>if possible, ask the musician to turn the gain control on the instrument all 
+the way up</u>, or at least all the way up for the parts that the musician wants to be the 
+loudest.  Guitars are not the only electro-acoustic instruments that might have
+gain controls.  Violins, saxophones, and many acoustic instruments equipped with a pickup, can 
+have gain controls.</p><p align="center">
+
+<img width="580" src="MISIALIGNXT.jpg"><br>
+<i>Above: An Electro-acoustic guitar with gain and tone controls.</i><br>
+<small><sub><font color="grey">Photo source, <a href="https://www.mooloolabamusic.com.au/mi-si-align-xt-battery-free-preamp-pickup-system-f">Mooloolaba Music</a>, fair use.</font></sub></small></p><br>
+
+
+<h1>Electric musical instruments</h1><p>
+
+Most electric musical instruments have several gain controls.  Musicians often deliberately 
+cause distortion with these gain controls as a creative effect.  Just be sure the signal 
+arriving at the mixer boards is at a normal level.  Quite often the electric instrument
+drives an "amplifier" located on-stage near the performer (really an amplifier plus a loudspeaker) 
+and a microphone is placed in front of the amplifier's loudspeaker to get the signal to the 
+sound system.  If this is the case, the gain structure issues are all the normal issues that 
+relate to the type of microphone being used.<br><br>
+
+Sometimes an electric instrument (electric guitar, electric violin, etc.) is connected to the 
+sound system via a <i>direct input box</i> (DI box).  In this case, if the signal at the mixer board 
+is too weak, ask the musician to turn up the last gain control in the chain of controls that they 
+have.  If this control is already all the way up, ask them to turn up the next gain control back 
+in the chain, etc. until you have enough signal.<br><br>
+
+Some musical instruments, especially keyboards, have stereo direct outputs.  (Labeled <i>right</i>
+and <i>left</i>)  If you want a monoaural signal, connect to only the <i>left</i> output.  If 
+the <i>right</i> output sockets are all empty, it is an industry convention that the <i>left</i> 
+outputs shall be automatically mixed down to mono.  As soon as something is plugged into any 
+<i>right</i> output then all the outputs become dedicated to their labeled channels.  If you 
+plug into only a <i>right</i> output you get only half the signal, whereas if you plug into only
+a </i>left</i> output you get the sum of the left and right outputs.</p><p align="center">
+
+<img src="Keyboard_back_panel.png"><br>
+<i>Above:  A typical musical instrument back panel with stereo line outputs</i></p><br>
+
 
 
 <h1>Alan &amp; Heath mixer&mdash;line pad</h1><p>
@@ -317,6 +395,113 @@ listening to the room without headphones.  Why use technology when there is a mo
 way to monitor that sound!  Thus, for all practical purposes the white square button below 
 the headphone MONITOR knob should always be down so that the headphones and the stereo VU 
 meter monitor the recording (2TRK) mix by default.</p><br>
+
+
+<h1>Alan &amp; Heath&mdash;Creating the L-R mix</h1><p>
+
+Once all the channels are properly gain trimmed (red knobs at the top of the mixer board) 
+then most of the rest of the gain structure falls into place much more easily.  Furthermore,
+most mixer boards are desinged with extra gain margins on the intermediate points in the 
+mixer board, so even if there is a minor gain structure error in the middle of the chain 
+it will create little or no distortion or hiss or hum.  The discussion that follows assumes
+that each channel is properly gain-trimmed.<br><br>
+
+For the moment, assume that no groups are being used.  For each channel that has a signal 
+that should be present in the main mix (sent everywhere--sanctuary, fellowship hall, 
+nursery, Facebook stream, recording&mdash;everywhere) press down the white "LR" button 
+near the associated channel fader (black slider).  Then push the fader up to near the 
+0 dB line.  In the example of the pastor's sermon, there is only one microphone that has 
+a significant amount of signal, the pastor's microphone.  For a  properly gain-trimmed 
+channel, 0 dB represents a nominal mix, so usually you will find that a pleasing mix will 
+be found with the faders near 0 dB, plus or minus a bit to suit your judgement.<br><br>
+
+The gain structure issue now is to be sure the L-R busses have nominal levels of signal 
+on them.  Above the L fader (left-most yellow slider) you will find an AFL button.  Press 
+it down and look at the stereo VU meter.  It should be bouncing up to at least &ndash;12 
+and no higher than 0 dB.  (Be sure no other PFL or AFL buttons are down.  The meter is 
+only accurate when exactly one PFL or AFL is in use.)  Good gain structure on the LR 
+busses will almost automatically happen if the channel gain trims are correct, so it is 
+not urgent to keep monitoring this.  But if you suspect a problem, this is one place to 
+check.  Check each of the L and the R channels individually and one-at-a-time.  If signal 
+levels are too high, pull down about the same amount on <i>all</i> the channel faders 
+(black), and push up if the signal is too low.  <br><br>
+
+You will probably notice that as more and more channels are opened up with significant 
+signals on them, the lower the channel faders (black) need to be to get the best mix.
+For example, in a praise and worship team situation you might have four vocalists with 
+microphones, a guitar, a piano with two microphones on it, a cello, and a flute, all with
+mics.  Now if each of these are properly gain trimmed and if each channel is coupled to 
+the LR busses, and if each channel fader is set at 0 dB, there will be much more than 
+0 dB, maybe +9 dB or so on the LR busses because of the multiplicity of signals flowing 
+onto those LR busses.  Just like a river with many tributaries gets wide, the LR busses
+with many signals flowing into them can get overloaded.  But if you just pull back all 
+the channel faders (black) to a little below 0 dB, the sum of all their signals will end 
+up being close to 0 dB on the LR busses.  Fortunately, our Alan &amp; Heath mixer has 
+lots of headroom (+16 dB according to the user's manual), so gain structure errors do 
+not become very noticeable on these mix busses, but the principle remains valid for 
+getting the best possible results.</p><br>
+
+<h1>Alan &amp; Heath&mdash;Creating group mixes.</h1><p>
+
+If you elect to use groups, couple the signals to the 1-2 or 3-4 groups using the small 
+grey buttons near the channel faders.  Usually only one (or zero) of these three buttons 
+should be down for each channel.  (In our context, pressing two or more of these on one
+channel will probably create complications in balancing out the mix.)  The group busses 
+can be checked for proper signal levels just like the L-R busses.  Press down one of the 
+AFL buttons above a group fader (red slider) to check that signal.  Similarly, if 
+corrective action is needed, all the channel faders feeding that group need to be adjusted 
+in unison.</p><br>
+
+<h1>Alan &amp; Heath&mdash;master outputs.</h1><p>
+
+<i>Sanctuary mix master</i><br>
+After the main mix is created on the LR busses we route that to various places using 
+outputs from the master (middle) section of the mixer board.  The Sanctuary mix is 
+derived by mixing the LR busses equally into one monaural mix.  This output is controlled
+by the "M" fader (yellow) in the master section.  <u>Normally this should be set at 0 dB</u>, 
+but if you want to make it louder or softer in the sanctuary, this is overall "program 
+volume control" for that purpose.  Why might you want to do this?  Maybe the sound system
+is being used for an event that is happening exclusively in the fellowship hall.  Then 
+by sliding this "M" fader all the way down the hollow echoey distant sound of the sanctuary 
+speakers will not bleed into the fellowship hall.  You can monitor this gain structure 
+of this output using the AFL button just above the "M" fader.<br><br>
+
+<i>Fellowship hall mix master</i><br>
+Another master output is from the bottom of the "matrix" section in the top left area
+of the mixer.  The "MTX1" fader (red knob) provides this output.  Normally we set this at 
+<br><u>0 dB (3 o'clock)</u>, but if you want to adjust the loudness in the fellowship hall only, this is the
+"program volume level" knob for that.<br><br>
+
+<i>Basement mix master</i><br>
+Another master output is from the bottom of the "matrix" section in the top left area 
+of the mixer.  The "MTX2" fader (red knob) provides this output.  We have speakers in 
+the nursery, the basement hallway area outside the nursery, and the youth room.  The 
+"MTX2" master is the "program volume level" knob for these speakers. Normally we set this
+at <u>0 dB (3 o'clock)</u><br><br> 
+
+<i>Stereo recording mix masters</i><br>
+Finally in the master section, "MTX3" (left) and "MTX4" (right) provide a stereo output
+for the CD recorder and for the Facebook stream and the hearing loop system.  This stereo 
+output goes to the RANE (brand) distribution amplifier where there are a number of additional 
+gain settings and outputs.  The RANE distribution amplifier is set up such that if you send
+it a signal that is properly gain structured, all the signals within the RANE unit will also
+be properly gain structured as well as all the signals delivered from that unit to other 
+devices such as the CD recorder, Facebook stream, and the hearing loop.  The "MTX3" or 
+"MTX4" master outputs can be checked for gain structure by pressing an AFL button near 
+the "MTX3" or "MTX4" master knobs (red).  Then the stereo VU meter will show the level at 
+this output and the headphones will allow you to listen to this signal.  Normally we set 
+these "MTX3" and "MTX4" masters at <u>0 dB (3 o'clock)</u>.<br><br>
+
+One pair of outputs from the RANE distribution amplifier, containing the final stereo recording mix, 
+is routed back to the Alan &amp; Heath mixer via the "2TRK" input to the mixer.  This 
+allows the final recording mix to be the default monitoring heard in the headphones and 
+it also allows the Alan &amp; Heath's stereo VU meter to monitor the final gain structure 
+of the stereo recording mix at the outputs of the RANE distribution amplifier.<br><br> 
+
+If any of these master outputs are showing signals that are too strong or two weak it is 
+quite unlikely that these masters are the best places to make the adjustment.  The most 
+likely culprits are channel gain trims that have not been carefully set and/or inappropriate 
+levels on the LR busses due to a mix that is overall to strong or too weak.</p><br>
 
 
 <h1>A bit off-topic:  Gain structure of the recording mix</h1><p>
