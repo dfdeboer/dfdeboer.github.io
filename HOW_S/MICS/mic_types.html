@@ -756,23 +756,22 @@ difficult to maintain high-fidelity audio reproduction.  <br><br>
 
 A microphone that is completely insensitive to directionality is said to be 
 <i>omnidirectional</i>.  The next step in increasing the directionality of the 
-microphone results more in a microphone that rejects sounds from the back than 
-in a microphone that is highly sensitive to the direction from which it receives 
-sound.  This type of microphone accepts sound from lots of directions, except 
-from directly from the back side, from which it is designed to reject sound.  
+microphone results more in a microphone that rejects sounds from the back.
+This type of microphone accepts sounds from lots of directions, except 
+directly from the back side, from which it is designed to reject sound.  
 This type is called <i>cardioid</i>.  The next step of increased directionality 
 has a goal of narrowing the angle of acceptance of sound as a higher priority than
 rejecting sound from the back of the microphone.  This is a <i>super-cardioid</i>, 
-also known as an <i>hyper-cardioid</i> microphone.  Making the microphone still 
-more directional means mostly making it reject sound from the sides than making 
-it reject sound from the back.  In fact, a <i>bi-directional</i> microphone, 
-also known as a <i>figure 8</i> microphone, picks up sound equally well from the
-front and the back but rejects sounds from the sides, especially sounds arriving 
-from 90&deg; off-axis.  Finally, microphones that reject sounds from almost all 
-angles except those in a narrow range of angles from directly on-axis are called 
-<i>shotgun</i> microphones.  Shotgun microphones will tend to be the largest and 
-lowest-fidelity microphones whereas omnidirectional microphones will be the easiest
-to miniaturize and will tend to deliver the highest-fidelity.<br><br>  
+also known as an <i>hyper-cardioid</i> microphone.  Making the microphone narrow 
+the pick-up angle from the front causes it to mostly reject sound from the sides.  
+In fact, it will pick up equally well from the front and from the back, but not 
+at all from the side.  This is a <i>bi-directional</i> microphone, 
+also known as a <i>figure 8</i> microphone.  Finally, microphones that reject sounds 
+from almost all angles including from the rear and accepts only sounds in a narrow 
+range of angles from directly on-axis are called <i>shotgun</i> microphones.  
+Shotgun microphones will tend to be the largest and lowest-fidelity microphones 
+whereas omnidirectional microphones will be the easiest to miniaturize and will 
+tend to deliver the highest-fidelity.<br><br>  
 
 Before explaining each of the different types of directional microphones it is 
 helpful to understand how the direction of a sound wave is evident to a microphone.  
@@ -811,7 +810,12 @@ how microphones are made directional and how to make best use of directional
 microphones. <br><br> 
 
 <img src="Omni_logo.png"><i><b>Omnidirectional</i></b><br>
-
+<ul>
+   <li>All directional, rather "musical" to most ears.</li>
+   <li>Resistant to wind noise and plosives in speech</li>
+   <li>Simple construction leads to high-accuracy sound pick-up</li>
+   <li>Keep omnis close to sound sources in live-sound applications, else feedback.</li>
+</ul>
 "Omni" means "all."  An omnidirectional microphone is "all-directional."  The 
 important aspect of an omni directional microphone is that it responds to the 
 pressure waves of the sound-field only at a single point in the three-dimensional 
@@ -839,6 +843,89 @@ changes at the sensitive point of the microphone are equally easily sensed.</i>
 >d<small><small>DB</small></small></span>.<br>
 <br><p>
 
+Omnidirectional microphones are somewhat insensitive to wind noise (e.g. outdoors) 
+and plosives from "p," "b," "s," and "t" sounds.  This is because wind (air velocity) 
+does not correspond directly to waves of pressure or rarefaction.  This is an 
+important advantage of omnidirectional microphones.  Wind rushing over the housing
+of the microphone can produce turbulence that can create some pressure-waves thus
+inducing some wind noise, so wind screening is still appropriate in many situations, 
+but in general, omnidirectional microphones resist wind noise better than directional
+microphones.<br><br>
+
+The directional pattern of a microphone can be expressed as a polar plot of gain 
+relative to on-axis gain.  In the plot below, the "0" degree mark (where 3 o'clock 
+would be on an analog clock face) represents the ability of the microphone to 
+pick up sounds on-axis.  (The ability to pick up sounds with the microphone pointed
+directly at the sound.)  On all polar patterns, this has a unit of "1" or 100%, 
+meaning that for sounds approaching the microphone from this angle (zero degrees) 
+relative to the axis, 100% or 1.0 units of the sound will be picked up.  For an 
+omnidirectional microphone the plot is uninteresting because, as the heavy (blue) 
+line indicates, the microphone picks up 100% of the sound when it arrives at any
+angle.  The plot is shown here mainly for comparison to the plots for directional
+microphones.  
+
+<p align="center"><img src="Omni.png"><br>
+<i>Above:  The ideal omnidirectional pattern.  The numbers around the outside of the 
+plot show the angle, in degrees, from which a sound may arrive.  The numbers between 
+0 and 1 on the radius to the right of 90 degrees label the fractional amount of sound 
+that might be picked up relative to an on-axis arrival.  If you multiply this number 
+by 100 you get the percentage of sound that might be picked up relative to an on-axis 
+arrival.  The heavy (blue) circle around the outside indicates that an omnidirectional 
+microphone picks up sound <br>equally well from any angle.</i>
+<small>Illustration by Prof. </small><span style="font-family:'Garamond'"
+>d<small><small>DB</small></small></span>.<br>
+<br><p>
+
+Most omnidirectional microphones have a directional pattern very close to the ideal
+pattern shown above for frequencies below 5 kHz.  Considering that the highest note 
+on a piano is about 4 kHz, this covers all the fundamental frequencies and even some 
+harmonics of voices and most musical instruments.  However not everything is so 
+perfect.  Most omnidirectional microphones, especially those in larger housings, 
+show some slight lack of sensitivity from the rear as frequencies go above 5 kHz.  This 
+will matter mostly for miking high-frequency instruments such as a piccolo or 
+cymbals, tambourines, etc.  The plot below shows a pattern that is more typical 
+of an actual omnidirectional microphone at about 8 kHz.  
+
+<p align="center"><img src="OmniPractical.png"><br>
+<i>Above:  An achievable practical omnidirectional pattern for high frequencies.
+This plot could be typical of 8 kHz sounds.  The numbers around the outside of 
+the plot show the angle, in degrees, from which a sound may arrive.  The numbers 
+between 0 and 1 on the radius to the right of 90 degrees label the fractional 
+amount of sound picked up relative to an on-axis arrival.  The heavy 
+(blue) nearly circular line indicates that a practical omnidirectional 
+microphone picks up a little less high-frequency sound from the rear.</i>
+<small>Illustration by Prof. </small><span style="font-family:'Garamond'"
+>d<small><small>DB</small></small></span>.<br>
+<br><p>
+
+
+The slight directional effect of omnidirectional microphones is usually so minimal 
+as to be negligible for all except a few applications, and even then, omnidirectional 
+microphones handle off-axis sounds with less distortion than any directional microphone.  
+For acoustic instruments on a quiet stage (no other nearby competing instruments or 
+voices) omnidirectional microphones typically produce especially pleasing results 
+relative to equally expensive directional microphones. But those are some seriously 
+restrictive qualifiers in most live-sound environments.  Omnidirectional microphones 
+are more common in a studio environment for recorded sound.  Omnidirectional microphones 
+in live-sound applications are mostly limited to lavalier and ear-set microphones where 
+their ability to be miniaturized matters.  <br><br>
+
+If omnidirectional microphones are used in live-sound reinforcement their ability to 
+pick up sound from all angles means they are more open to picking up feedback.  This is 
+a serious strike against the routine use of omnidirectional microphones in live-sound 
+reinforcement.  This disadvantage may be overcome by keeping the microphone very close
+to the sound source, which is exactly what ear-set and lavalier microphones do.  (Also, 
+whenever possible keep the mic behind the loudspeaker so that the directional pattern 
+of the loudspeaker directs amplified sound away from the microphone.) 
+<br><br>
+
+<!--<img src="Figure_eight_logo.png"><i><b>Figure-of-eight</i></b><br>
+Before discussing cardiod and super-cardiod microphones, consider Figure-eight microphones.  
+In a sense, this type of microphone is exactly the other end of the directionality 
+sp-->
+
+
+
 
 
 
@@ -853,9 +940,7 @@ changes at the sensitive point of the microphone are equally easily sensed.</i>
 
 Planned for the future on this page:<br>
 <br>
-2.) More on Directionality<br>&nbsp; &nbsp; &nbsp; &nbsp; 
-    More on omnidirectional microphones<br>&nbsp; &nbsp; &nbsp; &nbsp; 
-    Cardioid, super-cardioid, bi-directional, shotgun microphones
+2.) Cardioid, super-cardioid, bi-directional, shotgun microphones<br>
 3.) Audio Fidelity<br>
 -Capsule technologies<br><br>
 
