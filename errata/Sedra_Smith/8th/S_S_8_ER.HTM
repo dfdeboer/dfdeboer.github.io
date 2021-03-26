@@ -14,7 +14,7 @@
 <P align="center"><A HREF="../../../index.html">
                    Professor De Boer</A>'s list of<br><a href="../../../ERRATA/err.htm"> 
                        TEXTBOOK ERRATA</a><br>
-                    (last update 2/27/2021)<br> 
+                    (last update 3/26/2021)<br> 
                                <br>
     <img src="Sedra_Smith_8th_Cover_120x150.jpg" width="120" height="150"
                    alt="Textbook cover thumbnail"><br>
@@ -495,6 +495,19 @@ Appendix L, Page L-8, Answer to Problem 8.2.</b><br>
    40 k&Omega;, and +5 &mu;A.<br><br>&nbsp; &nbsp; &nbsp; &nbsp; 
    <i><small>(Posted 2/02/2021)</small></i><br><br>
             
+                                           <A NAME="L11_10P48"></A><b>
+Appendix L, Page L-11, Answer to Problem 10.48.</b><br>
+   The numerical answers given are poorly rounded.  The conclusion 
+   in favor of the method of open-circuit time-constants is wrong.
+   A correct answer is:<br><br> &nbsp; &nbsp; &nbsp; &nbsp;
+   
+        &ndash;143 V/V; 3.2 MHz; 2.47 MHz; The first estimate, from the<br> &nbsp; &nbsp; &nbsp; &nbsp;
+		dominant pole approximation, is likely to be the best because a<br> &nbsp; &nbsp; &nbsp; &nbsp;
+		loop of capacitors invalidates the accuracy of the method of <br> &nbsp; &nbsp; &nbsp; &nbsp;
+		open-loop time-constants.<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+		 
+   <i><small>(Posted 3/26/2021)</small></i><br><br>
+            
 <!-- needs further investigation         <A NAME="L12_10P89"></A><b>
 Appendix L, Page L-12, Answer to Problem 10.89(b).</b><br>
    The answer given for part (b) is wrong.<br>
@@ -779,6 +792,83 @@ Page 569, Problem 8.55.</b><br>
 	  <i>r<sub>o1</sub></i>, <i>r<sub>o2</sub></i>, and <i>r<sub>o3</sub></i>
 	  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
       <small><i>(Posted 2/03/2021)           </i></small><br><br>
+	  
+	                                       <A NAME="P703_A"></A><b>
+Page 703, Section 10.3, The Method of Open-Circuit Time Constants</b><br>
+   The presentation of this method is rather abbreviated in this 
+   textbook, which may lead students to erroneous conclusions.  This 
+   method has some risks of producing bogus results if one is not 
+   careful to first confirm that the circuit satisfies the conditions 
+   of the theorem of Open-circuit Time Constants.  Here is a statement
+   of the theorem:<br><br> &nbsp; &nbsp; &nbsp; &nbsp;
+   
+      Each of the high-frequency poles of a circuit can be found exactly <br> &nbsp; &nbsp; &nbsp; &nbsp;
+      <i>if</i>, in the small-signal model there are no inductors and any <br> &nbsp; &nbsp; &nbsp; &nbsp;
+	  capacitors in series or parallel are reduced to single equivalents <br> &nbsp; &nbsp; &nbsp; &nbsp;
+	  and there are no loops that involve only capacitors.  And if one <br> &nbsp; &nbsp; &nbsp; &nbsp;
+	  prepares the circuit for open-circuit time-constant analysis by <br> &nbsp; &nbsp; &nbsp; &nbsp;
+	  taking these steps:<br> &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp;
+	  
+	  1.) Zero all signal sources.<br> &nbsp; &nbsp; &nbsp; &nbsp;
+	  2.) Open (set to zero farads) all the capacitors that<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	      influence the high-frequency response.<br> &nbsp; &nbsp; &nbsp; &nbsp;
+      3.) Short all other capacitors.<br><br> &nbsp; &nbsp; &nbsp; &nbsp;  
+	  
+	  <i>Then</i>, for each of the capacitors, <i>C<sub>i</sub></i> that were opened, find the <br> &nbsp; &nbsp; &nbsp; &nbsp;
+	  Thevenin equivalent resistance <i>R<sub>i</sub></i> seen by each <i>C<sub>i</sub></i> and find the <br> &nbsp; &nbsp; &nbsp; &nbsp;
+	  associated pole frequency, &omega;<i><sub>i</sub></i> as the reciprocal of the product <br> &nbsp; &nbsp; &nbsp; &nbsp;
+	  (time constant), to wit. . . <br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	   
+	             &omega;<i><sub>i</sub></i> = 1/(<i>R<sub>i</sub></i><i>C<sub>i</sub></i>)<br><br>
+				 
+   After the pole frequencies are found from the open-circuit 
+   time-constant theorem one can then derive from them 
+   the denominator of the high-frequency transfer function, <i>F<sub>H</sub></i>(<i>s</i>)
+   and/or apply an approximation such as the dominant pole approximation 
+   (page 704) or the approximation shown on page 705 as Equation 10.63 to find the 
+   half-power frequency, &omega;<i><sub>H</sub></i>.<br><br>
+   
+   Furthermore, the approximation chosen is not part of the 
+   open-circuit time-constant method.  The open-circuit time-constant
+   method just gives a list of pole frequencies (or a list of 
+   time-constants).  One is free to do as one pleases with that 
+   list.  In addition to deriving the denominator of the high-frequency 
+   transfer function, or using a dominant pole approximation, or 
+   using equation 10.63, there is another approximation, not mentioned 
+   in the textbook, that can be used.  This other approximation can 
+   be proven to be optimistic.  However, it usually gives more accurate 
+   results than equation 10.63. (It always yields a result equal to 
+   or greater than the actual half-power frequency.) The approximation is: <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   
+   <img src="OptimisticApprox.png"><br>
+   
+   The theorem of open-circuit time-constants and the various 
+   approximations that may be applied to the list of poles may 
+   be used even when the theorem's conditions do not exactly 
+   apply. However, one must be aware that if there are loops of 
+   capacitors then the open-circuit time-constant method will 
+   find more poles than actually exist!  So, of course, the method 
+   cannot be exact in that case.  Also, the method ignores any 
+   zeros that may exist.  But if the extra pole(s) and or zero(s) 
+   is (are) not nearly dominant, then by coincidence the 
+   approximation of the half-power frequency can still be 
+   quite good.<br><br>
+   
+                               <font color="green"><small>
+   (See for reference Grey and Searle, <i>Electronic Principles: 
+   Physics, Models, and Circuits.</i>, Wiley, 1969, p531 and 
+   following.)</font></small>
+   
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+   <small><i>(Posted 3/26/2021)           </i></small><br><br>
+   
+   
+   
+   
+   
 
                                             <A NAME="G18_A"></A><b>
 Appendix G, page G-18, Problem G.9</b><br>
