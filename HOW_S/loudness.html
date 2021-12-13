@@ -89,7 +89,7 @@ level in pascals divided by 20 &mu;Pa.  The formula for conversion is:<br><br>
 dB-SPL = 20log<sub>10</sub>([SPL in Pa]/[20 &mu;Pa])<br><br>
 
 Using this formula we find these typical sound-pressure levels:<br>
-194 dB-SPL is the maximum possible sound pressure level in a normal atmosphere.<br>
+191 dB-SPL is the maximum possible sound pressure level in a normal atmosphere.<br>
 120 dB-SPL is the threshold of pain (discomfort&mdash;not outright pain).<br>
 110 dB-SPL The audience experience about 50 feet from the stage at a rock concert<br> &nbsp;
  85 dB-SPL A factory's production area.  (OSHA regulations become an issue!)<br> &nbsp;
@@ -119,8 +119,8 @@ world of noise.  </p><br>
 
 <h1>SPL Is Not Loudness!</h1><p>
 
-BUT. . . dB-SPL <i>is not</i> a good measure of loudness.  Consider that using a vacuum
-cleaner might seem louder than working in a "factory production area."  As another example,
+BUT. . . dB-SPL <i>is not</i> a good measure of loudness.  Consider that using a "vacuum
+cleaner" might seem louder than working in a "factory production area."  As another example,
 if you could hear the (normal) breathing of a person 3 feet away from you (easy if you 
 are in an anechoic chamber) you would think the breathing is unusually loud, but the same
 breathing in most situations is completely "silent," masked by other sounds.  Or you 
@@ -136,7 +136,7 @@ the programming?  This is possible because loudness, being a complex issue, is n
 is measured and regulated.  Voltages are actually what is regulated, limiting 
 sound-pressure levels.</p><br><p>
 
-<h1>Frequency changes loudness</h1><p>
+<h1>Loudness depends on frequency and dB SPL</h1><p>
 
 In the 1930's engineers at Bell Labs experimented to try to discover a 
 relationship between sound pressure level (in dB-SPL) and the resulting loudness.  They
@@ -154,6 +154,37 @@ do not account for the effects of age.  Any individual person's hearing can devi
 significantly from these curves.<br><br>
 
 <img width="500" height="449" src="500px-Lindos1.svg.png"><br><br>
+
+As explained above, the unit of loudness called the <i>phon</i> is derived from sound 
+pressure level in dB-SPL and from frequency.  The Fletcher-Munson curves express this definition.  
+A related but non-logarithmic measure of loudness that one might occasionally encounter 
+is the <i>sone</i>.  One sone is 40 phons, 2 sones is 50 phons, 4 sones is 60 phons, etc.
+Each doubling of the sones adds (about) 10 phons to the perceived loudness of a sound.  Phons 
+and dB SPL are the units usually encountered in audio engineering, so no further mention 
+of sones will be included here.  (Sones are used in some industrial noise analysis 
+contexts.)  There are still other units of loudness as well, but since they are not commonly 
+used in audio engineering, they will not be discussed here.  <br><br>
+
+<h1>Loudness compensation</h1><p>
+
+Because loudness depends on frequency, artificially changing the volume-level of a sound 
+will change the way we percieve the sound's tonal balance.  Every time the "volume" control
+of a radio is adjusted, our ears perceive the change as if the bass and treble controls of 
+the radio are also adjusted.  Turning the volume up increases our relative perception of 
+bass and treble relative to the midrange frequencies.  The sound seems more full and 
+pleasing to most people when the volume is turned up.  Conversely, turning the volume down 
+decreases our ability to perceive the bass and treble sounds relative to the midrange 
+sounds and the sound seems thin and low-quality.  Some radios and audio consumer-grade 
+audio equipment includes special tone-control circuits that automatically adjust themselves 
+as the volume control is adjusted to compensate for this nature of human hearing.  Usually 
+the "volume" control is then labeled as a "loudness" control instead to inform the 
+user that a loudness compensation circuit are included.  Loudness compensation is 
+usually included only on the more expensive consumer-grade audio equipment.  <br><br>
+
+Loudness compensation is almost never included in professional equipment intended for 
+live-sound reinforcement.  It would be inappropriate to include it in that context since 
+live-sound is the reference against which loudness compensation is supposed to adjust 
+itself.<br><br>
 
 The Fletcher-Munson curves show that human hearing has a more uniform 
 frequency response at high loudness levels.  Suppose you attend a live worship service 
@@ -176,12 +207,13 @@ requires 60 dB-SPL (20 dB-SPL less than the live sound) and 55 Hz requires 90 dB
 music will have lost 10 phons of loudness in the reproduced music if <i>all</i> frequencies
 are reduced 20 dB-SPL from the live sound level.  Thus hi-fidelity sound systems 
 have bass and treble tone controls so that you may boost the low and high frequencies 
-back to a perceived normal level.  (A few high-fidelity sound systems have a circuit 
-connected to the volume control to automatically boost the bass and treble frequencies
-as the volume is turned down.  Although perfect calibration of such an automatic 
-system is unlikely, this is usually a helpful feature, if it is provided.  This 
-feature, if available, is called <a href="https://en.wikipedia.org/wiki/Loudness_compensation"
->loudness compensation</a>.  It can usually be turned off, if desired, with a switch.)<br><br>
+back to a perceived normal level.  A few high-fidelity sound systems have a loudness 
+compensator circuit connected to the volume control to automatically boost the bass 
+and treble frequencies as the volume is turned down.  Although perfect calibration 
+of such an automatic system is unlikely, this is usually a helpful feature, if it is 
+provided.  Loudness compensation can usually be turned off, if desired, with a switch.
+More about loudness compensation can be found at the Wikipedia: <a href="https://en.wikipedia.org/wiki/Loudness_compensation"
+>loudness compensation</a>.  <br><br>
 
 The types of tone-control adjustments found on home stereo equipment are not the types 
 of adjustments needed in a live-sound or live-stream mixing environment.  They are 
