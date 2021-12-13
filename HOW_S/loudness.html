@@ -86,9 +86,21 @@ pea, el").  It is twenty times the base-ten logarithm of the ratio of the sound-
 level in pascals divided by 20 &mu;Pa.  The formula for conversion is:<br><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 
-dB-SPL = 20log<sub>10</sub>([SPL in Pa]/[20 &mu;Pa])<br><br>
+dB-SPL = 20log<sub>10</sub>([SPL in Pa RMS]/[20 &mu;Pa])<br><br>
 
-Using this formula we find these typical sound-pressure levels:<br>
+The formula above requires the sound pressure level to be in "Pascals RMS."  
+To convert Pascals to Pascals RMS, take the square root.  The maximum possible peak 
+SPL, as explained above, is about 101000 Pa.  To convert this to Pa RMS take the 
+square root of 101000.  This gives about 71500 Pa RMS.  Using the formula above 
+one finds that 71500 Pa RMS is equivalent to 191 dB-SPL.  The conversion to Pa RMS (take the 
+square root of the peak) is accurate for sounds with sinusoidal wave shapes and 
+is often acceptably accurate for any audio waveshape that is not highly impulsive.  
+RMS is a type of average which is waveshape dependent.  More details are available
+in the Wikipedia:  <a href="https://en.wikipedia.org/wiki/Root_mean_square"
+>Root Mean Square</a><br><br>
+
+
+Using the formula above we find these typical sound-pressure levels:<br>
 191 dB-SPL is the maximum possible sound pressure level in a normal atmosphere.<br>
 120 dB-SPL is the threshold of pain (discomfort&mdash;not outright pain).<br>
 110 dB-SPL The audience experience about 50 feet from the stage at a rock concert<br> &nbsp;
@@ -98,7 +110,7 @@ Using this formula we find these typical sound-pressure levels:<br>
  50 dB-SPL Quiet restaurant<br> &nbsp;
  40 dB-SPL Empty classroom with a fan or ventilator running<br> &nbsp;
  30 dB-SPL Empty movie theater<br> &nbsp;
- 20 dB-SPL Outdoors in the countryside far from traffic, slight breeze<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+ 20 dB-SPL Outdoors in the countryside far from traffic, slight breeze, no birds, etc.<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
            20 dB-SPL is also a desirable goal for an empty sanctuary or concert hall.<br> &nbsp;
  10 dB-SPL Two people 3 feet apart in an anechoic chamber.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
            They hear each other's breathing and their own heartbeats.<br> &nbsp; &nbsp;
