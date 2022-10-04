@@ -83,21 +83,20 @@ is about 101000 Pa.</p><p>
 Because our ears respond logarithmically, we usually convert SPL in Pa to a logarithmic 
 scale.  This is called the "decibel sound-pressure level" or "dB-SPL" ("dee, bee, ess,
 pea, el").  It is twenty times the base-ten logarithm of the ratio of the sound-pressure 
-level in pascals divided by 20 &mu;Pa.  The formula for conversion is:<br><br>
+level in pascals to 20 &mu;Pa.  The formula for conversion is:<br><br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 
 dB-SPL = 20log<sub>10</sub>([SPL in Pa RMS]/[20 &mu;Pa])<br><br>
 
 The formula above requires the sound pressure level to be in "Pascals RMS."  
-To convert Pascals to Pascals RMS, take the square root.  The maximum possible peak 
+To convert peak Pascals to Pascals RMS, as a rough estimate multiplying the peak 
+value by 0.707 will get you close most of the time.  (An <a 
+href="https://en.wikipedia.org/wiki/Root_mean_square">exact conversion</a> is 
+waveform dependent and may require some application of calculus&mdash;a topic beyond
+the scope of these pages.)  The maximum possible peak 
 SPL, as explained above, is about 101000 Pa.  To convert this to Pa RMS take the 
-square root of 101000.  This gives about 71500 Pa RMS.  Using the formula above 
-one finds that 71500 Pa RMS is equivalent to 191 dB-SPL.  The conversion to Pa RMS (take the 
-square root of the peak) is accurate for sounds with sinusoidal wave shapes and 
-is often acceptably accurate for any audio waveshape that is not highly impulsive.  
-RMS is a type of average which is waveshape dependent.  More details are available
-in the Wikipedia:  <a href="https://en.wikipedia.org/wiki/Root_mean_square"
->Root Mean Square</a><br><br>
+square root of 101000.  This gives about 71418 Pa RMS.  Using the formula above 
+one finds that 71418 Pa RMS is equivalent to 191 dB-SPL.  <br><br>
 
 
 Using the formula above we find these typical sound-pressure levels:<br>
@@ -190,7 +189,7 @@ sounds and the sound seems thin and low-quality.  Some radios and audio consumer
 audio equipment includes special tone-control circuits that automatically adjust themselves 
 as the volume control is adjusted to compensate for this nature of human hearing.  Usually 
 the "volume" control is then labeled as a "loudness" control instead to inform the 
-user that a loudness compensation circuit are included.  Loudness compensation is 
+user that a loudness compensation circuit is included.  Loudness compensation is 
 usually included only on the more expensive consumer-grade audio equipment.  <br><br>
 
 Loudness compensation is almost never included in professional equipment intended for 
