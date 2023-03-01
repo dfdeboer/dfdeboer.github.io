@@ -53,7 +53,7 @@ INTRODUCTION TO COMMUNICATION SYSTEMS&mdash;EGR 363<BR>
                    <DIV style="text-align:right; margin-top: 0px;
                               margin-bottom: 1px; font-size: 80%"
 
-                              >(Last update:   2/25/2023 3:14 pm)
+                              >(Last update:   3/01/2023 9:44 am)
 <!--  LAST_UPDATE------------------------------ -------- - -->
 <!--  Avoid Wednesday Due dates due to CA's Tu evening class -->
                                                  </DIV></TD></TR>
@@ -111,9 +111,9 @@ PS                                                       </small>
 		many other programs can do this task for you. <br>&nbsp;
 		Here is a hint in Matlab code that provides   <br>&nbsp;
 		one way to express the message signal <i>m</i><sub>1</sub>(<i>t</i>):<br>&nbsp;<font face="Courier New">
-		m1 = (2*t).*(u(t) - u(t - 0.5)) + ...         <br>&nbsp; &nbsp; &nbsp;
-		     (-2*t).*(u(t - 0.5) - u(t - 1.5)) + ...  <br>&nbsp; &nbsp; &nbsp;&nbsp;
-		     (2*t).*(u(t - 1.5) - u(t - 2.0))         </font><br>&nbsp;
+		m1 = (2*t).*(u(t) - u(t - 0.5)) + ...         <br>&nbsp;&nbsp;
+		 (-2*t + 2).*(u(t - 0.5) - u(t - 1.5)) + ... <br>&nbsp;&nbsp;
+		   (2*t - 4).*(u(t - 1.5) - u(t - 2.0))       </font><br>&nbsp;
 		When you repeat the problem for DSB-LC make   <br>&nbsp;
 		use of Equation 3.2.6 on page 127.            <br>&nbsp;
 		                                              <br>&nbsp;
