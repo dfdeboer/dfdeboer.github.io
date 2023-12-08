@@ -51,7 +51,8 @@ of loudness may be helpful, but the human ear is very complicated, making the
 correspondence between any measurement and a person's perception of loudness imprecise.
 The most common unit of measurement of loudness is the <i>phon</i>.  (Notice:  not 
 <i>decibels</i>.)  Only under certain prescribed conditions will a phon correspond 
-to a decibel (specifically, a db-SPL).</p><p>
+to a decibel (specifically, a db-SPL).  Two other units that relate to loudness are LUFS 
+and sones.  These will be described in the following paragraphs.</p><p>
 
 Loudness depends on the frequency of the sound.  The human ear is more sensitive to 
 mid-range frequencies than it is to low or high frequencies.  This means that for a 
@@ -59,7 +60,53 @@ given perception of loudness in phons one needs more power in low or high-freque
 sound-pressure waves.  Loudness also depends on the duration of the sound.  Short 
 brief sounds that happen in a generally quiet environment seem louder than droning 
 long-duration sounds that create a background of sound.  Our ears seem to naturally 
-filter out the background sounds and direct our focus toward changing sounds.</p><br><p>
+filter out the background sounds and direct our focus toward changing sounds.  The 
+absolute measure of sound that best accounts for all these effects is the phon.  A definition 
+of a phon will be given later after enough background information 
+is given for us to understand the definition.<br><br>
+
+Another measure that <i>relates</i> to loudness is called <i>LUFS</i> (pronounced 
+as a word that rhymes with "cuffs") or <i>Loudness Units Full Scale</i>.  
+Like the phon and the decibel, the LUFS is a logarithmic unit.  However, in spite of the word 
+"loudness" in its name, LUFS is not a measure of absolute loudness like phons are.  
+(A side note on grammar:  LUFS is a singular, not plural, word.  Counterintuitively, 
+we say, "LUFS is logarithmic."  We do not say, "LUFS are logarithmic.")<br><br>
+
+The key to understanding LUFS is in the 
+last two words of its name: <i>full scale</i>.  LUFS assume there is some context that 
+establishes a maximum loudness that can be produced.  For example, say you have 
+an amplifier with a volume control knob labeled with numbers from 0 to 10 (or a certain rock band uses 
+amplifiers labeled up to 11 ;-)  Now, suppose also that you have set that volume control 
+to the number "4."  That setting establishes a context for the maximum loudness that can be achieved.  
+That maximum achievable loudness is defined as 0 LUFS.  Everything of the programming that gets 
+reproduced at a softer volume than that maximum results in a negative number of LUFS.  
+In programming for streaming media (YouTube, Facebook, etc.) and TV and radio the 
+average loudness within the entire mix is designed by the mixing engineer to typically 
+be somewhere between &ndash;6 and &ndash;25 LUFS.  <br><br>
+
+The lower the average 
+LUFS is the more contrast the louder sounds of the programming may have against the 
+average.  But an interesting thing about LUFS is that if you change the volume 
+control you do not change the LUFS measurement of the programming!  That's because 
+if you turn up the volume, say from "4" to "6," everything gets louder, so the same 
+moments in the programming that produced 0 LUFS with the volume control at "4" also are 
+the moments with the loudest part of the programming when the volume control is at "6"!  
+That new loudness is still 0 LUFS in the context of setting the volume control at "6."  
+So LUFS is not really a measure of absolute loudness.  It is a measure of the present 
+loudness compared to the maximum possible loudness in the context in which you are 
+listening.  LUFS are an important measurement in mixing, but we need to remember that 
+LUFS do not measure absolute loudness like phons do.  <i>A volume control or any other 
+typical level control changes phons, but not LUFS.</i><br><br>
+
+A related but non-logarithmic measure of loudness that one might occasionally encounter 
+is the <i>sone</i>.  One sone is 40 phons, 2 sones is 50 phons, 4 sones is 60 phons, etc.
+Each doubling of the sones adds (about) 10 phons to the perceived loudness of a sound.  Phons 
+and dB SPL are the units usually encountered in audio engineering, so no further mention 
+of sones will be included here.  (Sones are used in some industrial noise analysis 
+contexts.)  There are still other units of loudness as well, but since they are not commonly 
+used in audio engineering, they will not be discussed here.  </p><br><p>
+
+
 
 <h1>Sound-Pressure Level (SPL) Defined</h1><p>
 Sound-pressure level (SPL) is a more easily defined quantity than loudness is.  
@@ -94,9 +141,9 @@ value by 0.707 will get you close most of the time.  (An <a
 href="https://en.wikipedia.org/wiki/Root_mean_square">exact conversion</a> is 
 waveform dependent and may require some application of calculus&mdash;a topic beyond
 the scope of these pages.)  The maximum possible peak 
-SPL, as explained above, is about 101000 Pa.  To convert this to Pa RMS take the 
-square root of 101000.  This gives about 71418 Pa RMS.  Using the formula above 
-one finds that 71418 Pa RMS is equivalent to 191 dB-SPL.  <br><br>
+SPL, as explained above, is about 101000 Pa.  To convert this to Pa RMS multiply 
+by 0.707.  This gives about 71407 Pa RMS.  Using the formula above 
+one finds that 71407 Pa RMS is equivalent to 191 dB-SPL.  <br><br>
 
 
 Using the formula above we find these typical sound-pressure levels:<br>
@@ -167,7 +214,14 @@ significantly from these curves.<br><br>
 <img width="500" height="449" src="500px-Lindos1.svg.png"><br><br>
 
 As explained above, the unit of loudness called the <i>phon</i> is derived from sound 
-pressure level in dB-SPL and from frequency.  The Fletcher-Munson curves express this definition.  
+pressure level in dB-SPL and from frequency.  The Fletcher-Munson curves express this definition. 
+Not all manufacturers who make audio equipment are satisfied with the Fletcher-Munson 
+curves.  That data is about a century old after all.  Many manufacturers use curves of 
+their own devising which they hold as trade secret information.  The general name for 
+these curves, be they Fletcher Monson curves or some other proprietary set of curves, 
+is equal-loudness countour curves.  The curves shown above are the Fletcher-Munson data 
+for equal-loudnes contours.<br><br>
+ 
 A related but non-logarithmic measure of loudness that one might occasionally encounter 
 is the <i>sone</i>.  One sone is 40 phons, 2 sones is 50 phons, 4 sones is 60 phons, etc.
 Each doubling of the sones adds (about) 10 phons to the perceived loudness of a sound.  Phons 
