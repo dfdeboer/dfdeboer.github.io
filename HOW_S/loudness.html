@@ -49,83 +49,168 @@ Loudness is the subjective perception of the intensity of sound pressure waves
 in the air.  There are many different standards for measuring Loudness.  Measurements 
 of loudness may be helpful, but the human ear is very complicated, making the 
 correspondence between any measurement and a person's perception of loudness imprecise.
-The most common unit of measurement of loudness is the <i>phon</i>.  (Notice:  not 
-<i>decibels</i>.)  Only under certain prescribed conditions will a phon correspond 
-to a decibel (specifically, a db-SPL).  Two other units that relate to loudness are LUFS 
-and sones.  These will be described in the following paragraphs.</p><p>
+<span style="background-color: #FFFFBB">The most reliable unit of measurement of 
+loudness is the <i>phon</i>.</span>  Yet another unit 
+is called <i>Sound Pressure Level</i> or <i>SPL</i>.  Only under certain 
+prescribed conditions will a phon correspond to SPL. (specifically, a db-SPL at 1 kHz).  
+Two other units that relate to loudness are LUFS and sones.  Yet another unit that has 
+something to do with loudness is the <i>VU</i> or <i>Volume Unit</i>, but remarkably, 
+of all the units the VU is the least reliable indicator of loudness.  The db-VU is a very 
+easy measurement to make and is very useful for maintaining signal integrity, therefore 
+it is very commonly used, even though it does not predict loudness well.  <br><br>
 
-Loudness depends on the frequency of the sound.  The human ear is more sensitive to 
-mid-range frequencies than it is to low or high frequencies.  This means that for a 
-given perception of loudness in phons one needs more power in low or high-frequency 
-sound-pressure waves.  Loudness also depends on the duration of the sound.  Short 
-brief sounds that happen in a generally quiet environment seem louder than droning 
-long-duration sounds that create a background of sound.  Our ears seem to naturally 
-filter out the background sounds and direct our focus toward changing sounds.  The 
-absolute measure of sound that best accounts for all these effects is the phon.  A definition 
-of a phon will be given later after enough background information 
-is given for us to understand the definition.<br><br>
+Loudness depends on the frequency, the spectral density, and duration of the sound.  
+The human ear is more sensitive to mid-range frequencies than it is to low or high 
+frequencies.  This means that for a given perception of loudness in phons one needs 
+more power in low or high-frequency sound-pressure waves.  Loudness also depends on 
+the duration of the sound.  Short brief sounds that happen in a generally quiet 
+environment seem louder than droning long-duration sounds that create a background 
+of sound.  Our ears seem to naturally filter out the background sounds and direct 
+our focus toward changing sounds.  If your brain needs to do a lot of this filtering 
+work to pick a voice out of background noise for example, it tends to make the voice 
+seem more powerful than it really is, rather than make the background noise seem weaker.  
+These are reasons why loudness is difficult to measure analytically.  The absolute 
+measure of sound that best accounts for all these effects is the phon.  <br><br></p><p>
 
+<h1>Overview of some units for measuring sound levels</h1><p>
+
+<i>decibels</i><br>
+You might be wondering about the loudness unit called the "just plain" 
+<i>decibel</i>.  Actually, there is no such unit of loudness.  The 
+decibel is a <a href="https://en.wikipedia.org/wiki/Decibel">mathematical technique</a> 
+to express a measurement on a logarithmic scale. Any kind of measurement, say the 
+brightness of light in a fiberoptic cable or the gain of an antenna, can be expressed 
+using decibels.  Just as there are many contexts in which the word <i>micro</i> comes 
+up, so with the <i>decibel</i>.  In order to express something like SPL on a logarithmic 
+scale we do the mathematical processing and then label the result using the word 
+"decibel," finally arriving at something like <i>db-SPL</i> or <i>decibel Sound 
+Pressure Level</i>.  <br><br>
+
+When you see "dB" or hear "decibel," it is just a scaling 
+prefix.  Pay attention to the modifier that follows.  That modifier is the real 
+unit being discussed.  Similarly, when you hear "nanometer" you understand that 
+the basic measurement is length in meters and "nano" is a prefix that scales the 
+number for convenient use in contexts of very short lengths. Occasionally 
+someone uses a prefix in a colloquial way.  "How many kilos of sugar did do 
+you want?"  We then understand that a unit, such as "gram," is implied.  "How 
+many kilograms of sugar do you want?" is what we understand, even if that was 
+not exactly what was asked.  Similarly if someone talks about "decibels" there 
+is a unit that is implied and hopefully can be filled in from context.<br><br> 
+
+<i>LUFS or LKFS</i><br>
 Another measure that <i>relates</i> to loudness is called <i>LUFS</i> (pronounced 
 as a word that rhymes with "cuffs") or <i>Loudness Units Full Scale</i>.  
-Like the phon and the decibel, the LUFS is a logarithmic unit.  However, in spite of the word 
-"loudness" in its name, LUFS is not a measure of absolute loudness like phons are.  
-(A side note on grammar:  LUFS is a singular, not plural, word.  Counterintuitively, 
-we say, "LUFS is logarithmic."  We do not say, "LUFS are logarithmic.")<br><br>
+Like the phon and the db-SPL, the LUFS is a logarithmic unit.  In spite of the word 
+"loudness" in its name, LUFS is not really a measure of absolute loudness like phons is.  
+(A side note on grammar:  LUFS is a treated as a singular word.  Counterintuitively, 
+we say, "LUFS is logarithmic."  We do not say, "LUFS are logarithmic.") <br><br> 
 
-The key to understanding LUFS is in the 
-last two words of its name: <i>full scale</i>.  LUFS assume there is some context that 
-establishes a maximum loudness that can be produced.  For example, say you have 
-an amplifier with a volume control knob labeled with numbers from 0 to 10 (or a certain rock band uses 
-amplifiers labeled up to 11 ;-)  Now, suppose also that you have set that volume control 
-to the number "4."  That setting establishes a context for the maximum loudness that can be achieved.  
-That maximum achievable loudness is defined as 0 LUFS.  Everything of the programming that gets 
+LUFS is an unofficial synonym for LKFS.  The LKFS measurement makes use of 
+a "K-weighted" frequency filter.  The standards document that defines LKFS 
+(<a href="https://www.itu.int/rec/R-REC-BS.1770-5-202311-I/en">ITU-R BS.1770</a>)  
+tries to make the K-weighted filter more obvious by naming the measurement with 
+a "K."  Most people call it "LUFS" anyway, probably because how does one 
+pronounce "LKFS?" (The definition of LKFS is Equation 2 on page 6 of the standard.)<br><br>
+
+The key to understanding LUFS is in the last two words of its name: "full scale."  
+LUFS assumes there is some context that establishes a maximum loudness that can be 
+produced.  For example, say you have an amplifier with a volume control knob labeled 
+with numbers from 0 to 10. (A certain rock band uses amplifiers labeled up to 11. How 
+the knobs are labeled makes no difference when it comes to LUFS!-)  
+Now, suppose also that you have set that volume control to the number "4."  That 
+setting establishes a context for the maximum loudness that the program can achieve.  That 
+maximum achievable loudness is defined as 0 LUFS.  Everything of the programming that gets 
 reproduced at a softer volume than that maximum results in a negative number of LUFS.  
 In programming for streaming media (YouTube, Facebook, etc.) and TV and radio the 
-average loudness within the entire mix is designed by the mixing engineer to typically 
-be somewhere between &ndash;6 and &ndash;25 LUFS.  <br><br>
+average LUFS within the entire mix is designed by the mixing engineer to typically 
+be somewhere between &ndash;6 and &ndash;30 LUFS.  Most platforms work best with 
+the average LUFS near &ndash;12 LUFS. <br><br>
 
-The lower the average 
-LUFS is the more contrast the louder sounds of the programming may have against the 
-average.  But an interesting thing about LUFS is that if you change the volume 
-control you do not change the LUFS measurement of the programming!  That's because 
-if you turn up the volume, say from "4" to "6," everything gets louder, so the same 
-moments in the programming that produced 0 LUFS with the volume control at "4" also are 
-the moments with the loudest part of the programming when the volume control is at "6"!  
+The lower the average LUFS is the more contrast the louder sounds of the programming 
+may have against the average.  But an interesting thing about LUFS is that if you 
+change the playback volume control you do not change the LUFS measurement of  
+the resulting loudness of the program!  That's because if you turn up the volume, 
+say from "4" to "6," <i>everything</i> gets louder, so the same moments in the 
+programming that produced 0 LUFS with the volume control at "4" also are the moments 
+with the loudest part of the programming when the volume control is at "6"!  
 That new loudness is still 0 LUFS in the context of setting the volume control at "6."  
 So LUFS is not really a measure of absolute loudness.  It is a measure of the present 
 loudness compared to the maximum possible loudness in the context in which you are 
 listening.  LUFS are an important measurement in mixing, but we need to remember that 
-LUFS do not measure absolute loudness like phons do.  <i>A volume control or any other 
-typical level control changes phons, but not LUFS.</i><br><br>
+LUFS do not measure absolute loudness like phons do.  <i>A playback volume control or 
+any other typical level control changes phons, but not LUFS.</i>  (Changing the recorded 
+or streamed mix&mdash;making one or another part of the mix softer or louder&mdash;can change 
+the LUFS.<br><br>
 
+<i>Sone</i><br>
 A related but non-logarithmic measure of loudness that one might occasionally encounter 
 is the <i>sone</i>.  One sone is 40 phons, 2 sones is 50 phons, 4 sones is 60 phons, etc.
 Each doubling of the sones adds (about) 10 phons to the perceived loudness of a sound.  Phons 
-and dB SPL are the units usually encountered in audio engineering, so no further mention 
+and dB SPL are the absolute units usually encountered in audio engineering, so no further mention 
 of sones will be included here.  (Sones are used in some industrial noise analysis 
-contexts.)  There are still other units of loudness as well, but since they are not commonly 
-used in audio engineering, they will not be discussed here.  </p><br><p>
+contexts.) <br><br>
+
+<i>VU and dB-VU</i><br>
+The <i>VU</i> or <i>Volume Unit</i> is a measure of a weighted moving average of the 
+rectified voltage of the signal.  It is an easy measurement to make and is very helpful 
+in preventing clipping and keeping the signal sufficiently above background noise and hum. 
+The VU is practically always expressed in decibels, in which case it is abbreviated as dB-VU.  
+Since it is an easy measurement to make and also a very useful measurement of signal 
+integrity, most mixing boards, recording equipment, and other devices have VU indicators, 
+either as traditional electro-mechanical meters with needles that swing over a scale, 
+or with bars of LEDs or some emulation on a screen.  VU meters (or bars) are by far 
+the most common displays of signal amplitude in the audio industry.  <br><br>
+  
+But loudness is more related to power and spectrum density than to voltage.  Since the VU 
+is at heart a voltage measurement, of all the measurements so far discussed here, the VU 
+is by far the least reliable indicator of perceived loudness.  To illustrate, YouTuber 
+Tom Scott has put up a demonstration video titled, "<a href=
+"https://www.youtube.com/watch?v=Is_wu0VRIqQ">Why are adverts so loud?</a>."  
+In this demonstration a person standing in a forest whispers into the microphone, 
+which sounds appropriately calm and soft.  Then the person, now standing next to a 
+highway, shouts into the microphone which sounds appropriately much louder.  
+Analyzing the VU levels reveals amazingly that the whispered voice is mastered to a 
+level of &ndash;4 dB-VU (quite high) and the person shouting is mastered to a level 
+of &ndash;12 dB-VU, eight decibels lower!  However, when measured in LUFS, the person 
+whispering is 7 LUFS softer than the person shouting.   Clearly a dB-VU measurement 
+is not a reliable way to assess perceived loudness. (I have analyzed this video myself.  
+Even after playback through YouTube, Tom Scott's claim of the eight dB-VU difference 
+is correct!  It is a bit of a gaffe that in one part of the video he calls the unit 
+of dB-VU simply the "decibel" and then later discusses dB-SPL and again calls that 
+just the "decibel," leaving it to the audience to sort out the unit from the context.  
+But the demonstration is well designed, vivid, and correct.)<br><br>
+
+<img width = "500" src="https://dfdeboer.github.io/HOW_S/LUFS_vs_dBVU.jpg"><br>
+<i>Tom Scott explains that the whispered voice has the highest dB-VU measurement suggesting 
+that it will be perceived as louder than the shouted voice when in fact it is perceived as softer. <small>(Screenshot from his 
+<a href="https://www.youtube.com/watch?v=Is_wu0VRIqQ">video</a>.)</small></i><br><br>
+
+The units discussed in this section (LUFS and dB-VU) are popular, but they are not true 
+measurements of the absolute loudness of a <i>sound</i>.  They are characteristics of a signal 
+that only relate indirectly to the loudness of the related sounds.  The units discussed 
+next are less often used, but they have much more to do with perceived absolute loudness of 
+sounds. <br></p><br><p>
 
 
 
 <h1>Sound-Pressure Level (SPL) Defined</h1><p>
 Sound-pressure level (SPL) is a more easily defined quantity than loudness is.  
 Sound-pressure level is the root-mean-square (RMS) deviation of a sound wave's pressure 
-from normal atmospheric pressure.  (Yeah, loudness is a lot more complicated than 
+from normal atmospheric pressure.  (Yeah, loudness is still more complicated than 
 that!)  The SI unit of sound-pressure is the <i>pascal</i> (Pa).<br><br>
 
 The threshold of human hearing is usually considered to be 20 &mu;Pa.  (micro-pascals)  
 The threshold of pain (where discomfort is first noticeable, not outright pain) in 
 human hearing is usually considered to be 20 Pa.  The maximum possible sound-pressure 
-level in the normal atmosphere near sea level is about 101000 Pa.  It is a maximum 
-because 101000 is about 1 atmosphere of pressure.  You cannot take more air molecules 
+level in the normal atmosphere near sea level is 101325 Pa.  It is a maximum 
+because 101325 is 1 atmosphere of pressure.  You cannot take more air molecules 
 out of a volume of space that is already lacking any air molecules!  Air pressure 
-disturbances that go beyond 101000 Pa are possible, but these would best be 
+disturbances that go beyond 101325 Pa are possible, but these would best be 
 characterized as blast-waves, such as are associated with bombs or objects moving at 
 supersonic speeds.  These can create very high positive pressures, but no pressures 
 lower than 0 Pa.  Audio equipment cannot create the asymmetric pressure profile of 
 a blast-wave.  Thus, it is fair to say that the highest possible sound-pressure level 
-is about 101000 Pa.</p><p>   
+is about 101325 Pa.</p><p>   
 
 Because our ears respond logarithmically, we usually convert SPL in Pa to a logarithmic 
 scale.  This is called the "decibel sound-pressure level" or "dB-SPL" ("dee, bee, ess,
@@ -136,24 +221,24 @@ level in pascals to 20 &mu;Pa.  The formula for conversion is:<br><br>
 dB-SPL = 20log<sub>10</sub>([SPL in Pa RMS]/[20 &mu;Pa])<br><br>
 
 The formula above requires the sound pressure level to be in "Pascals RMS."  
-To convert peak Pascals to Pascals RMS, as a rough estimate multiplying the peak 
-value by 0.707 will get you close most of the time.  (An <a 
+To convert peak Pascals to Pascals RMS, as a rough estimate dividing the peak 
+value by 1.4 (&radic;<span STYLE="text-decoration:overline">2</span>) will get you close most of the time.  (An <a 
 href="https://en.wikipedia.org/wiki/Root_mean_square">exact conversion</a> is 
 waveform dependent and may require some application of calculus&mdash;a topic beyond
 the scope of these pages.)  The maximum possible peak 
-SPL, as explained above, is about 101000 Pa.  To convert this to Pa RMS multiply 
-by 0.707.  This gives about 71407 Pa RMS.  Using the formula above 
-one finds that 71407 Pa RMS is equivalent to 191 dB-SPL.  <br><br>
+SPL, as explained above, is 101325 Pa.  To convert this to Pa RMS divide   
+by &radic;<span STYLE="text-decoration:overline">2</span>.  This gives about 71648 Pa RMS.  Using the formula above 
+one finds that 71648 Pa RMS is equivalent to 191 dB-SPL.  <br><br>
 
 
-Using the formula above we find these typical sound-pressure levels:<br>
+Here are some typical sound-pressure levels:<br>
 191 dB-SPL is the maximum possible sound pressure level in a normal atmosphere.<br>
 120 dB-SPL is the threshold of pain (discomfort&mdash;not outright pain).<br>
 110 dB-SPL The audience experience about 50 feet from the stage at a rock concert<br> &nbsp;
  85 dB-SPL A factory's production area.  (OSHA regulations become an issue!)<br> &nbsp;
  80 dB-SPL Vacuum cleaner<br> &nbsp;
  60 dB-SPL Normal human speech about 3 feet from the person speaking<br> &nbsp;
- 50 dB-SPL Quiet restaurant<br> &nbsp;
+ 50 dB-SPL A lightly occupied department store with background music playing<br> &nbsp;
  40 dB-SPL Empty classroom with a fan or ventilator running<br> &nbsp;
  30 dB-SPL Empty movie theater<br> &nbsp;
  20 dB-SPL Outdoors in the countryside far from traffic, slight breeze, no birds, etc.<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
@@ -167,12 +252,12 @@ Using the formula above we find these typical sound-pressure levels:<br>
 
 In the chart above 20 dB-SPL is mentioned as a goal for the quietness of an empty sanctuary.
 The rumble of heating ventilating and air-conditioning equipment, the buzzing of lamp 
-ballasts, the bustle of traffic on the streets outdoors, and similar sounds can all significantly 
+ballasts, the bustle of traffic on the streets outdoors, and similar sounds can   
 distract from a sense of reverence and peacefulness while also obscuring the details of 
 softly performed music.  Even achieving a quietness of 30 dB-SPL is non-trivial and will 
-require some deliberate effort to quiet down various aspects of the venue.  If this is not
-done, the level of quietness will likely be degraded to something above 35 dB-SPL in today's
-world of noise.  </p><br>
+require some deliberate effort to quiet down various aspects of the venue.  If care for 
+quietness is not a deliberate effort, the level of quietness will likely be degraded 
+to something above 35 dB-SPL in today's typical world of noisy equipment.  </p><br>
 
 
 <h1>SPL Is Not Loudness!</h1><p>
@@ -187,12 +272,13 @@ even though the dB-SPL levels are far apart.  The power that a sound wave carrie
 accurately expressed by dB-SPL, but our perception of that can be very different than the 
 dB-SPL numbers would predict.<br><br>
 
-As another example of loudness vs. dB-SPL, consider that the FCC requires that advertising 
-may not have an average dB-SPL level above that of the normal programming on radio and TV.  
-Just listen to some programming.  Do some advertisements sound  louder than 
-the programming?  This is possible because loudness, being a complex issue, is not what 
-is measured and regulated.  Voltages are actually what is regulated, limiting 
-sound-pressure levels.</p><br><p>
+As another example of loudness vs. dB-SPL, consider that in the USA the FCC requires that 
+advertising may not have an average dB-SPL level above that of the normal programming 
+on radio and TV.  Just listen to some programming.  Some advertisements sound much louder 
+than the program they support.  This is possible because loudness, being a complex issue, 
+is not what is measured and regulated.  Specifying that comparable dB-SPL levels much be 
+achieved implies that voltages are actually what is regulated, limiting only sound-pressure 
+levels.  Europeans have it better because their regulations are in terms of LUFS.</p><br><p>
 
 <h1>Loudness depends on frequency and dB SPL</h1><p>
 
@@ -204,7 +290,13 @@ best information on this topic that are in the public domain.  (Some companies h
 done their own research and use different curves when designing their 
 products.)  The Fletcher-Munson curves (red lines) are shown below.  One of the characteristics 
 of the Fletcher-Munson curves is that a phon is defined as equal to a dB-SPL at 
-1000 Hz for short-duration sounds against a background of silence.  The entire set of 
+1000 Hz for short-duration sounds against a background of silence.  If a pure tone 
+is at a frequency other than 1000 Hz, find the point (Hz, dB-SPL) on the Fletcher-Munson
+chart and interpolate the red line that would intersect that point.  That is the 
+loudness level in phons for that sound.  Example:  Measuring a 30 Hz sound reveals it 
+has a sound-pressure level of 115 db-SPL.  This sound has a loudness of only 90 phons.<br><br>  
+
+The entire set of 
 Fletcher-Munson curves is only valid for short-duration sounds against a background 
 of silence.  These curves also represent an average of all the samples from a large
 number of young people who claim to have no problems with their hearing.  The curves 
@@ -216,32 +308,25 @@ significantly from these curves.<br><br>
 As explained above, the unit of loudness called the <i>phon</i> is derived from sound 
 pressure level in dB-SPL and from frequency.  The Fletcher-Munson curves express this definition. 
 Not all manufacturers who make audio equipment are satisfied with the Fletcher-Munson 
-curves.  That data is about a century old after all.  Many manufacturers use curves of 
+curves.  After all, that data is about a century old now.  Many manufacturers use curves of 
 their own devising which they hold as trade secret information.  The general name for 
 these curves, be they Fletcher Monson curves or some other proprietary set of curves, 
-is equal-loudness countour curves.  The curves shown above are the Fletcher-Munson data 
-for equal-loudnes contours.<br><br>
+is equal-loudness contour curves.  The curves shown above are the Fletcher-Munson data 
+for equal-loudness contours.<br><br>
  
-A related but non-logarithmic measure of loudness that one might occasionally encounter 
-is the <i>sone</i>.  One sone is 40 phons, 2 sones is 50 phons, 4 sones is 60 phons, etc.
-Each doubling of the sones adds (about) 10 phons to the perceived loudness of a sound.  Phons 
-and dB SPL are the units usually encountered in audio engineering, so no further mention 
-of sones will be included here.  (Sones are used in some industrial noise analysis 
-contexts.)  There are still other units of loudness as well, but since they are not commonly 
-used in audio engineering, they will not be discussed here.  <br><br>
 
 <h1>Loudness compensation</h1><p>
 
-Because loudness depends on frequency, artificially changing the volume-level of a sound 
-will change the way we percieve the sound's tonal balance.  Every time the "volume" control
+Because loudness depends on frequency, artificially changing the db-SPL level of a sound 
+will change the way we perceive the sound's tonal balance.  Every time the "volume" control
 of a radio is adjusted, our ears perceive the change as if the bass and treble controls of 
 the radio are also adjusted.  Turning the volume up increases our relative perception of 
 bass and treble relative to the midrange frequencies.  The sound seems more full and 
 pleasing to most people when the volume is turned up.  Conversely, turning the volume down 
 decreases our ability to perceive the bass and treble sounds relative to the midrange 
-sounds and the sound seems thin and low-quality.  Some radios and audio consumer-grade 
-audio equipment includes special tone-control circuits that automatically adjust themselves 
-as the volume control is adjusted to compensate for this nature of human hearing.  Usually 
+sounds and the sound seems thin and low-quality.  Some radios and consumer-grade 
+audio equipment include special tone-control circuits that automatically adjust themselves 
+as the volume control is adjusted to compensate for this nature of human hearing.  Sometimes  
 the "volume" control is then labeled as a "loudness" control instead to inform the 
 user that a loudness compensation circuit is included.  Loudness compensation is 
 usually included only on the more expensive consumer-grade audio equipment.  <br><br>
@@ -251,16 +336,15 @@ live-sound reinforcement.  It would be inappropriate to include it in that conte
 live-sound is the reference against which loudness compensation is supposed to adjust 
 itself.<br><br>
 
-The Fletcher-Munson curves show that human hearing has a more uniform 
-frequency response at high loudness levels.  Suppose you attend a live worship service 
-in which the musical portions of the worship service are at about 80 phons of loudness.  
-Now you go home and listen to a recorded version of the very same worship service but 
-you set the volume control to provide about 60 phons of loudness.  This is a very common 
-scenario.  Usually when we listen to programming at home we listen at a lower loudness 
-level than that of the venue at the live event.  The greater curvature of 
-the 60 phon curve compared to the 80 phon curve tells us that the lower-loudness 
-playback of the sound is not going to sound as good as the original sound, unless some
-steps are taken <i>at the playback equipment</i> to compensate for the lower loudness.<br><br>
+Suppose you attend a live worship service in which the musical portions of the worship 
+service are at about 80 phons of loudness.  Now you go home and listen to a recorded 
+version of the very same worship service but you set the volume control to provide about 
+60 phons of loudness.  This is a very common scenario.  Usually when we listen to 
+programming at home we listen at a lower loudness level than that of the venue at the 
+live event.  The greater curvature of the 60 phon curve compared to the 80 phon curve 
+tells us that the lower-loudness playback of the sound is not going to sound as good 
+as the original sound, unless some steps are taken <i>at the playback equipment</i> to 
+compensate for the lower loudness.<br><br>
 
 For example it takes about 80 dB-SPL at a mid-range frequency such as 440 Hz 
 (A<sub>4</sub> on a piano&mdash;the A above middle C) to make 80 phons of loudness. 
