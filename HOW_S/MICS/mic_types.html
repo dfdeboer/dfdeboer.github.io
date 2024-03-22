@@ -1920,8 +1920,9 @@ house-of-worship applications even though they are great choices for their targe
    <li>For every mic there is a maximum sound-pressure level (in dB-SPL) that it can <br>&nbsp; &nbsp; &nbsp;
            accept without undue distortion. <br>
    <li>Every microphone generates slight self-noise.  In the microphone's output, <br>&nbsp; &nbsp; &nbsp;
-           self-noise sounds as if it is real noise, very soft, at a low sound-pressure <br>&nbsp; &nbsp; &nbsp;
-		   level.
+           self-noise typically has a hissing or whooshing sound, as if it is something <br>&nbsp; &nbsp;
+		   like wind, very soft.  Others might describe it as the sound of brushing <br>&nbsp; &nbsp;
+		   your hand through some long grass.  
    <li>The difference between the maximum acceptable SPL and the equivalent SPL of <br>&nbsp; &nbsp; &nbsp;
            the self noise is the microphone's <i>dynamic range.</i>  
    <li>Sounds to be picked up by the microphone must have a loudness that fits well<br>&nbsp; &nbsp; &nbsp;
@@ -2039,7 +2040,7 @@ bidirectional, <i>d</i> =1]</font></blockquote><br>
 
 Using physics one can show that the velocity variation is always proportional to the 
 pressure variation (for non-plosive sounds).  Thus if the pressure variation doubles (or changes by any factor) 
-then the volocity variation also doubles (or changes by the same factor).  
+then the velocity variation also doubles (or changes by the same factor).  
 Then, in the equation for <i>v</i>(<i>t</i>) notice that if <i>p</i>(<i>t</i>) doubles 
 (or changes by any factor) then <i>v</i>(<i>t</i>) doubles as well (or changes by the 
 same factor.  This is ideal distortion-free behavior.  For this to happen the diaphragm 
@@ -2082,11 +2083,11 @@ purposes, they are essentially the same thing. <br><br>
 <b>Clipping</b><br>
 Clipping is an extreme type of distortion.  Suppose the sound-pressure-level of the 
 sound presented to a microphone is so intense as to move the diaphragm all the way to 
-the limits of its motion, and would move the diaphragm futher if it could.  When the 
+the limits of its motion, and would move the diaphragm further if it could.  When the 
 diaphragm hits its limit, that will induce a sound into the signal that is not present 
-in the accoustic sound.  (When the supension of a car hits its limit you might hear 
-a clunking sound.  Similarly when a diaphram hits its limit.)  Furthermore, that 
-"clipping" sound will be harmonically related to the fundamental accoustic sound.  
+in the acoustic sound.  (When the suspension of a car hits its limit you might hear 
+a clunking sound.  Similarly when a diaphragm hits its limit.)  Furthermore, that 
+"clipping" sound will be harmonically related to the fundamental acoustic sound.  
 (If the sound changes pitch, the clipping distortion will also change pitch, thus 
 a harmonic relationship.)  Clipping creates THD when the sound is loud enough.<br><br>
 
@@ -2094,47 +2095,55 @@ a harmonic relationship.)  Clipping creates THD when the sound is loud enough.<b
 THD is measured with a pure tone of a specific frequency.  When there is more than 
 one tone, for example two tones, one of 400 Hz and one of 1000 Hz then of course an 
 undistorted signal will have only those two tones in it.  However, distortion can 
-cause the sum and difference frequencies, 1400 Hz and 600 Hz in this case, to become
+cause the sum and difference frequencies, 1400 Hz and 600 Hz in this example, to become
 audible.  Intermodulation distortion is measured similarly to THD, but now the filter
 rejects all signals except the sum and difference frequencies of the two tones applied.
 Intermodulation distortion is then the fraction or percentage that the power at the 
 output of the filter is in comparison to the power at the input of the filter.  Like 
 THD, the signal itself has a strong tendance to mask the intermodulation distortion, 
 so intermodulation distortion less than 1% is inaudible.  Non-zero THD is necessary 
-for any intermodulation distortion to exist.  When dealing with microphones,
-if THD is less than 1% then intermodulation distortion is sure to be negligible. <br><br>
+for any intermodulation distortion to exist.  If THD is less than 1% then 
+intermodulation distortion is almost certain to be negligible. <br><br>
 
 In power-amplifier and loudspeaker applications, the reduction of intermodulation 
 distortion is a primary advantage of using active crossovers and separate power 
 amplifiers ("Bi-amping").  By separating the audio into various frequency bands each 
-amplifier/speaker pathway deals with fewer frequenies, therefore each creates less 
+amplifier/speaker pathway deals with fewer frequencies, therefore each creates less 
 intermodulation distortion such that the sum of all pathways  has much less  
 intermodulation distortion than otherwise. <br><br> 
 
 <b>Summary of the topic of distortion</b><br>
 Because fundamental sound is so much stronger than the harmonic distortion (plus 
-noise if appliable) the fundamental has a strong abilty to mask the distortion.  
-Distortion levels of up to 10% might go unnoticed by the general public unless you 
-specifically ask them to listen carefully.  Distortion levels below 3% are difficult 
-for untrained persons to detect.  Distortion levels below 1% are impossible even 
-for most trained listeners to detect.  In electronic circuits (mixing console, 
-amplifiers, etc.) distortion levels below 0.1% are routine unless there are significant 
-issues such as clipping or low supply voltage (weak batteries), or gain structure 
-issues, etc.  <br><br>  
+noise if appliable) the fundamental has a strong ability to mask the distortion.  
+If the total harmonic distortion is under 3% in most situations hardly anyone (if 
+anyone) will notice it.  Distortion levels of up to 10% might go unnoticed by the 
+general public.  You can judge for yourself in this video:  "<a href="https://www.youtube.com/watch?v=7dLArMd-y64">How much distortion 
+can you hear?</a>"  In electronic circuits (mixing console, 
+amplifiers, etc.) distortion levels well below 0.1% are routine unless there are 
+significant issues such as clipping or low supply voltage (weak batteries), or gain 
+structure issues, etc.  In professional-grade microphones and loudspeakers distortion 
+levels under 1% are also routine.  (Example:  The Shure SM-94 microphone, a microphone 
+noted for low distortion, is specified to have less than 0.25% total harmonic distortion.) 
+Even though transducers may introduce an order of magnitude more distortion 
+into the system than the electronics does, the amount is well below an 
+audible level.  Harmonic distortion should never be a problem.  <br><br>  
 
 Frequency response specifications may be helpful in understanding if the microphone 
 will be a good fit to a particular application.  For spoken word and vocal music a 
-smooth response that is bettween 0 and +5 dB between 100 Hz and 8 kHz, with perhaps 
-some emphais in teh 3 to 5 kHz range seems to give pleasing results.  For musical 
-instruments, flat response overall and especially below 100 Hz for bass instruments 
-tends to give pleasing results.  If there is emphasis of frequencies it is best if 
-it is less than +3 dB relative to 100 Hz.  Overall smoothness and flatness of the 
-curve is disirable for picking up musical instruments.  In the final analysis, 
-the microphone that you have on hand that sounds best in the application is the 
-one to use.   
+smooth response that is between 0 and +5 dB between 100 Hz and 8 kHz, with perhaps 
+some emphasis in the 3 to 5 kHz range seems to give pleasing results.  For musical 
+instruments, flat response overall and especially between 100 Hz and 40 Hz for bass 
+instruments tends to give pleasing results.  (Flat frequency response extending 
+to 20 Hz is still better, but extending to 40 Hz brings most of the benefit.)  
+If there is emphasis of frequencies it is best if it is less than +3 dB relative 
+to 1000 Hz.  Overall smoothness and flatness of the curve is desirable for picking 
+up musical instruments.  In the final analysis, the microphone that you have on 
+hand that sounds best in the application is the one to use.  <br><br>
 
-
-<br><br>[Something more to go here eventually]
+When it comes to microphones, hum, self-noise (hissing), and clipping (lack of 
+dynamic range), are all problems that have well-known solutions.  While these 
+problems may occasionally present themselves, they should never be an insurmountable 
+issue in a church sound system.
 
 <h1>To be continued. . .</h1><p>
 
