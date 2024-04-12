@@ -1953,18 +1953,32 @@ of electrons and other causes in the electronics.  You can notice self-noise if 
 in a quiet place (e.g. muffled tightly between pillows in a quiet room) and then, using headphones and 
 with all loudspeakers turned off (so there can be no feedback) turn up the volume really high.  You will 
 hear a hissing sound.  Some of this hiss is from the microphone itself.  (Some more of it may be from the 
-console you are using.)  If the sound you are attempting to pick up with the microphone is not 
-loud enough, it cannot overcome the self-noise of the microphone.  Then, when the sound is soft you 
-will hear the hiss of the self-noise in the background.  As you can imagine, the need to pick 
+console you are using.)  <br><br>
+
+If the sound you are attempting to pick up with the microphone is not 
+loud enough, it cannot overcome the self-noise of the microphone.  For example, if the sound you want to 
+pick up is at a level of 55 dB-SPL and you want at least a 30 dB signal-to-noise ratio, then your microphone
+must have a self-noise level of 55 &ndash; 30 = 25 dB-SPL.  Otherwise, when the sound is soft you 
+will hear the hiss of the microphone's self-noise in the background.  As you can imagine, the need to pick 
 up such soft sounds is rarely a problem in a house-of-worship situation.  If you hear hiss or think you are 
-having a problem with a microphone's self-noise, check the gain trim on that channel and perhaps 
-on other channels and group mixes too.  Gain structure errors can produce hiss that sounds just 
-like microphone self-noise.  <br><br>  
+having a problem with a microphone's self-noise, check the gain trim on that channel first.  Gain structure errors are more common and can produce hiss that sounds just like microphone self-noise.  <br><br> 
+
+Microphone self-noise is measured in comparison to a theoretically perfect microphone which has no self-noise 
+at all.  Imagine two rooms.  One is perfectly silent--an anechoic chamber with no sound source in it.
+Put the microphone to be tested in this room.  Measure the loudness of the signal that comes from the 
+microphone.  Since there is no acoustic signal in this room, all the signal from this microphone is 
+self noise.  Now in the second room--also an anechoic chamber--place an ideal noise-free microphone and 
+also a source of "A weighted" (or CCIT weighted) noise.  (This sounds hissy, like radio static between stations.)  Turn up the level of the noise until the signal from the ideal microphone matches the 
+strength of the signal from the microphone being tested.  Measure, in dB-SPL, the loudness in the room that has 
+the noise source.  This is the level of self-noise in the microphone being tested.  (Of course, there is no 
+such ideal microphone to use for this test, so an actual test requires use of a calibrated and well-understood 
+microphone with very low self-noise and some math to compensate for the self-noise of the nearly ideal 
+microphone.)  <br><br> 
 
 Because self-noise is usually not an issue with a dynamic microphone, most specification sheets for 
 dynamic microphones don't mention anything about it.  Better condenser microphones will include self-noise
-on their specification sheets.  For house-of-worship applications anything below about 25 dB-A is good 
-enough.  (Or anything below about 37 dB-CCIT.)<br><br>
+on their specification sheets.  For house-of-worship applications anything below about 25 dB-SPL 
+A weighted is good enough.  (Or anything below about 37 dB SPL CCIT weighted.)<br><br>
 
 <b><i>Hum</i></b><br>
 Technically, hum is not self-noise.  But this seems to be an appropriate place to discuss it.  If you 
